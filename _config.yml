@@ -3,10 +3,10 @@ title: Development containers
 description: >
   Development containers documentation and specification page.
 
-baseurl: /dev-container-spec # the subpath of your site, e.g. /blog/
-url: https://microsoft.github.io/dev-container-spec/ # the base hostname & protocol for your site
-git_address: https://github.com/Microsoft/dev-container-spec
-git_edit_address: https://github.com/Microsoft/dev-container-spec/blob/gh-pages
+baseurl: /containers.dev # the subpath of your site, e.g. /blog/
+url: https://devcontainers.github.io/containers.dev/ # the base hostname & protocol for your site
+git_address: https://github.com/devcontainers/containers.dev
+git_edit_address: https://github.com/devcontainers/containers.dev/settings/pages/blob/gh-pages
 
 # Build settings
 markdown: kramdown
