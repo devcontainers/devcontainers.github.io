@@ -8,16 +8,27 @@ You may view the site at [devcontainers.github.io](https://devcontainers.github.
 
 If you'd like to build and preview the site yourself, we make it as smooth as possible through a dev container in this repo!
 
-* Clone or open this repo in the dev container-supporting editor of your choosing. You may review supporting tools and services [here](https://devcontainers.github.io/containers.dev/supporting).
-* Reopen this repo in the dev container. You may review its contents in the [`.devcontainer`](https://github.com/devcontainers/containers.dev/tree/gh-pages/.devcontainer) folder.
-* Once the dev container finishes building, start the site: `bundle exec jekyll serve`
-* Visit the site: http://localhost:4000/containers.dev/
+### Dev container
+
+You may build GitHub Pages sites with [Jekyll](https://jekyllrb.com/), which is a Ruby gem. You could manually install these tools on your machine, or you can easily get started with the setup you already need through a dev container!
+
+You may review this repo's dev container in the [`.devcontainer`](https://github.com/devcontainers/containers.dev/tree/gh-pages/.devcontainer) folder.
+
+It is from this [Jekyll definition](https://github.com/microsoft/vscode-dev-containers/tree/main/containers/jekyll).
+
+### Steps to build and run
+
+* Clone or open this repo in the dev container-supporting editor of your choosing.
+     * You may review supporting tools and services [here](https://devcontainers.github.io/containers.dev/supporting).
+* Reopen this repo in the dev container, so that the container builds and you may develop inside it using the included tools. 
+* Once the dev container finishes building, execute the following command in your dev container to start the site: `bundle exec jekyll serve`
+* Check out the site! http://localhost:4000/containers.dev/
 
 ## Feedback and contributing
 
-If you'd like to contribute to the dev containers website, please feel free to open a PR in this repo. You may also file any other issues or feedback in this repo.
+If you'd like to provide feedback on or contribute to the dev containers website, please feel free to open an issue or PR in this repo.
 
-For issues on and contributions to the dev container specification itself, please visit the Dev Containers Spec [repo](https://github.com/devcontainers/spec).
+For issues on and contributions to the dev container specification itself, please visit the [Dev Containers Spec repo](https://github.com/devcontainers/spec).
 
 ## License
 
