@@ -3,7 +3,7 @@ title: Development containers
 description: >
   Development containers documentation and specification page.
 
-baseurl: / # the subpath of your site, e.g. /blog/
+# baseurl: / # the subpath of your site, e.g. /blog/
 url: https://devcontainers.github.io # the base hostname & protocol for your site
 git_address: https://github.com/devcontainers/devcontainers.github.io
 git_edit_address: https://github.com/devcontainers/devcontainers.github.io/settings/pages/blob/gh-pages
