@@ -2,7 +2,7 @@
 
 This repo holds the website for the [Development Containers Specification](https://github.com/devcontainers/spec).
 
-You may view the site at [devcontainers.github.io](https://devcontainers.github.io/containers.dev/).
+You may view the site at [devcontainers.github.io](https://devcontainers.github.io/).
 
 ## Building
 
