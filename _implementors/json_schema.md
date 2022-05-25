@@ -3,7 +3,7 @@ layout: implementors
 title:  "devcontainer.json schema"
 shortTitle: "devcontainer.json schema"
 author: Microsoft
-index: 2
+index: 3
 ---
 
 You may review the [current devcontainer.json schema](https://github.com/microsoft/vscode/blob/main/extensions/configuration-editing/schemas/devContainer.schema.src.json), and the accompanying [dev-container-spec repo issue](https://github.com/microsoft/dev-container-spec/issues/14).

@@ -3,7 +3,7 @@ layout: implementors
 title:  "devcontainer.json reference"
 shortTitle: "devcontainer.json reference"
 author: Microsoft
-index: 3
+index: 4
 ---
 
 A `devcontainer.json` file in your project tells [tools and services that support the dev container spec](../../supporting) how to access (or create) a **development container** with a well-defined tool and runtime stack. It follows the JSON with Comments (jsonc) format.

@@ -3,11 +3,11 @@ layout: implementors
 title:  "Reference Implementation"
 shortTitle: "Reference Implementation"
 author: Microsoft
-index: 1
+index: 2
 ---
 
 # Reference Implementation
-The reference implementation for the specification is available through a development container CLI. This CLI can take a devcontainer.json and create and configure a dev container from it.
+The reference implementation for the specification is available through a [development container CLI](https://github.com/devcontainers/cli). This CLI can take a devcontainer.json and create and configure a dev container from it.
 
 ## What is the dev container CLI?
 When tools like VS Code and Codespaces detect a devcontainer.json file in a user's project, they use a CLI to configure a dev container. We've now opened up this CLI as a reference implementation so that individual users and other tools can read in devcontainer.json metadata and create dev containers from it.
