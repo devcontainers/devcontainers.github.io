@@ -76,6 +76,23 @@ A [codespace](https://docs.github.com/en/codespaces/overview) is a development e
 #### <a href="#codespaces-specific-properties" name="codespaces-specific-properties" class="anchor"> Product specific properties </a>
 GitHub Codespaces works with a growing number of tools and, where applicable, their `devcontainer.json` properties. For example, connecting the Codespaces web editor or VS Code enables the use of [VS Code properties](#visual-studio-code).
 
+If your Codespaces project needs additional permissions for other repositories, you can configure this through the `repositories` and `permissions` properties. You may learn more about this in the [Codespaces documentation](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-repository-access-for-your-codespaces). As with other tools, Codespaces specific properties are placed within a `codespaces` namespace inside the `customizations` property.
+
+```json
+"customizations": {
+		// Configure properties specific to Codespaces.
+		"codespaces": {
+			"repositories": {
+				"my_org/my_repo": {
+					"permissions": {
+						"issues": "write"
+					}
+				}
+			}
+		}
+}
+```
+
 #### <a href="#codespaces-specific-limitations" name="codespaces-specific-limitations" class="anchor"> Product specific limitations </a>
 
 Some properties may apply differently to Codespaces.
