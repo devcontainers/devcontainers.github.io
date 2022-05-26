@@ -3,7 +3,7 @@ layout: implementors
 title:  "How to contribute to the Development Container Specification"
 shortTitle: "Contributing"
 author: Microsoft
-index: 4
+index: 5
 ---
 
 We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. 
@@ -23,6 +23,25 @@ Here is a sample proposal:
 - PRs to the [schema](https://github.com/microsoft/vscode/blob/main/extensions/configuration-editing/schemas/devContainer.schema.src.json), i.e code or shell scripts demonstrating approaches for implementation.
 
 Once there is discussion on your proposal, please also open and link a PR to update the [devcontainer.json reference doc](https://aka.ms/devcontainer.json). When your proposal is merged, the docs will be kept up-to-date with the latest spec.
+
+### <a href="#tool-specific-support" name="tool-specific-support" class="anchor"> Contributing tool-specific support </a>
+
+Tool-specific properties are contained in namespaces in the `"customizations"` property. For instance, VS Code specific properties are formated as:
+
+```bash
+// Configure tool-specific properties.
+"customizations": {
+     // Configure properties specific to VS Code.
+     "vscode": {
+          // Set *default* container specific settings.json values on container create.
+          "settings": {},
+			
+          // Additional VS Code specific properties...
+     }
+},
+```
+
+You may propose adding a new namespace for a specific tool, and any properties specific to that tool.
 
 ## <a href="#review-process" name="review-process" class="anchor"> Review process </a>
 
