@@ -6,8 +6,6 @@ author: Microsoft
 index: 1
 ---
 
-# Dev container specification
-
 The purpose of the **development container** specification is to provide a way to enrich containers with the content and metadata necessary to enable development inside them. These container **environments** should be easy to use, create, and recreate. 
 
 A **development container** is a container in which a user can develop an application.  Tools that want to implement this specification should provide a set of features/commands that give more flexibility to users and allow **development containers** to scale to large development groups.
@@ -18,13 +16,13 @@ Historically, dev containers have been used to enable a development workflow use
 
 The focus of the dev container specification is to describe how to enrich a container for the purposes of development, rather than acting as a multi-container orchestrator format.  Container orchestrator formats can be referenced, when needed, to manage multiple containers and the **development container** lifecycle. Today, `devcontainer.json` includes scenario-specific properties for working without a container orchestrator (by directly referencing an image or Dockerfile) and for using Docker Compose as a simple multi-container orchestrator.
 
-# Metadata
+# <a href="#metadata" name="metadata" class="anchor"> Metadata </a>
 
 **Development containers** allow one to define a repeatable development environment for a user or team of developers that includes the execution environment the application needs. A development container defines an environment in which you develop your application before you are ready to deploy. While deployment and development containers may resemble one another, you may not want to include tools in a deployment image that you use during development.
 
 A **development container** is composed of a definition (e.g. contained in a `devcontainer.json` file) that deterministically creates containers under the control of the user.
 
-## `devcontainer.json`
+## <a href="#devcontainerjson" name="devcontainerjson" class="anchor"> `devcontainer.json` </a>
 
 The current metadata schema for **development containers** is contained in a `devcontainer.json` file.
 
@@ -38,16 +36,15 @@ While this metadata may be provided in different ways, when searching for a devc
 
 It is valid that these files may exist in more than one location, so consider providing a mechanism for users to select one when appropriate.
 
-
-# Configuration options
+## <a href="#configuration-options" name="configuration-options" class="anchor"> Configuration options </a>
 
 **Development containers** currently support multiple ways to specify the containers that create an environment. The following section describes the differences between them.
 
-## Image based
+## <a href="#image-based" name="image-based" class="anchor"> Image based </a>
 
 Image based configurations only reference an image that should be reachable and downloadable through `docker pull` commands. Logins and tokens required for these operations are execution environment specific. The only required parameter is `image`. The details are [here](devcontainerjson-reference.md#image-or-dockerfile-specific-properties).
 
-## Dockerfile based
+## <a href="#dockerfile-based" name="dockerfile-based" class="anchor"> Dockerfile based </a>
 
 These configurations are defined as using a `Dockerfile` to define the starting point of the **development containers**. As with image based configurations, it is assumed that any base images are already reachable by **Docker** when performing a `docker build` command. The only required parameter in this case is the relative reference to the `Dockerfile` in `build.dockerfile`. The details are [here](devcontainerjson-reference.md#image-or-dockerfile-specific-properties).
 
@@ -58,7 +55,7 @@ There are multiple properties that allow users to control how `docker build` wor
 - `build.target`,
 - `build.cacheFrom`
 
-## Docker Compose based
+## <a href="#docker-compose-based" name="docker-compose-based" class="anchor"> Docker Compose based </a>
 
 Docker Compose configurations use `docker-compose` to create and manage a set of containers required for an application. As with the other configurations, any images required for this operation are assumed to be reachable. The required parameters are:
 
@@ -69,13 +66,13 @@ It is important to remark that due to how `docker-compose` works a lot of the pr
 
 -`runServices`: the set of services in the `docker-compose` configuration that should be started or stopped with the environment.
 
-# Other options
+# <a href="#other-options" name="other-options" class="anchor"> Other options </a>
 
 In addition to the configuration options explained above, there are other settings that apply when creating **development containers** to facilitate their use by developers. These properties mostly apply to **image** and **Dockerfile** based configurations.
 
 We describe the main ones below.
 
-## Environment Variables
+## <a href="#environment-variables" name="environment-variables" class="anchor"> Environment variables </a>
 
 Environment variables can be set in containers at creation time, to override existing ones, or just to be used when a supporting tool connects to the environment.
 
@@ -83,21 +80,20 @@ There are two kinds of environment variables:
 * Container: These variables are part of the container when it is created and are available at all points in its lifecycle.
 * Remote: This variables are to be set by a **development container** supporting tool as part of its environment when it runs. These variables can change during the lifetime of the container.
 
-## Mounts
+## <a href="#mounts" name="mounts" class="anchor"> Mounts </a>
 
 Mounts allow containers to have access to the underlying machine, share data between containers and to persist information between **development containers**. 
 
 It is important to note that these mounts are from the underlying compute environment and thus cloud environments might not have access to the same data as a local machine.
 
-## Users
+## <a href="#users" name="users" class="anchor"> Users </a>
 
 Users control the permissions of applications executed in the containers, allowing the developer to control them. The specification takes into account two types of user definitions:
 
 * Container User: The user that will be used for all operations that run inside a container. It is used to run lifecycle commands among others.
 * Remote User: In case the developer wants to use different users for different purposes, the remote user is the user that connecting tools should use to execute operations inside the container.
 
-
-# Lifecycle
+# <a href="#lifecycle" name="lifecycle" class="anchor"> Lifecycle </a>
 
 A development environment goes through different lifecycle events during its use in the outer and inner loop of development.
 
@@ -107,7 +103,7 @@ A development environment goes through different lifecycle events during its use
 - Environment Resume.
 - Environment Connection.
 
-## Configuration Validation
+## <a href="#configuration-validation" name="configuration-validation" class="anchor"> Configuration Validation </a>
 
 This section consists of actions required to validate the `devcontainer.json` configuration and does not contain values that conflict with each other.
 
@@ -117,17 +113,17 @@ The tasks executed when validating the configuration are:
 - Validate access to the `workspace-folder`. 
 - Validate that the metadata (for example `devcontainer.json`) contains all parameters required for the selected configuration type.
 
-## Environment Creation
+## <a href="#environment-creation" name="environment-creation" class="anchor"> Environment Creation </a>
 
 The creation process goes through the steps necesarry to go from the user configuration to a working **environment** that is ready to be used.
 
-### Initialization
+### <a href="#initialization" name="initialization" class="anchor"> Initialization </a>
 
 During this step, the following is executed:
 - Validate access to the container orchestrator specified by the configuration.
 - Execution of `initializeCommand`.
 
-### Image creation
+### <a href="#image-creation" name="image-creation" class="anchor"> Image Creation </a>
 
 The first part of environment creation is generating the final image(s) that the **development containers** are going to use. This step is orchestrator dependent and can consist of just pulling a Docker image, running Docker build, or docker-compose build. Additionally, this step is useful on its own since it permits the creation of intermediate images that can be uploaded and used by other users, thus cutting down on creation time. It is encouraged that tools implementing this specification give access to a command that just executes this step.
 
@@ -137,7 +133,7 @@ This step executes the following:
 - Pull/build/execute of the defined container orchestration format to create images.
 - Validate the result of these operations.
 
-### Container Creation
+### <a href="#container-creation" name="container-creation" class="anchor"> Container Creation </a>
 
 After image creation, containers are created based on that image and setup.
 
@@ -146,15 +142,15 @@ This step executes the following:
 - Create the container with the specified properties.
 - Validate the container(s) were created successfully.
 
-### Post Container Creation
+### <a href="#post-container-creation" name="post-container-creation" class="anchor"> Post Container Creation </a>
 
 - At the end of the container creation step, a set of commands are executed inside the **main** container: `on-create-command`, `update-content-command` and `post-create-command`. This set of commands is executed in sequence on a container the first time it's created and depending on the creation parameters received. You can learn more in the [documentation on lifecycle scripts](devcontainerjson-reference.md#lifecycle-scripts). By default, `post-create-command` is executed in the background after reporting the successful creation of the development environment.
 - If the `wait-for` property is defined, then execution should stop at the specified property.
 
-## Environment Stop
+## <a href="#environment-stop" name="environment-stop" class="anchor"> Environment Stop </a>
 
 Stops all containers in the environment. The intention of this step is to ensure all containers are stopped correctly to ensure no data is lost.
 
-## Environment Restart
+## <a href="#environment-restart" name="environment-restart" class="anchor"> Environment Restart </a>
 
 After an environment has been stopped, the containers are restarted according to the orchestrator defined. Additionally, `post-start-command` is executed in the **main** container.

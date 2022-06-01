@@ -6,17 +6,16 @@ author: Microsoft
 index: 2
 ---
 
-# Reference Implementation
 The reference implementation for the specification is available through a [development container CLI](https://github.com/devcontainers/cli). This CLI can take a devcontainer.json and create and configure a dev container from it.
 
-## What is the dev container CLI?
+## <a href="#what-is-CLI" name="what-is-CLI" class="anchor"> What is the dev container CLI? </a>
 When tools like VS Code and Codespaces detect a devcontainer.json file in a user's project, they use a CLI to configure a dev container. We've now opened up this CLI as a reference implementation so that individual users and other tools can read in devcontainer.json metadata and create dev containers from it.
 
 This CLI can either be used directly or integrated into product experiences, similar to how it's integrated with Remote - Containers and Codespaces today. It currently supports both a simple single container option and integrates with [Docker Compose](https://docs.docker.com/compose/) for multi-container scenarios.
 
 The CLI is available for review in a new [devcontainers/cli](https://github.com/devcontainers/cli) repository, and you can read more about its development in [this issue](https://github.com/devcontainers/spec/issues/9) in the spec repo.
 
-## How can I try it?
+## <a href="#try-it" name="try-it" class="anchor"> How can I try it? </a>
 
 We'd love for you to try out the dev container CLI and let us know what you think. You can quickly try it out in just a few simple steps, either by installing its npm package or building the CLI repo from sources.
 
@@ -24,7 +23,7 @@ You may learn more about building from sources in the [CLI repo's README](https:
 
 To install the npm package, you will need Python, Node.js (version 14 or greater), and C/C++ installed to build one of the dependencies. The VS Code [How to Contribute](https://github.com/microsoft/vscode/wiki/How-to-Contribute) wiki has details about the recommended toolsets.
 
-### npm install
+### <a href="#npm-install" name="npm-install" class="anchor"> npm install </a>
 
 ```bash
 npm install -g @devcontainers/cli
@@ -47,7 +46,7 @@ Options:
   --version  Show version number                                       [boolean]
 ```
 
-### Try out the CLI
+### <a href="#try-out" name="try-out" class="anchor"> Try out the CLI </a>
 
 Once you have the CLI, you can try it out with a sample project, like this [Rust sample](https://github.com/microsoft/vscode-remote-try-rust).
 
