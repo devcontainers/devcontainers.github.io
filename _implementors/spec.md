@@ -30,9 +30,9 @@ The `devcontainer.json` specification contains different configuration options r
 
 While this metadata may be provided in different ways, when searching for a devcontainer.json file, products should expect to find a devcontainer.json file in one or more of the following locations (in order of precedence):
 
-.devcontainer/devcontainer.json
-.devcontainer.json
-.devcontainer/**/devcontainer.json (where ** is a sub-folder)
+- .devcontainer/devcontainer.json
+- .devcontainer.json
+- .devcontainer/**/devcontainer.json (where ** is a sub-folder)
 
 It is valid that these files may exist in more than one location, so consider providing a mechanism for users to select one when appropriate.
 
@@ -42,11 +42,11 @@ It is valid that these files may exist in more than one location, so consider pr
 
 ## <a href="#image-based" name="image-based" class="anchor"> Image based </a>
 
-Image based configurations only reference an image that should be reachable and downloadable through `docker pull` commands. Logins and tokens required for these operations are execution environment specific. The only required parameter is `image`. The details are [here](devcontainerjson-reference.md#image-or-dockerfile-specific-properties).
+Image based configurations only reference an image that should be reachable and downloadable through `docker pull` commands. Logins and tokens required for these operations are execution environment specific. The only required parameter is `image`. The details are [here](json_reference.md#image-specific).
 
 ## <a href="#dockerfile-based" name="dockerfile-based" class="anchor"> Dockerfile based </a>
 
-These configurations are defined as using a `Dockerfile` to define the starting point of the **development containers**. As with image based configurations, it is assumed that any base images are already reachable by **Docker** when performing a `docker build` command. The only required parameter in this case is the relative reference to the `Dockerfile` in `build.dockerfile`. The details are [here](devcontainerjson-reference.md#image-or-dockerfile-specific-properties).
+These configurations are defined as using a `Dockerfile` to define the starting point of the **development containers**. As with image based configurations, it is assumed that any base images are already reachable by **Docker** when performing a `docker build` command. The only required parameter in this case is the relative reference to the `Dockerfile` in `build.dockerfile`. The details are [here](json_reference.md#image-specific).
 
 There are multiple properties that allow users to control how `docker build` works:
 
@@ -97,11 +97,11 @@ Users control the permissions of applications executed in the containers, allowi
 
 A development environment goes through different lifecycle events during its use in the outer and inner loop of development.
 
-- Configuration Validation.
-- Environment Creation.
-- Environment Stop.
-- Environment Resume.
-- Environment Connection.
+- Configuration Validation
+- Environment Creation
+- Environment Stop
+- Environment Resume
+- Environment Connection
 
 ## <a href="#configuration-validation" name="configuration-validation" class="anchor"> Configuration Validation </a>
 
@@ -129,7 +129,7 @@ The first part of environment creation is generating the final image(s) that the
 
 This step executes the following:
 
-- [Configuration Validation](#configuration-validation) 
+- [Configuration validation](#configuration-validation) 
 - Pull/build/execute of the defined container orchestration format to create images.
 - Validate the result of these operations.
 
@@ -144,7 +144,7 @@ This step executes the following:
 
 ### <a href="#post-container-creation" name="post-container-creation" class="anchor"> Post Container Creation </a>
 
-- At the end of the container creation step, a set of commands are executed inside the **main** container: `on-create-command`, `update-content-command` and `post-create-command`. This set of commands is executed in sequence on a container the first time it's created and depending on the creation parameters received. You can learn more in the [documentation on lifecycle scripts](devcontainerjson-reference.md#lifecycle-scripts). By default, `post-create-command` is executed in the background after reporting the successful creation of the development environment.
+- At the end of the container creation step, a set of commands are executed inside the **main** container: `on-create-command`, `update-content-command` and `post-create-command`. This set of commands is executed in sequence on a container the first time it's created and depending on the creation parameters received. You can learn more in the [documentation on lifecycle scripts](json_reference.md#lifecycle-scripts). By default, `post-create-command` is executed in the background after reporting the successful creation of the development environment.
 - If the `wait-for` property is defined, then execution should stop at the specified property.
 
 ## <a href="#environment-stop" name="environment-stop" class="anchor"> Environment Stop </a>
