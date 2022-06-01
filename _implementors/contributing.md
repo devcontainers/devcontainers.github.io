@@ -43,6 +43,12 @@ Tool-specific properties are contained in namespaces in the `"customizations"` p
 
 You may propose adding a new namespace for a specific tool, and any properties specific to that tool.
 
+### <a href="#schema-hints" name="schema-hints" class="anchor"> Schema hints </a>
+
+You may also want to add hints or IntelliSense in dev container-supporting editors for your new property under `customizations`. 
+
+You may review [this example](https://github.com/microsoft/vscode/pull/150555) that adds hints for the `codespaces` property as an example.
+
 ## <a href="#review-process" name="review-process" class="anchor"> Review process </a>
 
 We use the following [labels](https://github.com/microsoft/dev-container-spec/labels) in the dev-container-spec repo:
