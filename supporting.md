@@ -73,6 +73,8 @@ A [codespace](https://docs.github.com/en/codespaces/overview) is a development e
 
 > **Tip:** If you make a change to your dev container after having built and connected to your codespace, be sure to run **Codespaces: Rebuild Container** from the Command Palette (`kbstyle(F1)`) to pick up any changes you make.
 
+> **Tip** Codespaces implements an auto `workspaceFolder` mount in **Docker Compose** scenarios.
+
 #### <a href="#codespaces-specific-properties" name="codespaces-specific-properties" class="anchor"> Product specific properties </a>
 GitHub Codespaces works with a growing number of tools and, where applicable, their `devcontainer.json` properties. For example, connecting the Codespaces web editor or VS Code enables the use of [VS Code properties](#visual-studio-code).
 
