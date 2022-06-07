@@ -2,7 +2,7 @@
 
 This repo holds the website for the [Development Containers Specification](https://github.com/devcontainers/spec).
 
-You may view the site at [containers.dev](https://containers.dev/).
+You may view the site at [containers.dev](https://containers.dev).
 
 ## Building
 
@@ -19,7 +19,7 @@ It is from this [Jekyll definition](https://github.com/microsoft/vscode-dev-cont
 ### Steps to build and run
 
 * Clone or open this repo in the dev container-supporting editor of your choosing.
-     * You may review supporting tools and services [here](https://devcontainers.github.io/containers.dev/supporting).
+     * You may review supporting tools and services [here](https://containers.dev/supporting).
 * Reopen this repo in the dev container, so that the container builds and you may develop inside it using the included tools. 
 * Once the dev container finishes building, execute the following command in your dev container to start the site: `bundle exec jekyll serve`
 * Check out the site! http://localhost:4000/containers.dev/
