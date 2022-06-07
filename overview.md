@@ -21,7 +21,7 @@ A development container defines an environment in which you develop your applica
 
 ### <a href="#build-and-test" name="build-and-test" class="anchor">  Build and test </a>
 
-Beyond repeatable setup, these same development containers provide consistency to avoid environment specific problems across developers and centralized build and test automation services. The open-source CLI reference implementation can either be used directly or integrated into product experience to use the structured metadata to deliver these benefits. It currently supports integrating with Docker Compose and a simplified, un-orchestrated single container option – so that they can be used as coding environments or for continuous integration and testing.
+Beyond repeatable setup, these same development containers provide consistency to avoid environment specific problems across developers and centralized build and test automation services. The open-source [CLI reference implementation](https://github.com/devcontainers/cli) can either be used directly or integrated into product experience to use the structured metadata to deliver these benefits. It currently supports integrating with Docker Compose and a simplified, un-orchestrated single container option – so that they can be used as coding environments or for continuous integration and testing.
 
 ### <a href="#supporting" name="supporting" class="anchor">  Supporting tools </a>
 

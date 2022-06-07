@@ -3,7 +3,7 @@ layout: implementors
 title:  "devcontainer.json reference"
 shortTitle: "devcontainer.json reference"
 author: Microsoft
-index: 3
+index: 4
 ---
 
 A `devcontainer.json` file in your project tells [tools and services that support the dev container spec](../../supporting) how to access (or create) a **development container** with a well-defined tool and runtime stack. It follows the JSON with Comments (jsonc) format.
@@ -56,6 +56,7 @@ The focus of `devcontainer.json` is to describe how to enrich a container for th
 | `overrideCommand` | boolean | Tells `devcontainer.json` supporting services / tools whether they should run `/bin/sh -c "while sleep 1000; do :; done"` when starting the container instead of the container's default command (since the container can shut down if the default command fails). Set to `false` if the default command must run for the container to function properly. Defaults to `true` for when using an image Dockerfile and `false` when referencing a Docker Compose file. |
 | `features` (currently in preview) | object | An object of dev container features and related options to be added into your primary container. The specific options  that are available varies by feature, so see its documentation for additional details. For example: <br />`"features": {"github-cli": "latest"}` <br /><br /> ⚠️ Currently in preview. |
 | `shutdownAction` | enum | Indicates whether `devcontainer.json` supporting tools should stop the containers when the related tool window is closed / shut down.<br>Values are  `none`, `stopContainer` (default for image or Dockerfile), and `stopCompose` (default for Docker Compose). |
+| `customizations` | object | Product specific properties, defined in [supporting tools](supporting-tools.md) |
 {: .table .table-bordered .table-responsive}
 
 ## <a href="#tool-specific" name="tool-specific" class="anchor"> Tool-specific properties </a>
