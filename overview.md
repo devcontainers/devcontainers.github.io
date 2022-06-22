@@ -23,6 +23,8 @@ A development container defines an environment in which you develop your applica
 
 Beyond repeatable setup, these same development containers provide consistency to avoid environment specific problems across developers and centralized build and test automation services. The open-source [CLI reference implementation](https://github.com/devcontainers/cli) can either be used directly or integrated into product experience to use the structured metadata to deliver these benefits. It currently supports integrating with Docker Compose and a simplified, un-orchestrated single container option – so that they can be used as coding environments or for continuous integration and testing.
 
+A GitHub Action and an Azure DevOps Task are available in [devcontainers/ci](https://github.com/devcontainers/ci) for running a repository's dev container in continuous integration (CI) builds. This allows you to reuse the same setup that you are using for local development to also build and test your code in CI.
+
 ### <a href="#supporting" name="supporting" class="anchor">  Supporting tools </a>
 
 You can [learn more](/supporting.md) about how other tools and services support the Development Container Specification.
