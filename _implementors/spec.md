@@ -38,11 +38,11 @@ The following section describes the differences between those that are supported
 
 ## <a href="#image-based" name="image-based" class="anchor"> Image based </a>
 
-Image based configurations only reference an image that should be reachable and downloadable through `docker pull` commands. Logins and tokens required for these operations are execution environment specific. The only required parameter is `image`. The details are [here](json_reference.md#image-specific).
+Image based configurations only reference an image that should be reachable and downloadable through `docker pull` commands. Logins and tokens required for these operations are execution environment specific. The only required parameter is `image`. The details are [here](../json_reference#image-specific).
 
 ## <a href="#dockerfile-based" name="dockerfile-based" class="anchor"> Dockerfile based </a>
 
-These configurations are defined as using a `Dockerfile` to define the starting point of the **development containers**. As with image based configurations, it is assumed that any base images are already reachable by **Docker** when performing a `docker build` command. The only required parameter in this case is the relative reference to the `Dockerfile` in `build.dockerfile`. The details are [here](json_reference.md#image-specific).
+These configurations are defined as using a `Dockerfile` to define the starting point of the **development containers**. As with image based configurations, it is assumed that any base images are already reachable by **Docker** when performing a `docker build` command. The only required parameter in this case is the relative reference to the `Dockerfile` in `build.dockerfile`. The details are [here](../json_reference#image-specific).
 
 There are multiple properties that allow users to control how `docker build` works:
 
@@ -74,7 +74,7 @@ Environment variables can be set at different points in the dev container lifecy
 * **Container**: These variables are part of the container when it is created and are available at all points in its lifecycle. This concept is native to containers and can be set in the container image itself, using `containerEnv` for **image** and **Dockerfile** scenarios or using orchestrator specific properties like `env` in **Docker Compose** files.
 * **Remote**: These variables should be set by a **development container** supporting tool as part of configuring its runtime environment. Users can set these using the `remoteEnv` property and implementing tools or services may add their own for specific scenarios (e.g., secrets). These variables can change during the lifetime of the container, and are added after the container's `ENTRYPOINT` has fired.
 
-The reason for this separation is it allows for the use of information not available at image build time and simplifies updating the environment for project/repository specific needs without modifying an image. With this in in mind, it's important to note that implementing tools should also support the [dynamic variable syntax](devcontainerjson-reference.md#variables-in-devcontainerjson) described in the metadata reference document.
+The reason for this separation is it allows for the use of information not available at image build time and simplifies updating the environment for project/repository specific needs without modifying an image. With this in in mind, it's important to note that implementing tools should also support the [dynamic variable syntax](../json_reference/#variables-in-devcontainerjson) described in the metadata reference document.
 
 Another notable and important environment variable related property is **`userEnvProbe`**. Implementing tools should use this property to "probe" for expected environment variables using the specified type of shell. However, it does not specify that this type of shell needs to be used for all sub-processes (given the performance impact). Instead, "probed" environment variables should be merged with Remote environment variables for any processes the implementer injects after the container is created.  This allows implementors to emulate developer expected behaviors around values added to their profile and rc files. 
 
@@ -90,7 +90,7 @@ The default mount point for the source code can be set with the `workspaceMount`
 
 The `workspaceFolder` can then be set to the default folder inside the container that should used in the container. Typically this is either the mount point in the container, or a sub-folder under it. Allowing a sub-folder to be used is particularly important for monorepos given you need the `.git` folder to interact with source control but developers are typically are interacting with a specific sub-project within the overall repository. 
 
-See [`workspaceMount` and `workspaceFolder`](json_reference.md#image-or-dockerfile-specific-properties) for reference.
+See [`workspaceMount` and `workspaceFolder`](../json_reference#image-specific) for reference.
 
 ## <a href="#users" name="users" class="anchor"> Users </a>
 
@@ -153,7 +153,7 @@ Note that container [mounts](#mounts), [environment variables](#environment-vari
 ### <a href="#post-container-creation" name="post-container-creation" class="anchor"> Post Container Creation </a>
 
 At the end of the container creation step, a set of commands are executed inside the **main** container: 
-- `onCreateCommand`, `updateContentCommand` and `postCreateCommand`. This set of commands is executed in sequence on a container the first time it's created and depending on the creation parameters received. You can learn more in the [documentation on lifecycle scripts](devcontainerjson-reference.md#lifecycle-scripts). By default, `postCreateCommand` is executed in the background after reporting the successful creation of the development environment.
+- `onCreateCommand`, `updateContentCommand` and `postCreateCommand`. This set of commands is executed in sequence on a container the first time it's created and depending on the creation parameters received. You can learn more in the [documentation on lifecycle scripts](../json_reference/#lifecycle-scripts). By default, `postCreateCommand` is executed in the background after reporting the successful creation of the development environment.
 - If the `waitFor` property is defined, then execution should stop at the specified property. This property defaults to `updateContentCommand`.
 
 Remote [environment variables](#environment-variables) and [user](#users) configuration should be applied to all created processes in the container (inclusive of `userEnvProbe`).
