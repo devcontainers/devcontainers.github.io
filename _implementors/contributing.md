@@ -3,7 +3,7 @@ layout: implementors
 title:  "How to contribute to the Development Container Specification"
 shortTitle: "Contributing"
 author: Microsoft
-index: 5
+index: 6
 ---
 
 We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. 
