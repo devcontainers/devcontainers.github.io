@@ -16,7 +16,7 @@ Dev container 'features' are self-contained, shareable units of installation cod
 
 Feature metadata is captured by a `devcontainer-feature.json` file in the root folder of the feature.
 
-## Folder Structure 
+## <a href="#folder-structure" name="folder-structure" class="anchor"> Folder Structure </a>
 
 A feature is a self contained entity in a folder with at least a `devcontainer-feature.json` and `install.sh` entrypoint script.  Additional files are permitted and are packaged along side the required files.
 
@@ -27,7 +27,7 @@ A feature is a self contained entity in a folder with at least a `devcontainer-f
 |    +-- (other files)
 ```
 
-## devcontainer-feature.json properties
+## <a href="#devcontainer-feature-json-properties" name="devcontainer-feature-json-properties" class="anchor"> devcontainer-feature.json properties </a>
 
 the `devcontainer-feature.json` file defines information about the feature to be used by any supporting tools and the way the feature will be executed.
 
@@ -62,7 +62,7 @@ Options
 | id.default | string | Default value for the option. |
 | id.description | string | Description for the option. |
 
-## devcontainer.json properties
+## <a href="#devcontainer-json-properties" name="devcontainer-json-properties" class="anchor"> devcontainer.json properties </a>
 
 Features are referenced in a user's [`devcontainer.json`](/docs/specs/devcontainer-reference.md#devcontainerjson) under the top level `features` object. 
 
@@ -71,7 +71,6 @@ A user can specify an arbitrary number of features.  At build time, these featur
 A single feature is provided as a key/value pair, where the key is the feature identifier, and the value is an object containing "options" (or empty for "default").  Each key in the feature object must be unique.
 
 These options are sourced as environment variables at build-time, as specified in [Option Resolution](#Option-Resolution).
-
 
 Below is a valid `features` object provided as an example.
 ```jsonc
@@ -109,7 +108,7 @@ As a shorthand, the value of a `feature` can be provided as a single string. Thi
 }
 ```
 
-### Referencing a feature 
+### <a href="#referencing-a-feature" name="referencing-a-feature" class="anchor"> Referencing a feature </a>
 
 The `id` format specified dicates how a supporting tool will locate and download a given feature. `id` is one of the following:
 
@@ -122,13 +121,13 @@ The `id` format specified dicates how a supporting tool will locate and download
 `
 (*) OCI registry must implement the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec).  Some implementors can be [found here](https://oras.land/implementors/).
 
-## Versioning
+## <a href="#versioning" name="versioning" class="anchor"> Versioning </a>
 
 Each feature is individually [versioned according to the semver specification](https://semver.org/).  The `version` property in the respective `devcontainer-feature.json` file is updated to increment the feature's version.
 
 Tooling that handles releasing features will not republish features if that exact version has already been published; however, tooling must republish major and minor versions in accordance with the semver specification.
 
-## Authoring
+## <a href="#authoring" name="authoring" class="anchor"> Authoring </a>
 
 Features can be authored in a number of languages, the most straightforward being bash scripts. If a feature is authored in a different language information about it should be included in the metadata so that users can make an informed choice about it.
 
@@ -138,13 +137,13 @@ Applications should default to `/bin/sh` for features that do not include this i
 
 If the feature is included in a folder as part of the repository that contains `devcontainer.json`, no other steps are necessary.
 
-## Release
+## <a href="#release" name="release" class="anchor"> Release </a>
 
 _For information on distribution features, see [the dev container features distribution proposal](./features-distribution.md)._
 
-## Execution
+## <a href="#execution" name="execution" class="anchor"> Execution </a>
 
-### Installation Order
+### <a href="#installation-order" name="installation-order" class="anchor"> Installation Order </a>
 
 By default, features are installed on top of a base image in an order determined as optimal by the implementing tool.
 
@@ -153,7 +152,7 @@ If any of the following properties are provided in the feature's `devcontainer-f
 1. The `overrideFeatureInstallOrder` property in user's `devcontainer.json`. Allows users to control the order of execution of their features.
 2. The `installsAfter` property defined as part of a feature's `devcontainer-feature.json`.
 
-#### (1) overrideFeatureInstallOrder
+#### <a href="#overrideFeatureInstallOrder" name="overrideFeatureInstallOrder" class="anchor"> (1) overrideFeatureInstallOrder </a>
 
 This property is declared by the user in their `devcontainer.json` file.
 
@@ -165,7 +164,7 @@ All feature `id` provided in `overrideFeatureInstallOrder` must also exist in th
 | :--- | :--- | :--- |
 | overrideFeatureInstallOrder | array | Array consisting of the feature `id` of features in the order the user wants them to be installed.   |
 
-#### (2) installsAfter
+#### <a href="#installsAfter" name="installsAfter" class="anchor"> (2) installsAfter </a>
 
 This property is defined in an individual feature's `devcontainer-feature.json` file by the feature author.  `installsAfter` allows an author to provide the tooling hints on loose dependencies between features.
 
@@ -175,7 +174,7 @@ After `overrideFeatureInstallOrder` is resolved, any remaining features that dec
 | :--- | :--- | :--- |
 | installsAfter | array | Array consisting of the feature `id` that should be installed before the given feature   |
 
-### Option Resolution
+### <a href="#option-resolution" name="option-resolution" class="anchor"> Option Resolution </a>
 
 A feature's 'options' - specified as the value of a single feature key/value pair in the user's `devcontainer.json` - are passed to the feature as environment variables.
 
@@ -194,7 +193,7 @@ This file is sourced at build-time for the feature `install.sh` entrypoint scrip
 
 Any options defined by a feature's `devcontainer-feature.json` that are omitted in the user's `devcontainer.json` will be implicitly exported as its default value.
 
-### Option Resolution Example
+### <a href="#option-resolution-example" name="option-resolution-example" class="anchor"> Option Resolution Example </a>
 
 Suppose a `python` feature has the following `options` parameters declared in the `devcontainer-feature.json` file:
 
@@ -241,7 +240,6 @@ OPTIMIZE="true"
 
 These will be sourced and visible to the `install.sh` entrypoint script.  The following `install.sh`...
 
-
 ```bash
 #!/usr/bin/env bash
 
@@ -257,7 +255,7 @@ Pip? false
 Optimize? true
 ```
 
-### Implementation Notes
+### <a href="#implementation-notes" name="implementation-notes" class="anchor"> Implementation Notes </a>
 
 There are several things to keep in mind for an application that implements features:
 
