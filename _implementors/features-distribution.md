@@ -17,7 +17,7 @@ Goals include:
 - For users, the ability for a user to pin to a particular version (absolute, or semantic version) of a feature to allow for consistent, repeatable environments.
 - The ability to standardize publishing such that [supporting tools](../supporting.md) may implement mechanisms for feature discoverability.
 
-## Source Code
+## <a href="#source-code" name="source-code" class="anchor"> Source Code </a>
 
 Features source code is stored in a git repository.
 
@@ -55,13 +55,13 @@ Where `src` is a directory containing a sub-folder with the name of the feature 
 
 Optionally, a mirrored `test` directory can be included with an accompanying `test.sh` script.  Implementing tools may use this to run tests against the given feature.
 
-## Versioning
+## <a href="#versioning" name="versioning" class="anchor"> Versioning </a>
 
 Each feature is individually [versioned according to the semver specification](https://semver.org/).  The `version` property in the respective `devcontainer-feature.json` file is parsed to determine if the feature should be republished.
 
 Tooling that handles publishing features will not republish features if that exact version has already been published; however, tooling must republish major and minor versions in accordance with the semver specification.
 
-## Packaging
+## <a href="#packaging" name="packaging" class="anchor"> Packaging </a>
 
 Features are distributed as tarballs.  The tarball contains the entire contents of the feature sub-directory, including the `devcontainer-feature.json`, `install.sh`, and any other files in the directory.
 
@@ -69,8 +69,7 @@ The tarball is named `devcontainer-feature-<id>.tgz`, where `<id>` is the featur
 
 A reference implementation for packaging and distributing features is provided as a GitHub Action (https://github.com/devcontainers/action).
 
-
-### devcontainer-collection.json
+### <a href="#devcontainer-collection-json" name="devcontainer-collection-json" class="anchor"> devcontainer-collection.json </a>
 
 The `devcontainer-collection.json` is an auto-generated metadata file.
 
@@ -81,13 +80,13 @@ The `devcontainer-collection.json` is an auto-generated metadata file.
 
 Each features's `devcontainer-feature.json` metadata file is appended into the `features` top-level array.
 
-## Distribution
+## <a href="#distribution" name="distribution" class="anchor"> Distribution </a>
 
 There are several supported ways to distribute features.  Distribution is handled by the implementing packaging tool.
 
 A user references a distributed feature in a `devcontainer.json` as defined in ['referencing a feature'](./features.md#referencing-a-feature).
 
-### OCI Registry
+### <a href="#oci-registry" name="oci-registry" class="anchor"> OCI Registry </a>
 
 An OCI registry that implements the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec) serves as the primary distribution mechanism for features.
 
@@ -114,7 +113,6 @@ do
             --manifest-config /dev/null:application/vnd.devcontainers \
                              ./${ARTIFACT_PATH}:application/vnd.devcontainers.layer.v1+tar
 done
-
 ```
 
 `Namespace` is the globally identifiable name for the collection of features. (eg: `owner/repo` for the source code's git repository).
@@ -131,11 +129,11 @@ oras push ${REGISTRY}/${NAMESPACE}:latest \
                             ./devcontainer-collection.json.:application/vnd.devcontainers.layer.v1+json
 ```
 
-### Directly Reference Tarball
+### <a href="#directly-reference-tarball" name="directly-reference-tarball" class="anchor"> Directly Reference Tarball </a>
 
 A feature can be referenced directly in a user's [`devcontainer.json`](./spec.md/#a-hrefdevcontainerjson-namedevcontainerjson-classanchor-devcontainerjson-a) file by an HTTP or HTTPS URI that points to the tarball from the [package step](#packaging).
 
-### Addendum: Locally Referenced
+### <a href="#addendum-locally-referenced" name="addendum-locally-referenced" class="anchor"> Addendum: Locally Referenced </a>
 
 To aid in feature authorship, or in instances where a feature should not be published externally, individual features can be referenced locally from the project's file tree.
 
