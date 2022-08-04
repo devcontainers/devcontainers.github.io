@@ -67,6 +67,12 @@ In addition to the configuration options explained above, there are other settin
 
 A complete list of available metadata properties and their purposes can be found in the [`devcontainer.json` reference](https://aka.ms/devcontainer.json). However, we will describe the critical ones below in more detail.
 
+## <a href="#features-preview" name="features-preview" class="anchor"> Features (preview) </a>
+
+Development container "Features" are self-contained, shareable units of installation code and development container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "features" into your development container for you or your collaborators to use.
+
+They are applied to container images as a secondary build step and can affect a number of dev container configuration settings. See the [features documentation](./features.md) for more details.
+
 ## <a href="#environment-variables" name="environment-variables" class="anchor"> Environment variables </a>
 
 Environment variables can be set at different points in the dev container lifecycle. With this in mind, **development containers** support two classes of environment variables:
