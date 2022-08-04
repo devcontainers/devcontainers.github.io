@@ -8,7 +8,7 @@ index: 5
 
 > Note: This section provides information on a currently active proposal. See the [Features proposal in the spec repo](https://github.com/devcontainers/spec/issues/61) for input and links to other proposed improvements.
 
-Dev container 'features' are self-contained, shareable units of installation code and development container configuration.
+Development container "Features" are self-contained, shareable units of installation code and development container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "features" into your development container for you or your collaborators to use.
 
 > While 'features' may be installed on top of any base image, the implementation of a feature might restrict it to a subset of possible base images.  
 > 
