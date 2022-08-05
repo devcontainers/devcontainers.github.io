@@ -66,7 +66,7 @@ Options
 
 ## <a href="#devcontainer-json-properties" name="devcontainer-json-properties" class="anchor"> devcontainer.json properties </a>
 
-Features are referenced in a user's [`devcontainer.json`](devcontainer-reference#devcontainerjson) under the top level `features` object. 
+Features are referenced in a user's [`devcontainer.json`](../json_reference) under the top level `features` object.
 
 A user can specify an arbitrary number of features.  At build time, these features will be installed in an order defined by a combination of the [installation order rules and implementation](#Installation-Order). 
 
