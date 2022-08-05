@@ -51,6 +51,7 @@ The properties of the file are as follows:
 | entrypoint | string | Set if the feature requires an entrypoint. |
 | customizations | object | Product specific properties, each namespace under `customizations` is treated as a separate set of properties. For each of this sets the object is parsed, values are replaced while arrays are set as a union. |
 | installsAfter | array | Array of Id's of features that should execute before this one. Allows control for feature authors on soft dependencies between different features. |
+{: .table .table-bordered .table-responsive}
 
 Options
 
@@ -61,10 +62,11 @@ Options
 | id.enum | string array | Possible values. |
 | id.default | string | Default value for the option. |
 | id.description | string | Description for the option. |
+{: .table .table-bordered .table-responsive}
 
 ## <a href="#devcontainer-json-properties" name="devcontainer-json-properties" class="anchor"> devcontainer.json properties </a>
 
-Features are referenced in a user's [`devcontainer.json`](/docs/specs/devcontainer-reference.md#devcontainerjson) under the top level `features` object. 
+Features are referenced in a user's [`devcontainer.json`](devcontainer-reference#devcontainerjson) under the top level `features` object. 
 
 A user can specify an arbitrary number of features.  At build time, these features will be installed in an order defined by a combination of the [installation order rules and implementation](#Installation-Order). 
 
@@ -117,6 +119,7 @@ The `id` format specified dicates how a supporting tool will locate and download
 | `<oci-registry>/<namespace>/<feature>[:<semantic-version>]` | Reference to feature in OCI registry(*) | ghcr.io/user/repo/go <br> ghcr.io/user/repo/go:1 <br> ghcr.io/user/repo/go:latest|
 | `https://<uri-to-feature-tgz>` | Direct HTTPS URI to a tarball. | https://github.com/user/repo/releases/devcontainer-feature-go.tgz |
 | `./<path-to-feature-dir>`| A relative directory to folder containing a devcontainer-feature.json. | ./myGoFeature |
+{: .table .table-bordered .table-responsive}
 
 `
 (*) OCI registry must implement the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec).  Some implementors can be [found here](https://oras.land/implementors/).
@@ -139,7 +142,7 @@ If the feature is included in a folder as part of the repository that contains `
 
 ## <a href="#release" name="release" class="anchor"> Release </a>
 
-_For information on distribution features, see [the dev container features distribution proposal](./features-distribution.md)._
+_For information on distribution features, see [the dev container features distribution proposal](../features-distribution)._
 
 ## <a href="#execution" name="execution" class="anchor"> Execution </a>
 
@@ -163,6 +166,7 @@ All feature `id` provided in `overrideFeatureInstallOrder` must also exist in th
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | overrideFeatureInstallOrder | array | Array consisting of the feature `id` of features in the order the user wants them to be installed.   |
+{: .table .table-bordered .table-responsive}
 
 #### <a href="#installsAfter" name="installsAfter" class="anchor"> (2) installsAfter </a>
 
@@ -173,6 +177,7 @@ After `overrideFeatureInstallOrder` is resolved, any remaining features that dec
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | installsAfter | array | Array consisting of the feature `id` that should be installed before the given feature   |
+{: .table .table-bordered .table-responsive}
 
 ### <a href="#option-resolution" name="option-resolution" class="anchor"> Option Resolution </a>
 
@@ -232,7 +237,7 @@ The user's `devcontainer.json` declared the python feature like so
 ```
 The emitted environment variables will be:
 
-```env
+```bash
 VERSION="3.10"
 PIP="false"
 OPTIMIZE="true"
