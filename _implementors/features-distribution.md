@@ -8,14 +8,14 @@ index: 6
 
 > Note: This section provides information on a currently active proposal. See the [Features distribution proposal in the spec repo](https://github.com/devcontainers/spec/issues/61) for input and links to other proposed improvements.
 
-This specification defines a pattern where community members and organizations can author and self-publish [dev container 'features'](./features.md). 
+This specification defines a pattern where community members and organizations can author and self-publish [dev container 'features'](../features). 
 
 Goals include:
 
 - For community authors, a "self-served" mechanism for dev container feature publishing, either publicly or privately.
 - For users, the ability to validate the integrity of previously fetched assets. 
 - For users, the ability for a user to pin to a particular version (absolute, or semantic version) of a feature to allow for consistent, repeatable environments.
-- The ability to standardize publishing such that [supporting tools](../supporting.md) may implement mechanisms for feature discoverability.
+- The ability to standardize publishing such that [supporting tools](../../supporting) may implement mechanisms for feature discoverability.
 
 ## <a href="#source-code" name="source-code" class="anchor"> Source Code </a>
 
@@ -77,6 +77,7 @@ The `devcontainer-collection.json` is an auto-generated metadata file.
 | :--- | :--- | :--- |
 | sourceInformation | object | Metadata from the implementing packaging tool. |
 | features | array | The list of features that are contained in this collection.|
+{: .table .table-bordered .table-responsive}
 
 Each features's `devcontainer-feature.json` metadata file is appended into the `features` top-level array.
 
@@ -84,7 +85,7 @@ Each features's `devcontainer-feature.json` metadata file is appended into the `
 
 There are several supported ways to distribute features.  Distribution is handled by the implementing packaging tool.
 
-A user references a distributed feature in a `devcontainer.json` as defined in ['referencing a feature'](./features.md#referencing-a-feature).
+A user references a distributed feature in a `devcontainer.json` as defined in ['referencing a feature'](../features#referencing-a-feature).
 
 ### <a href="#oci-registry" name="oci-registry" class="anchor"> OCI Registry </a>
 
@@ -131,12 +132,12 @@ oras push ${REGISTRY}/${NAMESPACE}:latest \
 
 ### <a href="#directly-reference-tarball" name="directly-reference-tarball" class="anchor"> Directly Reference Tarball </a>
 
-A feature can be referenced directly in a user's [`devcontainer.json`](./spec.md/#a-hrefdevcontainerjson-namedevcontainerjson-classanchor-devcontainerjson-a) file by an HTTP or HTTPS URI that points to the tarball from the [package step](#packaging).
+A feature can be referenced directly in a user's [`devcontainer.json`](../spec#a-hrefdevcontainerjson-namedevcontainerjson-classanchor-devcontainerjson-a) file by an HTTP or HTTPS URI that points to the tarball from the [package step](#packaging).
 
 ### <a href="#addendum-locally-referenced" name="addendum-locally-referenced" class="anchor"> Addendum: Locally Referenced </a>
 
 To aid in feature authorship, or in instances where a feature should not be published externally, individual features can be referenced locally from the project's file tree.
 
-A feature can be referenced directly in a user's [`devcontainer.json`](./spec.md/#a-hrefdevcontainerjson-namedevcontainerjson-classanchor-devcontainerjson-a) by relative path _inside_ the project directory.  A local feature may not be referenced outside of the project directory (`../` is not allowed), nor is an absolute path allowed.  
+A feature can be referenced directly in a user's [`devcontainer.json`](../spec#a-hrefdevcontainerjson-namedevcontainerjson-classanchor-devcontainerjson-a) by relative path _inside_ the project directory.  A local feature may not be referenced outside of the project directory (`../` is not allowed), nor is an absolute path allowed.  
 
 The provided relative path is a path to the folder containing the feature's `devcontainer-feature.json` and `install.sh` file.
