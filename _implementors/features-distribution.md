@@ -132,7 +132,9 @@ oras push ${REGISTRY}/${NAMESPACE}:latest \
 
 ### <a href="#directly-reference-tarball" name="directly-reference-tarball" class="anchor"> Directly Reference Tarball </a>
 
-A feature can be referenced directly in a user's [`devcontainer.json`](../spec#a-hrefdevcontainerjson-namedevcontainerjson-classanchor-devcontainerjson-a) file by an HTTP or HTTPS URI that points to the tarball from the [package step](#packaging).
+A feature can be referenced directly in a user's [`devcontainer.json`](../spec#a-hrefdevcontainerjson-namedevcontainerjson-classanchor-devcontainerjson-a) file by HTTPS URI that points to the tarball from the [package step](#packaging).
+
+The `.tgz` archive file must be named `devcontainer-feature-<featureId>.tgz`.
 
 ### <a href="#addendum-locally-referenced" name="addendum-locally-referenced" class="anchor"> Addendum: Locally Referenced </a>
 
