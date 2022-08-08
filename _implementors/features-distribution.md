@@ -127,7 +127,7 @@ NAMESPACE=devcontainers/features
 
 oras push ${REGISTRY}/${NAMESPACE}:latest \
         --manifest-config /dev/null:application/vnd.devcontainers \
-                            ./devcontainer-collection.json.:application/vnd.devcontainers.layer.v1+json
+                            ./devcontainer-collection.json:application/vnd.devcontainers.collection.layer.v1+json
 ```
 
 ### <a href="#directly-reference-tarball" name="directly-reference-tarball" class="anchor"> Directly Reference Tarball </a>
