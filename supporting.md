@@ -108,6 +108,7 @@ Some properties may apply differently to Codespaces.
 | `portsAttributes` | object | Codespaces does not yet support the `"host:port"` variation of this property.|
 | `shutdownAction` | enum | Does not apply to Codespaces. |
 | `${localEnv:VARIABLE_NAME}` | Any | For Codespaces, the host is in the cloud rather than your local machine.|
+| `waitFor` | enum | Codespaces does not yet support `waitFor`. |
 {: .table .table-bordered .table-responsive}
 
 ### <a href="#schema" name="schema" class="anchor"> Schema </a>
