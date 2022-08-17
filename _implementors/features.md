@@ -122,7 +122,7 @@ The `id` format specified dicates how a supporting tool will locate and download
 
 (*) OCI registry must implement the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec). Some implementors can be [found here](https://oras.land/implementors/).
 
-(**) The provided path is always relative to the project's root directory.
+(**) The provided path is always relative to the `.devcontainer/` folder, and is outlined further in the [Locally Referenced Addendum](devcontainer-features-distribution#Addendum:-Locally-Referenced).
 
 ## <a href="#versioning" name="versioning" class="anchor"> Versioning </a>
 
