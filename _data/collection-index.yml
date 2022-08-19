@@ -1,0 +1,5 @@
+- name: GitHub and VS Code Features
+  maintainer: GitHub and VS Code
+  contact: https://github.com/devcontainers/features/issues
+  repository: https://github.com/devcontainers/features
+  ociReference: ghcr.io/devcontainers/features
