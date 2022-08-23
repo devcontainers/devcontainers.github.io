@@ -6,8 +6,11 @@ sectionid: collection-index-features
 
 <h1 style="margin-left: auto;margin-right: auto;">Available Features</h1>
 <p style="margin-left: auto;margin-right: auto;">
-    This list contains 
-
+    This table contains all official and community-supported <a href="implementors/features/">dev container features</a>
+    known at the time of crawling <a href="/collections">each registered collection</a>. This list is continuously 
+    updated with the latest available feature information.
+    <br><br>
+    Referencing a feature below can be done in the 'features' section of a devcontainer.json.
 
 </p>
 
@@ -15,14 +18,20 @@ sectionid: collection-index-features
 </p>
 <tr>
     <td class="tg-0lax"><b>Feature Name</b></b></td>
-    <td class="tg-0lax"><b>Author</b></td>
-    <td class="tg-0lax"><b>Latest Reference</b></td>
+    <td class="tg-0lax"><b>Maintainer</b></td>
+    <td class="tg-0lax"><b>Reference</b></td>
+    <td class="tg-0lax"><b>Latest Version</b></td>
+
 </tr>
 
-{% for c in site.data.devcontainer-index.features %}
-<tr>
-    <td class="tg-0lax"><a href="{{ c.documentationURL }}">{{ c.name }}</a></td>
-    <td class="tg-0lax">{{ c.author }}</td>
-    <td class="tg-0lax"><code>{{ c.id }}:{{ c.version }}</code></td>
-</tr>
+{% for c in site.data.devcontainer-index.collections %}
+    {% for f in c.features %}
+    <tr>
+        <td class="tg-0lax"><a href="{{ f.documentationURL }}">{{ f.name }}</a></td>
+        <td class="tg-0lax">{{ c.sourceInformation.maintainer }}</td>
+        <td class="tg-0lax"><code>{{ f.id }}</code></td>
+        <td class="tg-0lax"><code>{{ f.version }}</code></td>
+    </tr>
+    {% endfor %}
+
 {% endfor %}
