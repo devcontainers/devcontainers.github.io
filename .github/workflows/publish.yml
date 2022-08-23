@@ -36,6 +36,7 @@ jobs:
         run: |
           cd _data
           oras pull ghcr.io/devcontainers/index:latest
+          cp devcontainer-index.json ../static/
 
       - name: Setup Pages
         uses: actions/configure-pages@v1
