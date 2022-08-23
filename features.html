@@ -1,0 +1,26 @@
+---
+title: Features
+layout: table
+sectionid: collection-index
+---
+
+<h1 style="margin-left: auto;margin-right: auto;">Features</h1>
+<p style="margin-left: auto;margin-right: auto;">
+    Crawled Features
+</p>
+
+<p>
+</p>
+<tr>
+    <td class="tg-0lax"><b>Feature Name</b></b></td>
+    <td class="tg-0lax"><b>Reference</b></td>
+    <td class="tg-0lax"><b>Latest Version</b></td>
+</tr>
+
+{% for c in site.data.devcontainer-index.features %}
+<tr>
+    <td class="tg-0lax">{{ c.name }}</td>
+    <td class="tg-0lax"><code>{{ c.id }}</code></td>
+    <td class="tg-0lax"><a href="{{ c.repository }}">{{ c.version }}</a></td>
+</tr>
+{% endfor %}

@@ -1,12 +1,8 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Publish to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["gh-pages"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -27,13 +23,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Install Oras
+        run: |
+          curl -LO https://github.com/oras-project/oras/releases/download/v0.13.0/oras_0.13.0_linux_amd64.tar.gz
+          mkdir -p oras-install/
+          tar -zxf oras_0.13.0_*.tar.gz -C oras-install/
+          mv oras-install/oras /usr/local/bin/
+          rm -rf oras_0.13.0_*.tar.gz oras-install/
+
+      - name: Fetch devcontainer-index.json
+        run: |
+          cd _data
+          oras pull ghcr.io/devcontainers/index:latest
+
       - name: Setup Pages
         uses: actions/configure-pages@v1
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
