@@ -193,3 +193,8 @@ To resume the environment from a stopped state:
 3. Additionally, execute the `postStartCommand` and `postAttachCommand` in the container.
 
 Like during the create process, remote [environment variables](#environment-variables) and [user](#users) configuration should be applied to all created processes in the container (inclusive of `userEnvProbe`).
+
+# <a href="#definitions" name="definitions" class="anchor"> Definitions </a>
+#### <a href="#project-workspace-folder" name="project-workspace-folder" class="anchor"> Project Workspace Folder </a>
+
+The **project workspace folder** is where an implementing tool should begin to search for `devcontainer.json` files. If the target project on disk is using git, the **project workspace folder** is typically the root of the git repository. 

@@ -117,16 +117,16 @@ The `id` format specified dicates how a supporting tool will locate and download
 | Type | Description | Example |
 | :--- | :--- | :--- |
 | `<oci-registry>/<namespace>/<feature>[:<semantic-version>]` | Reference to feature in OCI registry(*) | ghcr.io/user/repo/go <br> ghcr.io/user/repo/go:1 <br> ghcr.io/user/repo/go:latest|
-| `https://<uri-to-feature-tgz>` | Direct HTTPS URI to a tarball. | https://github.com/user/repo/releases/devcontainer-feature-go.tgz |
-| `./<path-to-feature-dir>`| A relative directory to folder containing a devcontainer-feature.json. | ./myGoFeature |
-{: .table .table-bordered .table-responsive}
+| `https://<..uri..>/devcontainer-feature-<feature>.tgz` | Direct HTTPS URI to a tarball. | https://github.com/user/repo/releases/devcontainer-feature-go.tgz |
+| `./<path-to-feature-dir>`| A relative directory(**) to folder containing a devcontainer-feature.json. | ./myGoFeature |
 
-`
-(*) OCI registry must implement the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec).  Some implementors can be [found here](https://oras.land/implementors/).
+(*) OCI registry must implement the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec). Some implementors can be [found here](https://oras.land/implementors/).
+
+(**) The provided path is always relative to the `.devcontainer/` folder, and is outlined further in the [Locally Referenced Addendum](devcontainer-features-distribution#Addendum:-Locally-Referenced).
 
 ## <a href="#versioning" name="versioning" class="anchor"> Versioning </a>
 
-Each feature is individually [versioned according to the semver specification](https://semver.org/).  The `version` property in the respective `devcontainer-feature.json` file is updated to increment the feature's version.
+Each feature is individually [versioned according to the semver specification](https://semver.org/). The `version` property in the respective `devcontainer-feature.json` file is updated to increment the feature's version.
 
 Tooling that handles releasing features will not republish features if that exact version has already been published; however, tooling must republish major and minor versions in accordance with the semver specification.
 
