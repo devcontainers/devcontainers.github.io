@@ -10,8 +10,7 @@ sectionid: collection-index-features
     known at the time of crawling <a href="collections">each registered collection</a>. This list is continuously 
     updated with the latest available feature information.
     <br><br>
-    Referencing a feature below can be done in the 'features' section of a devcontainer.json.
-
+    <a href="implementors/features#referencing-a-feature">Referencing a feature</a> below can be done in the 'features' section of a devcontainer.json.
 </p>
 
 <p>
@@ -26,10 +25,10 @@ sectionid: collection-index-features
 {% for c in site.data.devcontainer-index.collections %}
     {% for f in c.features %}
     <tr>
-        <td class="tg-0lax"><a href="{{ f.documentationURL }}">{{ f.name }}</a></td>
-        <td class="tg-0lax">{{ c.sourceInformation.maintainer }}</td>
-        <td class="tg-0lax"><code>{{ f.id }}</code></td>
-        <td class="tg-0lax"><code>{{ f.version }}</code></td>
+        <td class="tg-0lax"><a href="{{ f.documentationURL | strip_html }}">{{ f.name | strip_html  }}</a></td>
+        <td class="tg-0lax">{{ c.sourceInformation.maintainer | strip_html  }}</td>
+        <td class="tg-0lax"><code>{{ f.id | strip_html  }}:{{ f.majorVersion | strip_html }}</code></td>
+        <td class="tg-0lax"><code>{{ f.version | strip_html  }}</code></td>
     </tr>
     {% endfor %}
 
