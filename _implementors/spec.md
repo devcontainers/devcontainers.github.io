@@ -90,7 +90,7 @@ Mounts allow containers to have access to the underlying machine, share data bet
 
 A default mount should be included so that the source code is accessible from inside the container. Source code is stored outside of the container so that a developer's in-flight edits can be extracted, or a new container created in the event a container no longer starts.
 
-## <a href="#workspace-folder" name="workspace-folder" class="anchor"> workspaceFolder and worspaceMount </a>
+## <a href="#workspace-folder" name="workspace-folder" class="anchor"> workspaceFolder and workspaceMount </a>
 
 The default mount point for the source code can be set with the `workspaceMount` property for **image** and **dockerfile** scenarios or using the built in `mounts` property in **Docker Compose** files. This folder should point to the root of a repository (where the `.git` folder is found) so that source control operations work correctly inside the container.
 
