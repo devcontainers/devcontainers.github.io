@@ -20,7 +20,7 @@ Feature metadata is captured by a `devcontainer-feature.json` file in the root f
 
 ## <a href="#folder-structure" name="folder-structure" class="anchor"> Folder Structure </a>
 
-A feature is a self contained entity in a folder with at least a `devcontainer-feature.json` and `install.sh` entrypoint script.  Additional files are permitted and are packaged along side the required files.
+A Feature is a self contained entity in a folder with at least a `devcontainer-feature.json` and `install.sh` entrypoint script.  Additional files are permitted and are packaged along side the required files.
 
 ```
 +-- feature
@@ -31,25 +31,25 @@ A feature is a self contained entity in a folder with at least a `devcontainer-f
 
 ## <a href="#devcontainer-feature-json-properties" name="devcontainer-feature-json-properties" class="anchor"> devcontainer-feature.json properties </a>
 
-the `devcontainer-feature.json` file defines information about the feature to be used by any supporting tools and the way the feature will be executed.
+the `devcontainer-feature.json` file defines information about the feature to be used by any supporting tools and the way the Feature will be executed.
 
 The properties of the file are as follows:
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | `id` | string | ID of the feature/definition. The `id` should be unique in the context of the repository/published package where the feature exists and must match the name of the directory where the `devcontainer-feature.json` resides. |
-| `version` | string | The semantic version of the feature. |
+| `version` | string | The semantic version of the Feature. |
 | `name` | string | Name of the feature/definition. |
 | `description` | string | Description of the feature/definition. |
-| `documentationURL` | string | Url that points to the documentation of the feature. |
-| `licenseURL` | string | Url that points to the license of the feature. |
-| `keywords` | array | List of strings relevant to a user that would search for this definition/feature. |
+| `documentationURL` | string | Url that points to the documentation of the Feature. |
+| `licenseURL` | string | Url that points to the license of the Feature. |
+| `keywords` | array | List of strings relevant to a user that would search for this definition/Feature. |
 | `options` | object | A map of options that will be passed as environment variables to the execution of the script. |
 | `containerEnv` | object | A set of name value pairs that sets or overrides environment variables. |
 | `privileged` | boolean | Sets [privileged mode](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities) for the container (required by things like docker-in-docker) when the feature is used. |
-| `init` | boolean | Adds the [tiny init](https://github.com/RKrahl/tiny-init) process to the container (`--init`) when the feature is used. |
+| `init` | boolean | Adds the [tiny init](https://github.com/RKrahl/tiny-init) process to the container (`--init`) when the Feature is used. |
 | `capAdd` | array | Adds container [capabilities](https://docs.docker.com/engine/security/#linux-kernel-capabilities) when the Feature is used. |
-| `securityOpt` | array | Sets container security options like updating the [seccomp profile](https://docs.docker.com/engine/security/seccomp/) when the feature is used. |
+| `securityOpt` | array | Sets container security options like updating the [seccomp profile](https://docs.docker.com/engine/security/seccomp/) when the Feature is used. |
 | `entrypoint` | string | Set if the feature requires an "entrypoint" script that should fire at container start up. |
 | `customizations` | object | Product specific properties, each namespace under `customizations` is treated as a separate set of properties. For each of this sets the object is parsed, values are replaced while arrays are set as a union. |
 | `installsAfter` | array | Array of ID's of Features that should execute before this one. Allows control for feature authors on soft dependencies between different Features. |
@@ -88,7 +88,7 @@ Features are referenced in a user's [`devcontainer.json`](../json_reference) und
 
 A user can specify an arbitrary number of Features.  At build time, these Features will be installed in an order defined by a combination of the [installation order rules and implementation](#Installation-Order). 
 
-A single feature is provided as a key/value pair, where the key is the feature identifier, and the value is an object containing "options" (or empty for "default").  Each key in the feature object must be unique.
+A single Feature is provided as a key/value pair, where the key is the Feature identifier, and the value is an object containing "options" (or empty for "default").  Each key in the feature object must be unique.
 
 These options are sourced as environment variables at build-time, as specified in [Option Resolution](#Option-Resolution).
 
@@ -109,7 +109,7 @@ Below is a valid `features` object provided as an example.
 }
 ```
 
-> Note: The `:latest` version annotation is added implicitly if omitted. To pin to a specific package version ([example](https://github.com/devcontainers/features/pkgs/container/features/go/versions)), append it to the end of the feature.
+> Note: The `:latest` version annotation is added implicitly if omitted. To pin to a specific package version ([example](https://github.com/devcontainers/features/pkgs/container/features/go/versions)), append it to the end of the Feature.
 
 An option's value can be provided as either a `string` or `boolean`, and should match what is expected by the feature in the `devcontainer-feature.json` file.
 
@@ -141,19 +141,19 @@ The `id` format specified dicates how a supporting tool will locate and download
 
 (*) OCI registry must implement the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec). Some implementors can be [found here](https://oras.land/implementors/).
 
-(**) The provided path is always relative to the `.devcontainer/` folder, and is outlined further in the [Locally Referenced Addendum](devcontainer-features-distribution#Addendum:-Locally-Referenced).
+(**) The provided path is always relative to the folder containing the `devcontainer.json`. Further requirements are outlined in the [Locally Referenced Addendum](devcontainer-features-distribution#Addendum:-Locally-Referenced).
 
 ## <a href="#versioning" name="versioning" class="anchor"> Versioning </a>
 
-Each feature is individually [versioned according to the semver specification](https://semver.org/). The `version` property in the respective `devcontainer-feature.json` file is updated to increment the feature's version.
+Each Feature is individually [versioned according to the semver specification](https://semver.org/). The `version` property in the respective `devcontainer-feature.json` file is updated to increment the Feature's version.
 
 Tooling that handles releasing Features will not republish Features if that exact version has already been published; however, tooling must republish major and minor versions in accordance with the semver specification.
 
 ## <a href="#authoring" name="authoring" class="anchor"> Authoring </a>
 
-Features can be authored in a number of languages, the most straightforward being bash scripts. If a feature is authored in a different language information about it should be included in the metadata so that users can make an informed choice about it.
+Features can be authored in a number of languages, the most straightforward being bash scripts. If a Feature is authored in a different language information about it should be included in the metadata so that users can make an informed choice about it.
 
-Reference information about the application required to execute the feature should be included in `devcontainer-feature.json` in the metadata section.
+Reference information about the application required to execute the Feature should be included in `devcontainer-feature.json` in the metadata section.
 
 Applications should default to `/bin/sh` for Features that do not include this information.
 
@@ -169,7 +169,7 @@ _For information on distribution features, see [the dev container features distr
 
 By default, Features are installed on top of a base image in an order determined as optimal by the implementing tool.
 
-If any of the following properties are provided in the feature's `devcontainer-feature.json`, or the user's `devcontainer.json`, the order indicated by these propert(ies) are respected (with decreasing precedence).
+If any of the following properties are provided in the Feature's `devcontainer-feature.json`, or the user's `devcontainer.json`, the order indicated by these propert(ies) are respected (with decreasing precedence).
 
 1. The `overrideFeatureInstallOrder` property in user's `devcontainer.json`. Allows users to control the order of execution of their Features.
 2. The `installsAfter` property defined as part of a Feature's `devcontainer-feature.json`.
@@ -195,25 +195,25 @@ Example:
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `overrideFeatureInstallOrder` | array | Array consisting of the feature `id` (without the semantic version) of Features in the order the user wants them to be installed. |
+| `overrideFeatureInstallOrder` | array | Array consisting of the Feature `id` (without the semantic version) of Features in the order the user wants them to be installed. |
 {: .table .table-bordered .table-responsive}
 
 #### <a href="#installsAfter" name="installsAfter" class="anchor"> (2) The `installsAfter` Feature property </a>
 
-This property is defined in an individual feature's `devcontainer-feature.json` file by the feature author.  `installsAfter` allows an author to provide the tooling hints on loose dependencies between Features.
+This property is defined in an individual Feature's `devcontainer-feature.json` file by the feature author.  `installsAfter` allows an author to provide the tooling hints on loose dependencies between Features.
 
 After `overrideFeatureInstallOrder` is resolved, any remaining Features that declare an `installsAfter` must be installed after the Features declared in the property, provided that the features have also been declared in the `features` property.
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `installsAfter` | array | Array consisting of the feature `id` that should be installed before the given Feature |
+| `installsAfter` | array | Array consisting of the Feature `id` that should be installed before the given Feature. |
 {: .table .table-bordered .table-responsive}
 
 ### <a href="#option-resolution" name="option-resolution" class="anchor"> Option Resolution </a>
 
-A feature's 'options' - specified as the value of a single feature key/value pair in the user's `devcontainer.json` - are passed to the feature as environment variables.
+A Feature's 'options' - specified as the value of a single Feature key/value pair in the user's `devcontainer.json` - are passed to the Feature as environment variables.
 
-A supporting tool will parse the `options` object provided by the user.  If a value is provided for a feature, it will be emitted to a file named `devcontainer-features.env` following the format `<OPTION_NAME>=<value>`.  
+A supporting tool will parse the `options` object provided by the user.  If a value is provided for a Feature, it will be emitted to a file named `devcontainer-features.env` following the format `<OPTION_NAME>=<value>`.  
 
 To ensure a option that is valid as an environment variable, the follow substitutions are performed.
 
@@ -230,7 +230,7 @@ Any options defined by a feature's `devcontainer-feature.json` that are omitted 
 
 ### <a href="#option-resolution-example" name="option-resolution-example" class="anchor"> Option resolution example </a>
 
-Suppose a `python` feature has the following `options` parameters declared in the `devcontainer-feature.json` file:
+Suppose a `python` Feature has the following `options` parameters declared in the `devcontainer-feature.json` file:
 
 ```jsonc
 // ...
@@ -254,7 +254,7 @@ Suppose a `python` feature has the following `options` parameters declared in th
 }
 ```
 
-The user's `devcontainer.json` declared the python feature like so
+The user's `devcontainer.json` declared the python Feature like so:
 
 ```jsonc
 
@@ -294,10 +294,10 @@ Optimize? true
 
 There are several things to keep in mind for an application that implements Features:
 
-- The order of execution of Features is determined by the application, based on the `installAfter` property used by feature authors. It can be overridden by users if necessary with the `overrideFeatureInstallOrder` in `devcontainer.json`.
+- The order of execution of Features is determined by the application, based on the `installAfter` property used by Feature authors. It can be overridden by users if necessary with the `overrideFeatureInstallOrder` in `devcontainer.json`.
 - Features are used to create an image that can be used to create a container or not.
 - Parameters like `privileged`, `init` are included if just 1 feature requires them.
 - Parameters like `capAdd`, `securityOp`  are concatenated.
 - `containerEnv` is added before the feature is executed as `ENV` commands in the Dockerfile.
-- Each feature script executes as its own layer to aid in caching and rebuilding.
+- Each Feature script executes as its own layer to aid in caching and rebuilding.
 - There is also a proposal to move properties like `privileged` to `devcontainer.json` for consistency and to reduce reliance on the `runArgs` property. See https://github.com/devcontainers/spec/issues/2.
