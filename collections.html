@@ -23,7 +23,7 @@ sectionid: collection-index
 {% for c in site.data.collection-index %}
 <tr>
     <td class="tg-0lax">{{ c.name }}</td>
-    <td class="tg-0lax"><a href="{{ c.contact }}">{{ c.maintainer }}</a></td>
-    <td class="tg-0lax"><a href="{{ c.repository }}">{{ c.repository }}</a></td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html  }}</a></td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html  }}</a></td>
 </tr>
 {% endfor %}
