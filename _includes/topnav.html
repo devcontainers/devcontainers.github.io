@@ -20,6 +20,9 @@
                 <li {% if page.sectionid=='implementors' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
                     <a class="nav-link" href="{{ sorted.first.url | prepend: site.baseurl }}">Specification</a>
                 </li>
+                <li {% if page.sectionid=='implementors' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+                    <a class="nav-link" href='https://containers.dev/features'>Features</a>
+                </li>
                 <li {% if page.sectionid=='supporting' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
                     <a class="nav-link" href='{{ "/supporting" | prepend: site.baseurl }}'>Supporting Tools</a>
                 </li>
