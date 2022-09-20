@@ -3,3 +3,8 @@
   contact: https://github.com/devcontainers/features/issues
   repository: https://github.com/devcontainers/features
   ociReference: ghcr.io/devcontainers/features
+- name: Iterative Tools for Machine Learning Features 
+  maintainer: Iterative, Inc
+  contact: https://github.com/iterative/features/issues
+  repository: https://github.com/iterative/features
+  ociReference: ghcr.io/iterative/features
