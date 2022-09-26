@@ -31,7 +31,7 @@ Visual Studio Code specific properties go under `vscode` inside `customizations`
 | `settings` | object | Adds default `settings.json` values into a container/machine specific settings file. Defaults to `{}`. |
 {: .table .table-bordered .table-responsive}
 
-Please note that [Remote - Containers](#remote-containers) and [GitHub Codespaces](#github-codespaces) support the VS Code properties.
+Please note that [Dev Containers](#dev-containers) and [GitHub Codespaces](#github-codespaces) support the VS Code properties.
 
 ## <a href="#tools" name="tools" class="anchor"> Tools </a>
 
@@ -41,23 +41,23 @@ A dev container command line interface (CLI) that implements this specification.
 
 The CLI can take a `devcontainer.json` and create and configure a dev container from it. It allows for prebuilding dev container definitions using a CI or DevOps product like GitHub Actions. It can detect and include dev container features and apply them at container runtime, and run [lifecycle commands](implementors/json_reference/#lifecycle-scripts) like `postCreateCommand`, providing more power than a plain `docker build` and `docker run`.
 
-### <a href="#remote-containers-cli" name="remote-containers-cli" class="anchor"> Remote - Containers CLI </a>
+### <a href="#dev-containers-cli" name="dev-containers-cli" class="anchor"> Dev Containers CLI </a>
 
-There is a Remote - Containers [`devcontainer` CLI](https://code.visualstudio.com/docs/remote/devcontainer-cli) which may be installed within Remote - Containers or through the command line.
+There is a Dev Containers extension [`devcontainer` CLI](https://code.visualstudio.com/docs/remote/devcontainer-cli) which may be installed within the Dev Containers extension or through the command line.
 
-### <a href="#remote-containers" name="remote-containers" class="anchor"> Visual Studio Code Remote - Containers </a>
+### <a href="#dev-containers" name="dev-containers" class="anchor"> Visual Studio Code Dev Containers </a>
 
-The [**Visual Studio Code Remote - Containers** extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a [Docker container](https://docker.com) as a full-featured development environment. It allows you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set. There is more information in the Remote - Containers [documentation](https://code.visualstudio.com/docs/remote/containers).
+The [**Visual Studio Code Dev Containers** extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a [Docker container](https://docker.com) as a full-featured development environment. It allows you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set. There is more information in the Dev Containers [documentation](https://code.visualstudio.com/docs/remote/containers).
 
-> **Tip:** If you make a change to your dev container after having built and connected to it, be sure to run **Remote-Containers: Rebuild Container** from the Command Palette (`kbstyle(F1)`) to pick up any changes you make.
+> **Tip:** If you make a change to your dev container after having built and connected to it, be sure to run **Dev Containers: Rebuild Container** from the Command Palette (`kbstyle(F1)`) to pick up any changes you make.
 
 #### <a href="#product-specific-properties" name="product-specific-properties" class="anchor"> Product specific properties </a>
 
-Remote containers implements the [VS Code properties](#visual-studio-code) specific properties.
+The Dev Containers extension implements the [VS Code properties](#visual-studio-code) specific properties.
 
-#### <a href="#remote-containers-code-specific-limitations" name="remote-containers-specific-limitations" class="anchor"> Product specific limitations </a>
+#### <a href="#dev-containers-code-specific-limitations" name="dev-containers-specific-limitations" class="anchor"> Product specific limitations </a>
 
-Some properties may also have certain limitations in the Remote - Containers extension.
+Some properties may also have certain limitations in the Dev Containers extension.
 
 | Property or variable | Type  | Description |
 |:------------------|:------------|:------------|
