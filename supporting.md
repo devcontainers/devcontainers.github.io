@@ -33,6 +33,12 @@ Visual Studio Code specific properties go under `vscode` inside `customizations`
 
 Please note that [Dev Containers](#dev-containers) and [GitHub Codespaces](#github-codespaces) support the VS Code properties.
 
+### <a href="#visual-studio" name="visual-studio" class="anchor"> Visual Studio </a>
+
+Visual Studio added Dev Container support in Visual Studio 2022 17.4 for C++ projects using CMake Presets. It is part of the Linux and embedded development with C++ workload, so make sure it is selected in your VS installation. Visual Studio manages the lifecycle of Dev Containers it uses as you work, but it treats them as remote targets in a similar way to other Linux or WSL targets.
+
+You may learn more in the [announcement blog post](https://devblogs.microsoft.com/cppblog/dev-containers-for-c-in-visual-studio/).
+
 ## <a href="#tools" name="tools" class="anchor"> Tools </a>
 
 ## <a href="#devcontainer-cli" name="devcontainer-cli" class="anchor"> Dev container CLI </a>
@@ -41,9 +47,9 @@ A dev container command line interface (CLI) that implements this specification.
 
 The CLI can take a `devcontainer.json` and create and configure a dev container from it. It allows for prebuilding dev container definitions using a CI or DevOps product like GitHub Actions. It can detect and include dev container features and apply them at container runtime, and run [lifecycle commands](implementors/json_reference/#lifecycle-scripts) like `postCreateCommand`, providing more power than a plain `docker build` and `docker run`.
 
-### <a href="#dev-containers-cli" name="dev-containers-cli" class="anchor"> Dev Containers CLI </a>
+### <a href="#dev-containers-cli" name="dev-containers-cli" class="anchor"> VS Code extension CLI </a>
 
-There is a Dev Containers extension [`devcontainer` CLI](https://code.visualstudio.com/docs/remote/devcontainer-cli) which may be installed within the Dev Containers extension or through the command line.
+VS Code has a [CLI](https://code.visualstudio.com/docs/remote/devcontainer-cli) which may be installed within the Dev Containers extension or through the command line.
 
 ### <a href="#dev-containers" name="dev-containers" class="anchor"> Visual Studio Code Dev Containers </a>
 
