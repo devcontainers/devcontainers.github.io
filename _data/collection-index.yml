@@ -8,3 +8,8 @@
   contact: https://github.com/iterative/features/issues
   repository: https://github.com/iterative/features
   ociReference: ghcr.io/iterative/features
+- name: Features for R
+  maintainer: Rocker Project
+  contact: https://github.com/rocker-org/devcontainer-features/issues
+  repository: https://github.com/rocker-org/devcontainer-features
+  ociReference: ghcr.io/rocker-org/devcontainer-features
