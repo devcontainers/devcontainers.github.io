@@ -11,7 +11,7 @@ The reference implementation for the specification is available through a [devel
 ## <a href="#what-is-CLI" name="what-is-CLI" class="anchor"> What is the dev container CLI? </a>
 When tools like VS Code and Codespaces detect a devcontainer.json file in a user's project, they use a CLI to configure a dev container. We've now opened up this CLI as a reference implementation so that individual users and other tools can read in devcontainer.json metadata and create dev containers from it.
 
-This CLI can either be used directly or integrated into product experiences, similar to how it's integrated with Remote - Containers and Codespaces today. It currently supports both a simple single container option and integrates with [Docker Compose](https://docs.docker.com/compose/) for multi-container scenarios.
+This CLI can either be used directly or integrated into product experiences, similar to how it's integrated with Dev Containers and Codespaces today. It currently supports both a simple single container option and integrates with [Docker Compose](https://docs.docker.com/compose/) for multi-container scenarios.
 
 The CLI is available for review in a new [devcontainers/cli](https://github.com/devcontainers/cli) repository, and you can read more about its development in [this issue](https://github.com/devcontainers/spec/issues/9) in the spec repo.
 
