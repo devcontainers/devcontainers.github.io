@@ -10,7 +10,7 @@ We're excited for your contributions to the Dev Container Specification! This do
 
 ## <a href="#contribution-approaches" name="contribution-approaches" class="anchor"> Contribution approaches </a>
 
-- Propose the change via an [issue](https://github.com/microsoft/dev-container-spec/issues) in the [dev-container-spec repo](https://github.com/microsoft/dev-container-spec). Try to get early feedback before spending too much effort formalizing it.
+- Propose the change via an [issue](https://github.com/devcontainers/spec/issues) in the [spec repo](https://github.com/devcontainers/spec). Try to get early feedback before spending too much effort formalizing it.
 - More formally document the proposed change in terms of properties and their semantics. Look to format your proposal like our [devcontainer.json reference](../json_reference), which is a JSON with Comments (jsonc) format.
 
 Here is a sample proposal:
@@ -45,9 +45,9 @@ You may propose adding a new namespace for a specific tool, and any properties s
 
 ## <a href="#review-process" name="review-process" class="anchor"> Review process </a>
 
-We use the following [labels](https://github.com/microsoft/dev-container-spec/labels) in the dev-container-spec repo:
+We use the following [labels](https://github.com/devcontainers/spec/labels) in the spec repo:
 
 - `proposal`: Issues under discussion, still collecting feedback.
 - `finalization`: Proposals we intend to make part of the spec.
 
-[Milestones](https://github.com/microsoft/dev-container-spec/milestones) use a "month year" pattern (i.e. January 2022). If a finalized proposal is added to a milestone, it is intended to be merged during that milestone.
+[Milestones](https://github.com/devcontainers/spec/milestones) use a "month year" pattern (i.e. January 2022). If a finalized proposal is added to a milestone, it is intended to be merged during that milestone.
