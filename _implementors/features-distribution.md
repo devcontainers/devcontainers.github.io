@@ -73,9 +73,7 @@ The tarball is named `devcontainer-feature-<id>.tgz`, where `<id>` is the Featur
 
 A reference implementation for packaging and distributing Features is provided as a GitHub Action (https://github.com/devcontainers/action).
 
-<div id="devcontainer-collection.json"></div>
-
-### devcontainer-collection.json
+### <a href="#devcontainer-collection-json" name="devcontainer-collection-json" class="anchor"> devcontainer-collection.json </a>
 
 The `devcontainer-collection.json` is an auto-generated metadata file.
 
