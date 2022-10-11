@@ -3,6 +3,11 @@
   contact: https://github.com/devcontainers/features/issues
   repository: https://github.com/devcontainers/features
   ociReference: ghcr.io/devcontainers/features
+- name: Reference Implementation Templates
+  maintainer: Dev Container Spec Maintainers
+  contact: https://github.com/devcontainers/templates/issues
+  repository: https://github.com/devcontainers/templates
+  ociReference: ghcr.io/devcontainers/templates
 - name: Iterative Tools for Machine Learning Features 
   maintainer: Iterative, Inc
   contact: https://github.com/iterative/features/issues
