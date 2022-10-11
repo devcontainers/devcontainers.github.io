@@ -18,3 +18,8 @@
   contact: https://github.com/rocker-org/devcontainer-features/issues
   repository: https://github.com/rocker-org/devcontainer-features
   ociReference: ghcr.io/rocker-org/devcontainer-features
+- name: Public Meaningful Features
+  maintainer: Meaningful
+  contact: https://github.com/meaningful-ooo/devcontainer-features/issues
+  repository: https://github.com/meaningful-ooo/devcontainer-features
+  ociReference: ghcr.io/meaningful-ooo/devcontainer-features
