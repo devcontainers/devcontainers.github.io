@@ -25,6 +25,6 @@
   ociReference: ghcr.io/meaningful-ooo/devcontainer-features
 - name: Legacy Community Templates
   maintainer: Deprecated (No longer maintained)
-  contact: Community member listed in README files
+  contact: https://github.com/microsoft/vscode-dev-containers/issues/1589
   repository: https://github.com/microsoft/vscode-dev-containers
   ociReference: ghcr.io/microsoft/vscode-dev-containers
