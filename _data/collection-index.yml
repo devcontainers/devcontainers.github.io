@@ -23,8 +23,8 @@
   contact: https://github.com/meaningful-ooo/devcontainer-features/issues
   repository: https://github.com/meaningful-ooo/devcontainer-features
   ociReference: ghcr.io/meaningful-ooo/devcontainer-features
-- name: Community Templates (created before spec and self-hosting)
-  maintainer: Non-maintained (to be deprecated in favor of self-hosting)
+- name: Legacy Community Templates
+  maintainer: Deprecated (No longer maintained)
   contact: Community member listed in README files
   repository: https://github.com/microsoft/vscode-dev-containers
   ociReference: ghcr.io/microsoft/vscode-dev-containers
