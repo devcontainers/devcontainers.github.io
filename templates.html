@@ -1,0 +1,31 @@
+---
+title: Templates
+layout: table
+sectionid: collection-index-templates
+---
+
+<h1 style="margin-left: auto;margin-right: auto;">Available Templates</h1>
+<p style="margin-left: auto;margin-right: auto;">
+    This table contains all official and community-supported <a href="implementors/templates/">Dev Container Templates</a>
+    known at the time of crawling <a href="collections">each registered collection</a>. This list is continuously 
+    updated with the latest available Template information.
+    <br><br>
+    Templates listed here will be presenting in the UX of supporting tools (The VS Code Dev Containers extension, GitHub Codespaces, and so on).
+</p>
+
+<p>
+</p>
+<tr>
+    <td class="tg-0lax"><b>Template Name</b></b></td>
+    <td class="tg-0lax"><b>Maintainer</b></td>
+</tr>
+
+{% for c in site.data.devcontainer-index.collections %}
+    {% for f in c.templates %}
+    <tr>
+        <td class="tg-0lax"><a rel="nofollow" href="{{ f.documentationURL | strip_html }}">{{ f.name | strip_html  }}</a></td>
+        <td class="tg-0lax">{{ c.sourceInformation.maintainer | strip_html  }}</td>
+    </tr>
+    {% endfor %}
+
+{% endfor %}
