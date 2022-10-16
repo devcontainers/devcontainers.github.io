@@ -18,6 +18,11 @@
   contact: https://github.com/rocker-org/devcontainer-features/issues
   repository: https://github.com/rocker-org/devcontainer-features
   ociReference: ghcr.io/rocker-org/devcontainer-features
+- name: Templates for R
+  maintainer: Rocker Project
+  contact: https://github.com/rocker-org/devcontainer-templates/issues
+  repository: https://github.com/rocker-org/devcontainer-templates
+  ociReference: ghcr.io/rocker-org/devcontainer-templates
 - name: Public Meaningful Features
   maintainer: Meaningful
   contact: https://github.com/meaningful-ooo/devcontainer-features/issues
