@@ -116,7 +116,7 @@ However, if you are using something else to build your images, you can opt to ma
 LABEL devcontainer.metadata='[{ "capAdd": [ "SYS_PTRACE" ], "remoteUser": "devcontainer", "postCreateCommand": "yarn install" } 
 ```
 
-In either case, the result will be merged with any local devcontainer.json content at the time you create the container.  (See the [the spec](https://github.com/devcontainers/spec/blob/main/proposals/image-metadata.md) for info on merge loigic.) But at its simplest, you can just reference the image directly in devcontainer.json for the settings to take effect:
+In either case, the result will be merged with any local devcontainer.json content at the time you create the container (see the [the spec](https://github.com/devcontainers/spec/blob/main/proposals/image-metadata.md) for info on merge logic). But at its simplest, you can just reference the image directly in devcontainer.json for the settings to take effect:
 
 ```json
 {
