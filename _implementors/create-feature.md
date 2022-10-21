@@ -88,6 +88,8 @@ chmod +x /usr/local/bin/hello
 
 The feature-template repo contains a GitHub Action [workflow](https://github.com/devcontainers/feature-template/blob/main/.github/workflows/release.yaml) that will publish each feature to GHCR. By default, each feature will be prefixed with the `<owner/<repo>` namespace. Using the hello world example from above, it can be referenced in a `devcontainer.json` with: `ghcr.io/devcontainers/feature-template/color:1`.
 
+> Note: You can use the `devcontainer features publish` command from the [Dev Container CLI](https://github.com/devcontainers/cli) if you are not using GitHub Actions.
+
 The provided GitHub Action will also publish a third "metadata" package with just the namespace, eg: `ghcr.io/devcontainers/feature-template`, which is known as the Feature collection namespace.
 
 By default, GHCR packages are marked as private. To stay within the free tier, Features need to be marked as public.
