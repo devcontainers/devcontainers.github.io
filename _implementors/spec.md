@@ -274,10 +274,6 @@ To apply the metadata together with a user's devcontainer.json at runtime the fo
 
 Variables in string values will be substituted at the time the value is applied. When the order matters, the devcontainer.json is considered last.
 
-## <a href="#additional-props" name="additional-props" class="anchor"> Additional devcontainer.json Properties </a>
-
-We are adding support for `mounts`, `containerEnv`, `containerUser`, `init`, `privileged`, `capAdd`, and `securityOpt` to the devcontainer.json (also with Docker Compose) the same way these properties are already supported in the feature metadata.
-
 ## <a href="#metadata-notes" name="metadata-notes" class="anchor"> Notes </a>
 
 - Passing the label as a `LABEL` instruction in the Dockerfile:
