@@ -201,19 +201,10 @@ The **project workspace folder** is where an implementing tool should begin to s
 
 # <a href="#image-metadata" name="image-metadata" class="anchor"> Image Metadata </a>
 
-## <a href="#image-metadata-goal" name="image-metadata-goal" class="anchor"> Goal </a>
+Certain dev container metadata properties can be stored in an image label as an array of metadata snippets. This allows them to be stored in prebuilt images, such that, the image and its related configuration are self-contained. These contents should then be merged with any local devcontainer.json file contents at the time the container is created. An array is used so subsequent image builds can simply append changes to the array rather than attempting to merge at that point - which improves compatibility with arbitrary image build systems.
 
-Record dev container config and feature metadata in prebuilt images, such that, the image and the built-in features can be used with a devcontainer.json (image-, Dockerfile- or Docker Compose-based) that does not repeat the dev container config or feature metadata. Other tools should be able to record the same metadata without necessarily using features themselves.
+Metadata should be representative of with the following structure, using one entry per [Dev Container Feature](../features) and devcontainer.json (see table below for the full list):
 
-Current dev container config that can be recorded in the image: `mounts`, `onCreateCommand`, `updateContentCommand`, `postCreateCommand`, `postStartCommand`, `postAttachCommand`, `customizations`, `remoteUser`, `userEnvProbe`, `remoteEnv`, `containerEnv`, `overrideCommand`, `portsAttributes`, `otherPortsAttributes`, `forwardPorts`, `shutdownAction`, `updateRemoteUserUID` and `hostRequirements`.
-
-Current feature metadata relevant for using the feature when it is already part of the image: `mounts`, `init`, `privileged`, `capAdd`, `securityOpt`, `entrypoint` and `customizations`.
-
-We can add to these lists as we add more properties to the dev container configuration and the feature metadata.
-
-## <a href="#image-metadata-proposal" name="image-metadata-proposal" class="anchor"> Proposal </a>
-
-You may add metadata to the image with the following structure using one entry per feature and devcontainer.json (see table below for the full list):
 
 ```json
 [
