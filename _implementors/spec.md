@@ -213,7 +213,7 @@ We can add to these lists as we add more properties to the dev container configu
 
 ## <a href="#image-metadata-proposal" name="image-metadata-proposal" class="anchor"> Proposal </a>
 
-We propose to add metadata to the image with the following structure using one entry per feature and devcontainer.json (see table below for the full list):
+You may add metadata to the image with the following structure using one entry per feature and devcontainer.json (see table below for the full list):
 
 ```json
 [
