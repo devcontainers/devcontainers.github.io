@@ -43,3 +43,8 @@
   contact: https://github.com/devcontainers-contrib/features/issues
   repository: https://github.com/devcontainers-contrib/features
   ociReference: ghcr.io/devcontainers-contrib/features
+- name: Assorted Features
+  maintainer: eitsupi
+  contact: https://github.com/eitsupi/devcontainer-features/issues
+  repository: https://github.com/eitsupi/devcontainer-features
+  ociReference: ghcr.io/eitsupi/devcontainer-features
