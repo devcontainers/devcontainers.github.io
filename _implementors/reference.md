@@ -98,3 +98,39 @@ Hello, VS Code Remote - Containers!
 Congrats, you've just run the dev container CLI and seen it in action!
 
 These steps are also provided in the CLI repo's [README](https://github.com/devcontainers/cli/blob/main/README.md). You may also review frequently asked questions [here](https://github.com/devcontainers/spec/issues/31).
+
+### <a href="#prebuilding" name="prebuilding" class="anchor"> Prebuilding </a> 
+We recommend pre-building images with the tools you need rather than creating and building a container image each time you open your project in a dev container. Using pre-built images will result in a faster container startup, simpler configuration, and allows you to pin to a specific version of tools to improve supply-chain security and avoid potential breaks. You can automate pre-building your image by scheduling the build using a DevOps or continuous integration (CI) service like GitHub Actions.
+
+We recommend using the dev container CLI to pre-build your images. Once you've built your image, you can push it to a container registry (like the [Azure Container Registry](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli), [GitHub Container Registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#pushing-container-images), or [Docker Hub](https://docs.docker.com/engine/reference/commandline/push)) and reference it directly.
+
+#### <a href="#labels" name="labels" class="anchor"> Metadata in image labels (proposal) </a> 
+
+You can include dev container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/), such that, the image and the built-in features can be used with a devcontainer.json (image-, Dockerfile- or Docker Compose-based) that does not repeat the dev container config or feature metadata. Other tools should be able to record the same metadata without necessarily using features themselves.
+
+You may add metadata to the image with the following structure, using one entry per Feature and devcontainer.json:
+
+```json
+[
+	{
+		"id"?: string,
+		"init"?: boolean,
+		"privileged"?: boolean,
+		"capAdd"?: string[],
+		"securityOpt"?: string[],
+		"entrypoint"?: string,
+		"mounts"?: [],
+		...
+		"customizations"?: {
+			...
+		}
+	},
+	...
+]
+```
+
+To simplify adding this metadata for other tools, we also support having a single top-level object with the same properties.
+
+The metadata is added to the image as a `devcontainer.metadata` label with a JSON string value representing the above array or single object.
+
+You may review more information about this proposal in the [spec repo](https://github.com/devcontainers/spec/blob/main/proposals/image-metadata.md).
