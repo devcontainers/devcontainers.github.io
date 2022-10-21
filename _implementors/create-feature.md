@@ -10,7 +10,9 @@ index: 7
 
 Development container ['Features'](../features) are self-contained, shareable units of installation code and development container configuration. We [define a pattern](../features-distribution) for authoring and self-publishing Features. 
 
-In this document, we'll outline a "quickstart" to help you get up-and-running with creating and sharing your first Feature. You may review an example along with guidance in our [devcontainers/feature-template](https://github.com/devcontainers/feature-template) repo as well.
+In this document, we'll outline a "quickstart" to help you get up-and-running with creating and sharing your first Feature. You may review an example along with guidance in our [devcontainers/feature-template](https://github.com/devcontainers/feature-template) repo as well. 
+
+> Note: While this walkthrough will illustrate the use of GitHub and the GitHub Container Registry, you can use your own source control system and publish to any [OCI Artifact supporting](https://oras.land/implementors/#registries-supporting-oci-artifacts) container registry instead.
 
 ## <a href="#create-repo" name="create-repo" class="anchor"> Create a repo </a>
 
