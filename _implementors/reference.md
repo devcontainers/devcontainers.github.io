@@ -108,29 +108,20 @@ We recommend using the dev container CLI to pre-build your images. Once you've b
 
 You can include dev container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/), such that, the image and the built-in features can be used with a devcontainer.json (image-, Dockerfile- or Docker Compose-based) that does not repeat the dev container config or feature metadata. Other tools should be able to record the same metadata without necessarily using features themselves.
 
-You may add metadata to the image with the following structure, using one entry per Feature and devcontainer.json:
+The metadata label is **automatically added** when you pre-build using the Dev Container CLI (or most Dev Container spec supporting tools) and includes settings from devcontainer.json and any referenced Dev Container Features.
 
-```json
-[
-	{
-		"id"?: string,
-		"init"?: boolean,
-		"privileged"?: boolean,
-		"capAdd"?: string[],
-		"securityOpt"?: string[],
-		"entrypoint"?: string,
-		"mounts"?: [],
-		...
-		"customizations"?: {
-			...
-		}
-	},
-	...
-]
+However, if you are using something else to build your images, you can opt to manually add properties to an image label instead. For example, consider this Dockerfile snippet:
+
+```Dockerfile
+LABEL devcontainer.metadata='[{ "capAdd": [ "SYS_PTRACE" ], "remoteUser": "devcontainer", "postCreateCommand": "yarn install" } 
 ```
 
-To simplify adding this metadata for other tools, we also support having a single top-level object with the same properties.
+In either case, the result will be merged with any local devcontainer.json content at the time you create the container.  (See the [the spec](https://github.com/devcontainers/spec/blob/main/proposals/image-metadata.md) for info on merge loigic.) But at its simplest, you can just reference the image directly in devcontainer.json for the settings to take effect:
 
-The metadata is added to the image as a `devcontainer.metadata` label with a JSON string value representing the above array or single object.
+```json
+{
+    "image": "mcr.microsoft.com/devcontainers/go:1"
+}
+```
 
-You may review more information about this proposal in the [spec repo](https://github.com/devcontainers/spec/blob/main/proposals/image-metadata.md).
+See [Dev Container metadata reference](../json_reference) for information on which properties are supported.
