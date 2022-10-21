@@ -18,9 +18,7 @@ In this document, we'll outline a "quickstart" to help you get up-and-running wi
 
 Start off by creating a repository to host your Feature. In this guide, we'll use a public GitHub repository. 
 
-For the simplest getting started experience, you may fork our example [feature-template](https://github.com/devcontainers/feature-template) repo. 
-
-<img alt="Forking the feature-template GitHub repo" src="/img/feature-template-fork.png"/>
+For the simplest getting started experience, you may use our example [feature-template](https://github.com/devcontainers/feature-template) repo. You may select the green `Use this template` button on the repo's page.
 
 You may also [create your own repo on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo) if you'd prefer.
 
