@@ -108,5 +108,6 @@ If you'd like your Features to appear in our [public index](https://containers.d
 
 * Go to [github.com/devcontainers/devcontainers.github.io](github.com/devcontainers/devcontainers.github.io), which is the GitHub repo backing [containers.dev](https://containers.dev/)
 * Open a PR to modify the [collection-index.yml](https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml) file
+* Features housed in other OCI Artifact container registries can be included as long as they can be downloaded without a login.
 
 Feature collections are scanned to populate a Feature index on the [containers.dev site](../../features) and allow them to appear in Dev Container creation UX in [supporting tools](https://containers.dev/supporting) like [VS Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [GitHub Codespaces](https://github.com/features/codespaces).
