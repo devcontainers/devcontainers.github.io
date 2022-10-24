@@ -213,8 +213,6 @@ Each entry in the `object` will be run in parallel during that lifecycle step.
 }
 ```
 
-You may review this proposal directly in [the spec](https://github.com/devcontainers/spec/blob/main/proposals/parallel-lifecycle-script-execution.md).
-
 # <a href="#definitions" name="definitions" class="anchor"> Definitions </a>
 #### <a href="#project-workspace-folder" name="project-workspace-folder" class="anchor"> Project Workspace Folder </a>
 
