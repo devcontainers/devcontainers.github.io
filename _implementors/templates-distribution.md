@@ -3,7 +3,7 @@ layout: implementors
 title:  "Dev Container Templates distribution and discovery [proposal]"
 shortTitle: "Templates distribution"
 author: Microsoft
-index: 8
+index: 10
 ---
 
 This specification defines a pattern where community members and organizations can author and self-publish [Dev Container Templates](/implementors/templates). 
