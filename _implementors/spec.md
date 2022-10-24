@@ -194,7 +194,7 @@ To resume the environment from a stopped state:
 
 Like during the create process, remote [environment variables](#environment-variables) and [user](#users) configuration should be applied to all created processes in the container (inclusive of `userEnvProbe`).
 
-## <a href="#parallel-exec" name="parallel-exec" class="anchor"> Parallel lifecycle script execution (proposal) </a>
+## <a href="#parallel-exec" name="parallel-exec" class="anchor"> Parallel lifecycle script execution </a>
 
 Dev containers support a single command for each of its lifecycle scripts. While serial execution of multiple commands can be achieved with `;`, `&&`, etc., parallel execution deserves first-class support.
 
