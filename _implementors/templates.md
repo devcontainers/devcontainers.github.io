@@ -3,7 +3,7 @@ layout: implementors
 title:  "Dev Container Templates reference [proposal]"
 shortTitle: "Templates"
 author: Microsoft
-index: 7
+index: 9
 ---
 
 Development container "Templates" are source files packaged together that encode configuration for a complete development environment. A Template can be used in a new or existing project, and a [supporting tool](/supporting) will use the configuration from the Template to build a development container.
