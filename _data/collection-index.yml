@@ -48,3 +48,8 @@
   contact: https://github.com/eitsupi/devcontainer-features/issues
   repository: https://github.com/eitsupi/devcontainer-features
   ociReference: ghcr.io/eitsupi/devcontainer-features
+- name: Assorted Features
+  maintainer: Eric Ho
+  contact: https://github.com/dhoeric/features/issues
+  repository: https://github.com/dhoeric/features
+  ociReference: ghcr.io/dhoeric/features
