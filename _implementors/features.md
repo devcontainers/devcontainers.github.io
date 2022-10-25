@@ -324,13 +324,6 @@ There are several things to keep in mind for an application that implements Feat
 
 ## <a href="#dev-container-id" name="dev-container-id" class="anchor"> Dev Container ID </a>
 
-### <a href="#dev-container-id-goal" name="dev-container-id-goal" class="anchor"> Goal </a>
-
-Allow Features to refer to an identifier that is unique to the dev container they are installed into and that is stable across rebuilds.
-
-E.g., the `docker-in-docker` Feature needs a way to mount a volume per dev container.
-
-### <a href="#dev-container-id-prop" name="dev-container-id-prop" class="anchor"> Proposal </a>
 
 The identifier will be referred to as `${devcontainerId}` in the devcontainer.json and the Feature metadata and that will be replaced with the dev container's id. It should only be used in parts of the configuration and metadata that is not used for building the image because that would otherwise prevent pre-building the image at a time when the dev container's id is not known yet. Excluding boolean, numbers and enum properties the properties supporting `${devcontainerId}` in the devcontainer.json are: `name`, `runArgs`, `initializeCommand`, `onCreateCommand`, `updateContentCommand`, `postCreateCommand`, `postStartCommand`, `postAttachCommand`, `workspaceFolder`, `workspaceMount`, `mounts`, `containerEnv`, `remoteEnv`, `containerUser`, `remoteUser`, `customizations`. Excluding boolean, numbers and enum properties the properties supporting `${devcontainerId}` in the Feature metadata are: `entrypoint`, `mounts`, `customizations`.
 
