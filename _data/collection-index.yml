@@ -53,3 +53,8 @@
   contact: https://github.com/dhoeric/features/issues
   repository: https://github.com/dhoeric/features
   ociReference: ghcr.io/dhoeric/features
+- name: Assorted Features
+  maintainer: Ravikanth Chaganti
+  contact: https://github.com/rchaganti/vsc-devcontainer-features/issues
+  repository: https://github.com/rchaganti/vsc-devcontainer-features
+  ociReference: ghcr.io/rchaganti/vsc-devcontainer-features
