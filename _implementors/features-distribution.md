@@ -1,12 +1,10 @@
 ---
 layout: implementors
-title:  "Dev container Features contribution and discovery [proposal]"
+title:  "Dev container Features contribution and discovery"
 shortTitle: "Features distribution"
 author: Microsoft
 index: 6
 ---
-
-> Note: This section provides information on a currently active proposal. See the [Features distribution proposal in the spec repo](https://github.com/devcontainers/spec/issues/61) for input and links to other proposed improvements.
 
 This specification defines a pattern where community members and organizations can author and self-publish [Dev Container 'Features'](../features). 
 
