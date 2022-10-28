@@ -106,7 +106,7 @@ We recommend using the dev container CLI to pre-build your images. Once you've b
 
 #### <a href="#labels" name="labels" class="anchor"> Metadata in image labels (proposal) </a> 
 
-You can include dev container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/), such that, the image and the built-in features can be used with a devcontainer.json (image-, Dockerfile- or Docker Compose-based) that does not repeat the dev container config or feature metadata. Other tools should be able to record the same metadata without necessarily using features themselves.
+You can include dev container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/), such that, the image and the built-in Features can be used with a devcontainer.json (image-, Dockerfile- or Docker Compose-based) that does not repeat the dev container config or Feature metadata. Other tools should be able to record the same metadata without necessarily using Features themselves.
 
 The metadata label is **automatically added** when you pre-build using the Dev Container CLI (or most Dev Container spec supporting tools) and includes settings from devcontainer.json and any referenced Dev Container Features.
 

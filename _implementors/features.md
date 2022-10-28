@@ -1,12 +1,10 @@
 ---
 layout: implementors
-title:  "Dev Container Features reference [proposal]"
+title:  "Dev Container Features reference"
 shortTitle: "Features"
 author: Microsoft
 index: 5
 ---
-
-> Note: This section provides information on a currently active proposal. See the [Features proposal in the spec repo](https://github.com/devcontainers/spec/issues/61) for input and links to other proposed improvements.
 
 Development container "Features" are self-contained, shareable units of installation code and development container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "Features" into your development container for you or your collaborators to use.
 
@@ -161,7 +159,7 @@ If the Feature is included in a folder as part of the repository that contains `
 
 ## <a href="#release" name="release" class="anchor"> Release </a>
 
-_For information on distribution features, see [the dev container features distribution proposal](../features-distribution)._
+_For information on distributing Features, see [the dev container features distribution page](../features-distribution)._
 
 ## <a href="#execution" name="execution" class="anchor"> Execution </a>
 
