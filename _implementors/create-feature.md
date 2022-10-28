@@ -6,6 +6,8 @@ author: Microsoft
 index: 7
 ---
 
+> Note: This section provides information on a currently active proposal. See the [Features proposal in the spec repo](https://github.com/devcontainers/spec/issues/61) for input and links to other proposed improvements.
+
 Development container ['Features'](../features) are self-contained, shareable units of installation code and development container configuration. We [define a pattern](../features-distribution) for authoring and self-publishing Features. 
 
 In this document, we'll outline a "quickstart" to help you get up-and-running with creating and sharing your first Feature. You may review an example along with guidance in our [devcontainers/feature-template](https://github.com/devcontainers/feature-template) repo as well. 
