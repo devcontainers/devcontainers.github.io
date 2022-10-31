@@ -58,3 +58,8 @@
   contact: https://github.com/rchaganti/vsc-devcontainer-features/issues
   repository: https://github.com/rchaganti/vsc-devcontainer-features
   ociReference: ghcr.io/rchaganti/vsc-devcontainer-features
+- name: Amazon Linux 2 Features
+  maintainer: Ken Collins
+  contact: https://github.com/metaskills
+  repository: https://github.com/customink/codespaces-features
+  ociReference: ghcr.io/customink/codespaces-features
