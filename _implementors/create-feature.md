@@ -96,7 +96,7 @@ This can be done by navigating to the Feature's "package settings" page in GHCR,
 https://github.com/users/<owner>/packages/container/<repo>%2F<featureName>/settings
 ```
 
-<img alt="Changing package visibility to public" src="/img/make-package-public.png"/>
+<img style="max-width:70%;height:auto" alt="Changing package visibility to public" src="/img/make-package-public.png"/>
 
 ## <a href="#add-to-index" name="add-to-index" class="anchor"> Adding Features to the Index </a>
 
