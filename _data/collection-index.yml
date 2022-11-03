@@ -68,3 +68,8 @@
   contact: https://github.com/stuartleeks/dev-container-features/issues
   repository: https://github.com/stuartleeks/dev-container-features
   ociReference: ghcr.io/stuartleeks/dev-container-features
+- name: Assorted Features
+  maintainer: guiyomh
+  contact: https://github.com/guiyomh/features/issues
+  repository: https://github.com/guiyomh/features
+  ociReference: ghcr.io/guiyomh/features
