@@ -6,6 +6,8 @@ author: Microsoft
 index: 6
 ---
 
+**TLDR; Check out the [quick start template](https://github.com/devcontainers/feature-template) to get going on distributing your onw Dev Container Features.**
+
 This specification defines a pattern where community members and organizations can author and self-publish [Dev Container 'Features'](../features). 
 
 Goals include:
@@ -85,7 +87,7 @@ Each Features's `devcontainer-feature.json` metadata file is appended into the `
 
 ## <a href="#distribution" name="distribution" class="anchor"> Distribution </a>
 
-There are several supported ways to distribute Features. Distribution is handled by the implementing packaging tool such as the **[Dev Container CLI](https://github.com/devcontainers/cli)** or **[Dev Container Publish GitHub Action](https://github.com/marketplace/actions/dev-container-publish)**.
+There are several supported ways to distribute Features. Distribution is handled by the implementing packaging tool such as the [Dev Container CLI](https://github.com/devcontainers/cli) or [Dev Container Publish GitHub Action](https://github.com/marketplace/actions/dev-container-publish). See the [quick start repository](https://github.com/devcontainers/feature-template) for a full working example.
 
 A user references a distributed Feature in a `devcontainer.json` as defined in ['referencing a feature'](../features#referencing-a-feature).
 
