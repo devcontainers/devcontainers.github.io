@@ -56,7 +56,6 @@ Each sub-directory should be named such that it matches the `id` field of the `d
 
 ## <a href="#versioning" name="versioning" class="anchor">Versioning </a>
 
-
 Each Template is individually [versioned according to the semver specification](https://semver.org/). The `version` property in the respective `devcontainer-template.json` file is parsed to determine if the Template should be republished.
 
 Tooling that handles publishing Templates will not republish Templates if that exact version has already been published; however, tooling must republish major and minor versions in accordance with the semver specification.
@@ -85,13 +84,11 @@ Each Template's `devcontainer-template.json` metadata file is appended into the 
 
 ## <a href="#distribution" name="distribution" class="anchor"> Distribution </a>
 
-
-There are several supported ways to distribute Templates.  Distribution is handled by the implementing packaging tool.
+There are several supported ways to distribute Templates.  Distribution is handled by the implementing packaging tool such as the **[Dev Container CLI](https://github.com/devcontainers/cli)** or **[Dev Container Publish GitHub Action](https://github.com/marketplace/actions/dev-container-publish)**.
 
 A user can add a Template in to their projects as defined by the [supporting tools](/supporting#supporting-tools-and-services).
 
 ### <a href="#oci-registry" name="oci-registry" class="anchor">OCI Registry</a>
-
 
 An OCI registry that implements the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec) serves as the primary distribution mechanism for Templates.
 
