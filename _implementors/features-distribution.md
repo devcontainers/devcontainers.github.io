@@ -6,7 +6,7 @@ author: Microsoft
 index: 6
 ---
 
-**TLDR; Check out the [quick start template](https://github.com/devcontainers/feature-template) to get going on distributing your onw Dev Container Features.**
+**TL;DR Check out the [quick start template](https://github.com/devcontainers/feature-template) to get going on distributing your onw Dev Container Features.**
 
 This specification defines a pattern where community members and organizations can author and self-publish [Dev Container 'Features'](../features). 
 
