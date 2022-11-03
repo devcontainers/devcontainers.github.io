@@ -104,7 +104,7 @@ We recommend pre-building images with the tools you need rather than creating an
 
 We recommend using the dev container CLI to pre-build your images. Once you've built your image, you can push it to a container registry (like the [Azure Container Registry](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli), [GitHub Container Registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#pushing-container-images), or [Docker Hub](https://docs.docker.com/engine/reference/commandline/push)) and reference it directly.
 
-#### <a href="#labels" name="labels" class="anchor"> Metadata in image labels (proposal) </a> 
+#### <a href="#labels" name="labels" class="anchor"> Metadata in image labels</a> 
 
 You can include dev container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/), such that, the image and the built-in Features can be used with a devcontainer.json (image-, Dockerfile- or Docker Compose-based) that does not repeat the dev container config or Feature metadata. Other tools should be able to record the same metadata without necessarily using Features themselves.
 

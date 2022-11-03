@@ -85,7 +85,7 @@ Each Features's `devcontainer-feature.json` metadata file is appended into the `
 
 ## <a href="#distribution" name="distribution" class="anchor"> Distribution </a>
 
-There are several supported ways to distribute Features.  Distribution is handled by the implementing packaging tool.
+There are several supported ways to distribute Features. Distribution is handled by the implementing packaging tool such as the **[Dev Container CLI](https://github.com/devcontainers/cli)** or **[Dev Container Publish GitHub Action](https://github.com/marketplace/actions/dev-container-publish)**.
 
 A user references a distributed Feature in a `devcontainer.json` as defined in ['referencing a feature'](../features#referencing-a-feature).
 
