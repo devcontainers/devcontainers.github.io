@@ -73,3 +73,8 @@
   contact: https://github.com/guiyomh/features/issues
   repository: https://github.com/guiyomh/features
   ociReference: ghcr.io/guiyomh/features
+- name: Development Container Custom Features
+  maintainer: Nate Scherer
+  contact: https://github.com/natescherer/devcontainers-custom-features/issues
+  repository: https://github.com/natescherer/devcontainers-custom-features
+  ociReference: ghcr.io/natescherer/devcontainers-custom-features
