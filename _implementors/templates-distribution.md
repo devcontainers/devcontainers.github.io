@@ -6,7 +6,7 @@ author: Microsoft
 index: 10
 ---
 
-**TL;DR Check out the [quick start repository](https://github.com/devcontainers/template-starter) to get started on distributing your own Dev Container Features.**
+**TL;DR Check out the [quick start repository](https://github.com/devcontainers/template-starter) to get started on distributing your own Dev Container Templates.**
 
 This specification defines a pattern where community members and organizations can author and self-publish [Dev Container Templates](/implementors/templates). 
 
