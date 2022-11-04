@@ -6,7 +6,7 @@ author: Microsoft
 index: 6
 ---
 
-**TL;DR Check out the [quick start template](https://github.com/devcontainers/feature-template) to get going on distributing your own Dev Container Features.**
+**TL;DR Check out the [quick start repository](https://github.com/devcontainers/feature-template) to get started on distributing your own Dev Container Features.**
 
 This specification defines a pattern where community members and organizations can author and self-publish [Dev Container 'Features'](../features). 
 
