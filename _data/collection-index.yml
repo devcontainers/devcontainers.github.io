@@ -83,3 +83,8 @@
   contact: https://github.com/joshspicer/features/issues
   repository: https://github.com/joshspicer/features
   ociReference: ghcr.io/joshspicer/features
+- name: pnpm (requires npm)
+  maintainer: NicoVIII
+  contact: https://github.com/NicoVIII/devcontainer-features/issues
+  repository: https://github.com/NicoVIII/devcontainer-features
+  ociReference: ghcr.io/NicoVIII/devcontainer-features
