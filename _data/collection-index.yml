@@ -78,6 +78,11 @@
   contact: https://github.com/natescherer/devcontainers-custom-features/issues
   repository: https://github.com/natescherer/devcontainers-custom-features
   ociReference: ghcr.io/natescherer/devcontainers-custom-features
+- name: Features by @joshspicer
+  maintainer: Josh Spicer
+  contact: https://github.com/joshspicer/features/issues
+  repository: https://github.com/joshspicer/features
+  ociReference: ghcr.io/joshspicer/features
 - name: pnpm (requires npm)
   maintainer: NicoVIII
   contact: https://github.com/NicoVIII/devcontainer-features/issues
