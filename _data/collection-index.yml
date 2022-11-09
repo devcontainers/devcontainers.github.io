@@ -88,3 +88,8 @@
   contact: https://github.com/NicoVIII/devcontainer-features/issues
   repository: https://github.com/NicoVIII/devcontainer-features
   ociReference: ghcr.io/NicoVIII/devcontainer-features
+- name: PHP Features
+  maintainer: Shyim
+  contact: https://github.com/shyim/devcontainers-features/issues
+  repository: https://github.com/shyim/devcontainers-features
+  ociReference: ghcr.io/shyim/devcontainers-features
