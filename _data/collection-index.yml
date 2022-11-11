@@ -93,3 +93,8 @@
   contact: https://github.com/shyim/devcontainers-features/issues
   repository: https://github.com/shyim/devcontainers-features
   ociReference: ghcr.io/shyim/devcontainers-features
+- name: libmsquic feature for HTTP/3 support
+  maintainer: tlc-sundown
+  contact: https://github.com/tlc-sundown/devcontainers-features/issues
+  repository: https://github.com/tlc-sundown/devcontainers-features
+  ociReference: ghcr.io/tlc-sundown/devcontainers-features
