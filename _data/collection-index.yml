@@ -98,3 +98,13 @@
   contact: https://github.com/jungaretti/features/issues
   repository: https://github.com/jungaretti/features
   ociReference: ghcr.io/jungaretti/features
+- name: libmsquic feature for HTTP/3 support
+  maintainer: tlc-sundown
+  contact: https://github.com/tlc-sundown/devcontainers-features/issues
+  repository: https://github.com/tlc-sundown/devcontainers-features
+  ociReference: ghcr.io/tlc-sundown/devcontainers-features
+- name: Assorted Features
+  maintainer: Enrico Secondulfo
+  contact: https://github.com/enricosecondulfo/devcontainer-features/issues
+  repository: https://github.com/enricosecondulfo/devcontainer-features
+  ociReference: ghcr.io/enricosecondulfo/devcontainer-features
