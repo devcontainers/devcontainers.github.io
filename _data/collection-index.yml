@@ -93,6 +93,11 @@
   contact: https://github.com/shyim/devcontainers-features/issues
   repository: https://github.com/shyim/devcontainers-features
   ociReference: ghcr.io/shyim/devcontainers-features
+- name: Fun Features
+  maintainer: jungaretti
+  contact: https://github.com/jungaretti/features/issues
+  repository: https://github.com/jungaretti/features
+  ociReference: ghcr.io/jungaretti/features
 - name: libmsquic feature for HTTP/3 support
   maintainer: tlc-sundown
   contact: https://github.com/tlc-sundown/devcontainers-features/issues
