@@ -93,3 +93,8 @@
   contact: https://github.com/shyim/devcontainers-features/issues
   repository: https://github.com/shyim/devcontainers-features
   ociReference: ghcr.io/shyim/devcontainers-features
+- name: Assorted Features
+  maintainer: Enrico Secondulfo
+  contact: https://github.com/enricosecondulfo/devcontainer-features/issues
+  repository: https://github.com/enricosecondulfo/devcontainer-features
+  ociReference: ghcr.io/enricosecondulfo/devcontainer-features
