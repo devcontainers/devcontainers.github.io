@@ -5,7 +5,7 @@ author: "@joshspicer"
 authorUrl: https://github.com/joshspicer
 ---
 
-Development container ['Features'](/features) are self-contained, shareable units of installation code and development container configuration. We [define a pattern](/implementors/features-distribution/) for authoring and self-publishing Features. 
+Development container ['Features'](/features) are self-contained, shareable units of installation code and development container configuration. We [define a pattern](/implementors/features-distribution) for authoring and self-publishing Features.
 
 In this document, we'll outline a "quickstart" to help you get up-and-running with creating and sharing your first Feature. You may review an example along with guidance in our [devcontainers/feature-starter](https://github.com/devcontainers/feature-starter) repo as well. 
 
