@@ -33,7 +33,7 @@ defaults:
     type: posts
   values:
     layout: post
-    sectionid: blog
+    sectionid: guide
 
 - scope:
     path: _docs
@@ -56,7 +56,7 @@ collections:
     permalink: /:collection/:path/
     output: true
   posts:
-    permalink: /blog/:year/:month/:day/:title/
+    permalink: /guide/:title
     output: true
   implementors:
     permalink: /:collection/:path/
