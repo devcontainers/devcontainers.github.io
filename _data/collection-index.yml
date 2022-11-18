@@ -108,3 +108,8 @@
   contact: https://github.com/enricosecondulfo/devcontainer-features/issues
   repository: https://github.com/enricosecondulfo/devcontainer-features
   ociReference: ghcr.io/enricosecondulfo/devcontainer-features
+- name: SAML.to Development Container Features
+  maintainer: saml-to
+  contact: https://github.com/saml-to/devcontainer-features/issues
+  repository: https://github.com/saml-to/devcontainer-features
+  ociReference: ghcr.io/saml-to/devcontainer-features
