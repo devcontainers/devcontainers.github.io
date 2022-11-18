@@ -1,0 +1,15 @@
+---
+layout: singlePage
+title: Dev Container Blog
+---
+
+<ul>
+  {% for post in site.posts %}
+  <p>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{{ post.date | date_to_string }}</a></p>
+
+     {{ post.excerpt }}
+  </p>
+  {% endfor %}
+</ul>

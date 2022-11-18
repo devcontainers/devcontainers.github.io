@@ -18,7 +18,7 @@
                     <a class="nav-link" href="{{ sorted.first.url | prepend: site.baseurl }}">Implementations</a>
                 </li>-->
                 <li {% if page.sectionid=='metadata' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-                    <a class="nav-link" href="{{ "/implementors/json_reference" | prepend: site.baseurl }}">Metadata</a>
+                    <a class="nav-link" href="{{ "/implementors/json_reference" | prepend: site.baseurl }}">Reference</a>
                 </li>
                 <li {% if page.sectionid=='implementors' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
                     <a class="nav-link" href="{{ sorted.first.url | prepend: site.baseurl }}">Specification</a>
@@ -26,6 +26,10 @@
                 <li {% if page.sectionid=='supporting' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
                     <a class="nav-link" href='{{ "/supporting" | prepend: site.baseurl }}'>Supporting Tools</a>
                 </li>
+                <li {% if page.sectionid=='blog' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+                    <a class="nav-link" href='{{ "/blog" | prepend: site.baseurl }}'>Blog</a>
+                </li>
+
                 <li {% if page.sectionid=='features' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
                     <a class="nav-link" href='{{ "/features" | prepend: site.baseurl }}'>Available Features</a>
                 </li>
