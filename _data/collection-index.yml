@@ -113,3 +113,8 @@
   contact: https://github.com/saml-to/devcontainer-features/issues
   repository: https://github.com/saml-to/devcontainer-features
   ociReference: ghcr.io/saml-to/devcontainer-features
+- name: Cloud Native development environment tools
+  maintainer: rjfmachado
+  contact: https://github.com/rjfmachado/devcontainer-features/issues
+  repository: https://github.com/rjfmachado/devcontainer-features
+  ociReference: ghcr.io/rjfmachado/devcontainer-features
