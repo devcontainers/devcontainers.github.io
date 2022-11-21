@@ -147,7 +147,7 @@ A complete list of available metadata properties and their purposes can be found
 
 Development container "Features" are self-contained, shareable units of installation code and development container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "features" into your development container for you or your collaborators to use.
 
-They are applied to container images as a secondary build step and can affect a number of dev container configuration settings. See the [features documentation](./features) for more details.
+They are applied to container images as a secondary build step and can affect a number of dev container configuration settings. See the [features documentation](../features) for more details.
 
 ## <a href="#environment-variables" name="environment-variables" class="anchor"> Environment variables </a>
 
