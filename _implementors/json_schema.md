@@ -214,14 +214,14 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 						"type": "string"
 					},
 					"additionalProperties": {
-                    	"type": [
-                    		"string",
-                			"array"
-                    	],
-                    	"items": {
-                    		"type": "string"
-                    	}
-                    }
+						"type": [
+							"string",
+							"array"
+						],
+						"items": {
+							"type": "string"
+						}
+					}
 				},
 				"updateContentCommand": {
 					"type": [
@@ -234,14 +234,14 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 						"type": "string"
 					},
 					"additionalProperties": {
-                    	"type": [
-                    		"string",
-                			"array"
-                    	],
-                    	"items": {
-                    		"type": "string"
-                    	}
-                    }
+						"type": [
+							"string",
+							"array"
+						],
+						"items": {
+							"type": "string"
+						}
+					}
 				},
 				"postCreateCommand": {
 					"type": [
@@ -254,14 +254,14 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 						"type": "string"
 					},
 					"additionalProperties": {
-                    	"type": [
-                    		"string",
-                			"array"
-                    	],
-                    	"items": {
-                    		"type": "string"
-                    	}
-                    }
+						"type": [
+							"string",
+							"array"
+						],
+						"items": {
+							"type": "string"
+						}
+					}
 				},
 				"postStartCommand": {
 					"type": [
@@ -274,14 +274,14 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 						"type": "string"
 					},
 					"additionalProperties": {
-                    	"type": [
-                    		"string",
-                			"array"
-                    	],
-                    	"items": {
-                    		"type": "string"
-                    	}
-                    }
+						"type": [
+							"string",
+							"array"
+						],
+						"items": {
+							"type": "string"
+						}
+					}
 				},
 				"postAttachCommand": {
 					"type": [
@@ -294,14 +294,14 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 						"type": "string"
 					},
 					"additionalProperties": {
-                    	"type": [
-                    		"string",
-                			"array"
-                    	],
-                    	"items": {
-                    		"type": "string"
-                    	}
-                    }
+						"type": [
+							"string",
+							"array"
+						],
+						"items": {
+							"type": "string"
+						}
+					}
 				},
 				"waitFor": {
 					"type": "string",
