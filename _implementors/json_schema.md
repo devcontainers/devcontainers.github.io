@@ -211,11 +211,17 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 					],
 					"description": "A command to run when creating the container. This command is run after \"initializeCommand\" and before \"updateContentCommand\". If this is a single string, it will be run in a shell. If this is an array of strings, it will be run as a single command without shell.",
 					"items": {
-						"type": [
-							"string",
-							"array"
-						]
-					}
+						"type": "string"
+					},
+					"additionalProperties": {
+                    	"type": [
+                    		"string",
+                			"array"
+                    	],
+                    	"items": {
+                    		"type": "string"
+                    	}
+                    }
 				},
 				"updateContentCommand": {
 					"type": [
@@ -225,11 +231,17 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 					],
 					"description": "A command to run when creating the container and rerun when the workspace content was updated while creating the container. This command is run after \"onCreateCommand\" and before \"postCreateCommand\". If this is a single string, it will be run in a shell. If this is an array of strings, it will be run as a single command without shell.",
 					"items": {
-						"type": [
-							"string",
-							"array"
-						]
-					}
+						"type": "string"
+					},
+					"additionalProperties": {
+                    	"type": [
+                    		"string",
+                			"array"
+                    	],
+                    	"items": {
+                    		"type": "string"
+                    	}
+                    }
 				},
 				"postCreateCommand": {
 					"type": [
@@ -239,11 +251,17 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 					],
 					"description": "A command to run after creating the container. This command is run after \"updateContentCommand\" and before \"postStartCommand\". If this is a single string, it will be run in a shell. If this is an array of strings, it will be run as a single command without shell.",
 					"items": {
-						"type": [
-							"string",
-							"array"
-						]
-					}
+						"type": "string"
+					},
+					"additionalProperties": {
+                    	"type": [
+                    		"string",
+                			"array"
+                    	],
+                    	"items": {
+                    		"type": "string"
+                    	}
+                    }
 				},
 				"postStartCommand": {
 					"type": [
@@ -253,11 +271,17 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 					],
 					"description": "A command to run after starting the container. This command is run after \"postCreateCommand\" and before \"postAttachCommand\". If this is a single string, it will be run in a shell. If this is an array of strings, it will be run as a single command without shell.",
 					"items": {
-						"type": [
-							"string",
-							"array"
-						]
-					}
+						"type": "string"
+					},
+					"additionalProperties": {
+                    	"type": [
+                    		"string",
+                			"array"
+                    	],
+                    	"items": {
+                    		"type": "string"
+                    	}
+                    }
 				},
 				"postAttachCommand": {
 					"type": [
@@ -267,11 +291,17 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 					],
 					"description": "A command to run when attaching to the container. This command is run after \"postStartCommand\". If this is a single string, it will be run in a shell. If this is an array of strings, it will be run as a single command without shell.",
 					"items": {
-						"type": [
-							"string",
-							"array"
-						]
-					}
+						"type": "string"
+					},
+					"additionalProperties": {
+                    	"type": [
+                    		"string",
+                			"array"
+                    	],
+                    	"items": {
+                    		"type": "string"
+                    	}
+                    }
 				},
 				"waitFor": {
 					"type": "string",
