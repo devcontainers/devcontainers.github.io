@@ -118,7 +118,7 @@
   contact: https://github.com/rjfmachado/devcontainer-features/issues
   repository: https://github.com/rjfmachado/devcontainer-features
   ociReference: ghcr.io/rjfmachado/devcontainer-features
-- name: Shellcheck
+- name: Wiwa's features
   maintainer: lukewiwa
   contact: https://github.com/lukewiwa/features/issues
   repository: https://github.com/lukewiwa/features
