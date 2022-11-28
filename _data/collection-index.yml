@@ -123,3 +123,8 @@
   contact: https://github.com/lukewiwa/features/issues
   repository: https://github.com/lukewiwa/features
   ociReference: ghcr.io/lukewiwa/features
+- name: Container and Kubernetes Development Features
+  maintainer: rio
+  contact: https://github.com/rio/features/issues
+  repository: https://github.com/rio/features
+  ociReference: ghcr.io/rio/features
