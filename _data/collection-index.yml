@@ -128,3 +128,8 @@
   contact: https://github.com/rio/features/issues
   repository: https://github.com/rio/features
   ociReference: ghcr.io/rio/features
+- name: Kusion Features
+  maintainer: KusionStack
+  contact: https://github.com/KusionStack/devcontainer-features/issues
+  repository: https://github.com/KusionStack/devcontainer-features
+  ociReference: ghcr.io/KusionStack/devcontainer-features
