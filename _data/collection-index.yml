@@ -133,3 +133,18 @@
   contact: https://github.com/KusionStack/devcontainer-features/issues
   repository: https://github.com/KusionStack/devcontainer-features
   ociReference: ghcr.io/KusionStack/devcontainer-features
+- name: Édouard-lopez' Features
+  maintainer: edouard-lopez
+  contact: https://github.com/edouard-lopez/devcontainer-features/issues
+  repository: https://github.com/edouard-lopez/devcontainer-features
+  ociReference: ghcr.io/edouard-lopez/devcontainer-features
+- name: jlaundry Features
+  maintainer: jlaundry
+  contact: https://github.com/jlaundry/devcontainer-features/issues
+  repository: https://github.com/jlaundry/devcontainer-features
+  ociReference: ghcr.io/jlaundry/devcontainer-features
+- name: Assorted Features
+  maintainer: mikaello
+  contact: https://github.com/mikaello/devcontainer-features/issues
+  repository: https://github.com/mikaello/devcontainer-features
+  ociReference: ghcr.io/mikaello/devcontainer-features
