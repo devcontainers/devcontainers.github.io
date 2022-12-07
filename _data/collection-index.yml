@@ -138,8 +138,8 @@
   contact: https://github.com/jlaundry/devcontainer-features/issues
   repository: https://github.com/jlaundry/devcontainer-features
   ociReference: ghcr.io/jlaundry/devcontainer-features
-- name: Assorted Features
-  maintainer: mikaello
-  contact: https://github.com/mikaello/devcontainer-features/issues
-  repository: https://github.com/mikaello/devcontainer-features
-  ociReference: ghcr.io/mikaello/devcontainer-features
+- name: Devcontainer Features
+  maintainer: jsburckhardt
+  contact: https://github.com/jsburckhardt/devcontainer-features/issues
+  repository: https://github.com/jsburckhardt/devcontainer-features
+  ociReference: ghcr.io/jsburckhardt/devcontainer-features
