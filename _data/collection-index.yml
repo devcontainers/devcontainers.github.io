@@ -153,3 +153,8 @@
   contact: https://github.com/jsburckhardt/devcontainer-features/issues
   repository: https://github.com/jsburckhardt/devcontainer-features
   ociReference: ghcr.io/jsburckhardt/devcontainer-features
+- name: NAPPTIVE Playground CLI Features
+  maintainer: oleksis
+  contact: https://github.com/oleksis/playground-cli/issues
+  repository: https://github.com/oleksis/playground-cli
+  ociReference: ghcr.io/oleksis/playground-cli
