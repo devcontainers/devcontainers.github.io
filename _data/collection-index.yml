@@ -163,3 +163,8 @@
   contact: https://github.com/oleksis/playground-cli/issues
   repository: https://github.com/oleksis/playground-cli
   ociReference: ghcr.io/oleksis/playground-cli
+- name: Baskoro OSI devcontainer features
+  maintainer: Eki Baskoro
+  contact: https://github.com/ebaskoro/devcontainer-features/issues
+  repository: https://github.com/ebaskoro/devcontainer-features
+  ociReference: ghcr.io/ebaskoro/devcontainer-features
