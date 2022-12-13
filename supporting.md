@@ -41,7 +41,7 @@ You may learn more in the [announcement blog post](https://devblogs.microsoft.co
 
 ## <a href="#tools" name="tools" class="anchor"> Tools </a>
 
-## <a href="#devcontainer-cli" name="devcontainer-cli" class="anchor"> Dev container CLI </a>
+## <a href="#devcontainer-cli" name="devcontainer-cli" class="anchor"> Dev Container CLI </a>
 
 A dev container command line interface (CLI) that implements this specification. It is in development in the [devcontainers/cli](https://github.com/devcontainers/cli) repo.
 
@@ -50,6 +50,15 @@ The CLI can take a `devcontainer.json` and create and configure a dev container 
 ### <a href="#dev-containers-cli" name="dev-containers-cli" class="anchor"> VS Code extension CLI </a>
 
 VS Code has a [CLI](https://code.visualstudio.com/docs/remote/devcontainer-cli) which may be installed within the Dev Containers extension or through the command line.
+
+### <a href="#cachix-devenv" name="cachix-devenv" class="anchor"> Cachix devenv </a>
+
+Cachix's [devenv](https://devenv.sh/) supports automatically generating a `.devcontainer.json` file so you can use it with any Dev Container spec supporting tool. See [devenv documentation](https://devenv.sh/integrations/codespaces-devcontainer/) for detais. 
+
+### <a href="#jetpack-io-devbox" name="jetpack-io-devbox" class="anchor"> Jetpack.io Devbox </a>
+
+[Jetpack.io's VS Code extension](https://marketplace.visualstudio.com/items?itemName=jetpack-io.devbox) supports a **Generate Dev Container files** command so you can use Jetpack.io from Dev Container spec supporting tools.
+
 
 ### <a href="#dev-containers" name="dev-containers" class="anchor"> Visual Studio Code Dev Containers </a>
 
@@ -101,18 +110,21 @@ If your Codespaces project needs additional permissions for other repositories, 
 }
 ```
 
+Note that currently Codespaces reads these properties from devcontainer.json, not image metadata.
+
 #### <a href="#codespaces-specific-limitations" name="codespaces-specific-limitations" class="anchor"> Product specific limitations </a>
 
 Some properties may apply differently to Codespaces.
 
-| Property or variable | Type  | Description |
-|:------------------|:------------|:------------|
+| Property or variable | Type | Description |
+|----------|---------|----------------------|
 | `mounts` | array | Codespaces ignores "bind" mounts with the exception of the Docker socket. Volume mounts are still allowed.|
 | `forwardPorts` | array | Codespaces does not yet support the `"host:port"` variation of this property. |
 | `portsAttributes` | object | Codespaces does not yet support the `"host:port"` variation of this property.|
 | `shutdownAction` | enum | Does not apply to Codespaces. |
 | `${localEnv:VARIABLE_NAME}` | Any | For Codespaces, the host is in the cloud rather than your local machine.|
-| `waitFor` | enum | Codespaces does not yet support `waitFor`. |
+| `customizations.codespaces` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
+| `hostRequirements` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
 {: .table .table-bordered .table-responsive}
 
 ### <a href="#schema" name="schema" class="anchor"> Schema </a>
