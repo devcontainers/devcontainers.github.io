@@ -168,3 +168,8 @@
   contact: https://github.com/ebaskoro/devcontainer-features/issues
   repository: https://github.com/ebaskoro/devcontainer-features
   ociReference: ghcr.io/ebaskoro/devcontainer-features
+- name: A collection of useful GitHub CodeSpace features
+  maintainer: Warren Buckley
+  contact: https://github.com/warrenbuckley/codespace-features/issues
+  repository: https://github.com/warrenbuckley/codespace-features
+  ociReference: ghcr.io/warrenbuckley/codespace-features
