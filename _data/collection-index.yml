@@ -178,3 +178,8 @@
   contact: https://github.com/warrenbuckley/codespace-features/issues
   repository: https://github.com/warrenbuckley/codespace-features
   ociReference: ghcr.io/warrenbuckley/codespace-features
+- name: Roost Cluster
+  maintainer: Roost.ai (Harish Agrawal)
+  contact: https://github.com/roost-io/features/issues
+  repository: https://github.com/roost-io/features
+  ociReference: ghcr.io/roost-io/features
