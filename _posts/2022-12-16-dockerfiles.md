@@ -5,7 +5,7 @@ author: "@chuxel"
 authorUrl: https://github.com/chuxel
 ---
 
-When creating a development container, you have a variety of different ways to customize your environment like ["Features"](/features) or [lifecycle scripts](implementors/json_reference/#lifecycle-scripts). However, if you are familiar with containers, you may want to use a [Dockerfile](#dockerfile) or [Docker Compose / Compose](#docker-compose) to customize your environment. This article will walk through how to use these formats with the Dev Container spec.
+When creating a development container, you have a variety of different ways to customize your environment like ["Features"](/features) or [lifecycle scripts](/implementors/json_reference/#lifecycle-scripts). However, if you are familiar with containers, you may want to use a [Dockerfile](/implementors/guide/dockerfiles#dockerfile) or [Docker Compose / Compose](/implementors/guide/dockerfiles#docker-compose) to customize your environment. This article will walk through how to use these formats with the Dev Container spec.
 
 ## <a href="dockerfile" name="dockerfile" class="anchor">  Using a Dockerfile </a>
 
@@ -46,7 +46,7 @@ Better yet, you can can use a Dockerfile as a part of authoring an image you can
 
 See the reference on **[pre-building](/implementors/reference/#prebuilding)** to learn more!
 
-## <a href="docker-compose" name="docker-compose" class="anchor">  Using a Dockerfile </a>
+## <a href="docker-compose" name="docker-compose" class="anchor">  Using Docker Compose </a>
 
 [Docker Compose](https://docs.docker.com/compose/) is a great way to define a multi-container development environment. Rather than adding things like databases or redis to your Dockerfile, you can reference existing images for these services and focus your Dev Container's content on tools and utilities you need for development.
 
