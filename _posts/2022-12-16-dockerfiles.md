@@ -56,7 +56,7 @@ As mentioned in the Dockerfile section, to keep things simple, many [Dev Contain
 
 ```json
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu"
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
 }
 ```
 
