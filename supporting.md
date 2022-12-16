@@ -43,7 +43,8 @@ You may learn more in the [announcement blog post](https://devblogs.microsoft.co
 
 ### <a href="#devcontainer-cli" name="devcontainer-cli" class="anchor"> Dev Container CLI </a>
 
-The dev container command line interface (CLI) is a reference implmentation for the Dev Container spec. It is in development in the [devcontainers/cli](https://github.com/devcontainers/cli) repo. It is intended both for use directly and by tools or services that want to support the spec.
+The dev container command line interface (CLI) is a reference implementation for the Dev Container spec. It is in development in the [devcontainers/cli](https://github.com/devcontainers/cli) repo. It is intended both for use directly and by tools or services that want to support the spec.
+
 
 The CLI can take a `devcontainer.json` and create and configure a dev container from it. It allows for prebuilding dev container definitions using a CI or DevOps product like GitHub Actions. It can detect and include dev container features and apply them at container runtime, and run [lifecycle scripts](implementors/json_reference/#lifecycle-scripts) like `postCreateCommand`, providing more power than a plain `docker build` and `docker run`.
 
