@@ -60,7 +60,7 @@ As mentioned in the Dockerfile section, to keep things simple, many [Dev Contain
 }
 ```
 
-Let's create a `docker-compose.yml` file next to your `devcontainer.json` that references the same image:
+Let's create a `docker-compose.yml` file next to your `devcontainer.json` that references the same image and includes a PostgreSQL database:
 
 ```yaml
 version: '3.8'
