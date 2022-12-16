@@ -5,7 +5,7 @@ author: "@chuxel"
 authorUrl: https://github.com/chuxel
 ---
 
-When creating a development container, you have a variety of different ways to customize your environment like ["Features"](/features) or [lifecycle scripts](/implementors/json_reference/#lifecycle-scripts). However, if you are familiar with containers, you may want to use a [Dockerfile](/implementors/guide/dockerfiles#dockerfile) or [Docker Compose / Compose](/implementors/guide/dockerfiles#docker-compose) to customize your environment. This article will walk through how to use these formats with the Dev Container spec.
+When creating a development container, you have a variety of different ways to customize your environment like ["Features"](/features) or [lifecycle scripts](/implementors/json_reference/#lifecycle-scripts). However, if you are familiar with containers, you may want to use a [Dockerfile](/guide/dockerfiles#dockerfile) or [Docker Compose / Compose](/guide/dockerfiles#docker-compose) to customize your environment. This article will walk through how to use these formats with the Dev Container spec.
 
 ## <a href="dockerfile" name="dockerfile" class="anchor">  Using a Dockerfile </a>
 
@@ -122,6 +122,7 @@ services:
     volumes:
       - ../..:/workspaces:cached      
     network_mode: service:db
+    command: sleep infinity
 
   db:
     image: postgres:latest
