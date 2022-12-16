@@ -68,8 +68,9 @@ services:
   devcontainer:
     image: mcr.microsoft.com/vscode/devcontainers/base:ubuntu
     volumes:
-      - ../..:/workspaces:cached      
+      - ../..:/workspaces:cached
     network_mode: service:db
+    command: sleep infinity
 
   db:
     image: postgres:latest
