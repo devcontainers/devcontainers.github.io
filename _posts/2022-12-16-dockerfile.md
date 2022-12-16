@@ -7,7 +7,7 @@ authorUrl: https://github.com/chuxel
 
 When creating a development container, you have a variety of different ways to customize your environment like ["Features"](/features) or [lifecycle scripts](/implementors/json_reference/#lifecycle-scripts). However, if you are familiar with containers, you may want to use a [Dockerfile](/guide/dockerfile#dockerfile) or [Docker Compose / Compose](/guide/dockerfile#docker-compose) to customize your environment. This article will walk through how to use these formats with the Dev Container spec.
 
-## <a href="dockerfile" name="dockerfile" class="anchor">  Using a Dockerfile </a>
+## <a href="#dockerfile" name="dockerfile" class="anchor">  Using a Dockerfile </a>
 
 To keep things simple, many [Dev Container Templates](/templates) use container image references.
 
@@ -40,17 +40,17 @@ Next, remove the `image` property from `devcontainer.json` (if it exists) and ad
 
 That's it! When you start up your Dev Container, the Dockerfile will be automatically built with no additional work. See [Dockerfile scenario reference](implementors/json_reference/#image-specific) for more information on other related devcontainer.json properties.
 
-### <a href="dockerfile-image-iteration" name="dockerfile-image-iteration" class="anchor"> Iterating on an image that includes Dev Container metadata </a>
+### <a href="#dockerfile-image-iteration" name="dockerfile-image-iteration" class="anchor"> Iterating on an image that includes Dev Container metadata </a>
 
 Better yet, you can can use a Dockerfile as a part of authoring an image you can share with others. You can even **add Dev Container settings and metadata right into the image itself**. This avoids having to duplicate config and settings in multiple devcontainer.json files and keeps them in sync with your images! 
 
 See the reference on **[pre-building](/implementors/reference/#prebuilding)** to learn more!
 
-## <a href="docker-compose" name="docker-compose" class="anchor">  Using Docker Compose </a>
+## <a href="#docker-compose" name="docker-compose" class="anchor">  Using Docker Compose </a>
 
 [Docker Compose](https://docs.docker.com/compose/) is a great way to define a multi-container development environment. Rather than adding things like databases or redis to your Dockerfile, you can reference existing images for these services and focus your Dev Container's content on tools and utilities you need for development.
 
-### <a href="docker-compose-image" name="docker-compose-image" class="anchor"> Using an image with Docker Compose </a>
+### <a href="#docker-compose-image" name="docker-compose-image" class="anchor"> Using an image with Docker Compose </a>
 
 As mentioned in the Dockerfile section, to keep things simple, many [Dev Container Templates](/templates) use container image references.
 
@@ -108,7 +108,7 @@ In this example:
 
 That's it!
 
-### <a href="docker-compose-dockerfile" name="docker-compose-dockerfile" class="anchor"> Using a Dockerfile with Docker Compose </a>
+### <a href="#docker-compose-dockerfile" name="docker-compose-dockerfile" class="anchor"> Using a Dockerfile with Docker Compose </a>
 
 You can also combine these scenarios and use Dockerfile with Docker Compose. This time we'll update `docker-compose.yml` to reference the Dockerfile by replacing `image` with a similar `build` section:
 
