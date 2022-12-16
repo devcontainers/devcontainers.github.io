@@ -17,7 +17,7 @@ To keep things simple, many [Dev Container Templates](/templates) use container 
 }
 ```
 
-However, [Dockerfiles](https://docs.docker.com/engine/reference/builder/) are a great way to extend images and are a great way to add additional native OS packages or making minor edits to the OS image. You can reuse any Dockerfile, but let's walk through how to create one from scratch.
+However, [Dockerfiles](https://docs.docker.com/engine/reference/builder/) are a great way to extend images, add additional native OS packages, or make minor edits to the OS image. You can reuse any Dockerfile, but let's walk through how to create one from scratch.
 
 First, add a file named `Dockerfile` next to your `devcontainer.json`. For example:
 
