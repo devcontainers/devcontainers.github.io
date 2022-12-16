@@ -66,7 +66,7 @@ Let's create a `docker-compose.yml` file next to your `devcontainer.json` that r
 version: '3.8'
 services:
   devcontainer:
-    image: mcr.microsoft.com/vscode/devcontainers/base:ubuntu
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
     volumes:
       - ../..:/workspaces:cached
     network_mode: service:db
