@@ -137,6 +137,6 @@ volumes:
   postgres-data:
 ```
 
-Finally, as in the Dockerfile example, you can use this same setup to author a Dev Container image you can share with other and add Dev Container settings and metadata right into the image itself. 
+Finally, as in the Dockerfile example, you can use this same setup to author a Dev Container image you can share with others and add Dev Container settings and metadata right into the image itself. 
 
 See the reference on **[pre-building](/implementors/reference/#prebuilding)** to learn more!
