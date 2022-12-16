@@ -22,7 +22,7 @@ However, [Dockerfiles](https://docs.docker.com/engine/reference/builder/) are a 
 First, add a file named `Dockerfile` next to your `devcontainer.json`. For example:
 
 ```Dockerfile
-FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
 # Install the xz-utils package
 RUN apt-get update && apt-get install -y xz-utils
 ```
