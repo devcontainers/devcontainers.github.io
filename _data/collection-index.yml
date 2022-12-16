@@ -183,3 +183,8 @@
   contact: https://github.com/roost-io/features/issues
   repository: https://github.com/roost-io/features
   ociReference: ghcr.io/roost-io/features
+- name: lentzi90 devcontainer features
+  maintainer: Lennart Jern
+  contact: https://github.com/lentzi90/features/issues
+  repository: https://github.com/lentzi90/features
+  ociReference: ghcr.io/lentzi90/features
