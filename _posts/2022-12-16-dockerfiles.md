@@ -13,7 +13,7 @@ To keep things simple, many [Dev Container Templates](/templates) use container 
 
 ```json
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu"
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
 }
 ```
 
