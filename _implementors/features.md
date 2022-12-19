@@ -365,7 +365,7 @@ Optimize? true
 
 There are several things to keep in mind for an application that implements Features:
 
-- The order of execution of Features is determined by the application, based on the `installAfter` property used by Feature authors. It can be overridden by users if necessary with the `overrideFeatureInstallOrder` in `devcontainer.json`.
+- The order of execution of Features is determined by the application, based on the `installsAfter` property used by Feature authors. It can be overridden by users if necessary with the `overrideFeatureInstallOrder` in `devcontainer.json`.
 - Features are used to create an image that can be used to create a container or not.
 - Parameters like `privileged`, `init` are included if just 1 feature requires them.
 - Parameters like `capAdd`, `securityOp`  are concatenated.
