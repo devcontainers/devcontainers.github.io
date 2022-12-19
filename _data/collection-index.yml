@@ -188,3 +188,8 @@
   contact: https://github.com/lentzi90/features/issues
   repository: https://github.com/lentzi90/features
   ociReference: ghcr.io/lentzi90/features
+- name: Nextflow devcontainer features
+  maintainer: Rob Syme
+  contact: https://github.com/robsyme/features/issues
+  repository: https://github.com/robsyme/features
+  ociReference: ghcr.io/robsyme/features
