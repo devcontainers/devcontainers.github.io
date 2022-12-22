@@ -163,8 +163,33 @@
   contact: https://github.com/oleksis/playground-cli/issues
   repository: https://github.com/oleksis/playground-cli
   ociReference: ghcr.io/oleksis/playground-cli
+- name: Psibase templates
+  maintainer: James-Mart
+  contact: https://github.com/gofractally/psibase-devcontainer-template/issues
+  repository: https://github.com/gofractally/psibase-devcontainer-template/issues
+  ociReference: ghcr.io/gofractally/psibase-devcontainer-template
 - name: Baskoro OSI devcontainer features
   maintainer: Eki Baskoro
   contact: https://github.com/ebaskoro/devcontainer-features/issues
   repository: https://github.com/ebaskoro/devcontainer-features
   ociReference: ghcr.io/ebaskoro/devcontainer-features
+- name: A collection of useful GitHub CodeSpace features
+  maintainer: Warren Buckley
+  contact: https://github.com/warrenbuckley/codespace-features/issues
+  repository: https://github.com/warrenbuckley/codespace-features
+  ociReference: ghcr.io/warrenbuckley/codespace-features
+- name: Roost Cluster
+  maintainer: Roost.ai (Harish Agrawal)
+  contact: https://github.com/roost-io/features/issues
+  repository: https://github.com/roost-io/features
+  ociReference: ghcr.io/roost-io/features
+- name: lentzi90 devcontainer features
+  maintainer: Lennart Jern
+  contact: https://github.com/lentzi90/features/issues
+  repository: https://github.com/lentzi90/features
+  ociReference: ghcr.io/lentzi90/features
+- name: Nextflow devcontainer features
+  maintainer: Rob Syme
+  contact: https://github.com/robsyme/features/issues
+  repository: https://github.com/robsyme/features
+  ociReference: ghcr.io/robsyme/features

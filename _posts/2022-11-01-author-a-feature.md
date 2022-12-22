@@ -5,7 +5,7 @@ author: "@joshspicer"
 authorUrl: https://github.com/joshspicer
 ---
 
-Development container ['Features'](/features) are self-contained, shareable units of installation code and development container configuration. We [define a pattern](/implementors/features-distribution) for authoring and self-publishing Features.
+Development container ["Features"](/features) are self-contained, shareable units of installation code and development container configuration. We [define a pattern](/implementors/features-distribution) for authoring and self-publishing Features.
 
 In this document, we'll outline a "quickstart" to help you get up-and-running with creating and sharing your first Feature. You may review an example along with guidance in our [devcontainers/feature-starter](https://github.com/devcontainers/feature-starter) repo as well. 
 
@@ -101,7 +101,7 @@ https://github.com/users/<owner>/packages/container/<repo>%2F<featureName>/setti
 
 If you'd like your Features to appear in our [public index](/features) so that other community members can find them, you can do the following:
 
-* Go to [github.com/devcontainers/devcontainers.github.io](github.com/devcontainers/devcontainers.github.io), which is the GitHub repo backing [containers.dev](https://containers.dev/)
+* Go to [github.com/devcontainers/devcontainers.github.io](https://github.com/devcontainers/devcontainers.github.io), which is the GitHub repo backing [containers.dev](https://containers.dev/)
 * Open a PR to modify the [collection-index.yml](https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml) file
 * Features housed in other OCI Artifact container registries can be included as long as they can be downloaded without a login.
 
