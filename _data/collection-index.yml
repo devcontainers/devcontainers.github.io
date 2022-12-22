@@ -193,3 +193,8 @@
   contact: https://github.com/robsyme/features/issues
   repository: https://github.com/robsyme/features
   ociReference: ghcr.io/robsyme/features
+- name: Wasmtime + WASI Web Assembly features
+  contact: https://github.com/dev-wasm/dev-wasm-feature/issues
+  repository: https://github.com/dev-wasm/dev-wasm-feature
+  maintainer: Brendan Burns
+  ociReference: devwasm.azurecr.io/dev-wasm/dev-wasm-feature
