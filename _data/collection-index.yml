@@ -198,3 +198,8 @@
   repository: https://github.com/dev-wasm/dev-wasm-feature
   maintainer: Brendan Burns
   ociReference: devwasm.azurecr.io/dev-wasm/dev-wasm-feature
+- name: shinepukur devcontainer features
+  maintainer: Shine Pukur
+  contact: https://github.com/shinepukur/devcontainer-features/issues
+  repository: https://github.com/shinepukur/devcontainer-features
+  ociReference: ghcr.io/shinepukur/devcontainer-features
