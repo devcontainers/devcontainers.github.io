@@ -51,8 +51,8 @@ The properties of the file are as follows:
 | `entrypoint` | string | Set if the feature requires an "entrypoint" script that should fire at container start up. |
 | `customizations` | object | Product specific properties, each namespace under `customizations` is treated as a separate set of properties. For each of this sets the object is parsed, values are replaced while arrays are set as a union. |
 | `installsAfter` | array | Array of ID's of Features that should execute before this one. Allows control for feature authors on soft dependencies between different Features. |
-{: .table .table-bordered .table-responsive}
 | `legacyIds` | array | Array of old IDs used to publish this Feature. The property is useful for renaming a currently published Feature within a single namespace. |
+{: .table .table-bordered .table-responsive}
 
 ### <a href="#options-property" name="options-property" class="anchor"> The `options` property </a>
 
