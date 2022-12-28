@@ -203,3 +203,9 @@
   contact: https://github.com/shinepukur/devcontainer-features/issues
   repository: https://github.com/shinepukur/devcontainer-features
   ociReference: ghcr.io/shinepukur/devcontainer-features
+- name: msclock devcontainer features
+  maintainer: msclock
+  contact: https://github.com/msclock/features/issues
+  repository: https://github.com/msclock/features
+  ociReference: ghcr.io/msclock/features
+  
