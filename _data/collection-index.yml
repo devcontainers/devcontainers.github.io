@@ -208,4 +208,8 @@
   contact: https://github.com/msclock/features/issues
   repository: https://github.com/msclock/features
   ociReference: ghcr.io/msclock/features
-  
+- name: Fig Dev Container Features
+  maintainer: grant0417
+  contact: https://github.com/withfig/features/issues
+  repository: https://github.com/withfig/features
+  ociReference: ghcr.io/withfig/features
