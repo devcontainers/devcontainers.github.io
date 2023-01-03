@@ -213,3 +213,8 @@
   contact: https://github.com/withfig/features/issues
   repository: https://github.com/withfig/features
   ociReference: ghcr.io/withfig/features
+- name: Tailscale devcontainer features
+  maintainer: DentonGentry
+  contact: https://github.com/tailscale/codespace/issues
+  repository: https://github.com/tailscale/codespace
+  ociReference: ghcr.io/tailscale/codespace/tailscale
