@@ -203,3 +203,18 @@
   contact: https://github.com/shinepukur/devcontainer-features/issues
   repository: https://github.com/shinepukur/devcontainer-features
   ociReference: ghcr.io/shinepukur/devcontainer-features
+- name: msclock devcontainer features
+  maintainer: msclock
+  contact: https://github.com/msclock/features/issues
+  repository: https://github.com/msclock/features
+  ociReference: ghcr.io/msclock/features
+- name: Fig Dev Container Features
+  maintainer: grant0417
+  contact: https://github.com/withfig/features/issues
+  repository: https://github.com/withfig/features
+  ociReference: ghcr.io/withfig/features
+- name: Mamba Features
+  maintainer: mamba-org
+  contact: https://github.com/mamba-org/devcontainer-features/issues
+  repository: https://github.com/mamba-org/devcontainer-features
+  ociReference: ghcr.io/mamba-org/devcontainer-features
