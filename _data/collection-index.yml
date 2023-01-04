@@ -213,6 +213,11 @@
   contact: https://github.com/withfig/features/issues
   repository: https://github.com/withfig/features
   ociReference: ghcr.io/withfig/features
+- name: Mamba Features
+  maintainer: mamba-org
+  contact: https://github.com/mamba-org/devcontainer-features/issues
+  repository: https://github.com/mamba-org/devcontainer-features
+  ociReference: ghcr.io/mamba-org/devcontainer-features
 - name: Tailscale devcontainer features
   maintainer: DentonGentry
   contact: https://github.com/tailscale/codespace/issues
