@@ -39,6 +39,8 @@ Commands:
   devcontainer build [path]         Build a dev container image
   devcontainer run-user-commands    Run user commands
   devcontainer read-configuration   Read configuration
+  devcontainer features             Features commands
+  devcontainer templates            Templates commands
   devcontainer exec <cmd> [args..]  Execute a command on a running dev container
 
 Options:
