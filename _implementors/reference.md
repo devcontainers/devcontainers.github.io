@@ -104,27 +104,34 @@ These steps are also provided in the CLI repo's [README](https://github.com/devc
 ### <a href="#prebuilding" name="prebuilding" class="anchor"> Prebuilding </a> 
 We recommend pre-building images with the tools you need rather than creating and building a container image each time you open your project in a dev container. Using pre-built images will result in a faster container startup, simpler configuration, and allows you to pin to a specific version of tools to improve supply-chain security and avoid potential breaks. You can automate pre-building your image by scheduling the build using a DevOps or continuous integration (CI) service like GitHub Actions.
 
-We recommend using the dev container CLI to pre-build your images. Once you've built your image, you can push it to a container registry (like the [Azure Container Registry](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli), [GitHub Container Registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#pushing-container-images), or [Docker Hub](https://docs.docker.com/engine/reference/commandline/push)) and reference it directly.
+We recommend using the [Dev Container CLI](#npm-install) (or other spec supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci) or [Azure DevOps task](https://marketplace.visualstudio.com/items?itemName=devcontainers.ci)) to pre-build your images. Once you've built your image, you can push it to a container registry (like the [Azure Container Registry](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli), [GitHub Container Registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#pushing-container-images), or [Docker Hub](https://docs.docker.com/engine/reference/commandline/push)) and reference it directly.
+
+```bash
+devcontainer build --workspace-folder . --push true --image-name <my_image_name>:<optional_image_version>
+```
 
 #### <a href="#labels" name="labels" class="anchor"> Metadata in image labels</a> 
 
-You can include dev container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/), such that, the image and the built-in Features can be used with a devcontainer.json (image-, Dockerfile- or Docker Compose-based) that does not repeat the dev container config or Feature metadata. Other tools should be able to record the same metadata without necessarily using Features themselves.
+You can include Dev Container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/). This makes the image self-contained since these settings are automatically picked up when the image is referenced - whether directly, in a `FROM` in a referenced Dockerfile, or in a Docker Compose file. This helps prevent your Dev Container config and image contents from getting out of sync, and allows you to push updates of the same configuration to multiple repositories through a simple image reference.
 
-The metadata label is **automatically added** when you pre-build using the Dev Container CLI (or most Dev Container spec supporting tools) and includes settings from devcontainer.json and any referenced Dev Container Features.
+This metadata label is **automatically added** when you pre-build using the [Dev Container CLI](#npm-install) (or other spec supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci) or [Azure DevOps task](https://marketplace.visualstudio.com/items?itemName=devcontainers.ci)) and includes settings from devcontainer.json and any referenced Dev Container Features.
 
-However, if you are using something else to build your images, you can opt to manually add properties to an image label instead. For example, consider this Dockerfile snippet:
-
-```Dockerfile
-LABEL devcontainer.metadata='[{ "capAdd": [ "SYS_PTRACE" ], "remoteUser": "devcontainer", "postCreateCommand": "yarn install" }]' 
-
-```
-
-In either case, the result will be merged with any local devcontainer.json content at the time you create the container (see the [the spec](https://github.com/devcontainers/spec/blob/main/proposals/image-metadata.md) for info on merge logic). But at its simplest, you can just reference the image directly in devcontainer.json for the settings to take effect:
+This allows you to have a separate **more complex** devcontainer.json you use to pre-build your image, and then a dramatically **simplified one** in one or more repositories. The contents of the image will be merged with this simplified devcontainer.json content at the time you create the container (see the [the spec](/implementors/spec/#merge-logic) for info on merge logic). But at its simplest, you can just reference the image directly in devcontainer.json for the settings to take effect:
 
 ```json
 {
     "image": "mcr.microsoft.com/devcontainers/go:1"
 }
+```
+
+Note that you can also opt to you can opt to manually add metadata to an image label instead. These proprerties will be picked up even if you didn't build using the Dev Container CLI to build (and can be updated by the CLI even if you do). For example, consider this Dockerfile snippet:
+
+```Dockerfile
+LABEL devcontainer.metadata='[{ \
+  "capAdd": [ "SYS_PTRACE" ], \
+  "remoteUser": "devcontainer", \ 
+  "postCreateCommand": "yarn install" \ 
+}]'
 ```
 
 See [Dev Container metadata reference](../json_reference) for information on which properties are supported.
