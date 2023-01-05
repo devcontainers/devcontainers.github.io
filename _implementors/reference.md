@@ -124,7 +124,7 @@ This allows you to have a separate **more complex** devcontainer.json you use to
 }
 ```
 
-Note that you can also opt to you can opt to manually add metadata to an image label instead. These proprerties will be picked up even if you didn't build using the Dev Container CLI to build (and can be updated by the CLI even if you do). For example, consider this Dockerfile snippet:
+Note that you can also opt to you can opt to manually add metadata to an image label instead. These proprerties will be picked up even if you didn't use the Dev Container CLI to build (and can be updated by the CLI even if you do). For example, consider this Dockerfile snippet:
 
 ```Dockerfile
 LABEL devcontainer.metadata='[{ \
