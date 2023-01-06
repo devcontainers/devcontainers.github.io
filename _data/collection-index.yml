@@ -223,8 +223,3 @@
   contact: https://github.com/astronomer/devcontainer-features/issues
   repository: https://github.com/astronomer/devcontainer-features
   ociReference: ghcr.io/astronomer/devcontainer-features
-- name: Tailscale devcontainer features
-  maintainer: DentonGentry
-  contact: https://github.com/tailscale/codespace/issues
-  repository: https://github.com/tailscale/codespace
-  ociReference: ghcr.io/tailscale/codespace/tailscale
