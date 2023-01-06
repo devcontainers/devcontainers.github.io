@@ -158,11 +158,11 @@
   contact: https://github.com/jsburckhardt/devcontainer-features/issues
   repository: https://github.com/jsburckhardt/devcontainer-features
   ociReference: ghcr.io/jsburckhardt/devcontainer-features
-- name: NAPPTIVE Playground CLI Features
+- name: Oleksis' Dev Container Features
   maintainer: oleksis
-  contact: https://github.com/oleksis/playground-cli/issues
-  repository: https://github.com/oleksis/playground-cli
-  ociReference: ghcr.io/oleksis/playground-cli
+  contact: https://github.com/oleksis/devcontainer-features/issues
+  repository: https://github.com/oleksis/devcontainer-features
+  ociReference: ghcr.io/oleksis/devcontainer-features
 - name: Psibase templates
   maintainer: James-Mart
   contact: https://github.com/gofractally/psibase-devcontainer-template/issues
@@ -218,6 +218,11 @@
   contact: https://github.com/mamba-org/devcontainer-features/issues
   repository: https://github.com/mamba-org/devcontainer-features
   ociReference: ghcr.io/mamba-org/devcontainer-features
+- name: Astronomer Features
+  maintainer: fhoda
+  contact: https://github.com/astronomer/devcontainer-features/issues
+  repository: https://github.com/astronomer/devcontainer-features
+  ociReference: ghcr.io/astronomer/devcontainer-features
 - name: Tailscale devcontainer features
   maintainer: DentonGentry
   contact: https://github.com/tailscale/codespace/issues

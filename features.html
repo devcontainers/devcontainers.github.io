@@ -25,12 +25,14 @@ sectionid: collection-index-features
 
 {% for c in site.data.devcontainer-index.collections %}
     {% for f in c.features %}
-    <tr>
-        <td class="tg-0lax"><a rel="nofollow" href="{{ f.documentationURL | strip_html }}">{{ f.name | strip_html  }}</a></td>
-        <td class="tg-0lax">{{ c.sourceInformation.maintainer | strip_html  }}</td>
-        <td class="tg-0lax"><code>{{ f.id | strip_html  }}:{{ f.majorVersion | strip_html }}</code></td>
-        <td class="tg-0lax"><code>{{ f.version | strip_html  }}</code></td>
-    </tr>
+        {% if f.deprecated != true %}
+            <tr>
+                <td class="tg-0lax"><a rel="nofollow" href="{{ f.documentationURL | strip_html }}">{{ f.name | strip_html  }}</a></td>
+                <td class="tg-0lax">{{ c.sourceInformation.maintainer | strip_html  }}</td>
+                <td class="tg-0lax"><code>{{ f.id | strip_html  }}:{{ f.majorVersion | strip_html }}</code></td>
+                <td class="tg-0lax"><code>{{ f.version | strip_html  }}</code></td>
+            </tr>
+        {% endif %}
     {% endfor %}
 
 {% endfor %}
