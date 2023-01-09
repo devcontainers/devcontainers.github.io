@@ -223,6 +223,11 @@
   contact: https://github.com/astronomer/devcontainer-features/issues
   repository: https://github.com/astronomer/devcontainer-features
   ociReference: ghcr.io/astronomer/devcontainer-features
+- name: Devcontainer features by @EliiseS
+  maintainer: EliiseS
+  contact: https://github.com/EliiseS/devcontainer-features/issues
+  repository: https://github.com/EliiseS/devcontainer-features
+  ociReference: ghcr.io/eliises/devcontainer-features
 - name: Testing Automation Features & more
   maintainer: Matthieu Fronton
   contact: https://github.com/frntn/devcontainers-features/issues
