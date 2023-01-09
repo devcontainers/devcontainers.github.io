@@ -222,4 +222,4 @@
   maintainer: EliiseS
   contact: https://github.com/EliiseS/devcontainer-features/issues
   repository: https://github.com/EliiseS/devcontainer-features
-  ociReference: ghcr.io/EliiseS/devcontainer-features
+  ociReference: ghcr.io/eliises/devcontainer-features
