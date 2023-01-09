@@ -228,3 +228,8 @@
   contact: https://github.com/EliiseS/devcontainer-features/issues
   repository: https://github.com/EliiseS/devcontainer-features
   ociReference: ghcr.io/eliises/devcontainer-features
+- name: Testing Automation Features & more
+  maintainer: Matthieu Fronton
+  contact: https://github.com/frntn/devcontainers-features/issues
+  repository: https://github.com/frntn/devcontainers-features
+  ociReference: ghcr.io/frntn/devcontainers-features
