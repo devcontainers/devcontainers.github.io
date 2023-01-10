@@ -38,7 +38,7 @@ Next, remove the `image` property from `devcontainer.json` (if it exists) and ad
 }
 ```
 
-That's it! When you start up your Dev Container, the Dockerfile will be automatically built with no additional work. See [Dockerfile scenario reference](implementors/json_reference/#image-specific) for more information on other related devcontainer.json properties.
+That's it! When you start up your Dev Container, the Dockerfile will be automatically built with no additional work. See [Dockerfile scenario reference](/implementors/json_reference/#image-specific) for more information on other related devcontainer.json properties.
 
 ### <a href="#dockerfile-image-iteration" name="dockerfile-image-iteration" class="anchor"> Iterating on an image that includes Dev Container metadata </a>
 

@@ -223,8 +223,18 @@
   contact: https://github.com/astronomer/devcontainer-features/issues
   repository: https://github.com/astronomer/devcontainer-features
   ociReference: ghcr.io/astronomer/devcontainer-features
-- name: Lightweight devcontainer templates
+- name: Devcontainer features by @EliiseS
+  maintainer: EliiseS
+  contact: https://github.com/EliiseS/devcontainer-features/issues
+  repository: https://github.com/EliiseS/devcontainer-features
+  ociReference: ghcr.io/eliises/devcontainer-features
+- name: Testing Automation Features & more
+  maintainer: Matthieu Fronton
+  contact: https://github.com/frntn/devcontainers-features/issues
+  repository: https://github.com/frntn/devcontainers-features
+  ociReference: ghcr.io/frntn/devcontainers-features
+- name: csutter's devcontainer templates
   maintainer: csutter
-  contact: https://github.com/csutter/lightweight-devcontainer-templates/issues
-  repository: https://github.com/csutter/lightweight-devcontainer-templates
-  ociReference: ghcr.io/csutter/lightweight-devcontainer-templates
+  contact: https://github.com/csutter/devcontainer-templates/issues
+  repository: https://github.com/csutter/devcontainer-templates
+  ociReference: ghcr.io/csutter/devcontainer-templates
