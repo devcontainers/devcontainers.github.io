@@ -238,3 +238,8 @@
   contact: https://github.com/csutter/devcontainer-templates/issues
   repository: https://github.com/csutter/devcontainer-templates
   ociReference: ghcr.io/csutter/devcontainer-templates
+- name: Convenient features
+  maintainer: ChristopherMacGown
+  contact: https://github.com/ChristopherMacGown/devcontainer-features/issues
+  repository: https://github.com/ChristopherMacGown/devcontainer-features
+  ociReference: ghcr.io/christophermacgown/devcontainer-features
