@@ -50,7 +50,7 @@ The properties of the file are as follows:
 | `securityOpt` | array | Sets container security options like updating the [seccomp profile](https://docs.docker.com/engine/security/seccomp/) when the Feature is used. |
 | `entrypoint` | string | Set if the feature requires an "entrypoint" script that should fire at container start up. |
 | `customizations` | object | Product specific properties, each namespace under `customizations` is treated as a separate set of properties. For each of this sets the object is parsed, values are replaced while arrays are set as a union. |
-| `installsAfter` | array | Array of ID's of Features that should execute before this one. Allows control for feature authors on soft dependencies between different Features. |
+| `installsAfter` | array | Array of ID's of Features (omitting a version tag) that should execute before this one. Allows control for Feature authors on soft dependencies between different Features. |
 | `legacyIds` | array | Array of old IDs used to publish this Feature. The property is useful for renaming a currently published Feature within a single namespace. |
 | `deprecated` | boolean | Indicates that the Feature is deprecated, and will not receive any further updates/support. This property is intended to be used by the supporting tools for highlighting Feature deprecation. |
 {: .table .table-bordered .table-responsive}
@@ -251,7 +251,7 @@ If any of the following properties are provided in the Feature's `devcontainer-f
 
 This property is declared by the user in their `devcontainer.json` file.
 
-Any un-versioned feature IDs listed in this array will be installed before all other Features, in the provided order. Any omitted Features will be installed in an order selected by the implementing tool, or ordered via the `installsAfter` property _after_  any Features listed in the `overrideFeatureInstallOrder` array, if applicable. 
+Any **un-versioned** Feature IDs listed in this array will be installed before all other Features, in the provided order. Any omitted Features will be installed in an order selected by the implementing tool, or ordered via the `installsAfter` property _after_  any Features listed in the `overrideFeatureInstallOrder` array, if applicable.
 
 All un-versioned Feature `id`s provided in `overrideFeatureInstallOrder` must also exist in the `features` property of a user's `devcontainer.json`. For instance, all the Features which follows the OCI registry format would include everything except for the label that contains the version (`<oci-registry>/<namespace>/<feature>` without the `:<semantic-version>`).
 
@@ -273,13 +273,15 @@ Example:
 
 #### <a href="#installsAfter" name="installsAfter" class="anchor"> (2) The `installsAfter` Feature property </a>
 
-This property is defined in an individual Feature's `devcontainer-feature.json` file by the feature author.  `installsAfter` allows an author to provide the tooling hints on loose dependencies between Features.
+This property is defined in an individual feature's `devcontainer-feature.json` file by the feature author. `installsAfter` allows an author to provide the tooling hints on loose dependencies between Features.
+
+> This property is mostly useful for optimizing build time (by reordering the Feature installation to reduce installing a required CLI twice, for example).  Ideally, all Features should be able to fully install themselves without requiring another Feature to be pre-installed.
 
 After `overrideFeatureInstallOrder` is resolved, any remaining Features that declare an `installsAfter` must be installed after the Features declared in the property, provided that the features have also been declared in the `features` property.
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `installsAfter` | array | Array consisting of the Feature `id` that should be installed before the given Feature. |
+| `installsAfter` | array | Array consisting of the Feature `id` (omitting a version tag) that should be installed before the given Feature |
 {: .table .table-bordered .table-responsive}
 
 ### <a href="#option-resolution" name="option-resolution" class="anchor"> Option Resolution </a>
