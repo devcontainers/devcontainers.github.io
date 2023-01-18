@@ -29,7 +29,9 @@ A Feature is a self contained entity in a folder with at least a `devcontainer-f
 
 ## <a href="#devcontainer-feature-json-properties" name="devcontainer-feature-json-properties" class="anchor"> devcontainer-feature.json properties </a>
 
-the `devcontainer-feature.json` file defines information about the feature to be used by any supporting tools and the way the Feature will be executed.
+The `devcontainer-feature.json` file defines information about the Feature to be used by any supporting tools and the way the Feature will be executed.
+
+[devContainerFeature.schema.json](https://github.com/devcontainers/spec/blob/main/schemas/devContainerFeature.schema.json) defines the schema for the `devcontainer-feature.json` file.
 
 The properties of the file are as follows:
 
