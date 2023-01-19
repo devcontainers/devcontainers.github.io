@@ -243,3 +243,8 @@
   contact: https://github.com/ChristopherMacGown/devcontainer-features/issues
   repository: https://github.com/ChristopherMacGown/devcontainer-features
   ociReference: ghcr.io/christophermacgown/devcontainer-features
+- name: Devcontainer features by @Balazs
+  maintainer: Balazs23
+  contact: https://github.com/Balazs23/devcontainers-features/issues
+  repository: https://github.com/Balazs23/devcontainers-features
+  ociReference: ghcr.io/balazs23/devcontainer-features
