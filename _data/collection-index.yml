@@ -247,4 +247,4 @@
   maintainer: Balazs23
   contact: https://github.com/Balazs23/devcontainers-features/issues
   repository: https://github.com/Balazs23/devcontainers-features
-  ociReference: ghcr.io/balazs23/devcontainer-features
+  ociReference: ghcr.io/balazs23/devcontainers-features
