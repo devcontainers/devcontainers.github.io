@@ -26,7 +26,7 @@
 - name: Public Meaningful Features
   maintainer: Meaningful
   contact: https://github.com/meaningful-ooo/devcontainer-features/issues
-  repository: https://github.com/meaningful-ooo/devcontainer-features
+  repository: https://github.com/meaningful-ooo/devcontainer-features.
   ociReference: ghcr.io/meaningful-ooo/devcontainer-features
 - name: Legacy Community Templates
   maintainer: Deprecated (No longer maintained)
@@ -243,3 +243,8 @@
   contact: https://github.com/ChristopherMacGown/devcontainer-features/issues
   repository: https://github.com/ChristopherMacGown/devcontainer-features
   ociReference: ghcr.io/christophermacgown/devcontainer-features
+  - name: Pwd9000-ML devcontainer templates
+  maintainer: Pwd9000-ML
+  contact: https://github.com/Pwd9000-ML/devcontainer-templates/issues
+  repository: https://github.com/Pwd9000-ML/devcontainer-templates
+  ociReference: ghcr.io/Pwd9000-ML/devcontainer-templates
