@@ -247,4 +247,4 @@
   maintainer: Marcel Lupo @Pwd9000-ML
   contact: https://github.com/Pwd9000-ML/devcontainer-templates/issues
   repository: https://github.com/Pwd9000-ML/devcontainer-templates
-  ociReference: ghcr.io/Pwd9000-ML/devcontainer-templates
+  ociReference: ghcr.io/pwd9000-ml/devcontainer-templates
