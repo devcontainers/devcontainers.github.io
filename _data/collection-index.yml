@@ -244,7 +244,7 @@
   repository: https://github.com/ChristopherMacGown/devcontainer-features
   ociReference: ghcr.io/christophermacgown/devcontainer-features
   - name: Pwd9000-ML devcontainer templates
-  maintainer: Pwd9000-ML
+  maintainer: Marcel Lupo @Pwd9000-ML
   contact: https://github.com/Pwd9000-ML/devcontainer-templates/issues
   repository: https://github.com/Pwd9000-ML/devcontainer-templates
   ociReference: ghcr.io/Pwd9000-ML/devcontainer-templates
