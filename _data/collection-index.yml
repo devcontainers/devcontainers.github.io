@@ -248,3 +248,8 @@
   contact: https://github.com/Pwd9000-ML/devcontainer-templates/issues
   repository: https://github.com/Pwd9000-ML/devcontainer-templates
   ociReference: ghcr.io/pwd9000-ml/devcontainer-templates
+- name: mickeahlinder devcontainer features
+  maintainer: Mikael Ahlinder
+  contact: https://github.com/mickeahlinder/devcontainer-features/issues
+  repository: https://github.com/mickeahlinder/devcontainer-features
+  ociReference: ghcr.io/mickeahlinder/devcontainer-features
