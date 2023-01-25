@@ -258,3 +258,8 @@
   contact: https://github.com/jckimble/devcontainer-features/issues
   repository: https://github.com/jckimble/devcontainer-features
   ociReference: ghcr.io/jckimble/devcontainer-features
+- name: IU LaTeX Container Templates
+  maintainer: Torben Wetter
+  contact: https://github.com/TorbenWetter/iu-latex-container-templates/issues
+  repository: https://github.com/TorbenWetter/iu-latex-container-templates
+  ociReference: ghcr.io/torbenwetter/iu-latex-container-templates
