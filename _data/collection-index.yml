@@ -258,3 +258,8 @@
   contact: https://github.com/mickeahlinder/devcontainer-features/issues
   repository: https://github.com/mickeahlinder/devcontainer-features
   ociReference: ghcr.io/mickeahlinder/devcontainer-features
+- name: jckimble Dev Container / Codespaces Features
+  maintainer: James C Kimble Jr
+  contact: https://github.com/jckimble/devcontainer-features/issues
+  repository: https://github.com/jckimble/devcontainer-features
+  ociReference: ghcr.io/jckimble/devcontainer-features
