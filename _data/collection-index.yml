@@ -267,4 +267,4 @@
   maintainer: Israel Rescalvo
   contact: https://github.com/Standard-IO/devcontainers-templates/issues
   repository: https://github.com/Standard-IO/devcontainers-templates
-  ociReference: ghcr.io/standard-iO/devcontainers-templates
+  ociReference: ghcr.io/standard-io/devcontainers-templates
