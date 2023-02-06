@@ -263,3 +263,8 @@
   contact: https://github.com/TorbenWetter/iu-latex-container-templates/issues
   repository: https://github.com/TorbenWetter/iu-latex-container-templates
   ociReference: ghcr.io/torbenwetter/iu-latex-container-templates
+- name: Python3 with Pyenv and Poetry
+  maintainer: Israel Rescalvo
+  contact: https://github.com/Standard-IO/devcontainers-templates/issues
+  repository: https://github.com/Standard-IO/devcontainers-templates
+  ociReference: ghcr.io/standard-iO/devcontainers-templates
