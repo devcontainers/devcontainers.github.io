@@ -268,3 +268,8 @@
   contact: https://github.com/Standard-IO/devcontainers-templates/issues
   repository: https://github.com/Standard-IO/devcontainers-templates
   ociReference: ghcr.io/standard-io/devcontainers-templates
+- name: Assorted Features
+  maintainer: r3dpoint
+  contact: https://github.com/r3dpoint/devcontainer-features/issues
+  repository: https://github.com/r3dpoint/devcontainer-features
+  ociReference: ghcr.io/r3dpoint/devcontainer-features
