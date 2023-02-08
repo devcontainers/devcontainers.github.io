@@ -32,7 +32,7 @@
   maintainer: Deprecated (No longer maintained)
   contact: https://github.com/microsoft/vscode-dev-containers/issues/1589
   repository: https://github.com/microsoft/vscode-dev-containers
-  ociReference: ghcr.io/microsoft/vscode-dev-containersdevcontainers
+  ociReference: ghcr.io/microsoft/vscode-dev-containers
 - name: Assorted Features
   maintainer: Mike Priscella
   contact: https://github.com/mpriscella/features/issues
