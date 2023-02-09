@@ -268,8 +268,14 @@
   contact: https://github.com/Standard-IO/devcontainers-templates/issues
   repository: https://github.com/Standard-IO/devcontainers-templates
   ociReference: ghcr.io/standard-io/devcontainers-templates
+- name: ROS Templates
+  maintainer: Kenji Brameld
+  contact: https://github.com/ijnek/ros-devcontainer-template/issues
+  repository: https://github.com/ijnek/ros-devcontainer-template
+  ociReference: ghcr.io/ijnek/ros-devcontainer-template
 - name: Assorted Features
   maintainer: r3dpoint
   contact: https://github.com/r3dpoint/devcontainer-features/issues
   repository: https://github.com/r3dpoint/devcontainer-features
   ociReference: ghcr.io/r3dpoint/devcontainer-features
+  
