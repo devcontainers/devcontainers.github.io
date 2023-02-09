@@ -268,3 +268,8 @@
   contact: https://github.com/Standard-IO/devcontainers-templates/issues
   repository: https://github.com/Standard-IO/devcontainers-templates
   ociReference: ghcr.io/standard-io/devcontainers-templates
+- name: ROS Templates
+  maintainer: Kenji Brameld
+  contact: https://github.com/ijnek/ros-devcontainer-template/issues
+  repository: https://github.com/ijnek/ros-devcontainer-template
+  ociReference: ghcr.io/ijnek/ros-devcontainer-template
