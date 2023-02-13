@@ -278,3 +278,8 @@
   contact: https://github.com/r3dpoint/devcontainer-features/issues
   repository: https://github.com/r3dpoint/devcontainer-features
   ociReference: ghcr.io/r3dpoint/devcontainer-features
+- name: Swift Container Templates
+  maintainer: Swift Server Workgroup
+  contact: https://github.com/swift-server/swift-devcontainer-template/issues
+  repository: https://github.com/swift-server/swift-devcontainer-template
+  ociReference: ghcr.io/swift-server/swift-devcontainer-template
