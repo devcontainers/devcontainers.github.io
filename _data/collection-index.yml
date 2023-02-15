@@ -287,4 +287,4 @@
   maintainer: Hamish Cox
   contact: https://github.com/HamishWHC/cs3231-devcontainer/issues
   repository: https://github.com/HamishWHC/cs3231-devcontainer
-  ociReference: ghcr.io/HamishWHC/cs3231-devcontainer
+  ociReference: ghcr.io/hamishwhc/cs3231-devcontainer
