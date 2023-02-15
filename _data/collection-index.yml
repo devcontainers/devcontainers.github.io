@@ -283,3 +283,8 @@
   contact: https://github.com/swift-server/swift-devcontainer-template/issues
   repository: https://github.com/swift-server/swift-devcontainer-template
   ociReference: ghcr.io/swift-server/swift-devcontainer-template
+ - name: Android SDK Tools and Apt packages
+  maintainer: @akhildevelops
+  contact: https://github.com/akhildevelops/devcontainer-features/issues
+  repository: https://github.com/akhildevelops/devcontainer-features
+  ociReference: ghcr.io/akhildevelops/devcontainer-features
