@@ -288,3 +288,8 @@
   contact: https://github.com/akhildevelops/devcontainer-features/issues
   repository: https://github.com/akhildevelops/devcontainer-features
   ociReference: ghcr.io/akhildevelops/devcontainer-features
+- name: UNSW cs3231 OS Development
+  maintainer: Hamish Cox
+  contact: https://github.com/HamishWHC/cs3231-devcontainer/issues
+  repository: https://github.com/HamishWHC/cs3231-devcontainer
+  ociReference: ghcr.io/hamishwhc/cs3231-devcontainer
