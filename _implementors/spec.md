@@ -36,7 +36,6 @@ Certain dev container metadata properties can be stored in an image label as an 
 
 Metadata should be representative of with the following structure, using one entry per [Dev Container Feature](../features) and devcontainer.json (see table below for the full list):
 
-
 ```json
 [
 	{
@@ -62,7 +61,7 @@ The metadata is added to the image as a `devcontainer.metadata` label with a JSO
 
 ### <a href="#merge-logic" name="merge-logic" class="anchor"> Merge Logic </a>
 
-To apply the metadata together with a user's devcontainer.json at runtime the following merge logic by property is used. The table also notes which properties are currently supported coming from the devcontainer.json and which from the feature metadata, this will change over time as we add more properties.
+To apply the metadata together with a user's devcontainer.json at runtime, the following merge logic by property is used. The table also notes which properties are currently supported coming from the devcontainer.json and from the Feature metadata- this will change over time as we add more properties.
 
 | Property | Type/Format | Merge Logic | devcontainer.json | Feature Metadata |
 | -------- | ----------- | ----------- | :---------------: | :--------------: |
@@ -181,7 +180,7 @@ Users control the permissions of applications executed in the containers, allowi
 * **Container User**: The user that will be used for all operations that run inside a container. This concept is native to containers. It may be set in the container image, using the `containerUser` property for  **image** and **dockerfile** scenarios, or using an orchestratric specific property like `user` property in Docker Compose files.
 * **Remote User**: Used to run the [lifecycle](#lifecycle) scripts inside the container. This is also the user tools and editors that connect to the container should use to run their processes. This concept is not native to containers. Set using the `remoteEnv` property in all cases and defaults to the container user.
 
-This separation allows the ENTRYPOINT for the image to execute with different permissions than the developer and allows for developers to switch users without recreating their containers.
+This separation allows the `ENTRYPOINT` for the image to execute with different permissions than the developer and allows for developers to switch users without recreating their containers.
 
 # <a href="#lifecycle" name="lifecycle" class="anchor"> Lifecycle </a>
 
@@ -203,7 +202,7 @@ The exact steps required to validate configuration can vary based on exactly whe
 
 ## <a href="#environment-creation" name="environment-creation" class="anchor"> Environment Creation </a>
 
-The creation process goes through the steps necesarry to go from the user configuration to a working **environment** that is ready to be used.
+The creation process goes through the steps necessary to go from the user configuration to a working **environment** that is ready to be used.
 
 ### <a href="#initialization" name="initialization" class="anchor"> Initialization </a> 
 
@@ -274,7 +273,7 @@ Like during the create process, remote [environment variables](#environment-vari
 
 Dev containers support a single command for each of its lifecycle scripts. While serial execution of multiple commands can be achieved with `;`, `&&`, etc., parallel execution deserves first-class support.
 
-All lifecycle scripts have been extended to support `object` types. The key of the `object` will be a unique name for the command and the value will be the `string` or `array` command. Each command must exit successfully for the stage to be considered successful.
+All lifecycle scripts have been extended to support `object` types. The key of the `object` will be a unique name for the command, and the value will be the `string` or `array` command. Each command must exit successfully for the stage to be considered successful.
 
 Each entry in the `object` will be run in parallel during that lifecycle step.
 
