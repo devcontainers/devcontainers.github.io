@@ -17,7 +17,7 @@ Goals include:
 - For users, provide the ability for a user to pin to a particular version (absolute, or semantic version) of a Feature to allow for consistent, repeatable environments.
 - Provide the ability to standardize publishing such that [supporting tools](../../supporting) may implement their own mechanism to aid Feature discoverability as they see fit.
 
-> **Tip:** This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, see the [template](https://github.com/devcontainers/feature-template) and [core Features](https://github.com/devcontainers/features) repositories.
+> **Tip:** This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, check out the [GitHub starter](https://github.com/devcontainers/feature-starter) and [core Features](https://github.com/devcontainers/features) repositories.
 
 ## <a href="#source-code" name="source-code" class="anchor"> Source Code </a>
 
