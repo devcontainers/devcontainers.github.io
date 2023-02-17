@@ -172,7 +172,7 @@ Variables can be referenced in certain string values in `devcontainer.json` in t
 | `${devcontainerId}` | Any | Identifier derived from a set of container labels that uniquely idenity the dev container on a Docker host. It allows Features to refer to an identifier that is unique to the dev container they are installed into and that is stable across rebuilds.<br> The properties supporting it in devcontainer.json are: `name`, `runArgs`, `initializeCommand`, `onCreateCommand`, `updateContentCommand`, `postCreateCommand`, `postStartCommand`, `postAttachCommand`, `workspaceFolder`, `workspaceMount`, `mounts`, `containerEnv`, `remoteEnv`, `containerUser`, `remoteUser`, and `customizations`. |
 {: .table .table-bordered .table-responsive}
 
-## Schema
+## <a href="#schema" name="schema" class="anchor"> Schema </a>
 
 You can see the VS Code implementation of the dev container schema [here](https://github.com/microsoft/vscode/blob/main/extensions/configuration-editing/schemas/devContainer.schema.src.json).
 
