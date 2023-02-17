@@ -3,7 +3,7 @@ layout: implementors
 title:  "Dev Container Templates distribution and discovery [proposal]"
 shortTitle: "Templates distribution"
 author: Microsoft
-index: 10
+index: 8
 ---
 
 **TL;DR Check out the [quick start repository](https://github.com/devcontainers/template-starter) to get started on distributing your own Dev Container Templates.**
