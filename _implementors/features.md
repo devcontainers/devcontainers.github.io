@@ -8,13 +8,11 @@ index: 5
 
 Development container "Features" are self-contained, shareable units of installation code and development container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "Features" into your development container for you or your collaborators to use.
 
-> **Note:** While Features may be installed on top of any base image, the implementation of a Feature might restrict it to a subset of possible base images. 
-> 
-> For example, some Features may be authored to work with a certain linux distro (e.g. debian-based images that use the `apt` package manager).
-
 Feature metadata is captured by a `devcontainer-feature.json` file in the root folder of the feature.
 
-> **Tip:** This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, see the [template](https://github.com/devcontainers/feature-template) and [core Features](https://github.com/devcontainers/features) repositories.
+> **Note:** While Features may be installed on top of any base image, the implementation of a Feature might restrict it to a subset of possible base images. For example, some Features may be authored to work with a certain Linux distro (e.g. debian-based images that use the `apt` package manager).
+> 
+> This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, check out the [quick start](https://github.com/devcontainers/feature-starter) and [core Features](https://github.com/devcontainers/features) repositories.
 
 ## <a href="#folder-structure" name="folder-structure" class="anchor"> Folder Structure </a>
 
@@ -175,11 +173,11 @@ Below is a valid `features` object provided as an example.
 }
 ```
 
-> Note: The `:latest` version annotation is added implicitly if omitted. To pin to a specific package version ([example](https://github.com/devcontainers/features/pkgs/container/features/go/versions)), append it to the end of the Feature.
+> **Note:** The `:latest` version annotation is added implicitly if omitted. To pin to a specific package version ([example](https://github.com/devcontainers/features/pkgs/container/features/go/versions)), append it to the end of the Feature.
 
 An option's value can be provided as either a `string` or `boolean`, and should match what is expected by the feature in the `devcontainer-feature.json` file.
 
-As a shorthand, the value of a `feature` can be provided as a single string. This string is mapped to an option called `version`.  In the example below, both examples are equivalent. 
+As a shorthand, the value of the `features` property can be provided as a single string. This string is mapped to an option called `version`. In the example below, both examples are equivalent. 
 
 ```jsonc
 "features": {
@@ -217,7 +215,7 @@ Tooling that handles releasing Features will not republish Features if that exac
 
 ## <a href="#authoring" name="authoring" class="anchor"> Authoring </a>
 
-Features can be authored in a number of languages, the most straightforward being bash scripts. If a Feature is authored in a different language information about it should be included in the metadata so that users can make an informed choice about it.
+Features can be authored in a number of languages, the most straightforward being bash scripts. If a Feature is authored in a different language, information about it should be included in the metadata so that users can make an informed choice about it.
 
 Reference information about the application required to execute the Feature should be included in `devcontainer-feature.json` in the metadata section.
 
@@ -227,7 +225,7 @@ If the Feature is included in a folder as part of the repository that contains `
 
 ## <a href="#release" name="release" class="anchor"> Release </a>
 
-_For information on distributing Features, see [the dev container features distribution page](../features-distribution)._
+_For information on distributing Features, see [the dev container Features distribution page](../features-distribution)._
 
 ## <a href="#execution" name="execution" class="anchor"> Execution </a>
 

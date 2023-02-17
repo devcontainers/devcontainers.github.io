@@ -1,9 +1,9 @@
 ---
 layout: implementors
-title:  "Dev Container Templates distribution and discovery [proposal]"
+title:  "Dev Container Templates distribution and discovery"
 shortTitle: "Templates distribution"
 author: Microsoft
-index: 10
+index: 8
 ---
 
 **TL;DR Check out the [quick start repository](https://github.com/devcontainers/template-starter) to get started on distributing your own Dev Container Templates.**
@@ -78,6 +78,7 @@ The `devcontainer-collection.json` is an auto-generated metadata file.
 | :--- | :--- | :--- |
 | `sourceInformation` | object | Metadata from the implementing packaging tool. |
 | `templates` | array | The list of Templates that are contained in this collection.|
+{: .table .table-bordered .table-responsive}
 
 Each Template's `devcontainer-template.json` metadata file is appended into the `templates` top-level array.
 

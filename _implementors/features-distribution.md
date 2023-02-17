@@ -17,7 +17,7 @@ Goals include:
 - For users, provide the ability for a user to pin to a particular version (absolute, or semantic version) of a Feature to allow for consistent, repeatable environments.
 - Provide the ability to standardize publishing such that [supporting tools](../../supporting) may implement their own mechanism to aid Feature discoverability as they see fit.
 
-> **Tip:** This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, see the [template](https://github.com/devcontainers/feature-template) and [core Features](https://github.com/devcontainers/features) repositories.
+> **Tip:** This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, check out the [quick start](https://github.com/devcontainers/feature-starter) and [core Features](https://github.com/devcontainers/features) repositories.
 
 ## <a href="#source-code" name="source-code" class="anchor"> Source Code </a>
 
@@ -71,7 +71,7 @@ Features are distributed as tarballs. The tarball contains the entire contents o
 
 The tarball is named `devcontainer-feature-<id>.tgz`, where `<id>` is the Feature's `id` field.
 
-A reference implementation for packaging and distributing Features is provided as a GitHub Action (https://github.com/devcontainers/action).
+A reference implementation for packaging and distributing Features is provided as a [GitHub Action](https://github.com/devcontainers/action).
 
 ### <a href="#devcontainer-collection-json" name="devcontainer-collection-json" class="anchor"> devcontainer-collection.json </a>
 

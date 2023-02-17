@@ -1,14 +1,14 @@
 ---
 layout: implementors
-title:  "Dev Container Templates reference [proposal]"
+title:  "Dev Container Templates reference"
 shortTitle: "Templates"
 author: Microsoft
-index: 9
+index: 7
 ---
 
 Development container "Templates" are source files packaged together that encode configuration for a complete development environment. A Template can be used in a new or existing project, and a [supporting tool](/supporting) will use the configuration from the Template to build a development container.
 
-The configuration is placed in a [`.devcontainer.json`](/implementors/json_reference#devcontainerjson) which can also reference other files within the Template. Alternatively, `.devcontainer/devcontainer.json` can also be used if the container needs to reference other files, such as a `Dockerfile` or `docker-compose.yml`. A Template can also provide additional source files (eg: boilerplate code or a [lifecycle script](/implementors/json_reference/#lifecycle-scripts).
+The configuration is placed in a [`.devcontainer.json`](/implementors/json_reference#devcontainerjson) which can also reference other files within the Template. Alternatively, `.devcontainer/devcontainer.json` can also be used if the container needs to reference other files, such as a `Dockerfile` or `docker-compose.yml`. A Template can also provide additional source files (eg: boilerplate code or a [lifecycle script](/implementors/json_reference/#lifecycle-scripts)).
 
 Template metadata is captured by a `devcontainer-template.json` file in the root folder of the Template.
 
@@ -41,6 +41,7 @@ The properties of the file are as follows:
 | `platforms` | array | Languages and platforms supported by the Template. |
 | `publisher` | string | Name of the publisher/maintainer of the Template. |
 | `keywords` | array | List of strings relevant to a user that would search for this Template. |
+{: .table .table-bordered .table-responsive}
 
 ### <a href="#options" name="options" class="anchor">  The `options` property</a>
 The `options` property contains a map of option IDs and their related configuration settings. These `options` are used by the supporting tools to prompt the user to choose from different Template configuration options. The tools would replace the option ID with the selected value in all the files (within the sub-directory of the Template). This replacement would happen before dropping the `.devcontainer.json` (or `.devcontainer/devcontainer.json`) and other files (within the sub-directory of the Template) required to containerize your project. See [option resolution](#option-resolution) for more details. For example:
@@ -66,6 +67,7 @@ The `options` property contains a map of option IDs and their related configurat
 | `optionId.proposals` | array | A list of suggested string values. Free-form values **are** allowed. Omit when using `optionId.enum`. |
 | `optionId.enum` | array | A strict list of allowed string values. Free-form values are **not** allowed. Omit when using `optionId.proposals`. |
 | `optionId.default` | string | Default value for the option. |
+{: .table .table-bordered .table-responsive}
 
 > `Note`: The `options` must be unique for every `devcontainer-template.json`
 
@@ -87,7 +89,7 @@ Tooling that handles releasing Templates will not republish Templates if that ex
 
 ## <a href="#release" name="release" class="anchor"> Release </a>
 
-_For information on distributing Templates, see [templates-distribution](/implementors/templates-distribution)._
+_For information on distributing Templates, see the [Templates distribution doc](/implementors/templates-distribution)._
 
 ### <a href="#option-resolution" name="option-resolution" class="anchor"> Option Resolution </a>
 
@@ -119,7 +121,7 @@ Suppose the `java` Template has the following `options` parameters declared in t
           "17",
           "11"
         ],
-			  "default": "17-bullseye"
+    "default": "17-bullseye"
     },
     "nodeVersion": {
         "type": "string", 
@@ -145,14 +147,14 @@ and it has the following `.devcontainer.json` file:
 
 ```json
 {
-	"name": "Java",
-	"image": "mcr.microsoft.com/devcontainers/java:0-${templateOption:imageVariant}",
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "${templateOption:nodeVersion}",
-      "installMaven": "${templateOption:installMaven}"
-		}
-	},
+     "name": "Java",
+     "image": "mcr.microsoft.com/devcontainers/java:0-${templateOption:imageVariant}",
+     "features": {
+          "ghcr.io/devcontainers/features/node:1": {
+               "version": "${templateOption:nodeVersion}",
+               "installMaven": "${templateOption:installMaven}"
+          }
+     },
 //	...
 }
 ```
@@ -161,7 +163,7 @@ A user tries to add the `java` Template to their project using the [supporting t
 
 The supporting tool could then use a string replacer for all the files within the sub-directory of the Template. In this example, `.devcontainer.json` needs to be modified and hence, the inputs can provided to it as follows:
 
-```
+```json
 {
   imageVariant:"17-bullseye",
   nodeVersion: "latest",
@@ -173,15 +175,15 @@ The modified `.devcontainer.json` will be as follows:
 
 ```json
 {
-	"name": "Go",
-	"image": "mcr.microsoft.com/devcontainers/go:0-17-bullseye",
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "latest",
-      "installMaven": "false"
-		}
-	},
-	...
+     "name": "Go",
+     "image": "mcr.microsoft.com/devcontainers/go:0-17-bullseye",
+     "features": {
+          "ghcr.io/devcontainers/features/node:1": {
+               "version": "latest",
+               "installMaven": "false"
+	  }
+     },
+     ...
 }
 ```
 

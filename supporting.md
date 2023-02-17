@@ -45,12 +45,11 @@ You may learn more in the [announcement blog post](https://devblogs.microsoft.co
 
 The dev container command line interface (CLI) is a reference implementation for the Dev Container spec. It is in development in the [devcontainers/cli](https://github.com/devcontainers/cli) repo. It is intended both for use directly and by tools or services that want to support the spec.
 
-
 The CLI can take a `devcontainer.json` and create and configure a dev container from it. It allows for prebuilding dev container definitions using a CI or DevOps product like GitHub Actions. It can detect and include dev container features and apply them at container runtime, and run [lifecycle scripts](implementors/json_reference/#lifecycle-scripts) like `postCreateCommand`, providing more power than a plain `docker build` and `docker run`.
 
 #### <a href="#dev-containers-cli" name="dev-containers-cli" class="anchor"> VS Code extension CLI </a>
 
-The [VS Code Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) includes a variation of the devcontainer CLI that adds the ability use the command line to open the a Dev Container in VS Code. It is also automatically updated when the extension updates. 
+The [VS Code Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) includes a variation of the devcontainer CLI that adds the ability use the command line to open a dev container in VS Code. It is also automatically updated when the extension updates. 
 
 Press <kbd>cmd/ctrl</kbd>+<kbd>shift</kbd>+<kbd>p</kbd> or <kbd>F1</kbd> and select the **Dev Containers: Install devcontainer CLI** command to install it.
 
