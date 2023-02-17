@@ -12,7 +12,7 @@ Feature metadata is captured by a `devcontainer-feature.json` file in the root f
 
 > **Note:** While Features may be installed on top of any base image, the implementation of a Feature might restrict it to a subset of possible base images. For example, some Features may be authored to work with a certain Linux distro (e.g. debian-based images that use the `apt` package manager).
 > 
-> This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, check out the [GitHub starter](https://github.com/devcontainers/feature-starter) and [core Features](https://github.com/devcontainers/features) repositories.
+> This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, check out the [quick start](https://github.com/devcontainers/feature-starter) and [core Features](https://github.com/devcontainers/features) repositories.
 
 ## <a href="#folder-structure" name="folder-structure" class="anchor"> Folder Structure </a>
 
