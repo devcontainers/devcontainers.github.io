@@ -71,7 +71,7 @@ Features are distributed as tarballs. The tarball contains the entire contents o
 
 The tarball is named `devcontainer-feature-<id>.tgz`, where `<id>` is the Feature's `id` field.
 
-A reference implementation for packaging and distributing Features is provided as a GitHub Action (https://github.com/devcontainers/action).
+A reference implementation for packaging and distributing Features is provided as a [GitHub Action](https://github.com/devcontainers/action).
 
 ### <a href="#devcontainer-collection-json" name="devcontainer-collection-json" class="anchor"> devcontainer-collection.json </a>
 
