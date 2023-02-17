@@ -124,7 +124,7 @@ This allows you to have a separate **more complex** devcontainer.json you use to
 }
 ```
 
-Note that you can also opt to you can opt to manually add metadata to an image label instead. These properties will be picked up even if you didn't use the Dev Container CLI to build (and can be updated by the CLI even if you do). For example, consider this Dockerfile snippet:
+Note that you can also opt to manually add metadata to an image label instead. These properties will be picked up even if you didn't use the Dev Container CLI to build (and can be updated by the CLI even if you do). For example, consider this Dockerfile snippet:
 
 ```Dockerfile
 LABEL devcontainer.metadata='[{ \
@@ -134,4 +134,4 @@ LABEL devcontainer.metadata='[{ \
 }]'
 ```
 
-See [Dev Container metadata reference](../json_reference) for information on which properties are supported.
+See the [Dev Container metadata reference](../json_reference) for information on which properties are supported.
