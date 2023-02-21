@@ -293,3 +293,8 @@
   contact: https://github.com/HamishWHC/cs3231-devcontainer/issues
   repository: https://github.com/HamishWHC/cs3231-devcontainer
   ociReference: ghcr.io/hamishwhc/cs3231-devcontainer
+- name: Condor Container Features
+  maintainer: @trestrantham
+  contact: https://github.com/condorapp/devcontainer-features/issues
+  repository: https://github.com/condorapp/devcontainer-features
+  ociReference: ghcr.io/condorapp/devcontainer-features
