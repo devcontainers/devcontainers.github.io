@@ -293,3 +293,8 @@
   contact: https://github.com/HamishWHC/cs3231-devcontainer/issues
   repository: https://github.com/HamishWHC/cs3231-devcontainer
   ociReference: ghcr.io/hamishwhc/cs3231-devcontainer
+- name: TRunk CLI Features (trunk.io)
+  maintainer: trunk-io
+  contact: https://github.com/trunk-io/devcontainer-feature/issues
+  repository: https://github.com/trunk-io/devcontainer-feature
+  ociReference: ghcr.io/trunk-io/devcontainer-feature
