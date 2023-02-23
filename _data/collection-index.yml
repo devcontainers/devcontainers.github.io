@@ -298,3 +298,8 @@
   contact: https://github.com/trunk-io/devcontainer-feature/issues
   repository: https://github.com/trunk-io/devcontainer-feature
   ociReference: ghcr.io/trunk-io/devcontainer-feature
+- name: watchman ()
+  maintainer: vvvrrooomm
+  contact: https://github.com/vvvrrooomm/watchman/issues
+  repository: https://github.com/vvvrrooomm/watchman/
+  ociReference: ghcr.io/vvvrrooomm/watchman/watchman
