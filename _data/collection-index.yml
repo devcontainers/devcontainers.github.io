@@ -298,3 +298,8 @@
   contact: https://github.com/trunk-io/devcontainer-feature/issues
   repository: https://github.com/trunk-io/devcontainer-feature
   ociReference: ghcr.io/trunk-io/devcontainer-feature
+- name: MultiversX Dev Container Templates
+  maintainer: MultiversX
+  contact: https://github.com/multiversx/mx-template-devcontainers/issues
+  repository: https://github.com/multiversx/mx-template-devcontainers
+  ociReference: ghcr.io/multiversx/mx-template-devcontainers
