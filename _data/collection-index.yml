@@ -303,3 +303,8 @@
   contact: https://github.com/multiversx/mx-template-devcontainers/issues
   repository: https://github.com/multiversx/mx-template-devcontainers
   ociReference: ghcr.io/multiversx/mx-template-devcontainers
+- name: jemalloc
+  maintainer: Joseph Heck
+  contact: https://github.com/heckj/jemalloc/issues
+  repository: https://github.com/heckj/jemalloc
+  ociReference: ghcr.io/heckj/jemalloc
