@@ -308,3 +308,8 @@
   contact: https://github.com/heckj/devcontainer-swift-additions/issues
   repository: https://github.com/heckj/devcontainer-swift-additions
   ociReference: ghcr.io/heckj/devcontainer-swift-additions
+- name: gickis Dev Container Features
+  maintainer: Andrii Tararaka
+  contact: https://github.com/gickis/devcontainer-features/issues
+  repository: https://github.com/gickis/devcontainer-features
+  ociReference: ghcr.io/gickis/devcontainer-features
