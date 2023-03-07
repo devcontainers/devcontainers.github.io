@@ -318,3 +318,8 @@
   contact: jarrod@jarrodcolburn.com
   repository: https://github.com/jarrodcolburn/features
   ociReference: ghcr.io/jarrodcolburn/features
+- name: sonikro Dev Container Features
+  maintainer: Jonathan Nagayoshi
+  contact: https://github.com/sonikro/devcontainer-features/issues
+  repository: https://github.com/sonikro/devcontainer-features
+  ociReference: ghcr.io/sonikro/devcontainer-features
