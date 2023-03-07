@@ -313,6 +313,11 @@
   contact: https://github.com/gickis/devcontainer-features/issues
   repository: https://github.com/gickis/devcontainer-features
   ociReference: ghcr.io/gickis/devcontainer-features
+- name: Flutter SDK
+  maintainer: Jarrod Colburn
+  contact: jarrod@jarrodcolburn.com
+  repository: https://github.com/jarrodcolburn/features
+  ociReference: ghcr.io/jarrodcolburn/features
 - name: sonikro Dev Container Features
   maintainer: Jonathan Nagayoshi
   contact: https://github.com/sonikro/devcontainer-features/issues
