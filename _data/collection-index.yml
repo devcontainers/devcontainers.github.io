@@ -39,12 +39,12 @@
   repository: https://github.com/mpriscella/features
   ociReference: ghcr.io/mpriscella/features
 - name: DevContainers-Contrib Features
-  maintainer: Daniel Braun
+  maintainer: The Dev Container Contrib Community
   contact: https://github.com/devcontainers-contrib/features/issues
   repository: https://github.com/devcontainers-contrib/features
   ociReference: ghcr.io/devcontainers-contrib/features
 - name: DevContainers-Contrib Templates
-  maintainer: Daniel Braun
+  maintainer: The Dev Container Contrib Community
   contact: https://github.com/devcontainers-contrib/templates/issues
   repository: https://github.com/devcontainers-contrib/templates
   ociReference: ghcr.io/devcontainers-contrib/templates
