@@ -313,3 +313,8 @@
   contact: https://github.com/gickis/devcontainer-features/issues
   repository: https://github.com/gickis/devcontainer-features
   ociReference: ghcr.io/gickis/devcontainer-features
+- name: sonikro Dev Container Features
+  maintainer: Jonathan Nagayoshi
+  contact: https://github.com/sonikro/devcontainer-features/issues
+  repository: https://github.com/sonikro/devcontainer-features
+  ociReference: ghcr.io/sonikro/devcontainer-features
