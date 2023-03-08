@@ -328,10 +328,6 @@
   contact: https://github.com/JasonTheDeveloper/features/issues
   repository: https://github.com/JasonTheDeveloper/features
   ociReference: ghcr.io/jasonthedeveloper/features
-- name: Features by John Muchovej
-  maintainer: John Muchovej
-  contact: https://github.com/jmuchovej/devcontainers
-  ociReference: ghcr.io/jmuchovej/features
 - name: Templates by John Muchovej
   maintainer: John Muchovej
   contact: https://github.com/jmuchovej/devcontainers
