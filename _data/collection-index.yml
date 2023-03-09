@@ -336,5 +336,5 @@
 - name: Features by dasiths
   maintainer: dasiths
   contact: https://dasith.me
-  repository: https://github.com/dasiths/vscode-features
-  ociReference: ghcr.io/dasiths/vscode-features
+  repository: https://github.com/dasiths/devcontainer-features
+  ociReference: ghcr.io/dasiths/devcontainer-features
