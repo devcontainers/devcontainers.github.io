@@ -334,7 +334,7 @@
   repository: https://github.com/jmuchovej/devcontainers
   ociReference: ghcr.io/jmuchovej/templates
 - name: Features by dasiths
-  maintainer: dasiths
+  maintainer: Dasith Wijes
   contact: https://dasith.me
   repository: https://github.com/dasiths/devcontainer-features
   ociReference: ghcr.io/dasiths/devcontainer-features
