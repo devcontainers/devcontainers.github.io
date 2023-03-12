@@ -338,3 +338,8 @@
   contact: https://dasith.me
   repository: https://github.com/dasiths/devcontainer-features
   ociReference: ghcr.io/dasiths/devcontainer-features
+- name: flexwie devcontainer features
+  maintainer: Felix Wieland
+  contact: https://github.com/flexwie/devcontainer-features/issues
+  repository: https://github.com/flexwie/devcontainer-features
+  ociReference: ghcr.io/flexwie/devcontainer-features
