@@ -24,7 +24,7 @@ body {
 }
 
 .bg-primary {
-	background-color: #2753e3 !important;
+	background-color: #{{ site.theme_color }} !important;
   }
 
 .header-container {
@@ -442,7 +442,7 @@ pre[class=highlight] {
 }
 
 .nav .nav-link {
-	color: #2753e3 !important;
+	color: #{{ site.theme_color }} !important;
   }
 
 .nav .nav-link:hover {
@@ -450,7 +450,7 @@ pre[class=highlight] {
 }
 
 a {
-	color: #2753e3;
+	color: #{{ site.theme_color }};
 }
 
 a:hover {
