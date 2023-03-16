@@ -343,3 +343,8 @@
   contact: https://github.com/flexwie/devcontainer-features/issues
   repository: https://github.com/flexwie/devcontainer-features
   ociReference: ghcr.io/flexwie/devcontainer-features
+- name: Rust on Nails
+  maintainer: Ian Purton
+  contact: https://github.com/purton-tech/rust-on-nails/issues
+  repository: https://github.com/purton-tech/rust-on-nails
+  ociReference: ghcr.io/purton-tech/rust-on-nails
