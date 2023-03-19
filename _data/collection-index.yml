@@ -348,3 +348,8 @@
   contact: https://github.com/purton-tech/rust-on-nails/issues
   repository: https://github.com/purton-tech/rust-on-nails
   ociReference: ghcr.io/purton-tech/rust-on-nails
+- name: ksh5022 devcontainer features
+  maintainer: Kevin Harrigan
+  contact: https://github.com/ksh5022/devcontainer-features/issues
+  repository: https://github.com/ksh5022/devcontainer-features
+  ociReference: ghcr.io/ksh5022/devcontainer-features
