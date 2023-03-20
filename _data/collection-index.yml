@@ -304,10 +304,10 @@
   repository: https://github.com/multiversx/mx-template-devcontainers
   ociReference: ghcr.io/multiversx/mx-template-devcontainers
 - name: Swift Dev Container Features
-  maintainer: Joseph Heck
-  contact: https://github.com/heckj/devcontainer-swift-additions/issues
-  repository: https://github.com/heckj/devcontainer-swift-additions
-  ociReference: ghcr.io/heckj/devcontainer-swift-additions
+  maintainer: Joseph Heck/Adam Fowler
+  contact: https://github.com/swift-server-community/swift-devcontainer-features/issues
+  repository: https://github.com/swift-server-community/swift-devcontainer-features
+  ociReference: ghcr.io/swift-server-community/swift-devcontainer-features
 - name: gickis Dev Container Features
   maintainer: Andrii Tararaka
   contact: https://github.com/gickis/devcontainer-features/issues
