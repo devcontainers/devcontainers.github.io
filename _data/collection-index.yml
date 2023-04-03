@@ -358,3 +358,8 @@
   contact: https://github.com/GMkonan/feature/issues
   repository: https://github.com/GMkonan/feature
   ociReference: ghcr.io/gmkonan/feature
+- name: Azutake Dev Container features
+  maintainer: Azutake
+  contact: https://github.com/azutake/devcontainer-features/issues
+  repository: https://github.com/azutake/devcontainer-features
+  ociReference: ghcr.io/azutake/devcontainer-features
