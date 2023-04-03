@@ -362,4 +362,4 @@
   maintainer: Dapr maintainers
   contact: https://github.com/dapr/cli/issues
   repository: https://github.com/dapr/cli
-  ociReference: ghcr.io/dapr/cli/dapr-cli
+  ociReference: ghcr.io/dapr/cli
