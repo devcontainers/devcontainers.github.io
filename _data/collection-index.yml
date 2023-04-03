@@ -363,3 +363,8 @@
   contact: https://github.com/dapr/cli/issues
   repository: https://github.com/dapr/cli
   ociReference: ghcr.io/dapr/cli
+- name: Azutake Dev Container features
+  maintainer: Azutake
+  contact: https://github.com/azutake/devcontainer-features/issues
+  repository: https://github.com/azutake/devcontainer-features
+  ociReference: ghcr.io/azutake/devcontainer-features
