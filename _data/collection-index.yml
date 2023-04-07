@@ -368,3 +368,8 @@
   contact: https://github.com/azutake/devcontainer-features/issues
   repository: https://github.com/azutake/devcontainer-features
   ociReference: ghcr.io/azutake/devcontainer-features
+- name: Features by michidk
+  maintainer: Michael Lohr
+  contact: https://github.com/michidk/
+  repository: https://github.com/michidk/devcontainers-features
+  ociReference: ghcr.io/michidk/devcontainers-features
