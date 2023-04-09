@@ -373,3 +373,9 @@
   contact: https://github.com/michidk/
   repository: https://github.com/michidk/devcontainers-features
   ociReference: ghcr.io/michidk/devcontainers-features
+- name: Integrated Circuit Design Environment Templates
+  maintainer: Curtis Mayberry
+  contact: https://github.com/curtisma/
+  repository: https://github.com/cascode-labs/viper-ic-devcontainers
+  ociReference: ghcr.io/cascode-labs/viper-ic-devcontainers
+  
