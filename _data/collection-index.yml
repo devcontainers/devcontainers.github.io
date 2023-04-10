@@ -378,3 +378,8 @@
   contact: https://github.com/wxw-matt/devcontainer-features/issues
   repository: https://github.com/wxw-matt/devcontainer-features
   ociReference: ghcr.io/wxw-matt/devcontainer-features
+- name: Run shell commands
+  maintainer: Xiaowei Wang
+  contact: https://github.com/wxw-matt/devcontainer-features/issues
+  repository: https://github.com/wxw-matt/devcontainer-features
+  ociReference: ghcr.io/wxw-matt/devcontainer-features
