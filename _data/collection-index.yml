@@ -373,3 +373,8 @@
   contact: https://github.com/michidk/
   repository: https://github.com/michidk/devcontainers-features
   ociReference: ghcr.io/michidk/devcontainers-features
+- name: A powerful and handy feature that runs remote shell scripts
+  maintainer: Xiaowei Wang
+  contact: https://github.com/wxw-matt/devcontainer-features/issues
+  repository: https://github.com/wxw-matt/devcontainer-features
+  ociReference: ghcr.io/wxw-matt/devcontainer-features
