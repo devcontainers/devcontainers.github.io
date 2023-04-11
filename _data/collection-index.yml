@@ -378,4 +378,8 @@
   contact: https://github.com/curtisma/
   repository: https://github.com/cascode-labs/viper-ic-devcontainers
   ociReference: ghcr.io/cascode-labs/viper-ic-devcontainers
-  
+- name: A powerful and handy feature that runs remote shell scripts
+  maintainer: Xiaowei Wang
+  contact: https://github.com/wxw-matt/devcontainer-features/issues
+  repository: https://github.com/wxw-matt/devcontainer-features
+  ociReference: ghcr.io/wxw-matt/devcontainer-features
