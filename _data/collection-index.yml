@@ -383,3 +383,8 @@
   contact: https://github.com/wxw-matt/devcontainer-features/issues
   repository: https://github.com/wxw-matt/devcontainer-features
   ociReference: ghcr.io/wxw-matt/devcontainer-features
+- name: Pony language
+  maintainer: Digital DEfiance
+  contact: https://github.com/Digital-Defiance/vsc-pony/issues
+  repository: https://github.com/Digital-Defiance/vsc-pony
+  ociReference: ghcr.io/Digital-Defiance/vsc-pony
