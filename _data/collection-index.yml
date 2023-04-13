@@ -383,3 +383,8 @@
   contact: https://github.com/wxw-matt/devcontainer-features/issues
   repository: https://github.com/wxw-matt/devcontainer-features
   ociReference: ghcr.io/wxw-matt/devcontainer-features
+- name: Salesforce CLI Features
+  maintainer: Jason Vercellone
+  contact: https://github.com/vercellone/devcontainer-features/issues
+  repository: https://github.com/vercellone/devcontainer-features
+  ociReference: ghcr.io/vercellone/devcontainer-features
