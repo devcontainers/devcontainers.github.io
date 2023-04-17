@@ -388,3 +388,8 @@
   contact: https://github.com/vercellone/devcontainer-features/issues
   repository: https://github.com/vercellone/devcontainer-features
   ociReference: ghcr.io/vercellone/devcontainer-features
+- name: Features by joedmck
+  maintainer: Joe McKinnon
+  contact: https://github.com/joedmck/devcontainer-features/issues
+  repository: https://github.com/joedmck/devcontainer-features
+  ociReference: ghcr.io/joedmck/devcontainer-features
