@@ -304,10 +304,10 @@
   repository: https://github.com/multiversx/mx-template-devcontainers
   ociReference: ghcr.io/multiversx/mx-template-devcontainers
 - name: Swift Dev Container Features
-  maintainer: Joseph Heck
-  contact: https://github.com/heckj/devcontainer-swift-additions/issues
-  repository: https://github.com/heckj/devcontainer-swift-additions
-  ociReference: ghcr.io/heckj/devcontainer-swift-additions
+  maintainer: Joseph Heck/Adam Fowler
+  contact: https://github.com/swift-server-community/swift-devcontainer-features/issues
+  repository: https://github.com/swift-server-community/swift-devcontainer-features
+  ociReference: ghcr.io/swift-server-community/swift-devcontainer-features
 - name: gickis Dev Container Features
   maintainer: Andrii Tararaka
   contact: https://github.com/gickis/devcontainer-features/issues
@@ -330,5 +330,71 @@
   ociReference: ghcr.io/jasonthedeveloper/features
 - name: Templates by John Muchovej
   maintainer: John Muchovej
-  contact: https://github.com/jmuchovej/devcontainers
+  contact: https://github.com/jmuchovej/devcontainers/issues
+  repository: https://github.com/jmuchovej/devcontainers
   ociReference: ghcr.io/jmuchovej/templates
+- name: Features by dasiths
+  maintainer: Dasith Wijes
+  contact: https://dasith.me
+  repository: https://github.com/dasiths/devcontainer-features
+  ociReference: ghcr.io/dasiths/devcontainer-features
+- name: flexwie devcontainer features
+  maintainer: Felix Wieland
+  contact: https://github.com/flexwie/devcontainer-features/issues
+  repository: https://github.com/flexwie/devcontainer-features
+  ociReference: ghcr.io/flexwie/devcontainer-features
+- name: Rust on Nails
+  maintainer: Ian Purton
+  contact: https://github.com/purton-tech/rust-on-nails/issues
+  repository: https://github.com/purton-tech/rust-on-nails
+  ociReference: ghcr.io/purton-tech/rust-on-nails
+- name: ksh5022 devcontainer features
+  maintainer: Kevin Harrigan
+  contact: https://github.com/ksh5022/devcontainer-features/issues
+  repository: https://github.com/ksh5022/devcontainer-features
+  ociReference: ghcr.io/ksh5022/devcontainer-features
+- name: GMkonan devcontainer features
+  maintainer: GMkonan
+  contact: https://github.com/GMkonan/feature/issues
+  repository: https://github.com/GMkonan/feature
+  ociReference: ghcr.io/gmkonan/feature
+- name: Dapr devcontainer features
+  maintainer: Dapr maintainers
+  contact: https://github.com/dapr/cli/issues
+  repository: https://github.com/dapr/cli
+  ociReference: ghcr.io/dapr/cli
+- name: Azutake Dev Container features
+  maintainer: Azutake
+  contact: https://github.com/azutake/devcontainer-features/issues
+  repository: https://github.com/azutake/devcontainer-features
+  ociReference: ghcr.io/azutake/devcontainer-features
+- name: Features by michidk
+  maintainer: Michael Lohr
+  contact: https://github.com/michidk/
+  repository: https://github.com/michidk/devcontainers-features
+  ociReference: ghcr.io/michidk/devcontainers-features
+- name: Integrated Circuit Design Environment Templates
+  maintainer: Curtis Mayberry
+  contact: https://github.com/curtisma/
+  repository: https://github.com/cascode-labs/viper-ic-devcontainers
+  ociReference: ghcr.io/cascode-labs/viper-ic-devcontainers
+- name: A powerful and handy feature that runs remote shell scripts
+  maintainer: Xiaowei Wang
+  contact: https://github.com/wxw-matt/devcontainer-features/issues
+  repository: https://github.com/wxw-matt/devcontainer-features
+  ociReference: ghcr.io/wxw-matt/devcontainer-features
+- name: Salesforce CLI Features
+  maintainer: Jason Vercellone
+  contact: https://github.com/vercellone/devcontainer-features/issues
+  repository: https://github.com/vercellone/devcontainer-features
+  ociReference: ghcr.io/vercellone/devcontainer-features
+- name: Features by joedmck
+  maintainer: Joe McKinnon
+  contact: https://github.com/joedmck/devcontainer-features/issues
+  repository: https://github.com/joedmck/devcontainer-features
+  ociReference: ghcr.io/joedmck/devcontainer-features
+- name: Features by CodeMan99
+  maintainer: Cody Taylor
+  contact: https://github.com/CodeMan99/features/issues
+  repository: https://github.com/CodeMan99/features
+  ociReference: ghcr.io/codeman99/features
