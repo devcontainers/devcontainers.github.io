@@ -7,6 +7,7 @@ description: >
 url: https://devcontainers.github.io # the base hostname & protocol for your site
 git_address: https://github.com/devcontainers/devcontainers.github.io
 git_edit_address: https://github.com/devcontainers/devcontainers.github.io/settings/pages/blob/gh-pages
+theme_color: 2753E3
 
 # Build settings
 markdown: kramdown
