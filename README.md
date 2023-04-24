@@ -14,7 +14,7 @@ You may build GitHub Pages sites with [Jekyll](https://jekyllrb.com/), which is 
 
 You may review this repo's dev container in the [`.devcontainer`](https://github.com/devcontainers/containers.dev/tree/gh-pages/.devcontainer) folder.
 
-It is from this [Jekyll definition](https://github.com/microsoft/vscode-dev-containers/tree/main/containers/jekyll).
+It is from this [Jekyll Dev Container Template](https://github.com/devcontainers/templates/tree/main/src/jekyll).
 
 ### Steps to build and run
 
