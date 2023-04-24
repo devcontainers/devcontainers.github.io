@@ -398,3 +398,8 @@
   contact: https://github.com/CodeMan99/features/issues
   repository: https://github.com/CodeMan99/features
   ociReference: ghcr.io/codeman99/features
+- name: Features by Favalos
+  maintainer: Fernando Avalos
+  contact: https://github.com/favalos/devcontainer-features/issues
+  repository: https://github.com/favalos/devcontainer-features
+  ociReference: ghcr.io/favalos/devcontainer-features
