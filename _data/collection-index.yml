@@ -403,3 +403,9 @@
   contact: https://github.com/favalos/devcontainer-features/issues
   repository: https://github.com/favalos/devcontainer-features
   ociReference: ghcr.io/favalos/devcontainer-features
+- name: Community Templates
+  maintainer: devcontainers-community
+  contact: https://github.com/devcontainers-community/templates/issues
+  repository: https://github.com/devcontainers-community/templates
+  ociReference: ghcr.io/devcontainers-community/templates
+
