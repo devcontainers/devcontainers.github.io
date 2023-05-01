@@ -1,0 +1,37 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Dev Container Spec Issues"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "### Spec repo"
+  },
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "repo:devcontainers/spec milestone:backlog"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "### All repos with latest milestone"
+  },
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "repo:devcontainers/images repo:devcontainers/features repo:devcontainers/templates repo:devcontainers/spec repo:devcontainers/devcontainers.github.io repo:devcontainers/cli milestone:\"May 2023\""
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "### Images and Features"
+  },
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "repo:devcontainers/images repo:devcontainers/features milestone:backlog"
+  }
+]
