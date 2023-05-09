@@ -27,7 +27,9 @@ A Feature is a self contained entity in a folder with at least a `devcontainer-f
 
 ## <a href="#devcontainer-feature-json-properties" name="devcontainer-feature-json-properties" class="anchor"> devcontainer-feature.json properties </a>
 
-The `devcontainer-feature.json` file defines information about the Feature to be used by any supporting tools and the way the Feature will be executed.
+The `devcontainer-feature.json` file defines metadata about a given Feature.
+
+All properties are optional **except for `id`, `version`, and `name`**. 
 
 [devContainerFeature.schema.json](https://github.com/devcontainers/spec/blob/main/schemas/devContainerFeature.schema.json) defines the schema for the `devcontainer-feature.json` file.
 
@@ -35,10 +37,10 @@ The properties of the file are as follows:
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `id` | string | ID of the feature/definition. The `id` should be unique in the context of the repository/published package where the feature exists and must match the name of the directory where the `devcontainer-feature.json` resides. |
-| `version` | string | The semantic version of the Feature. |
-| `name` | string | Name of the feature/definition. |
-| `description` | string | Description of the feature/definition. |
+| `id` | string | <b>Required</b>: Identifier of the Feature.  Must be unique in the context of the repository where the Feature exists and must match the name of the directory where the `devcontainer-feature.json` resides. |
+| `version` | string | <b>Required</b>: The semantic version of the Feature (e.g: <code>1.0.0</code>). |
+| `name` | string | <b>Required</b>: A "human-friendly" display name for the Feature. |
+| `description` | string | Description of the Feature. |
 | `documentationURL` | string | Url that points to the documentation of the Feature. |
 | `licenseURL` | string | Url that points to the license of the Feature. |
 | `keywords` | array | List of strings relevant to a user that would search for this definition/Feature. |
@@ -53,8 +55,32 @@ The properties of the file are as follows:
 | `installsAfter` | array | Array of ID's of Features (omitting a version tag) that should execute before this one. Allows control for Feature authors on soft dependencies between different Features. |
 | `legacyIds` | array | Array of old IDs used to publish this Feature. The property is useful for renaming a currently published Feature within a single namespace. |
 | `deprecated` | boolean | Indicates that the Feature is deprecated, and will not receive any further updates/support. This property is intended to be used by the supporting tools for highlighting Feature deprecation. |
-| `mounts` | object | Defaults to unset. Cross-orchestrator way to add additional mounts to a container. Each value is an object that accepts the same values as the [Docker CLI `--mount` flag](https://docs.docker.com/engine/reference/commandline/run/#add-bind-mounts-or-volumes-using-the---mount-flag). The Pre-defined [devcontainerId](/_implementors/json_reference.md#variables-in-devcontainerjson) variable may be referenced in the value. For example:<br />`"mounts": [{ "source": "dind-var-lib-docker", "target": "/var/lib/docker", "type": "volume" }]` |
+| `mounts` | object | Defaults to unset. Cross-orchestrator way to add additional mounts to a container. Each value is an object that accepts the same values as the [Docker CLI `--mount` flag](https://docs.docker.com/engine/reference/commandline/run/#add-bind-mounts-or-volumes-using-the---mount-flag). The Pre-defined [devcontainerId](/implementors/json_reference#variables-in-devcontainerjson) variable may be referenced in the value. For example:<br />`"mounts": [{ "source": "dind-var-lib-docker", "target": "/var/lib/docker", "type": "volume" }]` |
 {: .table .table-bordered .table-responsive}
+
+
+### <a href="#lifecycle-hooks" name="lifecycle-hooks" class="anchor"> Lifecycle Hooks </a>
+
+The following lifecycle hooks may be declared as properties of `devcontainer-feature.json`. 
+
+| Property | Type|
+| :--- | :--- |
+| `onCreateCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties)|
+| `updateContentCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties)|
+| `postCreateCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties)|
+| `postStartCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties) |
+| `postAttachCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties) |
+{: .table .table-bordered .table-responsive}
+
+#### Behavior
+
+Each property mirrors the behavior of the matching property in [`devcontainer.json`](/implementors/json_reference#Lifecycle-scripts), including the behavior that commands are executed from the context of the [project workspace folder](/implementors/spec/#project-workspace-folder).
+
+For each lifecycle hook (in [Feature installation order](/implementors/features/#installation-order)), each command contributed by a Feature is executed in sequence (blocking the next command from executing). Commands provided by Features are always executed _before_ any user-provided lifecycle commands (i.e: in the `devcontainer.json`).
+
+If a Feature provides a given command with the [object syntax](/implementors/json_reference#formatting-string-vs-array-properties), all commands within that group are executed in parallel, but still blocking commands from subsequent Features and/or the `devcontainer.json`.
+
+> NOTE: These properties are stored within [image metadata](/implementors/spec/#merge-logic).
 
 ### <a href="#options-property" name="options-property" class="anchor"> The `options` property </a>
 
