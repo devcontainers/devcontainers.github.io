@@ -416,5 +416,5 @@
 - name: Assorted Features
   maintainer: brokeyourbike
   contact: https://github.com/brokeyourbike/devcontainer-features/issues
-  repository: https://github.com/guiyomh/devcontainer-features
+  repository: https://github.com/brokeyourbike/devcontainer-features
   ociReference: ghcr.io/brokeyourbike/devcontainer-features
