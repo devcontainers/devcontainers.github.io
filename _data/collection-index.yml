@@ -414,7 +414,7 @@
   repository: https://github.com/lee-orr/rusty-dev-containers
   ociReference: ghcr.io/lee-orr/rusty-dev-containers
 - name: Assorted Features
-  maintainer: brokeyourbike
+  maintainer: Ivan Stasiuk
   contact: https://github.com/brokeyourbike/devcontainer-features/issues
   repository: https://github.com/brokeyourbike/devcontainer-features
   ociReference: ghcr.io/brokeyourbike/devcontainer-features
