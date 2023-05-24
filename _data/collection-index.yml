@@ -418,3 +418,8 @@
   contact: https://github.com/brokeyourbike/devcontainer-features/issues
   repository: https://github.com/brokeyourbike/devcontainer-features
   ociReference: ghcr.io/brokeyourbike/devcontainer-features
+- name: Internet Computer Templates
+  maintainer: VVV Interactive | Internet Base
+  contact: https://github.com/vvv-interactive/ibdev/issues
+  repository: https://github.com/vvv-interactive/ibdev
+  ociReference: ghcr.io/vvv-interactive/ibdev
