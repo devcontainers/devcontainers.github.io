@@ -423,3 +423,8 @@
   contact: https://github.com/vvv-interactive/ibdev/issues
   repository: https://github.com/vvv-interactive/ibdev
   ociReference: ghcr.io/vvv-interactive/ibdev
+- name: Features by joshuanianji
+  maintainer: Joshua Ji
+  contact: https://github.com/joshuanianji/devcontainer-features/issues
+  repository: https://github.com/joshuanianji/devcontainer-features
+  ociReference: ghcr.io/joshuanianji/devcontainer-features
