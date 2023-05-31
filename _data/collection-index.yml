@@ -427,4 +427,4 @@
   maintainer: Nikita Kurpas
   contact: https://github.com/NikitaKurpas/features/issues
   repository: https://github.com/NikitaKurpas/features
-  ociReference: ghcr.io/NikitaKurpas/features
+  ociReference: ghcr.io/nikitakurpas/features
