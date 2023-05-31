@@ -428,3 +428,8 @@
   contact: https://github.com/NikitaKurpas/features/issues
   repository: https://github.com/NikitaKurpas/features
   ociReference: ghcr.io/nikitakurpas/features
+- name: Features by joshuanianji
+  maintainer: Joshua Ji
+  contact: https://github.com/joshuanianji/devcontainer-features/issues
+  repository: https://github.com/joshuanianji/devcontainer-features
+  ociReference: ghcr.io/joshuanianji/devcontainer-features
