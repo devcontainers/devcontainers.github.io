@@ -423,6 +423,11 @@
   contact: https://github.com/vvv-interactive/ibdev/issues
   repository: https://github.com/vvv-interactive/ibdev
   ociReference: ghcr.io/vvv-interactive/ibdev
+- name: Features by Nikita Kurpas
+  maintainer: Nikita Kurpas
+  contact: https://github.com/NikitaKurpas/features/issues
+  repository: https://github.com/NikitaKurpas/features
+  ociReference: ghcr.io/nikitakurpas/features
 - name: Features by joshuanianji
   maintainer: Joshua Ji
   contact: https://github.com/joshuanianji/devcontainer-features/issues
