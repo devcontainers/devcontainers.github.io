@@ -433,3 +433,8 @@
   contact: https://github.com/joshuanianji/devcontainer-features/issues
   repository: https://github.com/joshuanianji/devcontainer-features
   ociReference: ghcr.io/joshuanianji/devcontainer-features
+- name: Features by nullcoder
+  maintainer: Thanan Traiongthawon
+  contact: https://github.com/nullcoder/devcontainer-features/issues
+  repository: https://github.com/nullcoder/devcontainer-features
+  ociReference: ghcr.io/nullcoder/devcontainer-features
