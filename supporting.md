@@ -147,6 +147,10 @@ Some properties may apply differently to Codespaces.
 | `hostRequirements` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
 {: .table .table-bordered .table-responsive}
 
+### <a href="#devpod" name="devpod" class="anchor"> DevPod </a>
+
+[DevPod](https://github.com/loft-sh/devpod) is a client-only tool to create reproducible developer environments based on a devcontainer.json on any backend. Each developer environment runs in a container and is specified through a devcontainer.json. Through DevPod providers these environments can be created on any backend, such as the local computer, a Kubernetes cluster, any reachable remote machine or in a VM in the cloud.
+
 ### <a href="#schema" name="schema" class="anchor"> Schema </a>
 
 You can explore the [VS Code implementation](implementors/json_schema) of the dev container schema.
