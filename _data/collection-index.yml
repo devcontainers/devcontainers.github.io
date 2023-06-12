@@ -438,3 +438,8 @@
   contact: https://github.com/nullcoder/devcontainer-features/issues
   repository: https://github.com/nullcoder/devcontainer-features
   ociReference: ghcr.io/nullcoder/devcontainer-features
+- name: Features by shepherdjerred
+  maintainer: Jerred Shepherd
+  contact: https://github.com/shepherdjerred/devcontainers-features/issues
+  repository: https://github.com/shepherdjerred/devcontainers-features
+  ociReference: ghcr.io/shepherdjerred/devcontainers-features
