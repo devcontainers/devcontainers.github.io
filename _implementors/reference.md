@@ -135,3 +135,9 @@ LABEL devcontainer.metadata='[{ \
 ```
 
 See the [Dev Container metadata reference](../json_reference) for information on which properties are supported.
+
+### <a href="#domainnames" name="domainnames" class="anchor"> Domain Names </a> 
+
+If you are behind a firewall that needs to allow specific domains used by the dev container CLI, here's the list of hostnames you should allow communication to go through:
+
+* `containers.dev`
