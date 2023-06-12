@@ -140,4 +140,5 @@ See the [Dev Container metadata reference](../json_reference) for information on
 
 If you are behind a firewall that needs to allow specific domains used by the dev container CLI, here's the list of hostnames you should allow communication to go through:
 
-* `containers.dev`
+* `containers.dev` - The [homepage](https://containers.dev/) for everything about dev containers. It includes all official and community-supported [Features](https://containers.dev/features) and [Templates](https://containers.dev/templates).
+* `ghcr.io`, `mcr.microsoft.com` - [OCI registries](https://containers.dev/implementors/features-distribution/#oci-registry) like [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) or [Microsoft Container Registry](https://mcr.microsoft.com/en-us/catalog?search=dev%20container) serves as the primary distribution mechanism for dev container resources. 
