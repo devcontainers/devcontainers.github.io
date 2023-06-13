@@ -443,3 +443,8 @@
   contact: https://github.com/shepherdjerred/devcontainers-features/issues
   repository: https://github.com/shepherdjerred/devcontainers-features
   ociReference: ghcr.io/shepherdjerred/devcontainers-features
+- name: Features by jayree
+  maintainer: jayree
+  contact: https://github.com/jayree/devcontainer-features/issues
+  repository: https://github.com/jayree/devcontainer-features
+  ociReference: ghcr.io/jayree/devcontainer-features
