@@ -448,3 +448,8 @@
   contact: https://github.com/jayree/devcontainer-features/issues
   repository: https://github.com/jayree/devcontainer-features
   ociReference: ghcr.io/jayree/devcontainer-features
+- name: Typescript Monorepo by Luk4h
+  maintainer: Luk4h
+  contact: https://github.com/Luk4h/DevContainers/issues
+  repository: https://github.com/Luk4h/DevContainers
+  ociReference: ghcr.io/luk4h/devcontainers/typescript
