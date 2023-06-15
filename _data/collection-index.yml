@@ -448,3 +448,8 @@
   contact: https://github.com/jayree/devcontainer-features/issues
   repository: https://github.com/jayree/devcontainer-features
   ociReference: ghcr.io/jayree/devcontainer-features
+- name: Features by bdsoha
+  maintainer: bdsoha
+  contact: https://github.com/bdsoha/devcontainers/issues
+  repository: https://github.com/bdsoha/devcontainers
+  ociReference: ghcr.io/bdsoha/devcontainers
