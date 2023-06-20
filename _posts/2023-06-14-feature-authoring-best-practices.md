@@ -9,7 +9,7 @@ Last November I wrote about the basics around [authoring a Dev Container Feature
 
 ## Utilize the `test` command
 
-Bundled with the `devcontainer` cli is the `devcontainer features test` command.  This command is designed to help Feature authors test their Feature in a variety of scenarios.  It is highly recommended that Feature authors use this command to test their Feature before publishing. Some docuemntation on the `test` command can be found [here](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios), and an example can be found in the [feature-starter template repo](https://github.com/devcontainers/feature-starter).
+Bundled with the `devcontainer` cli is the `devcontainer features test` command.  This command is designed to help Feature authors test their Feature in a variety of scenarios.  It is highly recommended that Feature authors use this command to test their Feature before publishing. Some docuemntation on the `test` command can be found [here](https://github.com/devcontainers/cli/blob/main/docs/features/test.md), and an example can be found in the [feature-starter template repo](https://github.com/devcontainers/feature-starter).
 
 ## Feature idempotency
 
