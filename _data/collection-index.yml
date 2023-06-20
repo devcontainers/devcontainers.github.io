@@ -448,6 +448,11 @@
   contact: https://github.com/jayree/devcontainer-features/issues
   repository: https://github.com/jayree/devcontainer-features
   ociReference: ghcr.io/jayree/devcontainer-features
+- name: Templates by jayree
+  maintainer: jayree
+  contact: https://github.com/jayree/devcontainer-templates/issues
+  repository: https://github.com/jayree/devcontainer-templates
+  ociReference: ghcr.io/jayree/devcontainer-templates
 - name: Features by bdsoha
   maintainer: bdsoha
   contact: https://github.com/bdsoha/devcontainers/issues
