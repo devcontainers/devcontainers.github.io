@@ -9,7 +9,7 @@ Last November I wrote about the basics around [authoring a Dev Container Feature
 
 ## Utilize the `test` command
 
-Bundled with the `devcontainer` cli is the `devcontainer features test` command.  This command is designed to help Feature authors test their Feature in a variety of scenarios.  It is highly recommended that Feature authors use this command to test their Feature before publishing. Some docuemntation on the `test` command can be found [here](https://github.com/devcontainers/cli/blob/main/docs/features/test.md), and an example can be found in the [Feature quick start repo](https://github.com/devcontainers/feature-starter).
+Bundled with the `devcontainer` cli is the `devcontainer features test` command.  This command is designed to help Feature authors test their Feature in a variety of scenarios.  It is highly recommended that Feature authors use this command to test their Feature before publishing. Some documentation on the `test` command can be found [here](https://github.com/devcontainers/cli/blob/main/docs/features/test.md), and an example can be found in the [Feature quick start repo](https://github.com/devcontainers/feature-starter). This repo is updated periodically as new functionality is added to the reference implementation.
 
 ## Feature idempotency
 
@@ -68,18 +68,42 @@ if [[ "${DOCKER_MOBY_ARCHIVE_VERSION_CODENAMES}" != *"${VERSION_CODENAME}"* ]]; 
     print_error "Supported distributions include:  ${DOCKER_MOBY_ARCHIVE_VERSION_CODENAMES}"
     exit 1
 fi
-
 ```
+
+If you're attempting to target a distro that may not have your desired scripting language installed (eg: `bash` is not installed on `alpine`), one pattern used in the [`common-utils`](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/src/common-utils/install.sh) Feature is shown below.
+
+```sh
+#!/bin/sh
+
+# ... 
+# ...
+
+if [ "$(id -u)" -ne 0 ]; then
+    echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
+    exit 1
+fi
+
+# If we're using Alpine, install bash before executing
+. /etc/os-release
+if [ "${ID}" = "alpine" ]; then
+    apk add --no-cache bash
+fi
+
+exec /bin/bash "$(dirname $0)/main.sh" "$@"
+exit $?
+```
+
+In this example, the remainder of the Feature logic is placed in a bashscript called `main.sh` and executed by `bash`.
 
 ### Detect the non-root user
 
 Feature installation scripts are run as `root`.  In contrast, many dev containers have a `remoteUser` set (either implicitly through [image metadata](https://containers.dev/implementors/spec/#image-metadata) or directly in the `devcontainer.json`).  In a Feature's installation script, one should be mindful of the final user and account for instances where the user is not `root`.
 
-Feature authors should take advantage of the [`_REMOTE_USER` and similar variables](https://containers.dev/implementors/features/#user-env-var) injected by implementations.
+Feature authors should take advantage of the [`_REMOTE_USER` and similar variables](https://containers.dev/implementors/features/#user-env-var) injected during the build.
 
 ```bash
 
-# _REMOTE_USER is passed in 
+# _REMOTE_USER is set in the environment during the build to match the effective 'remoteUser'
 USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"
 
 if [ "${USERNAME}" = "auto" ] || [ "${USERNAME}" = "automatic" ]; then
