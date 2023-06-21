@@ -5,7 +5,7 @@ author: "@joshspicer"
 authorUrl: https://github.com/joshspicer
 ---
 
-Last November I wrote about the basics around [authoring a Dev Container Feature](/guide/author-a-feature). Since then, [hundreds](https://containers.dev/features) of Features have been written by the community. The flexibility of Features has enabled a wide variety of use cases, from installing a single tool to configuring a full development environment.  To that effect, many different patterns for Feature authorship have emerged, and the core team has learned a lot about what works well and what doesn't.
+Last November I wrote about the basics around [authoring a Dev Container Feature](/guide/author-a-feature). Since then, [hundreds](https://containers.dev/features) of Features have been written by the community. The flexibility of Features has enabled a wide variety of use cases, from installing a single tool to setting up specific aspects of a project's development environment that can be shared across repositories.  To that effect, many different patterns for Feature authorship have emerged, and the core team has learned a lot about what works well and what doesn't.
 
 ## Utilize the `test` command
 
@@ -13,36 +13,37 @@ Bundled with the `devcontainer` cli is the `devcontainer features test` command.
 
 ## Feature idempotency
 
-The most useful Features are idempotent. This means that if a Feature is installed multiple times with different options (something that will become more common with [Feature Dependencies](https://github.com/devcontainers/spec/blob/main/proposals/feature-dependencies.md)), the Feature should be able to handle this gracefully.  This could mean a couple things:
+The most useful Features are idempotent. This means that if a Feature is installed multiple times with different options (something that will come into play with [Feature Dependencies](https://github.com/devcontainers/spec/blob/main/proposals/feature-dependencies.md)), the Feature should be able to handle this gracefully. This is especially important for Features with a wide array of options that you anticipate others may depend on in the future.
 
-> There is an open spec proposal for installing the same Feature twice in a given `devcontainer.json`: https://github.com/devcontainers/spec/issues/44.  While the syntax to do so in a given `devcontainer.json` is not yet defined, Feature dependencies will effectively allow for this.
+> 🔧 There is an open spec proposal for installing the same Feature twice in a given `devcontainer.json`: https://github.com/devcontainers/spec/issues/44.  While the syntax to do so in a given `devcontainer.json` is not yet defined, Feature dependencies will effectively allow for this.
 
 For Features that install a versioned tool (eg: version x of `go` and version y of `ruby` ), a robust Feature should be able to install multiple versions of the tool.  If your tool has a version manager (java's `SDKMAN`, ruby's `rvm`) it is usually as simple as installing the version manager and then running a command to install the desired version of that tool.
 
-For example, the [python Feature](https://github.com/devcontainers/features/blob/main/src/python/devcontainer-feature.json#L8-L22) has an option for which version of `python` to install. If the Feature is installed multiple times with different versions, a well-designed Feature should install each specified version into a separate directory. This allows the user (and subsequently installed Features) to select the correct version of `python` if they wish.
+For instances where there isn't an existing version manager available, a well-designed Feature should consider installing distict versions of itself to a well known location.  A pattern that many Features utilize successfully is writing each version of each tool to a central folder and symlinking the "active" version to a folder on the PATH.
 
-A pattern that many Features utlize successfully is writing each version of each tool to a central folder and symlinking the "active" version to a well-known location on the PATH.
+Feature can redefine the PATH variable with `containerEnv`, like so:
+
+```bash
+# devcontainer-feature.json
+"containerEnv": {
+    "PATH": "/usr/local/myTool/bin:${PATH}"
+}
+```
+
+> 🔧 A spec proposal is open for simplifying the process of adding a path to the $PATH variable: https://github.com/devcontainers/spec/issues/251
 
 To make testing for idempotency easy, [this change to the reference implementation](https://github.com/devcontainers/cli/pull/553) introduces a new mode to the `devcontainer features test` command that will attempt to install a Feature multiple times.  This is useful for testing that a Feature is idempotent, and also for testing that a Feature is able to logically juggle multiple versions of a tool.
 
-### Adding to the $PATH
-
-Features are free to define their own semantics for when two conflicting tools are installed.  Reasonable behavior is to update any references to an installed tool on the PATH to the assets installed from the **last executed Feature**.
-
-> A spec proposal is open for simplifying the process of adding a path to the $PATH variable: https://github.com/devcontainers/spec/issues/251 
-
-For example, if two python Features are installed with different versions, the Feature that was installed last should update the PATH to point to that version of `python` installed.  This ensures that the user is able to use the version of `python` that they selected, and not the version requested by an intermediately installed Feature.
-
 ## Writing your install script
 
-> Many of the suggestions in this section may benefit from the 'Feature library'/'code reuse' proposal here https://github.com/devcontainers/spec/blob/main/proposals/features-library.md
+> 🔧 Many of the suggestions in this section may benefit from the 'Feature library'/'code reuse' proposal here https://github.com/devcontainers/spec/blob/main/proposals/features-library.md.
 
 
 ### Detect Platform/OS
 
-> A spec proposal is open for detecting the platform/OS and providing better warnings: https://github.com/devcontainers/spec/issues/58
+> 🔧 A spec proposal is open for detecting the platform/OS and providing better warnings: https://github.com/devcontainers/spec/issues/58
 
-Features are often designed to work on a subset of possible base images.  For example, the majority of Features in the [`devcontainers/features` repo](https://github.com/devcontainers/features) repo are designed to work broadly with debian-derived images.  The distinction is often simply due to the wide array of base images available, and the fact that many Features will use an OS-specific package manager.
+Features are often designed to work on a subset of possible base images.  For example, the majority of Features in the [`devcontainers/features` repo](https://github.com/devcontainers/features) repo are designed to work broadly with debian-derived images.  The limitation is often simply due to the wide array of base images available, and the fact that many Features will use an OS-specific package manager.
 
 One possible way to implement this check is shown below.
 
@@ -70,7 +71,7 @@ if [[ "${DOCKER_MOBY_ARCHIVE_VERSION_CODENAMES}" != *"${VERSION_CODENAME}"* ]]; 
 fi
 ```
 
-If you're attempting to target a distro that may not have your desired scripting language installed (eg: `bash` is not installed on `alpine`), one pattern used in the [`common-utils`](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/src/common-utils/install.sh) Feature is shown below.
+If you're attempting to target a distro that may not have your desired scripting language installed (eg: `bash` is not installed on `alpine`), one pattern used in the [`common-utils`](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/src/common-utils/install.sh) Feature is shown below to install `bash`.
 
 ```sh
 #!/bin/sh
@@ -95,6 +96,48 @@ exit $?
 
 In this example, the remainder of the Feature logic is placed in a bashscript called `main.sh` and executed by `bash`.
 
+Testing against several base images can be done by using the `devcontainer features test` command with the `--base-image` flag, or with a [scenario](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios).  For example, to test against `debian:buster` and `debian:bullseye`, one could add a [workflow like this to their repo](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/.github/workflows/test-all.yaml#L9-L52).
+
+```yaml
+name: "Test Features matrixed with a set of base images"
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        features: [
+            "anaconda",
+            "aws-cli",
+            "azure-cli",
+            # ...
+        ]
+        baseImage:
+          [
+            "ubuntu:bionic",
+            "ubuntu:focal",
+            "ubuntu:jammy",
+            "debian:11",
+            "debian:12",
+            "mcr.microsoft.com/devcontainers/base:ubuntu",
+            "mcr.microsoft.com/devcontainers/base:debian",
+          ]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
+        run: devcontainer features test  --skip-scenarios -f ${{ matrix.features }} -i ${{ matrix.baseImage }}
+```
+
 ### Detect the non-root user
 
 Feature installation scripts are run as `root`.  In contrast, many dev containers have a `remoteUser` set (either implicitly through [image metadata](https://containers.dev/implementors/spec/#image-metadata) or directly in the `devcontainer.json`).  In a Feature's installation script, one should be mindful of the final user and account for instances where the user is not `root`.
@@ -102,10 +145,10 @@ Feature installation scripts are run as `root`.  In contrast, many dev container
 Feature authors should take advantage of the [`_REMOTE_USER` and similar variables](https://containers.dev/implementors/features/#user-env-var) injected during the build.
 
 ```bash
-
 # _REMOTE_USER is set in the environment during the build to match the effective 'remoteUser'
 USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"
 
+# If an existing non-root user matching the POSSIBLE_USERS exists, use it!
 if [ "${USERNAME}" = "auto" ] || [ "${USERNAME}" = "automatic" ]; then
     USERNAME=""
     POSSIBLE_USERS=("vscode" "node" "codespace" "$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)")
@@ -122,12 +165,9 @@ elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
     USERNAME=root
 fi
 
-# ...
-# ...
-
 # Install tool and make sure the non-root user has permission to use it
-# ...
-# chmod -R $USERNAME $TOOL_PATH
+curl $TOOL_DOWNLOAD_LINK -o $TOOL_PATH
+chmod -R $USERNAME $TOOL_PATH
 
 ```
 
@@ -135,4 +175,4 @@ fi
 
 Most Features in [the index today](https://containers.dev/features) have some external/upstream dependency.  Very often these upstream dependencies can change (ie: versioning pattern, rotated GPG key, etc...) that may cause a Feature to fail to install.  To mitigate this, one strategy is to implement multiple paths to install a given tool (if available).  For example, a Feature that installs `go` might try to install it from the upstream package manager, and if not fall back to a GitHub release.
 
-Writing several [scenario tests](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios) will help you catch instances where a given path no longer works.  
+Writing several [scenario tests](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios) that force the Feature to go down distict installation paths will help you catch cases where a given path no longer works.
