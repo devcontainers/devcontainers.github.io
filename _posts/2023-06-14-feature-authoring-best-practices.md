@@ -75,7 +75,7 @@ fi
 
 Feature installation scripts are run as `root`.  In contrast, many dev containers have a `remoteUser` set (either implicitly through [image metadata](https://containers.dev/implementors/spec/#image-metadata) or directly in the `devcontainer.json`).  In a Feature's installation script, one should be mindful of the final user and account for instances where the user is not `root`.
 
-Feature authors should take advantage of the [`_REMOTE_USER` and similar variables](https://containers.dev/implementors/features/#user-env-var)  injected by conformant implementations.
+Feature authors should take advantage of the [`_REMOTE_USER` and similar variables](https://containers.dev/implementors/features/#user-env-var) injected by implementations.
 
 ```bash
 
