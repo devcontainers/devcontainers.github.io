@@ -5,17 +5,17 @@ author: "@joshspicer"
 authorUrl: https://github.com/joshspicer
 ---
 
-Last November I wrote about the basics around [authoring a Dev Container Feature](/guide/author-a-feature). Since then, [hundreds](https://containers.dev/features) of Features have been written by the community. The flexibility of Features has enabled a wide variety of use cases, from installing a single tool to configuring a full development environment.  To that effect, many different patterns for Feature authorship have emerge and the core team has learned a lot about what works well and what doesn't.
+Last November I wrote about the basics around [authoring a Dev Container Feature](/guide/author-a-feature). Since then, [hundreds](https://containers.dev/features) of Features have been written by the community. The flexibility of Features has enabled a wide variety of use cases, from installing a single tool to configuring a full development environment.  To that effect, many different patterns for Feature authorship have emerged, and the core team has learned a lot about what works well and what doesn't.
 
 ## Utilize the `test` command
 
-Bundled with the `devcontainer` cli is the `devcontainer features test` command.  This command is designed to help Feature authors test their Feature in a variety of scenarios.  It is highly recommended that Feature authors use this command to test their Feature before publishing. Some docuemntation on the `test` command can be found [here](https://github.com/devcontainers/cli/blob/main/docs/features/test.md), and an example can be found in the [feature-starter template repo](https://github.com/devcontainers/feature-starter).
+Bundled with the `devcontainer` cli is the `devcontainer features test` command.  This command is designed to help Feature authors test their Feature in a variety of scenarios.  It is highly recommended that Feature authors use this command to test their Feature before publishing. Some docuemntation on the `test` command can be found [here](https://github.com/devcontainers/cli/blob/main/docs/features/test.md), and an example can be found in the [Feature quick start repo](https://github.com/devcontainers/feature-starter).
 
 ## Feature idempotency
 
 The most useful Features are idempotent. This means that if a Feature is installed multiple times with different options (something that will become more common with [Feature Dependencies](https://github.com/devcontainers/spec/blob/main/proposals/feature-dependencies.md)), the Feature should be able to handle this gracefully.  This could mean a couple things:
 
-> There is an open spec proposal for installing the same Feature twice in a given `devcontainer.json`: https://github.com/devcontainers/spec/issues/44.   While the syntax to do so in a given `devcontainer.json` is not yet defined, Feature dependencies will effectively allow for this.
+> There is an open spec proposal for installing the same Feature twice in a given `devcontainer.json`: https://github.com/devcontainers/spec/issues/44.  While the syntax to do so in a given `devcontainer.json` is not yet defined, Feature dependencies will effectively allow for this.
 
 For Features that install a versioned tool (eg: version x of `go` and version y of `ruby` ), a robust Feature should be able to install multiple versions of the tool.  If your tool has a version manager (java's `SDKMAN`, ruby's `rvm`) it is usually as simple as installing the version manager and then running a command to install the desired version of that tool.
 
@@ -38,11 +38,11 @@ For example, if two python Features are installed with different versions, the F
 > Many of the suggestions in this section may benefit from the 'Feature library'/'code reuse' proposal here https://github.com/devcontainers/spec/blob/main/proposals/features-library.md
 
 
-## Detect Platform/OS
+### Detect Platform/OS
 
 > A spec proposal is open for detecting the platform/OS and providing better warnings: https://github.com/devcontainers/spec/issues/58
 
-Features are often designed to work on subset of possible base images.  For example, the majority of Features in the [`devcontainers/features` repo](https://github.com/devcontainers/features) repo as designed to work broadly with debian-derived images.  The distinction is often simply due to the wide array of base images available, and the fact that many Features will use an OS-specific package manager.
+Features are often designed to work on a subset of possible base images.  For example, the majority of Features in the [`devcontainers/features` repo](https://github.com/devcontainers/features) repo are designed to work broadly with debian-derived images.  The distinction is often simply due to the wide array of base images available, and the fact that many Features will use an OS-specific package manager.
 
 One possible way to implement this check is shown below.
 
@@ -71,7 +71,7 @@ fi
 
 ```
 
-## Detect the non-root user
+### Detect the non-root user
 
 Feature installation scripts are run as `root`.  In contrast, many dev containers have a `remoteUser` set (either implicitly through [image metadata](https://containers.dev/implementors/spec/#image-metadata) or directly in the `devcontainer.json`).  In a Feature's installation script, one should be mindful of the final user and account for instances where the user is not `root`.
 
@@ -107,8 +107,8 @@ fi
 
 ```
 
-## Implement redundant paths/strategies
+### Implement redundant paths/strategies
 
-Most Features in [the index today](https://containers.dev/features) have some external/upstream dependency.  Very often these upstream dependencies can change (ie: versioning pattern, rotated GPG key, etc...) that may cause a Feature to fail to install.  To mitigate this, one strategy is to implement multiple paths to install a given tool (if available).  For example, a Feature that installs `go` might try to install it from the upstream package manager, and if not fall back to the a GitHub release.
+Most Features in [the index today](https://containers.dev/features) have some external/upstream dependency.  Very often these upstream dependencies can change (ie: versioning pattern, rotated GPG key, etc...) that may cause a Feature to fail to install.  To mitigate this, one strategy is to implement multiple paths to install a given tool (if available).  For example, a Feature that installs `go` might try to install it from the upstream package manager, and if not fall back to a GitHub release.
 
 Writing several [scenario tests](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios) will help you catch instances where a given path no longer works.  
