@@ -21,7 +21,7 @@ For Features that install a versioned tool (eg: version x of `go` and version y 
 
 For instances where there isn't an existing version manager available, a well-designed Feature should consider installing distict versions of itself to a well known location.  A pattern that many Features utilize successfully is writing each version of each tool to a central folder and symlinking the "active" version to a folder on the PATH.
 
-Feature can redefine the PATH variable with `containerEnv`, like so:
+Features can redefine the PATH variable with `containerEnv`, like so:
 
 ```bash
 # devcontainer-feature.json
@@ -73,9 +73,7 @@ if [[ "${DOCKER_MOBY_ARCHIVE_VERSION_CODENAMES}" != *"${VERSION_CODENAME}"* ]]; 
 fi
 ```
 
-If you're attempting to target a distro that will not have your desired scripting language installed (eg: `bash` is not installed on `alpine`), you may find it useful to use a pattern as shown below.
-
-This example is from the [`common-utils`](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/src/common-utils/install.sh) Feature and is used to install `bash` on alpine-like distros.
+If you are targeting distros that may not have your desired scripting language installed (eg: `bash` is often not installed on `alpine` images), you can either use plain `/bin/sh` - which is available virtually everywhere - or you can verify (and install) the scripting language in a small bootstrap script as shown below.
 
 ```sh
 #!/bin/sh 
@@ -97,8 +95,6 @@ fi
 exec /bin/bash "$(dirname $0)/main.sh" "$@"
 exit $?
 ```
-
-In this example, the remainder of the Feature logic is placed in a file called `main.sh` and executed by `bash`.
 
 Validating functionality against several base images can be done by using the `devcontainer features test` command with the `--base-image` flag, or with a [scenario](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios).  For example,  one could add a [workflow like this to their repo](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/.github/workflows/test-all.yaml#L9-L52).
 
@@ -150,30 +146,11 @@ Feature installation scripts are run as `root`.  In contrast, many dev container
 Feature authors should take advantage of the [`_REMOTE_USER` and similar variables](https://containers.dev/implementors/features/#user-env-var) injected during the build.
 
 ```bash
-# _REMOTE_USER is set in the environment during the build to match the effective 'remoteUser'
-USERNAME="${USERNAME:-"${_REMOTE_USER:-"automatic"}"}"
-
-# If an existing non-root user matching the POSSIBLE_USERS exists, use it!
-if [ "${USERNAME}" = "auto" ] || [ "${USERNAME}" = "automatic" ]; then
-    USERNAME=""
-    POSSIBLE_USERS=("vscode" "node" "codespace" "$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)")
-    for CURRENT_USER in "${POSSIBLE_USERS[@]}"; do
-        if id -u ${CURRENT_USER} > /dev/null 2>&1; then
-            USERNAME=${CURRENT_USER}
-            break
-        fi
-    done
-    if [ "${USERNAME}" = "" ]; then
-        USERNAME=root
-    fi
-elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
-    USERNAME=root
-fi
-
-# Install tool and make sure the non-root user has permission to use it
-curl $TOOL_DOWNLOAD_LINK -o $TOOL_PATH
-chmod -R $USERNAME $TOOL_PATH
-
+# Install tool in effective remoteUser's bin folder
+mkdir -p "$_REMOTE_USER_HOME/bin"
+curl $TOOL_DOWNLOAD_LINK -o "$_REMOTE_USER_HOME/bin/$TOOL"
+chown $_REMOTE_USER:$_REMOTE_USER "$_REMOTE_USER_HOME/bin/$TOOL"
+chmod 755 "$_REMOTE_USER_HOME/bin/$TOOL"
 ```
 
 ### Implement redundant paths/strategies
