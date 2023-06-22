@@ -13,9 +13,9 @@ Bundled with the `devcontainer` cli is the `devcontainer features test` command.
 
 ## Feature idempotency
 
-The most useful Features are idempotent. This means that if a Feature is installed multiple times with different options (something that will come into play with [Feature Dependencies](https://github.com/devcontainers/spec/blob/main/proposals/feature-dependencies.md)), the Feature should be able to handle this gracefully. This is especially important for Features with a wide array of options that you anticipate others may depend on in the future.
+The most useful Features are idempotent. This means that if a Feature is installed multiple times with different options (something that will come into play with [Feature Dependencies](https://github.com/devcontainers/spec/blob/main/proposals/feature-dependencies.md)), the Feature should be able to handle this gracefully. This is especially important for option-rich Features that you anticipate others may depend on in the future.
 
-> 🔧 There is an open spec proposal for installing the same Feature twice in a given `devcontainer.json`: https://github.com/devcontainers/spec/issues/44.  While the syntax to do so in a given `devcontainer.json` is not yet defined, Feature dependencies will effectively allow for this.
+> 🔧 There is an open spec proposal for installing the same Feature twice in a given `devcontainer.json` [(devcontainers/spec#44)](https://github.com/devcontainers/spec/issues/44).  While the syntax to do so in a given `devcontainer.json` is not yet defined, Feature dependencies will effectively allow for this.
 
 For Features that install a versioned tool (eg: version x of `go` and version y of `ruby` ), a robust Feature should be able to install multiple versions of the tool.  If your tool has a version manager (java's `SDKMAN`, ruby's `rvm`) it is usually as simple as installing the version manager and then running a command to install the desired version of that tool.
 
@@ -30,20 +30,22 @@ Feature can redefine the PATH variable with `containerEnv`, like so:
 }
 ```
 
-> 🔧 A spec proposal is open for simplifying the process of adding a path to the $PATH variable: https://github.com/devcontainers/spec/issues/251
+> 🔧 A spec proposal is open for simplifying the process of adding a path to the $PATH variable: [(devcontainers/spec#251)](https://github.com/devcontainers/spec/issues/251).
 
-To make testing for idempotency easy, [this change to the reference implementation](https://github.com/devcontainers/cli/pull/553) introduces a new mode to the `devcontainer features test` command that will attempt to install a Feature multiple times.  This is useful for testing that a Feature is idempotent, and also for testing that a Feature is able to logically juggle multiple versions of a tool.
+To make testing for idempotency easy, [this change to the reference implementation](https://github.com/devcontainers/cli/pull/553) introduces a new mode to the `devcontainer features test` command that will attempt to install a Feature multiple times.  This is useful for testing that a Feature is idempotent, and also for testing that a Feature is able to logically "juggle" multiple versions of a tool.
 
 ## Writing your install script
 
-> 🔧 Many of the suggestions in this section may benefit from the 'Feature library'/'code reuse' proposal here https://github.com/devcontainers/spec/blob/main/proposals/features-library.md.
 
+> 🔧 Many of the suggestions in this section may benefit from the [Feature library/code reuse proposal](https://github.com/devcontainers/spec/blob/main/proposals/features-library.md).
+
+This section includes some tips for the contents of the `install.sh` entrypoint script.
 
 ### Detect Platform/OS
 
-> 🔧 A spec proposal is open for detecting the platform/OS and providing better warnings: https://github.com/devcontainers/spec/issues/58
+> 🔧 A spec proposal is open for detecting the platform/OS and providing better warnings [(devcontainers/spec#58)](https://github.com/devcontainers/spec/issues/58).
 
-Features are often designed to work on a subset of possible base images.  For example, the majority of Features in the [`devcontainers/features` repo](https://github.com/devcontainers/features) repo are designed to work broadly with debian-derived images.  The limitation is often simply due to the wide array of base images available, and the fact that many Features will use an OS-specific package manager.
+Features are often designed to work on a subset of possible base images.  For example, the majority of Features in the [`devcontainers/features`](https://github.com/devcontainers/features) repo are designed to work broadly with debian-derived images.  The limitation is often simply due to the wide array of base images available, and the fact that many Features will use an OS-specific package manager.  To make it easy for users to understand which base images a Feature is designed to work with, it is recommended that Features include a check for the OS and provide a helpful error message if the OS is not supported.
 
 One possible way to implement this check is shown below.
 
@@ -71,10 +73,12 @@ if [[ "${DOCKER_MOBY_ARCHIVE_VERSION_CODENAMES}" != *"${VERSION_CODENAME}"* ]]; 
 fi
 ```
 
-If you're attempting to target a distro that may not have your desired scripting language installed (eg: `bash` is not installed on `alpine`), one pattern used in the [`common-utils`](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/src/common-utils/install.sh) Feature is shown below to install `bash`.
+If you're attempting to target a distro that will not have your desired scripting language installed (eg: `bash` is not installed on `alpine`), you may find it useful to use a pattern as shown below.
+
+This example is from the [`common-utils`](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/src/common-utils/install.sh) Feature and is used to install `bash` on alpine-like distros.
 
 ```sh
-#!/bin/sh
+#!/bin/sh 
 
 # ... 
 # ...
@@ -94,9 +98,9 @@ exec /bin/bash "$(dirname $0)/main.sh" "$@"
 exit $?
 ```
 
-In this example, the remainder of the Feature logic is placed in a bashscript called `main.sh` and executed by `bash`.
+In this example, the remainder of the Feature logic is placed in a file called `main.sh` and executed by `bash`.
 
-Testing against several base images can be done by using the `devcontainer features test` command with the `--base-image` flag, or with a [scenario](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios).  For example, to test against `debian:buster` and `debian:bullseye`, one could add a [workflow like this to their repo](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/.github/workflows/test-all.yaml#L9-L52).
+Validating functionality against several base images can be done by using the `devcontainer features test` command with the `--base-image` flag, or with a [scenario](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios).  For example,  one could add a [workflow like this to their repo](https://github.com/devcontainers/features/blob/d934503a050ba84e6b42a006aacd891c4088eb62/.github/workflows/test-all.yaml#L9-L52).
 
 ```yaml
 name: "Test Features matrixed with a set of base images"
@@ -133,9 +137,10 @@ jobs:
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
-
+        {% raw %}
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test  --skip-scenarios -f ${{ matrix.features }} -i ${{ matrix.baseImage }}
+        {% endraw %} 
 ```
 
 ### Detect the non-root user
