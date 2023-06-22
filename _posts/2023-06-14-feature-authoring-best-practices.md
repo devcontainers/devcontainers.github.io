@@ -180,4 +180,4 @@ chmod -R $USERNAME $TOOL_PATH
 
 Most Features in [the index today](https://containers.dev/features) have some external/upstream dependency.  Very often these upstream dependencies can change (ie: versioning pattern, rotated GPG key, etc...) that may cause a Feature to fail to install.  To mitigate this, one strategy is to implement multiple paths to install a given tool (if available).  For example, a Feature that installs `go` might try to install it from the upstream package manager, and if not fall back to a GitHub release.
 
-Writing several [scenario tests](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios) that force the Feature to go down distict installation paths will help you catch cases where a given path no longer works.
+Writing several [scenario tests](https://github.com/devcontainers/cli/blob/main/docs/features/test.md#scenarios) that force the Feature to go down distinct installation paths will help you catch cases where a given path no longer works.
