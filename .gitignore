@@ -3,4 +3,3 @@ _site
 spec-generator/node_modules
 spec-generator/out
 devcontainer-index.json
-devcontainer-control-manifest.json

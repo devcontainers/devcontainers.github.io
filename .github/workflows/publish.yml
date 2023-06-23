@@ -36,12 +36,6 @@ jobs:
           mv oras-install/oras /usr/local/bin/
           rm -rf oras_0.13.0_*.tar.gz oras-install/
 
-      - name: Fetch devcontainer-control-manifest.json
-        run: |
-          cd _data
-          oras pull ghcr.io/devcontainers/control-manifest:latest
-          cp devcontainer-control-manifest.json ../static/
-
       - name: Fetch devcontainer-index.json
         run: |
           cd _data
