@@ -174,7 +174,7 @@ Variables can be referenced in certain string values in `devcontainer.json` in t
 
 ## <a href="#schema" name="schema" class="anchor"> Schema </a>
 
-You can see the VS Code implementation of the dev container schema [here](https://github.com/microsoft/vscode/blob/main/extensions/configuration-editing/schemas/devContainer.schema.src.json).
+You can see the dev container schema [here](https://github.com/devcontainers/spec/blob/main/schemas/devContainer.base.schema.json).
 
 ## <a href="#publishing-vs-forwarding-ports" name="publishing-vs-forwarding-ports" class="anchor"> Publishing vs forwarding ports </a>
 
