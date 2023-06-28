@@ -11,6 +11,7 @@ group :jekyll_plugins do
    gem "jemoji"
    gem "github-pages"
    gem "jekyll-remote-theme"
+   gem "jekyll-feed"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
