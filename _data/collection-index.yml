@@ -458,3 +458,8 @@
   contact: https://github.com/bdsoha/devcontainers/issues
   repository: https://github.com/bdsoha/devcontainers
   ociReference: ghcr.io/bdsoha/devcontainers
+- name: Python3 with Pyenv and PDM
+  maintainer: Nafnix
+  contact: https://github.com/nafnix/devcontainers-templates/issues
+  repository: https://github.com/nafnix/devcontainers-templates
+  ociReference: ghcr.io/nafnix/devcontainers-templates
