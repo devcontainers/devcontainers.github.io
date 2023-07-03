@@ -468,3 +468,8 @@
   contact: https://github.com/microsoft/datascience-py-r/issues
   repository: https://github.com/microsoft/datascience-py-r
   ociReference: ghcr.io/microsoft/datascience-py-r
+- name: Features by tomharvey
+  maintainer: Tom Harvey
+  contact: https://github.com/tomharvey/devcontainer-features/issues
+  repository: https://github.com/tomharvey/devcontainer-features
+  ociReference: ghcr.io/tomharvey/devcontainer-features
