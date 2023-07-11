@@ -149,7 +149,7 @@ A local Feature is referenced in the devcontainer's `feature` object **relative 
 
 Additional constraints exists when including local Features in a project:
 
-* The project must have a `.devcontainer/` folder at the root of the [**project workspace folder**](/docs/specs/devcontainer-reference.md#project-workspace-folder).
+* The project must have a `.devcontainer/` folder at the root of the [**project workspace folder**](/implementors/spec/#project-workspace-folder).
 
 * A local Feature's source code **must** be contained within a sub-folder of the `.devcontainer/ folder`.
 
