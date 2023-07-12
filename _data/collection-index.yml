@@ -473,3 +473,8 @@
   contact: https://github.com/tomharvey/devcontainer-features/issues
   repository: https://github.com/tomharvey/devcontainer-features
   ociReference: ghcr.io/tomharvey/devcontainer-features
+- name: Azure Developer CLI Dev Container Feature
+  maintainer: Azure Developer CLI Team
+  contact: https://github.com/Azure/azure-dev/issues
+  repository: https://github.com/Azure/azure-dev
+  ociReference: ghcr.io/azure/azure-dev
