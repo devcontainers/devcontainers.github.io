@@ -352,6 +352,39 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 									"type": "string",
 									"pattern": "^\\d+([tgmk]b)?$",
 									"description": "Amount of required disk space in bytes. Supports units tb, gb, mb and kb."
+								},
+								"gpu": {
+									"oneOf": [
+										{
+											"type": [
+												"boolean",
+												"string"
+											],
+											"enum": [
+												true,
+												false,
+												"optional"
+											],
+											"description": "Indicates whether a GPU is required. The string \"optional\" indicates that a GPU is optional. An object value can be used to configure more detailed requirements."
+										},
+										{
+											"type": "object",
+											"properties": {
+												"cores": {
+													"type": "integer",
+													"minimum": 1,
+													"description": "Number of required cores."
+												},
+												"memory": {
+													"type": "string",
+													"pattern": "^\\d+([tgmk]b)?$",
+													"description": "Amount of required RAM in bytes. Supports units tb, gb, mb and kb."
+												}
+											},
+											"description": "Indicates whether a GPU is required. The string \"optional\" indicates that a GPU is optional. An object value can be used to configure more detailed requirements.",
+											"additionalProperties": false
+										}
+									]
 								}
 							}
 						}

@@ -91,13 +91,15 @@ If one of the lifecycle scripts fails, any subsequent scripts will not be execut
 
 ## <a href="#min-host-reqs" name="min-host-reqs" class="anchor"> Minimum host requirements </a>
 
-While `devcontainer.json` does not focus on hardware or VM provisioning, it can be useful to know your container's minimum RAM, CPU, and storage requirements. This is what the `hostRequirements` properties allow you to do. Cloud services can use these properties to automatically default to the best compute option available, while in other cases, you will be presented with a warning if the requirements are not met.
+While `devcontainer.json` does not focus on hardware or VM provisioning, it can be useful to know your container's minimum RAM, CPU, storage, and GPU requirements. This is what the `hostRequirements` properties allow you to do. Cloud services can use these properties to automatically default to the best compute option available, while in other cases, you will be presented with a warning if the requirements are not met.
 
 | Property | Type  | Description |
 |:------------------|:------------|:------------|
 | `hostRequirements.cpus` 🏷️ | integer | Indicates the minimum required number of CPUs / virtual CPUs / cores. For example: `"hostRequirements": {"cpus": 2}` |
 | `hostRequirements.memory` 🏷️ | string |  A string indicating minimum memory requirements with a `tb`, `gb`, `mb`, or `kb` suffix. For example, `"hostRequirements": {"memory": "4gb"}` |
 | `hostRequirements.storage` 🏷️ | string | A string indicating minimum storage requirements with a `tb`, `gb`, `mb`, or `kb` suffix. For example, `"hostRequirements": {"storage": "32gb"}` |
+| `hostRequirements.gpu` 🏷️ | boolean, string or object | Indicates whether a GPU is required. The string \"optional\" indicates that a GPU is optional. An object value can be used to configure more detailed requirements. For example: `"hostRequirements": {"gpu": true}` |
+
 {: .table .table-bordered .table-responsive}
 
 ## <a href="#port-attributes" name="port-attributes" class="anchor"> Port attributes </a>

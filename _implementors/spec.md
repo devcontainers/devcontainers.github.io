@@ -90,7 +90,7 @@ To apply the metadata together with a user's devcontainer.json at runtime, the f
 | `forwardPorts` | `(number \| string)[]` | Union of all ports without duplicates. Last one wins (when mapping changes). | x |   |
 | `shutdownAction` | `string` (enum) | Last value wins. | x |   |
 | `updateRemoteUserUID` | `boolean` | Last value wins. | x |   |
-| `hostRequirements` | `cpus`, `memory`, `storage` | Max value wins. | x |   |
+| `hostRequirements` | `cpus`, `memory`, `storage`, `gpu` | Max value wins. | x |   |
 {: .table .table-bordered .table-responsive}
 
 Variables in string values will be substituted at the time the value is applied. When the order matters, the devcontainer.json is considered last.
