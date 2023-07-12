@@ -39,6 +39,12 @@ Visual Studio added Dev Container support in Visual Studio 2022 17.4 for C++ pro
 
 You may learn more in the [announcement blog post](https://devblogs.microsoft.com/cppblog/dev-containers-for-c-in-visual-studio/).
 
+### <a href="#intellij" name="intellij" class="anchor"> IntelliJ IDEA </a>
+
+IntelliJ IDEA has early support Dev Containers that can be run remotely via an SSH connection or locally using Docker.
+
+You may learn more in the [announcement blog post](https://blog.jetbrains.com/idea/2023/06/intellij-idea-2023-2-eap-6/#SupportforDevContainers).
+
 ## <a href="#tools" name="tools" class="anchor"> Tools </a>
 
 ### <a href="#devcontainer-cli" name="devcontainer-cli" class="anchor"> Dev Container CLI </a>
