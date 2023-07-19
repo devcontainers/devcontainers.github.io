@@ -478,3 +478,8 @@
   contact: https://github.com/Azure/azure-dev/issues
   repository: https://github.com/Azure/azure-dev
   ociReference: ghcr.io/azure/azure-dev
+- name: Skyramp Dev Container Feature
+  maintainer: Skyramp, Inc.
+  contact: https://github.com/letsramp/devcontainer-features/issues
+  repository: https://github.com/letsramp/devcontainer-features
+  ociReference: ghcr.io/letsramp/devcontainer-features
