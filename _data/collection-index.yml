@@ -483,3 +483,7 @@
   contact: https://github.com/letsramp/devcontainer-features/issues
   repository: https://github.com/letsramp/devcontainer-features
   ociReference: ghcr.io/letsramp/devcontainer-features
+- name: Earthly Dev Container Features
+  maintainer: Earthly Technologies
+  repository: https://github.com/earthly/devcontainer-features
+  ociRefernce: ghcr.io/earthly/devcontainer-features
