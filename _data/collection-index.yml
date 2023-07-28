@@ -492,4 +492,4 @@
   maintainer: Stateful, Inc.
   contact: https://github.com/stateful/devcontainer-features/issues
   repository: https://github.com/stateful/devcontainer-features
-  ociRefernce: https://ghcr.io/stateful/devcontainer-features
+  ociReference: ghcr.io/stateful/devcontainer-features
