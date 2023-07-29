@@ -32,7 +32,7 @@ Next, remove the `image` property from `devcontainer.json` (if it exists) and ad
 ```json
 {
     "build": {
-        // Path is relataive to the devcontainer.json file.
+        // Path is relative to the devcontainer.json file.
         "dockerfile": "Dockerfile"
     }
 }
@@ -138,6 +138,6 @@ volumes:
   postgres-data:
 ```
 
-Finally, as in the Dockerfile example, you can use this same setup to author a Dev Container image you can share with others and add Dev Container settings and metadata right into the image itself. 
+Finally, as in the Dockerfile example, you can use this same setup to create a Dev Container image that you can share with others. You can also add Dev Container settings and metadata right into the image itself. 
 
 See the reference on **[pre-building](/implementors/reference/#prebuilding)** to learn more!
