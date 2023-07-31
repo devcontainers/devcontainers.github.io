@@ -9,7 +9,7 @@ Development container ["Features"](/features) are self-contained, shareable unit
 
 In this document, we'll outline a "quickstart" to help you get up-and-running with creating and sharing your first Feature. You may review an example along with guidance in our [devcontainers/feature-starter](https://github.com/devcontainers/feature-starter) repo as well. 
 
-> Note: While this walkthrough will illustrate the use of GitHub and the GitHub Container Registry, you can use your own source control system and publish to any [OCI Artifact supporting](https://oras.land/implementors/#registries-supporting-oci-artifacts) container registry instead.
+> Note: While this walkthrough will illustrate the use of GitHub and the GitHub Container Registry, you can use your own source control system and publish to any [OCI Artifact supporting](https://oras.land/docs/compatible_oci_registries#registries-supporting-oci-artifacts) container registry instead.
 
 ## <a href="#create-repo" name="create-repo" class="anchor"> Create a repo </a>
 
