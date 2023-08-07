@@ -493,3 +493,8 @@
   contact: https://github.com/stateful/devcontainer-features/issues
   repository: https://github.com/stateful/devcontainer-features
   ociReference: ghcr.io/stateful/devcontainer-features
+- name: Wpdevenv Templates
+  maintainer: Wpdevenv
+  contact: https://github.com/wpdevenv/dev_container_templates/issues
+  repository: https://github.com/wpdevenv/dev_container_templates
+  ociReference: ghcr.io/wpdevenv/dev_container_templates
