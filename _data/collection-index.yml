@@ -498,3 +498,7 @@
   contact: https://github.com/wpdevenv/dev_container_templates/issues
   repository: https://github.com/wpdevenv/dev_container_templates
   ociReference: ghcr.io/wpdevenv/dev_container_templates
+- name: Features by Elan Hasson
+  maintainer: ElanHasson
+  contact: https://github.com/ElanHasson/devcontainer-features/issues
+  repository: https://github.com/ElanHasson/devcontainer-features
