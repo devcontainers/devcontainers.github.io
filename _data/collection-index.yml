@@ -498,3 +498,8 @@
   contact: https://github.com/wpdevenv/dev_container_templates/issues
   repository: https://github.com/wpdevenv/dev_container_templates
   ociReference: ghcr.io/wpdevenv/dev_container_templates
+- name: Native Dev Container Features
+  maintainer: John Chlark Sumatra
+  contact: https://github.com/itsmechlark/features/issues
+  repository: https://github.com/itsmechlark/features
+  ociReference: ghcr.io/itsmechlark/features
