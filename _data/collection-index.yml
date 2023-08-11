@@ -502,3 +502,4 @@
   maintainer: ElanHasson
   contact: https://github.com/ElanHasson/devcontainer-features/issues
   repository: https://github.com/ElanHasson/devcontainer-features
+  ociReference: ghcr.io/ElanHasson/devcontainer-features
