@@ -503,3 +503,8 @@
   contact: https://github.com/itsmechlark/features/issues
   repository: https://github.com/itsmechlark/features
   ociReference: ghcr.io/itsmechlark/features
+- name: Assorted Features
+  maintainer: Marco Zaccaro
+  contact: https://github.com/marcozac/devcontainer-features/issues
+  repository: https://github.com/marcozac/devcontainer-features
+  ociReference: ghcr.io/marcozac/devcontainer-features
