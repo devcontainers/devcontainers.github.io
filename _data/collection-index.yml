@@ -508,3 +508,8 @@
   contact: https://github.com/marcozac/devcontainer-features/issues
   repository: https://github.com/marcozac/devcontainer-features
   ociReference: ghcr.io/marcozac/devcontainer-features
+- name: Features by Elan Hasson
+  maintainer: ElanHasson
+  contact: https://github.com/ElanHasson/devcontainer-features/issues
+  repository: https://github.com/ElanHasson/devcontainer-features
+  ociReference: ghcr.io/elanhasson/devcontainer-features
