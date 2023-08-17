@@ -408,6 +408,11 @@
   contact: https://github.com/devcontainers-community/templates/issues
   repository: https://github.com/devcontainers-community/templates
   ociReference: ghcr.io/devcontainers-community/templates
+- name: Community Features
+  maintainer: devcontainers-community
+  contact: https://github.com/devcontainers-community/features/issues
+  repository: https://github.com/devcontainers-community/features
+  ociReference: ghcr.io/devcontainers-community/features
 - name: Rusty Features
   maintainer: Lee-Orr
   contact: https://github.com/lee-orr/rusty-dev-containers/issues
