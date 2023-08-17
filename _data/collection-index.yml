@@ -413,6 +413,11 @@
   contact: https://github.com/devcontainers-community/features/issues
   repository: https://github.com/devcontainers-community/features
   ociReference: ghcr.io/devcontainers-community/features
+- name: Community npm Features
+  maintainer: devcontainers-community
+  contact: https://github.com/devcontainers-community/npm-features/issues
+  repository: https://github.com/devcontainers-community/npm-features
+  ociReference: ghcr.io/devcontainers-community/npm-features
 - name: Rusty Features
   maintainer: Lee-Orr
   contact: https://github.com/lee-orr/rusty-dev-containers/issues
