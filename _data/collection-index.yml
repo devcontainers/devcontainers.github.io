@@ -523,3 +523,8 @@
   contact: https://github.com/ElanHasson/devcontainer-features/issues
   repository: https://github.com/ElanHasson/devcontainer-features
   ociReference: ghcr.io/elanhasson/devcontainer-features
+- name: Python+MSSQL+Azure SQL Templates
+  maintainer: Azure Developer CLI Team
+  contact: https://github.com/Azure-Samples/python-ms-sql-devcontainer/issues
+  repository: https://github.com/Azure-Samples/python-ms-sql-devcontainer
+  ociReference: ghcr.io/azure-samples/python-ms-sql-devcontainer
