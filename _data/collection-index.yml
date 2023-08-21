@@ -527,4 +527,4 @@
   maintainer: Mahdi Setayesh
   contact: https://github.com/Azure-Samples/python-ms-sql-devcontainer/issues
   repository: https://github.com/Azure-Samples/python-ms-sql-devcontainer
-  ociReference: ghcr.io/Azure-Samples/python-ms-sql-devcontainer
+  ociReference: ghcr.io/azure-samples/python-ms-sql-devcontainer
