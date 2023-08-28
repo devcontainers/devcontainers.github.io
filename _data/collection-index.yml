@@ -528,3 +528,8 @@
   contact: https://github.com/Azure-Samples/python-ms-sql-devcontainer/issues
   repository: https://github.com/Azure-Samples/python-ms-sql-devcontainer
   ociReference: ghcr.io/azure-samples/python-ms-sql-devcontainer
+- name: Julia Language Features
+  maintainer: Julia Language Community
+  contact: https://github.com/JuliaLang/devcontainer-features/issues
+  repository: https://github.com/JuliaLang/devcontainer-features
+  ociReference: ghcr.io/julialang/devcontainer-features
