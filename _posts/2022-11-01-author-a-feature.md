@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Authoring a Dev Container Feature"
-author: "@joshspicer"
-authorUrl: https://github.com/joshspicer
+author:
+    - "@joshspicer"
+authorUrl:
+    - https://github.com/joshspicer
 ---
 
 Development container ["Features"](/features) are self-contained, shareable units of installation code and development container configuration. We [define a pattern](/implementors/features-distribution) for authoring and self-publishing Features.

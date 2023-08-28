@@ -2,15 +2,12 @@
 layout: singlePage
 ---
 <div class="container">
-    <p>{{ page.date | date_to_string }} - 
-    {% if page.authors.size == 1 %}
-        <a href="{{ page.authorUrl }}">{{ page.author }}</a>
-    {% else %}
-        Authors:
-        {% for author in page.authors %}
-            <a href="{{ author.authorUrl }}">{{ author.name }}</a>{% unless forloop.last %}, {% endunless %}
+    <p>{{ page.date | date_to_string }} -
+        {% assign i = 0 %}
+        {% for a in page.author %}
+            <a href="{{ page.authorUrl[i] }}">{{ page.author[i] }}</a>
+            {% assign i = i | plus:1 %}
         {% endfor %}
-    {% endif %}
     </p>
 
     {{ content }}

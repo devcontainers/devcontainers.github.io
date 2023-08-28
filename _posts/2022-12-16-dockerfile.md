@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Using Images, Dockerfiles, and Docker Compose"
-author: "@chuxel"
-authorUrl: https://github.com/chuxel
+author:
+  - "@chuxel"
+authorUrl:
+  - https://github.com/chuxel
 ---
 
 When creating a development container, you have a variety of different ways to customize your environment like ["Features"](/features) or [lifecycle scripts](/implementors/json_reference/#lifecycle-scripts). However, if you are familiar with containers, you may want to use a [Dockerfile](/guide/dockerfile#dockerfile) or [Docker Compose / Compose](/guide/dockerfile#docker-compose) to customize your environment. This article will walk through how to use these formats with the Dev Container spec.
