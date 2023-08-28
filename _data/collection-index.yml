@@ -528,3 +528,8 @@
   contact: https://github.com/Azure-Samples/python-ms-sql-devcontainer/issues
   repository: https://github.com/Azure-Samples/python-ms-sql-devcontainer
   ociReference: ghcr.io/azure-samples/python-ms-sql-devcontainer
+- name: Features by Tiwaloluwa Ojo
+  maintainer: Tiwaloluwa Ojo
+  contact: https://github.com/tiwaojo/features/issues
+  repository: https://github.com/tiwaojo/features
+  ociReference: ghcr.io/tiwaojo/features
