@@ -538,3 +538,8 @@
   contact: https://github.com/JuliaLang/devcontainer-features/issues
   repository: https://github.com/JuliaLang/devcontainer-features
   ociReference: ghcr.io/julialang/devcontainer-features
+- name: Julia Language Templates
+  maintainer: Julia Language Community
+  contact: https://github.com/JuliaLang/devcontainer-templates/issues
+  repository: https://github.com/JuliaLang/devcontainer-templates
+  ociReference: ghcr.io/julialang/devcontainer-templates
