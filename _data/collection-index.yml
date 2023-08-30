@@ -543,3 +543,8 @@
   contact: https://github.com/JuliaLang/devcontainer-templates/issues
   repository: https://github.com/JuliaLang/devcontainer-templates
   ociReference: ghcr.io/julialang/devcontainer-templates
+- name: Features by John Rowley
+  maintainer: John Rowley
+  contact: https://github.com/robbert229/devcontainer-features/issues
+  repository: https://github.com/robbert229/devcontainer-features
+  ociReference: ghcr.io/robbert229/devcontainer-features
