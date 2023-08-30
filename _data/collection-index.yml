@@ -547,4 +547,4 @@
   maintainer: John Rowley
   contact: https://github.com/robbert229/devcontainer-features/issues
   repository: https://github.com/robbert229/devcontainer-features
-  ociReference: ghcr.io/robbert229/devcontainers-features
+  ociReference: ghcr.io/robbert229/devcontainer-features
