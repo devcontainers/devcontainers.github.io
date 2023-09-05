@@ -2,7 +2,13 @@
 layout: singlePage
 ---
 <div class="container">
-    <p>{{ page.date | date_to_string }} - <a href="{{ page.authorUrl }}">{{ page.author }}</a></p>
+    <p>{{ page.date | date_to_string }} -
+        {% assign i = 0 %}
+        {% for a in page.author %}
+            <a href="{{ page.authorUrl[i] }}">{{ page.author[i] }}</a>
+            {% assign i = i | plus:1 %}
+        {% endfor %}
+    </p>
 
     {{ content }}
 </div>

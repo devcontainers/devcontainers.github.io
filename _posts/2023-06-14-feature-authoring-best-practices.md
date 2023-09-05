@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Best Practices: Authoring a Dev Container Feature"
-author: "@joshspicer"
-authorUrl: https://github.com/joshspicer
+author:
+  - "@joshspicer"
+authorUrl:
+  - https://github.com/joshspicer
 ---
 
 Last November I wrote about the basics around [authoring a Dev Container Feature](/guide/author-a-feature). Since then, [hundreds](https://containers.dev/features) of Features have been written by the community. The flexibility of Features has enabled a wide variety of use cases, from installing a single tool to setting up specific aspects of a project's development environment that can be shared across repositories.  To that effect, many different patterns for Feature authorship have emerged, and the core team has learned a lot about what works well and what doesn't.
