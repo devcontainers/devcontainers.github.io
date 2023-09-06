@@ -405,13 +405,13 @@
   ociReference: ghcr.io/favalos/devcontainer-features
 - name: Community Templates
   maintainer: devcontainers-community
-  contact: https://github.com/devcontainers-community/templates/issues
-  repository: https://github.com/devcontainers-community/templates
+  contact: https://github.com/orgs/devcontainers-community/discussions
+  repository: https://github.com/devcontainers-community
   ociReference: ghcr.io/devcontainers-community/templates
 - name: Community Features
   maintainer: devcontainers-community
-  contact: https://github.com/devcontainers-community/features/issues
-  repository: https://github.com/devcontainers-community/features
+  contact: https://github.com/orgs/devcontainers-community/discussions
+  repository: https://github.com/devcontainers-community
   ociReference: ghcr.io/devcontainers-community/features
 - name: Community npm Features
   maintainer: devcontainers-community
