@@ -548,3 +548,8 @@
   contact: https://github.com/robbert229/devcontainer-features/issues
   repository: https://github.com/robbert229/devcontainer-features
   ociReference: ghcr.io/robbert229/devcontainer-features
+- name: AliuQ Templates
+  maintainer: AliuQ
+  contact: https://github.com/aliuq/devcontainers/issues
+  repository: https://github.com/aliuq/devcontainers
+  ociReference: ghcr.io/aliuq/devcontainers
