@@ -553,3 +553,8 @@
   contact: https://github.com/aliuq/devcontainers/issues
   repository: https://github.com/aliuq/devcontainers
   ociReference: ghcr.io/aliuq/devcontainers
+- name: Nordcom Group Inc.'s Dev Container Features
+  maintainer: Filiph Siitam Sandström
+  contact: https://github.com/NordcomInc/devcontainer-features/issues
+  repository: https://github.com/NordcomInc/devcontainer-features
+  ociReference: ghcr.io/nordcominc/devcontainer-features
