@@ -558,3 +558,8 @@
   contact: https://github.com/NordcomInc/devcontainer-features/issues
   repository: https://github.com/NordcomInc/devcontainer-features
   ociReference: ghcr.io/nordcominc/devcontainer-features
+- name: Features by Maxim Slipenko
+  maintainer: Maxim Slipenko
+  contact: https://github.com/Maks1mS/devcontainers-features/issues
+  repository: https://github.com/Maks1mS/devcontainers-features
+  ociReference: ghcr.io/maks1ms/devcontainers-features
