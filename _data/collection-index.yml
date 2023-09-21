@@ -563,3 +563,8 @@
   contact: https://github.com/Maks1mS/devcontainers-features/issues
   repository: https://github.com/Maks1mS/devcontainers-features
   ociReference: ghcr.io/maks1ms/devcontainers-features
+- name: Container Structure Tests
+  maintainer: Ty Schlichenmeyer
+  contact: https://github.com/schlich/cst-devcontainer-feature/issues
+  repository: https://github.com/schlich/cst-devcontainer-feature
+  ociReference: ghcr.io/cst-devcontainer-feature
