@@ -567,4 +567,4 @@
   maintainer: Ty Schlichenmeyer
   contact: https://github.com/schlich/cst-devcontainer-feature/issues
   repository: https://github.com/schlich/cst-devcontainer-feature
-  ociReference: ghcr.io/cst-devcontainer-feature
+  ociReference: ghcr.io/schlich/cst-devcontainer-feature
