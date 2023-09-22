@@ -142,4 +142,4 @@ volumes:
 
 Finally, as in the Dockerfile example, you can use this same setup to create a Dev Container image that you can share with others. You can also add Dev Container settings and metadata right into the image itself. 
 
-See the guide on **[pre-building](/_posts/2023-08-22-prebuild.md)** to learn more!
+See the guide on **[pre-building]({% post_url 2023-08-22-prebuild %})** to learn more!
