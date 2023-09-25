@@ -568,3 +568,8 @@
   contact: https://github.com/schlich/cst-devcontainer-feature/issues
   repository: https://github.com/schlich/cst-devcontainer-feature
   ociReference: ghcr.io/schlich/cst-devcontainer-feature
+- name: LINO PIMO SIGO Toolbox
+  maintainer: CGI France
+  contact: https://github.com/CGI-FR/lino-devcontainer/issues
+  repository: https://github.com/CGI-FR/lino-devcontainer/
+  ociReference: ghcr.io/lino-devcontainer/lino
