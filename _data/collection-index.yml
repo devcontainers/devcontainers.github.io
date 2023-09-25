@@ -568,3 +568,8 @@
   contact: https://github.com/schlich/cst-devcontainer-feature/issues
   repository: https://github.com/schlich/cst-devcontainer-feature
   ociReference: ghcr.io/schlich/cst-devcontainer-feature
+- name: Features by raucha
+  maintainer: raucha
+  contact: https://github.com/raucha/devcontainer-features/issues
+  repository: https://github.com/raucha/devcontainer-features
+  ociReference: ghcr.io/raucha/devcontainer-features
