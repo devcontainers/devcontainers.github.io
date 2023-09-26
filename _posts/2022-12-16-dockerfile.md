@@ -46,7 +46,7 @@ That's it! When you start up your Dev Container, the Dockerfile will be automati
 
 Better yet, you can can use a Dockerfile as a part of authoring an image you can share with others. You can even **add Dev Container settings and metadata right into the image itself**. This avoids having to duplicate config and settings in multiple devcontainer.json files and keeps them in sync with your images! 
 
-See the guide on **[pre-building](/_posts/2023-08-22-prebuild.md)** to learn more!
+See the guide on **[pre-building]({% post_url 2023-08-22-prebuild %})** to learn more!
 
 ## <a href="#docker-compose" name="docker-compose" class="anchor">  Using Docker Compose </a>
 
@@ -142,4 +142,4 @@ volumes:
 
 Finally, as in the Dockerfile example, you can use this same setup to create a Dev Container image that you can share with others. You can also add Dev Container settings and metadata right into the image itself. 
 
-See the guide on **[pre-building](/_posts/2023-08-22-prebuild.md)** to learn more!
+See the guide on **[pre-building]({% post_url 2023-08-22-prebuild %})** to learn more!
