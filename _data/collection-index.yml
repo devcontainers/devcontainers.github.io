@@ -578,3 +578,8 @@
   contact: https://github.com/CGI-FR/lino-devcontainer/issues
   repository: https://github.com/CGI-FR/lino-devcontainer/
   ociReference: ghcr.io/cgi-fr/lino-devcontainer
+- name: Alpine DevContainer Features
+  maintainer: cirolosapio
+  contact: https://github.com/cirolosapio/devcontainers-features/issues
+  repository: https://github.com/cirolosapio/devcontainers-features
+  ociReference: ghcr.io/cirolosapio/devcontainers-features
