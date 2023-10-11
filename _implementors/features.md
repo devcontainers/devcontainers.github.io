@@ -82,6 +82,40 @@ If a Feature provides a given command with the [object syntax](/implementors/jso
 
 > NOTE: These properties are stored within [image metadata](/implementors/spec/#merge-logic).
 
+#### Writing scripts to known container path
+
+It may be helpful for a Feature to write scripts to a known, persistent path within the container (ie: for later use in a given lifecycle hook). 
+
+Take the `git-lfs` Feature, which [writes a script](https://github.com/devcontainers/features/blob/4fca96b5e8a4bfc93679098cb19d73c65ce571eb/src/git-lfs/install.sh#L190-L216) to `/usr/local/share/pull-git-lfs-artifacts.sh` during installation.
+
+##### install.sh
+```bash
+PULL_GIT_LFS_SCRIPT_PATH="/usr/local/share/pull-git-lfs-artifacts.sh"
+
+tee "$PULL_GIT_LFS_SCRIPT_PATH" > /dev/null \
+<< EOF
+#!/bin/sh
+set -e
+<...truncated...>
+EOF
+```
+
+This script is then executed during the [`postCreateCommand` lifecycle hook](https://github.com/devcontainers/features/blob/4fca96b5e8a4bfc93679098cb19d73c65ce571eb/src/git-lfs/devcontainer-feature.json#L23).
+
+##### devcontainer-feature.json
+```jsonc
+{
+    "id": "git-lfs",
+    "version": "1.1.0",
+    "name": "Git Large File Support (LFS)",
+    // <...truncated...>
+    "postCreateCommand": "/usr/local/share/pull-git-lfs-artifacts.sh",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
+```
+
 ### <a href="#options-property" name="options-property" class="anchor"> The `options` property </a>
 
 The options property contains a map of option IDs and their related configuration settings. The ID becomes the name of the environment variable in all caps. See [option resolution](#option-resolution) for more details. For example:
