@@ -86,7 +86,7 @@ If a Feature provides a given command with the [object syntax](/implementors/jso
 
 It may be helpful for a Feature to write scripts to a known, persistent path within the container (i.e. for later use in a given lifecycle hook). 
 
-Take the `git-lfs` Feature, which [writes a script](https://github.com/devcontainers/features/blob/4fca96b5e8a4bfc93679098cb19d73c65ce571eb/src/git-lfs/install.sh#L190-L216) to `/usr/local/share/pull-git-lfs-artifacts.sh` during installation.
+Take for instance the `git-lfs` Feature, which [writes a script](https://github.com/devcontainers/features/blob/4fca96b5e8a4bfc93679098cb19d73c65ce571eb/src/git-lfs/install.sh#L190-L216) to `/usr/local/share/pull-git-lfs-artifacts.sh` during installation.
 
 ##### install.sh
 ```bash
