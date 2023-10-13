@@ -1,0 +1,25 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install dependencies",
+      "command": "bundle install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "bundle exec jekyll serve": {
+      "name": "bundle exec jekyll serve",
+      "command": "bundle exec jekyll serve --host 0.0.0.0",
+      "runAtStart": true,
+      "preview": {
+        "port": 4000
+      }
+    },
+    "ruby:typecheck": {
+      "name": "Typecheck",
+      "command": "solargraph typecheck"
+    }
+  }
+}
