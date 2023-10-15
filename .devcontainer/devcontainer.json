@@ -9,6 +9,9 @@
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
 		  "version": "latest"
+		},
+		"ghcr.io/devcontainers/features/python": {
+		  "version": "latest"
 		}
 	},
 
@@ -18,7 +21,14 @@
 		4000,
 		// Live reload server
 		35729
-	]
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode-remote.remote-containers"
+			]
+		}
+	}
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "jekyll --version"
