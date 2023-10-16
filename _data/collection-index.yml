@@ -583,3 +583,8 @@
   contact: https://github.com/cirolosapio/devcontainers-features/issues
   repository: https://github.com/cirolosapio/devcontainers-features
   ociReference: ghcr.io/cirolosapio/devcontainers-features
+- name: Features by AudaciousTux
+  maintainer: audacioustux
+  contact: https://github.com/audacioustux/devcontainers/issues
+  repository: https://github.com/audacioustux/devcontainers
+  ociReference: ghcr.io/audacioustux/devcontainers
