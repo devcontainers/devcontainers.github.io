@@ -588,3 +588,8 @@
   contact: https://github.com/audacioustux/devcontainers/issues
   repository: https://github.com/audacioustux/devcontainers
   ociReference: ghcr.io/audacioustux/devcontainers
+- name: PlantUml DevContainer 
+  maintainer: lnyousif
+  contact: https://github.com/lnyousif/plantuml-devcontainer/issues
+  repository: https://github.com/lnyousif/plantuml-devcontainer
+  ociReference: ghcr.io/lnyousif/plantuml-devcontainer
