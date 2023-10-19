@@ -153,6 +153,47 @@ Some properties may apply differently to Codespaces.
 | `hostRequirements` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
 {: .table .table-bordered .table-responsive}
 
+### <a href="#codesandbox" name="codesandbox" class="anchor"> CodeSandbox </a>
+
+[CodeSandbox](https://codesandbox.io/) provides cloud development environments running on a microVM architecture. VM specs start at 2 vCPUs + 2 GB RAM per environment (free tier) and can go up to 16 vCPUs + 32 GB RAM.
+
+When you import a GitHub repository into CodeSandbox, it will automatically provision a dedicated environment for every branch. Thanks to memory snapshotting, CodeSandbox then resumes and branches an environment in under two seconds.
+
+
+CodeSandbox offers support for multiple editors, so you can code using the CodeSandbox web editor, VS Code, or the CodeSandbox iOS app.
+
+**Tip:** After importing a repository into CodeSandbox, you can use the built-in UI to configure the environment using dev containers.
+
+#### <a href="#codesandbox-specific-properties" name="codesandbox-specific-properties" class="anchor"> Product specific properties </a>
+CodeSandbox has built-in support for any programming language and supports Debian and Ubuntu-based images.
+
+All properties specific to CodeSandbox are placed within a `.codesandbox` folder at root level. Typically, this will contain a `tasks.json` file, which defines the commands to be run at startup or with a click.
+
+More details about these can be found in the CodeSandbox [documentation](https://codesandbox.io/docs/learn/repositories/task).
+
+#### Product specific limitations
+
+CodeSandbox runs dev containers using rootless Podman instead of Docker. CodeSandbox also uses [devcontainers/cli](https://github.com/devcontainers/cli) to manage dev containers. So any limitations of rootless Podman and Dev Container CLI should apply to CodeSandbox. 
+
+
+The following properties apply differently to CodeSandbox.
+
+| Property or variable | Type | Description |
+|----------|---------|----------------------|
+| `forwardPorts` | array | CodeSandbox does not need this property. All ports opened in dev containers will be mapped to a public URL automatically. |
+
+| `portsAttributes` | object | CodeSandbox does not yet support this property. Ports are attached to tasks configured in `.codesandbox/tasks.json` and are attributed to the tasks.|
+| `otherPortsAttributes` | object | CodeSandbox does not yet support this property. |
+| `remoteUser` | string | CodeSandbox currently ignores this property and overrides this as `root`. CodeSandbox uses rootless Podman to run containers. Running with a non-root remote user is the same as running as a root remote user in rootless Podman, from a security perspective. CodeSandbox plans on supporting this in the future. |
+| `shutdownAction` | string | Does not apply to CodeSandbox. |
+
+| `capAdd` | array | CodeSandbox does not support adding docker capabilities. As the containers are run as a non-root user, capabilities that need root access will not work. |
+
+| `features` | object | CodeSandbox automatically adds docker-cli to the container and connects to the host socket. Features like `docker-in-docker` and `docker-outside-of-docker` will work a bit differently. As the docker-cli and socket from host are accessible in the container, most use cases should work as expected. |
+| `${localEnv:VARIABLE_NAME}` | Any | For CodeSandbox, the host is in the cloud rather than in your local machine.|
+| `hostRequirements` | object | CodeSandbox does not yet support this property. |
+{: .table .table-bordered .table-responsive}
+
 ### <a href="#devpod" name="devpod" class="anchor"> DevPod </a>
 
 [DevPod](https://github.com/loft-sh/devpod) is a client-only tool to create reproducible developer environments based on a devcontainer.json on any backend. Each developer environment runs in a container and is specified through a devcontainer.json. Through DevPod providers these environments can be created on any backend, such as the local computer, a Kubernetes cluster, any reachable remote machine or in a VM in the cloud.
