@@ -4,14 +4,15 @@
 	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/jekyll:1-bullseye",
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
-		  "version": "latest"
-		}
+			"version": "latest"
+		},
+		"ghcr.io/akhildevelops/devcontainer-features/android-cli": {
+			"version": "latest"
+		},
 	},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		// Jekyll server
@@ -19,13 +20,10 @@
 		// Live reload server
 		35729
 	]
-
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "jekyll --version"
-
 	// Configure tool-specific properties.
 	// "customizations": {},
-
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
