@@ -173,13 +173,15 @@ More details about these can be found in the CodeSandbox [documentation](https:/
 
 #### Product specific limitations
 
-CodeSandbox runs dev containers using rootless Podman instead of Docker. CodeSandbox also uses [devcontainers/cli](https://github.com/devcontainers/cli) to manage Dev Containers. So any limitations of rootless Podman and Dev Container CLI should apply to CodeSandbox. 
+CodeSandbox runs dev containers using rootless Podman instead of Docker. CodeSandbox also uses [devcontainers/cli](https://github.com/devcontainers/cli) to manage dev containers. So any limitations of rootless Podman and Dev Container CLI should apply to CodeSandbox. 
+
 
 The following properties apply differently to CodeSandbox.
 
 | Property or variable | Type | Description |
 |----------|---------|----------------------|
-| `forwardPorts` | array | CodeSandbox does not need this property. All ports opened in Dev Containers will be mapped to a public URL automatically. |
+| `forwardPorts` | array | CodeSandbox does not need this property. All ports opened in dev containers will be mapped to a public URL automatically. |
+
 | `portsAttributes` | object | CodeSandbox does not yet support this property. Ports are attached to tasks configured in `.codesandbox/tasks.json` and are attributed to the tasks.|
 | `otherPortsAttributes` | object | CodeSandbox does not yet support this property. |
 | `remoteUser` | string | CodeSandbox currently ignores this property and overrides this as `root`. CodeSandbox uses rootless Podman to run containers. Running with a non-root remote user is the same as running as a root remote user in rootless Podman, from a security perspective. CodeSandbox plans on supporting this in the future. |
