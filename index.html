@@ -16,7 +16,8 @@ layout: default
 
         <br />
         <div class="intro-text">
-            <a class="github-button" href="https://github.com/devcontainers/spec" data-size="large" data-icon="octicon-star" data-show-count="true" tabindex="0"
+            <a class="github-button" href="https://github.com/devcontainers/spec" data-size="large"
+                data-icon="octicon-star" data-show-count="true" tabindex="0"
                 aria-label="Star devcontainers/spec on GitHub">Star</a>
         </div>
     </div>
@@ -27,44 +28,61 @@ layout: default
         <div class="col-lg-7" role="navigation" aria-label="Main">
             <h2 class="header-light regular-pad">What are Development Containers?</h2>
 
-            <p>A Development Container (or Dev Container for short) allows you to use a container as a full-featured development environment. It can be used to run an application, to separate tools, libraries, or runtimes needed for working with a codebase, and to aid in continuous integration and testing. Dev containers can be run locally or remotely, in a private or public cloud, in a variety of <a href="./supporting" aria-label="Supporting tools">supporting tools and editors</a>.</p>
+            <p>A development container (or dev container for short) allows you to use a container as a full-featured
+                development environment. It can be used to run an application, to separate tools, libraries, or runtimes
+                needed for working with a codebase, and to aid in continuous integration and testing. Dev containers can
+                be run locally or remotely, in a private or public cloud, in a variety of <a href="./supporting"
+                    aria-label="Supporting tools">supporting tools and editors</a>.</p>
 
-            <p>The Development Containers Specification seeks to find ways to enrich existing formats with common development specific settings, tools, and configuration while still providing a simplified, un-orchestrated single container option – so that they can be used as coding environments or for continuous integration and testing. Beyond the specification's core metadata, the spec also enables developers to quickly share and reuse container setup steps through <a href="./features" aria-label="See the Dev Container Features spec">Dev Container Features</a> and <a href="./templates" aria-label="See the Dev Container Templates spec">Templates</a>. </p>
+            <p>The Development Container Specification seeks to find ways to enrich existing formats with common
+                development specific settings, tools, and configuration while still providing a simplified,
+                un-orchestrated single container option – so that they can be used as coding environments or for
+                continuous integration and testing. Beyond the specification's core metadata, the spec also enables
+                developers to quickly share and reuse container setup steps through <a href="./features"
+                    aria-label="See the Dev Container Features spec">Features</a> and <a href="./templates"
+                    aria-label="See the Dev Container Templates spec">Templates</a>. </p>
 
         </div>
         <div class="col-lg-5">
             <div class="row align-items-center">
                 <div class="col-lg-12">
-                    <img alt="Go devcontainer.json config file" src="img/goConfig.png" class="img-fluid rounded"/>
-                    <p class="text-left"><i>Use or create dev container definitions for a multitude of tech stacks and tools.</i></p>
+                    <img alt="Go devcontainer.json config file" src="img/goConfig.png" class="img-fluid rounded" />
+                    <p class="text-left"><i>Use or create dev container definitions for a multitude of tech stacks and
+                            tools.</i></p>
                 </div>
             </div>
-    </div>
+        </div>
 
-    <hr>
+        <hr>
 
-    <div class="row more-info">
-        <div class="col-lg-4">
-            <h1 class="text-center"><img src="img/cogs.png" alt="Gear cogs"></h1>
-            <a href='{{ "/overview" | prepend: site.baseurl }}'><h3 class="text-center">Overview</h3></a>
-            <p>
-                More information about the Development Containers Specification.
-            </p>
-        </div>
-        <div class="col-lg-4">
-            <h1 class="text-center"><img src="img/book.png" alt="Gear cogs"></h1>
-            {% assign sorted = site.implementors | sort: 'index' %}
-            <a href = "{{ sorted.first.url | prepend: site.baseurl }}"><h3 class="text-center">Specification</h3></a>
-            <p>
-                Check out the latest reference implementation and schemas.
-            </p>
-        </div>
-        <div class="col-lg-4">
-            <h1 class="text-center"><img src="img/branch.png" alt="Gear cogs"></h1>
-            <a href = '{{ "/supporting" | prepend: site.baseurl }}'><h3 class="text-center">Supporting Tools</h3></a>
-            <p>
-                A variety of tools and services support this standard.
-            </p>
+        <div class="row more-info">
+            <div class="col-lg-4">
+                <h1 class="text-center"><img src="img/cogs.png" alt="Gear cogs"></h1>
+                <a href='{{ "/overview" | prepend: site.baseurl }}'>
+                    <h3 class="text-center">Overview</h3>
+                </a>
+                <p>
+                    More information about the Development Container Specification.
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h1 class="text-center"><img src="img/book.png" alt="Gear cogs"></h1>
+                {% assign sorted = site.implementors | sort: 'index' %}
+                <a href="{{ sorted.first.url | prepend: site.baseurl }}">
+                    <h3 class="text-center">Specification</h3>
+                </a>
+                <p>
+                    Check out the latest reference implementation and schemas.
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h1 class="text-center"><img src="img/branch.png" alt="Gear cogs"></h1>
+                <a href='{{ "/supporting" | prepend: site.baseurl }}'>
+                    <h3 class="text-center">Supporting Tools</h3>
+                </a>
+                <p>
+                    A variety of tools and services support this standard.
+                </p>
+            </div>
         </div>
     </div>
-</div>

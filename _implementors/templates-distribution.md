@@ -68,7 +68,7 @@ Templates are distributed as tarballs. The tarball contains the entire contents 
 
 The tarball is named `devcontainer-template-<id>.tgz`, where `<id>` is the Templates's `id` field.
 
-A reference implementation for packaging and distributing Templates is provided as a GitHub Action (https://github.com/devcontainers/action).
+A reference implementation for packaging and distributing Templates is provided as a [GitHub Action](https://github.com/devcontainers/action).
 
 ### <a href="#devcontainer-collection" name="devcontainer-collection" class="anchor"> devcontainer-collection.json </a>
 
@@ -135,7 +135,7 @@ oras push ${REGISTRY}/${NAMESPACE}:latest \
 
 ## <a href="#guide-to-publishing-templates" name="guide-to-publishing-templates" class="anchor">Guide to publishing Templates</a>
 
-The dev container CLI can be used to publish [Dev Container Template](https://containers.dev/implementors/templates/) artifacts to an OCI registry (that supports the [artifacts specification](https://oras.land/implementors/)).
+The Dev Container CLI can be used to publish [Template](https://containers.dev/implementors/templates/) artifacts to an OCI registry (that supports the [artifacts specification](https://oras.land/implementors/)).
 
 To see all the available options, run `devcontainers templates publish --help`.
 
