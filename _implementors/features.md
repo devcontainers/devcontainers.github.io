@@ -313,7 +313,7 @@ After `overrideFeatureInstallOrder` is resolved, any remaining Features that dec
 
 ### <a href="#option-resolution" name="option-resolution" class="anchor"> Option Resolution </a>
 
-A Feature's options - specified as the value of a single Feature key/value pair in the user's `devcontainer.json` - are passed to the Feature as environment variables.
+A Feature's `options` - specified as the value of a single Feature key/value pair in the user's `devcontainer.json` - are passed to the Feature as environment variables.
 
 A supporting tool will parse the `options` object provided by the user.  If a value is provided for a Feature, it will be emitted to a file named `devcontainer-features.env` following the format `<OPTION_NAME>=<value>`.  
 
