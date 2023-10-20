@@ -593,3 +593,8 @@
   contact: https://github.com/lnyousif/plantuml-devcontainer/issues
   repository: https://github.com/lnyousif/plantuml-devcontainer
   ociReference: ghcr.io/lnyousif/plantuml-devcontainer
+- name: Features by xfrancois
+  maintainer: xfrancois
+  contact: https://github.com/xfrancois/devcontainers-features/issues
+  repository: https://github.com/xfrancois/devcontainers-features
+  ociReference: ghcr.io/xfrancois/devcontainers-features
