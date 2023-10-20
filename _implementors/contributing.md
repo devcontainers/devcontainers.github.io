@@ -6,7 +6,7 @@ author: Microsoft
 index: 9
 ---
 
-We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. 
+We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. We also welcome you to join our [community Slack channel](https://aka.ms/dev-container-community).
 
 ## <a href="#contribution-approaches" name="contribution-approaches" class="anchor"> Contribution approaches </a>
 
