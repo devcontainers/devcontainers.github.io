@@ -6,18 +6,18 @@ author: Microsoft
 index: 2
 ---
 
-The reference implementation for the specification is available through a [development container CLI](https://github.com/devcontainers/cli). This CLI can take a devcontainer.json and create and configure a dev container from it.
+The reference implementation for the specification is available through a [development container CLI](https://github.com/devcontainers/cli). This CLI can take a `devcontainer.json` and create and configure a dev container from it.
 
-## <a href="#what-is-CLI" name="what-is-CLI" class="anchor"> What is the dev container CLI? </a>
-When tools like VS Code and Codespaces detect a devcontainer.json file in a user's project, they use a CLI to configure a dev container. We've now opened up this CLI as a reference implementation so that individual users and other tools can read in devcontainer.json metadata and create dev containers from it.
+## <a href="#what-is-CLI" name="what-is-CLI" class="anchor"> What is the Dev Container CLI? </a>
+When tools like VS Code and Codespaces detect a `devcontainer.json` file in a user's project, they use a CLI to configure a dev container. We've now opened up this CLI as a reference implementation so that individual users and other tools can read in `devcontainer.json` metadata and create dev containers from it.
 
 This CLI can either be used directly or integrated into product experiences, similar to how it's integrated with Dev Containers and Codespaces today. It currently supports both a simple single container option and integrates with [Docker Compose](https://docs.docker.com/compose/) for multi-container scenarios.
 
-The CLI is available for review in a new [devcontainers/cli](https://github.com/devcontainers/cli) repository, and you can read more about its development in [this issue](https://github.com/devcontainers/spec/issues/9) in the spec repo.
+The CLI is available in the [devcontainers/cli](https://github.com/devcontainers/cli) repository.
 
 ## <a href="#try-it" name="try-it" class="anchor"> How can I try it? </a>
 
-We'd love for you to try out the dev container CLI and let us know what you think. You can quickly try it out in just a few simple steps, either by installing its npm package or building the CLI repo from sources.
+We'd love for you to try out the Dev Container CLI and let us know what you think. You can quickly try it out in just a few simple steps, either by installing its npm package or building the CLI repo from sources.
 
 You may learn more about building from sources in the [CLI repo's README](https://github.com/devcontainers/cli#try-it-out). On this page, we'll focus on using the npm package.
 
@@ -97,7 +97,7 @@ Hello, VS Code Remote - Containers!
 {"outcome":"success"}
 ```
 
-Congrats, you've just run the dev container CLI and seen it in action!
+Congrats, you've just run the Dev Container CLI and seen it in action!
 
 These steps are also provided in the CLI repo's [README](https://github.com/devcontainers/cli/blob/main/README.md). You may also review frequently asked questions [here](https://github.com/devcontainers/spec/issues/31).
 
@@ -110,13 +110,15 @@ We recommend using the [Dev Container CLI](#npm-install) (or other spec supporti
 devcontainer build --workspace-folder . --push true --image-name <my_image_name>:<optional_image_version>
 ```
 
+You can also check out our [in-depth guide on prebuilds](/_posts/2023-08-22-prebuild.md).
+
 #### <a href="#labels" name="labels" class="anchor"> Metadata in image labels</a> 
 
 You can include Dev Container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/). This makes the image self-contained since these settings are automatically picked up when the image is referenced - whether directly, in a `FROM` in a referenced Dockerfile, or in a Docker Compose file. This helps prevent your Dev Container config and image contents from getting out of sync, and allows you to push updates of the same configuration to multiple repositories through a simple image reference.
 
-This metadata label is **automatically added** when you pre-build using the [Dev Container CLI](#npm-install) (or other spec supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci) or [Azure DevOps task](https://marketplace.visualstudio.com/items?itemName=devcontainers.ci)) and includes settings from devcontainer.json and any referenced Dev Container Features.
+This metadata label is **automatically added** when you pre-build using the [Dev Container CLI](#npm-install) (or other spec supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci) or [Azure DevOps task](https://marketplace.visualstudio.com/items?itemName=devcontainers.ci)) and includes settings from `devcontainer.json` and any referenced Dev Container Features.
 
-This allows you to have a separate **more complex** devcontainer.json you use to pre-build your image, and then a dramatically **simplified one** in one or more repositories. The contents of the image will be merged with this simplified devcontainer.json content at the time you create the container (see the [the spec](/implementors/spec/#merge-logic) for info on merge logic). But at its simplest, you can just reference the image directly in devcontainer.json for the settings to take effect:
+This allows you to have a separate **more complex** `devcontainer.json` you use to pre-build your image, and then a dramatically **simplified one** in one or more repositories. The contents of the image will be merged with this simplified devcontainer.json content at the time you create the container (see the [the spec](/implementors/spec/#merge-logic) for info on merge logic). But at its simplest, you can just reference the image directly in `devcontainer.json` for the settings to take effect:
 
 ```json
 {
@@ -138,7 +140,7 @@ See the [Dev Container metadata reference](../json_reference) for information on
 
 ### <a href="#domainnames" name="domainnames" class="anchor"> Domain Names </a> 
 
-If you are behind a firewall that needs to allow specific domains used by the dev container CLI, here's the list of hostnames you should allow communication to go through:
+If you are behind a firewall that needs to allow specific domains used by the Dev Container CLI, here's the list of hostnames you should allow communication to go through:
 
 * `containers.dev` - The [homepage](https://containers.dev/) for everything about dev containers. It includes all official and community-supported [Features](https://containers.dev/features) and [Templates](https://containers.dev/templates).
 * `ghcr.io`, `*.azurecr.io`, `mcr.microsoft.com` - [OCI registries](https://containers.dev/implementors/features-distribution/#oci-registry) like [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry), [Azure Container Registry](azure.microsoft.com/en-us/products/container-registry), and [Microsoft Container Registry](https://mcr.microsoft.com/en-us/catalog?search=dev%20container) serves as the primary distribution mechanism for dev container resources. 

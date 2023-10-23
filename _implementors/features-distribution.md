@@ -8,7 +8,7 @@ index: 6
 
 **TL;DR Check out the [quick start repository](https://github.com/devcontainers/feature-template) to get started on distributing your own Dev Container Features.**
 
-This specification defines a pattern where community members and organizations can author and self-publish [Dev Container 'Features'](../features). 
+This specification defines a pattern where community members and organizations can author and self-publish [Dev Container Features](../features). 
 
 Goals include:
 
@@ -89,7 +89,7 @@ Each Features's `devcontainer-feature.json` metadata file is appended into the `
 
 There are several supported ways to distribute Features. Distribution is handled by the implementing packaging tool such as the [Dev Container CLI](https://github.com/devcontainers/cli) or [Dev Container Publish GitHub Action](https://github.com/marketplace/actions/dev-container-publish). See the [quick start repository](https://github.com/devcontainers/feature-template) for a full working example.
 
-A user references a distributed Feature in a `devcontainer.json` as defined in ['referencing a feature'](../features#referencing-a-feature).
+A user references a distributed Feature in a `devcontainer.json` as defined in ['referencing a Feature'](../features#referencing-a-feature).
 
 ### <a href="#oci-registry" name="oci-registry" class="anchor"> OCI Registry </a>
 
@@ -151,7 +151,7 @@ Additional constraints exists when including local Features in a project:
 
 * The project must have a `.devcontainer/` folder at the root of the [**project workspace folder**](/implementors/spec/#project-workspace-folder).
 
-* A local Feature's source code **must** be contained within a sub-folder of the `.devcontainer/ folder`.
+* A local Feature's source code **must** be contained within a sub-folder of the `.devcontainer/` folder.
 
 * The sub-folder name **must** match the Feature's `id` field.
 

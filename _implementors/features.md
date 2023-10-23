@@ -6,13 +6,13 @@ author: Microsoft
 index: 5
 ---
 
-Development container "Features" are self-contained, shareable units of installation code and development container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "Features" into your development container for you or your collaborators to use.
+**Development Container Features** are self-contained, shareable units of installation code and development container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "features" into your development container for you or your collaborators to use.
 
 Feature metadata is captured by a `devcontainer-feature.json` file in the root folder of the feature.
 
 > **Note:** While Features may be installed on top of any base image, the implementation of a Feature might restrict it to a subset of possible base images. For example, some Features may be authored to work with a certain Linux distro (e.g. debian-based images that use the `apt` package manager).
 > 
-> This section covers details on the Features specification. If you are looking for summarized information on creating your own Features, check out the [quick start](https://github.com/devcontainers/feature-starter) and [core Features](https://github.com/devcontainers/features) repositories.
+> This page covers details on the Features specification. If you are looking for summarized information on creating your own Features, check out the [quick start](https://github.com/devcontainers/feature-starter) and [core Features](https://github.com/devcontainers/features) repositories.
 
 ## <a href="#folder-structure" name="folder-structure" class="anchor"> Folder Structure </a>
 
@@ -72,7 +72,7 @@ The following lifecycle hooks may be declared as properties of `devcontainer-fea
 | `postAttachCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties) |
 {: .table .table-bordered .table-responsive}
 
-#### Behavior
+#### <a href="#behavior" name="behavior" class="anchor"> Behavior </a>
 
 Each property mirrors the behavior of the matching property in [`devcontainer.json`](/implementors/json_reference#Lifecycle-scripts), including the behavior that commands are executed from the context of the [project workspace folder](/implementors/spec/#project-workspace-folder).
 
@@ -80,7 +80,7 @@ For each lifecycle hook (in [Feature installation order](/implementors/features/
 
 If a Feature provides a given command with the [object syntax](/implementors/json_reference#formatting-string-vs-array-properties), all commands within that group are executed in parallel, but still blocking commands from subsequent Features and/or the `devcontainer.json`.
 
-> NOTE: These properties are stored within [image metadata](/implementors/spec/#merge-logic).
+> **Note**: These properties are stored within [image metadata](/implementors/spec/#merge-logic).
 
 ### <a href="#options-property" name="options-property" class="anchor"> The `options` property </a>
 
@@ -117,11 +117,11 @@ Feature scripts run as the `root` user and sometimes need to know which user acc
 
 Additionally, the home folders of the two users are passed to the Feature scripts as `_REMOTE_USER_HOME` and `_CONTAINER_USER_HOME` environment variables.
 
-The container user can be set with `containerUser` in the devcontainer.json and image metadata, `user` in the docker-compose.yml, `USER` in the Dockerfile, and can be passed down from the base image.
+The container user can be set with `containerUser` in the `devcontainer.json` and image metadata, `user` in the `docker-compose.yml`, `USER` in the Dockerfile, and can be passed down from the base image.
 
 ### <a href="#dev-container-id" name="dev-container-id" class="anchor"> Dev Container ID </a>
 
-An identifier will be referred to as `${devcontainerId}` in the devcontainer.json and the Feature metadata and that will be replaced with the dev container's id. It should only be used in parts of the configuration and metadata that is not used for building the image because that would otherwise prevent pre-building the image at a time when the dev container's id is not known yet. Excluding boolean, numbers and enum properties the properties supporting `${devcontainerId}` in the Feature metadata are: `entrypoint`, `mounts`, `customizations`.
+An identifier will be referred to as `${devcontainerId}` in the `devcontainer.json` and the Feature metadata and that will be replaced with the dev container's id. It should only be used in parts of the configuration and metadata that is not used for building the image because that would otherwise prevent pre-building the image at a time when the dev container's id is not known yet. Excluding boolean, numbers and enum properties the properties supporting `${devcontainerId}` in the Feature metadata are: `entrypoint`, `mounts`, `customizations`.
 
 Implementations can choose how to compute this identifier. They must ensure that it is unique among other dev containers on the same Docker host and that it is stable across rebuilds of dev containers. The identifier must only contain alphanumeric characters. We describe a way to do this below.
 
@@ -218,7 +218,7 @@ As a shorthand, the value of the `features` property can be provided as a single
 }
 ```
 
-### <a href="#referencing-a-feature" name="referencing-a-feature" class="anchor"> Referencing a feature </a>
+### <a href="#referencing-a-feature" name="referencing-a-feature" class="anchor"> Referencing a Feature </a>
 
 The `id` format specified dicates how a supporting tool will locate and download a given feature. `id` is one of the following:
 
@@ -251,7 +251,7 @@ If the Feature is included in a folder as part of the repository that contains `
 
 ## <a href="#release" name="release" class="anchor"> Release </a>
 
-_For information on distributing Features, see [the dev container Features distribution page](../features-distribution)._
+_For information on distributing Features, see the [Features distribution page](../features-distribution)._
 
 ## <a href="#execution" name="execution" class="anchor"> Execution </a>
 
@@ -313,11 +313,11 @@ After `overrideFeatureInstallOrder` is resolved, any remaining Features that dec
 
 ### <a href="#option-resolution" name="option-resolution" class="anchor"> Option Resolution </a>
 
-A Feature's 'options' - specified as the value of a single Feature key/value pair in the user's `devcontainer.json` - are passed to the Feature as environment variables.
+A Feature's `options` - specified as the value of a single Feature key/value pair in the user's `devcontainer.json` - are passed to the Feature as environment variables.
 
 A supporting tool will parse the `options` object provided by the user.  If a value is provided for a Feature, it will be emitted to a file named `devcontainer-features.env` following the format `<OPTION_NAME>=<value>`.  
 
-To ensure a option that is valid as an environment variable, the follow substitutions are performed.
+To ensure a option that is valid as an environment variable, the follow substitutions are performed:
 
 ```javascript
 (str: string) => str

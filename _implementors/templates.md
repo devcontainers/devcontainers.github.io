@@ -6,7 +6,7 @@ author: Microsoft
 index: 7
 ---
 
-Development container "Templates" are source files packaged together that encode configuration for a complete development environment. A Template can be used in a new or existing project, and a [supporting tool](/supporting) will use the configuration from the Template to build a development container.
+**Development Container Templates** are source files packaged together that encode configuration for a complete development environment. A Template can be used in a new or existing project, and a [supporting tool](/supporting) will use the configuration from the Template to build a development container.
 
 The configuration is placed in a [`.devcontainer.json`](/implementors/json_reference#devcontainerjson) which can also reference other files within the Template. Alternatively, `.devcontainer/devcontainer.json` can also be used if the container needs to reference other files, such as a `Dockerfile` or `docker-compose.yml`. A Template can also provide additional source files (eg: boilerplate code or a [lifecycle script](/implementors/json_reference/#lifecycle-scripts)).
 
