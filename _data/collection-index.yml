@@ -598,3 +598,9 @@
   contact: https://github.com/xfrancois/devcontainers-features/issues
   repository: https://github.com/xfrancois/devcontainers-features
   ociReference: ghcr.io/xfrancois/devcontainers-features
+- name: Features by nucleuscloud
+  maintainer: nucleuscloud
+  contact: https://github.com/nucleuscloud/devcontainer-features/issues
+  repository: https://github.com/nucleuscloud/devcontainer-features
+  ociReference: ghcr.io/nucleuscloud/devcontainer-features
+  
