@@ -24,7 +24,8 @@
 		"vscode": {
 			"extensions": [
 				"GitHub.copilot@prerelease",
-				"GitHub.copilot-chat@prerelease"
+				"GitHub.copilot-chat@prerelease",
+				"GitHub.vscode-pull-request-github@prerelease"
 			]
 		}
 	}
