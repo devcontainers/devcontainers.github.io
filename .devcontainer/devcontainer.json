@@ -18,7 +18,16 @@
 		4000,
 		// Live reload server
 		35729
-	]
+	],
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot@prerelease",
+				"GitHub.copilot-chat@prerelease"
+			]
+		}
+	}
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "jekyll --version"
