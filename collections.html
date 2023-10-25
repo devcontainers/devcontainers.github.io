@@ -16,7 +16,22 @@ sectionid: collection-index
 </p>
 
 <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for collections...">
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
 
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
 <table id="collectionTable">
     <tr>
         <th>Name</th>
