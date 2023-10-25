@@ -6,65 +6,28 @@ sectionid: collection-index
 
 <h1 style="margin-left: auto;margin-right: auto;">Collections</h1>
 <p style="margin-left: auto;margin-right: auto;">
-    This list below contains pointers to official and community-contributed Dev Container assets, including Features and Templates.
-    Collections on this list are continuously crawled for liveness, and can be presented in UX of Dev Container-supporting tools 
+    This list below contains pointers to official and community-contributed dev container assets, including Features and
+    Templates.
+    Collections on this list are continuously crawled for liveness, and can be presented in UX of spec supporting tools
     (i.e. it will be presented in the GitHub Codespaces and VS Code Dev Containers UX).
 </p>
 
 <p>
-    To add your own collection to this list, please create a PR editing <a href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">this yaml file</a>.
+    To add your own collection to this list, please create a PR editing <a
+        href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">this
+        yaml file</a>.
 </p>
+<tr>
+    <td class="tg-0lax"><b>Name</b></b></td>
+    <td class="tg-0lax"><b>Maintainer</b></td>
+    <td class="tg-0lax"><b>Repository</b></td>
+</tr>
 
-<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for collections...">
-<style>
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    th, td {
-        text-align: left;
-        padding: 8px;
-        border: 1px solid #ddd;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-</style>
-<table id="collectionTable">
-    <tr>
-        <th>Name</th>
-        <th>Maintainer</th>
-        <th>Repository</th>
-    </tr>
-
-    {% for c in site.data.collection-index %}
-    <tr>
-        <td>{{ c.name }}</td>
-        <td><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html  }}</a></td>
-        <td><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html  }}</a></td>
-    </tr>
-    {% endfor %}
-</table>
-
-<script>
-function searchTable() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("collectionTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }
-    }
-}
-</script>
+{% for c in site.data.collection-index %}
+<tr>
+    <td class="tg-0lax">{{ c.name }}</td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html }}</a></td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html }}</a>
+    </td>
+</tr>
+{% endfor %}
