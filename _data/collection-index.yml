@@ -608,3 +608,8 @@
   contact: https://github.com/joshspicer/more-features/issues
   repository: https://github.com/joshspicer/more-features
   ociReference: ghcr.io/joshspicer/more-features
+- name: Features by MarlonPassos-git
+  maintainer: MarlonPassos-git
+  contact: https://github.com/MarlonPassos-git/dev-container-features/issues
+  repository: https://github.com/MarlonPassos-git/dev-container-features
+  ociReference: ghcr.io/marlonpassos-git/dev-container-features
