@@ -610,6 +610,6 @@
   ociReference: ghcr.io/joshspicer/more-features
 - name: Features by MarlonPassos-git
   maintainer: MarlonPassos-git
-  contact: hhttps://github.com/MarlonPassos-git/dev-container-features/issues
+  contact: https://github.com/MarlonPassos-git/dev-container-features/issues
   repository: https://github.com/MarlonPassos-git/dev-container-features
   ociReference: ghcr.io/MarlonPassos-git/dev-container-features
