@@ -612,4 +612,4 @@
   maintainer: MarlonPassos-git
   contact: https://github.com/MarlonPassos-git/dev-container-features/issues
   repository: https://github.com/MarlonPassos-git/dev-container-features
-  ociReference: ghcr.io/MarlonPassos-git/dev-container-features
+  ociReference: ghcr.io/marlonpassos-git/dev-container-features
