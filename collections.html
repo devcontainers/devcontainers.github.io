@@ -12,44 +12,22 @@ sectionid: collection-index
     (i.e. it will be presented in the GitHub Codespaces and VS Code Dev Containers UX).
 </p>
 
-<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for names..">
+<p>
+    To add your own collection to this list, please create a PR editing <a
+        href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">this
+        yaml file</a>.
+</p>
+<tr>
+    <td class="tg-0lax"><b>Name</b></b></td>
+    <td class="tg-0lax"><b>Maintainer</b></td>
+    <td class="tg-0lax"><b>Repository</b></td>
+</tr>
 
-<table id="collectionTable" style="border: 1px solid black;">
-    <thead>
-        <tr>
-            <th><b>Name</b></th>
-            <th><b>Maintainer</b></th>
-            <th><b>Repository</b></th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for c in site.data.collection-index %}
-        <tr>
-            <td>{{ c.name }}</td>
-            <td><a rel="nofollow" href="{{ c.contact | strip_html }}">{{ c.maintainer | strip_html }}</a></td>
-            <td><a rel="nofollow" href="{{ c.repository | strip_html }}">{{ c.repository | strip_html }}</a></td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
-<script>
-    function searchTable() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("searchInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("collectionTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
+{% for c in site.data.collection-index %}
+<tr>
+    <td class="tg-0lax">{{ c.name }}</td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html }}</a></td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html }}</a>
+    </td>
+</tr>
+{% endfor %}
