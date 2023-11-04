@@ -613,3 +613,8 @@
   contact: https://github.com/MarlonPassos-git/dev-container-features/issues
   repository: https://github.com/MarlonPassos-git/dev-container-features
   ociReference: ghcr.io/marlonpassos-git/dev-container-features
+- name: Bats Features by Luigi Operoso
+  maintainer: brokenpip3
+  contact: https://github.com/brokenpip3/devcontainers-bats/issues
+  repository: https://github.com/brokenpip3/devcontainers-bats
+  ociReference: ghcr.io/brokenpip3/devcontainers-bats/bats-libs
