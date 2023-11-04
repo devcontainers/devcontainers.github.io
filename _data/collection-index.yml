@@ -617,4 +617,4 @@
   maintainer: brokenpip3
   contact: https://github.com/brokenpip3/devcontainers-bats/issues
   repository: https://github.com/brokenpip3/devcontainers-bats
-  ociReference: ghcr.io/brokenpip3/devcontainers-bats/bats-libs
+  ociReference: ghcr.io/brokenpip3/devcontainers-bats
