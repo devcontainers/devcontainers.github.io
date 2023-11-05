@@ -613,3 +613,8 @@
   contact: https://github.com/MarlonPassos-git/dev-container-features/issues
   repository: https://github.com/MarlonPassos-git/dev-container-features
   ociReference: ghcr.io/marlonpassos-git/dev-container-features
+- name: DevContainer Features by Paul Gilber
+  maintainer: Paul Gilber
+  contact: https://github.com/paul-gilber/devcontainer-features/issues
+  repository: https://github.com/paul-gilber/devcontainer-features
+  ociReference: ghcr.io/paul-gilber/devcontainer-features
