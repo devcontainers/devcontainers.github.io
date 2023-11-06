@@ -616,4 +616,4 @@
 - name: DevContainers for Fedora-based Development
   maintainer: RonaldTM9999
   contact: https://github.com/RonaldTM9999/devcontainers/issues
-  ociReference: https://ghcr.io/RonaldTM9999/devcontainers
+  ociReference: ghcr.io/ronaldtm9999/devcontainers
