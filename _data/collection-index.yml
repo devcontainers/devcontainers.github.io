@@ -613,3 +613,7 @@
   contact: https://github.com/MarlonPassos-git/dev-container-features/issues
   repository: https://github.com/MarlonPassos-git/dev-container-features
   ociReference: ghcr.io/marlonpassos-git/dev-container-features
+- name: DevContainers for Fedora-based Development
+  maintainer: RonaldTM9999
+  contact: https://github.com/RonaldTM9999/devcontainers/issues
+  ociReference: https://ghcr.io/RonaldTM9999/devcontainers
