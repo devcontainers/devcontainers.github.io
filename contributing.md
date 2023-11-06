@@ -37,8 +37,11 @@ Tool-specific properties are contained in namespaces in the `"customizations"` p
 
 You may propose adding a new namespace for a specific tool, and any properties specific to that tool.
 
-### GitHub Discussions
-If you'd like to discuss the spec, such as asking questions, providing feedback, or engaging on how your team may use or contribute to dev containers, please check out the issues across the repos in the [Dev Containers GitHub org](https://github.com/devcontainers/devcontainers.github.io/edit/gh-pages/contributing.md) and consider joining our [community Slack channel](https://aka.ms/dev-container-community). This is a great opportunity to connect with the community and maintainers of this project.
+### Community Engagement
+There are several options to engage with the dev container community, such as asking questions, opening proposals, providing feedback, or engaging on how your team may use or contribute to dev containers:
+- [GitHub Discussions](https://github.com/devcontainers/spec/discussions): This is a great opportunity to connect with the community and maintainers of this project, without the requirement of contributing a change to the actual spec (which we see more in issues and PRs)
+- Check out the issues and PRs across the repos in the [Dev Containers GitHub org](https://github.com/devcontainers/devcontainers.github.io/edit/gh-pages/contributing.md)
+- [Community Slack channel](https://aka.ms/dev-container-community): This is a great opportunity to connect with the community and maintainers
 
 ## Formatting Guidelines
 
