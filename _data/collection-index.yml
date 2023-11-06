@@ -618,3 +618,13 @@
   contact: https://github.com/RonaldTM9999/devcontainers/issues
   repository: https://github.com/RonaldTM9999/devcontainers
   ociReference: ghcr.io/ronaldtm9999/devcontainers
+- name: DevContainer Features by Paul Gilber
+  maintainer: Paul Gilber
+  contact: https://github.com/paul-gilber/devcontainer-features/issues
+  repository: https://github.com/paul-gilber/devcontainer-features
+  ociReference: ghcr.io/paul-gilber/devcontainer-features
+- name: Bats Features by Luigi Operoso
+  maintainer: brokenpip3
+  contact: https://github.com/brokenpip3/devcontainers-bats/issues
+  repository: https://github.com/brokenpip3/devcontainers-bats
+  ociReference: ghcr.io/brokenpip3/devcontainers-bats
