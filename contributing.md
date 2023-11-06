@@ -38,7 +38,21 @@ Tool-specific properties are contained in namespaces in the `"customizations"` p
 You may propose adding a new namespace for a specific tool, and any properties specific to that tool.
 
 ### GitHub Discussions
-If you'd like to discuss the spec, such as asking questions, providing feedback, or engaging on how your team may use or contribute to dev containers, please check out the [GitHub Discussions](https://github.com/devcontainers/spec/discussions) in this repo. This is a great opportunity to connect with the community and maintainers of this project, without the requirement of contributing a change to the actual spec (which we see more in issues and PRs).
+If you'd like to discuss the spec, such as asking questions, providing feedback, or engaging on how your team may use or contribute to dev containers, please check out the issues across the repos in the [Dev Containers GitHub org](https://github.com/devcontainers/devcontainers.github.io/edit/gh-pages/contributing.md) and consider joining our [community Slack channel](https://aka.ms/dev-container-community). This is a great opportunity to connect with the community and maintainers of this project.
+
+## Formatting Guidelines
+
+When contributing an official doc or referencing dev containers in your projects, please consider the following guidelines:
+
+- Refer to the spec as the "Development Container Specification"
+     - All capital letters
+     - Singular "Container" rather than plural "Containers"
+- The term "dev container" shouldn't be capitalized on its own
+     - It should only be capitalized when referring to an official tool title, like the VS Code Dev Containers extension 
+- Signify `devcontainer.json` is a file type through backticks 
+- Features and Templates should always be capitalized
+- Refer to the CLI as the "Dev Container CLI" (note the caps)
+- Use bolding for emphasis sprinkled throughout sections, rather than try to use it to always bold certain terms
 
 ## Review process
 
