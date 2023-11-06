@@ -37,12 +37,6 @@ Tool-specific properties are contained in namespaces in the `"customizations"` p
 
 You may propose adding a new namespace for a specific tool, and any properties specific to that tool.
 
-### Community Engagement
-There are several options to engage with the dev container community, such as asking questions, opening proposals, providing feedback, or engaging on how your team may use or contribute to dev containers:
-- [GitHub Discussions](https://github.com/devcontainers/spec/discussions): This is a great opportunity to connect with the community and maintainers of this project, without the requirement of contributing a change to the actual spec (which we see more in issues and PRs)
-- Check out the issues and PRs across the repos in the [Dev Containers GitHub org](https://github.com/devcontainers/devcontainers.github.io/edit/gh-pages/contributing.md)
-- [Community Slack channel](https://aka.ms/dev-container-community): This is a great opportunity to connect with the community and maintainers
-
 ## Formatting Guidelines
 
 When contributing an official doc or referencing dev containers in your projects, please consider the following guidelines:
@@ -65,3 +59,9 @@ We use the following [labels](https://github.com/devcontainers/spec/labels):
 - `finalization`: Proposals we intend to make part of the spec.
 
 [Milestones](https://github.com/devcontainers/spec/milestones) use a "month year" pattern (i.e. January 2022). If a finalized proposal is added to a milestone, it is intended to be merged during that milestone.
+
+## Community Engagement
+There are several additional options to engage with the dev container community, such as asking questions, providing feedback, or engaging on how your team may use or contribute to dev containers:
+- [GitHub Discussions](https://github.com/devcontainers/spec/discussions): This is a great opportunity to connect with the community and maintainers of this project, without the requirement of contributing a change to the actual spec (which we see more in issues and PRs)
+- [Community Slack channel](https://aka.ms/dev-container-community): This is a great opportunity to connect with the community and maintainers
+- You can always check out the issues and PRs (and contribute new ones) across the repos in the [Dev Containers GitHub org](https://github.com/devcontainers/devcontainers.github.io/edit/gh-pages/contributing.md) too!
