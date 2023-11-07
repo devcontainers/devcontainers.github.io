@@ -17,45 +17,17 @@ sectionid: collection-index
         href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">this
         yaml file</a>.
 </p>
+<tr>
+    <td class="tg-0lax"><b>Name</b></b></td>
+    <td class="tg-0lax"><b>Maintainer</b></td>
+    <td class="tg-0lax"><b>Repository</b></td>
+</tr>
 
-<input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Search for collections...">
-
-<table id="collectionTable" style="margin-left: auto;margin-right: auto;">
-    <thead>
-        <tr>
-            <th><b>Name</b></th>
-            <th><b>Maintainer</b></th>
-            <th><b>Repository</b></th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for c in site.data.collection-index %}
-        <tr>
-            <td>{{ c.name }}</td>
-            <td><a rel="nofollow" href="{{ c.contact | strip_html }}">{{ c.maintainer | strip_html }}</a></td>
-            <td><a rel="nofollow" href="{{ c.repository | strip_html }}">{{ c.repository | strip_html }}</a></td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
-<script>
-    function filterTable() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("searchInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("collectionTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
+{% for c in site.data.collection-index %}
+<tr>
+    <td class="tg-0lax">{{ c.name }}</td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html }}</a></td>
+    <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html }}</a>
+    </td>
+</tr>
+{% endfor %}
