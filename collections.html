@@ -12,22 +12,88 @@ sectionid: collection-index
     (i.e. it will be presented in the GitHub Codespaces and VS Code Dev Containers UX).
 </p>
 
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid #dfe2e5;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #dfe2e5;
+    }
+
+    th {
+        background-color: #f6f8fa;
+    }
+</style>
+
 <p>
     To add your own collection to this list, please create a PR editing <a
         href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">this
         yaml file</a>.
 </p>
-<tr>
-    <td class="tg-0lax"><b>Name</b></b></td>
-    <td class="tg-0lax"><b>Maintainer</b></td>
-    <td class="tg-0lax"><b>Repository</b></td>
-</tr>
 
-{% for c in site.data.collection-index %}
-<tr>
-    <td class="tg-0lax">{{ c.name }}</td>
-    <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html }}</a></td>
-    <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html }}</a>
-    </td>
-</tr>
-{% endfor %}
+<div>
+    <label for="search-input">Search:</label>
+    <input type="text" id="search-input" onkeyup="filterTable()" placeholder="Type to search...">
+</div>
+
+<table id="collection-table">
+    <thead>
+        <tr>
+            <th><b>Name</b></th>
+            <th><b>Maintainer</b></th>
+            <th><b>Repository</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in site.data.collection-index %}
+        <tr>
+            <td>{{ c.name }}</td>
+            <td><a rel="nofollow" href="{{ c.contact | strip_html }}">{{ c.maintainer | strip_html }}</a></td>
+            <td><a rel="nofollow" href="{{ c.repository | strip_html }}">{{ c.repository | strip_html }}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<script>
+    function filterTable() {
+        // Get input value and convert to lowercase
+        var input = document.getElementById("search-input");
+        var filter = input.value.toLowerCase();
+
+        // Get table rows and loop through them
+        var table = document.getElementById("collection-table");
+        var rows = table.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+
+            // Get cells in current row and loop through them
+            var cells = row.getElementsByTagName("td");
+            var showRow = false;
+            for (var j = 0; j < cells.length; j++) {
+                var cell = cells[j];
+                var text = cell.textContent.toLowerCase();
+
+                // Check if cell text contains filter text
+                if (text.indexOf(filter) > -1) {
+                    showRow = true;
+                    break;
+                }
+            }
+
+            // Show or hide row based on filter
+            if (showRow) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        }
+    }
+</script>
