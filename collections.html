@@ -12,22 +12,78 @@ sectionid: collection-index
     (i.e. it will be presented in the GitHub Codespaces and VS Code Dev Containers UX).
 </p>
 
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #24292e;
+        border: 1px solid #d1d5da;
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+        text-align: left;
+        border: 1px solid #d1d5da;
+    }
+
+    th {
+        font-weight: bold;
+        background-color: #f6f8fa;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f6f8fa;
+    }
+</style>
+
 <p>
     To add your own collection to this list, please create a PR editing <a
         href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">this
         yaml file</a>.
 </p>
-<tr>
-    <td class="tg-0lax"><b>Name</b></b></td>
-    <td class="tg-0lax"><b>Maintainer</b></td>
-    <td class="tg-0lax"><b>Repository</b></td>
-</tr>
 
-{% for c in site.data.collection-index %}
-<tr>
-    <td class="tg-0lax">{{ c.name }}</td>
-    <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html }}</a></td>
-    <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html }}</a>
-    </td>
-</tr>
-{% endfor %}
+<div>
+    <label for="search">Search:</label>
+    <input type="text" id="search" onkeyup="filterTable()" placeholder="Enter a search term...">
+</div>
+
+<table id="collection-table">
+    <thead>
+        <tr>
+            <th><b>Name</b></th>
+            <th><b>Maintainer</b></th>
+            <th><b>Repository</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in site.data.collection-index %}
+        <tr>
+            <td>{{ c.name }}</td>
+            <td><a rel="nofollow" href="{{ c.contact | strip_html }}">{{ c.maintainer | strip_html }}</a></td>
+            <td><a rel="nofollow" href="{{ c.repository | strip_html }}">{{ c.repository | strip_html }}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<script>
+    function filterTable() {
+        // Get input value
+        var input = document.getElementById("search").value.toLowerCase();
+        // Get table rows
+        var rows = document.getElementById("collection-table").getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+        // Loop through rows and hide/show based on search term
+        for (var i = 0; i < rows.length; i++) {
+            var name = rows[i].getElementsByTagName("td")[0].textContent.toLowerCase();
+            var maintainer = rows[i].getElementsByTagName("td")[1].textContent.toLowerCase();
+            var repository = rows[i].getElementsByTagName("td")[2].textContent.toLowerCase();
+            if (name.indexOf(input) > -1 || maintainer.indexOf(input) > -1 || repository.indexOf(input) > -1) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
+        }
+    }
+</script>
