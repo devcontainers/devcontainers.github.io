@@ -28,11 +28,6 @@
   contact: https://github.com/meaningful-ooo/devcontainer-features/issues
   repository: https://github.com/meaningful-ooo/devcontainer-features
   ociReference: ghcr.io/meaningful-ooo/devcontainer-features
-- name: Legacy Community Templates
-  maintainer: Deprecated (No longer maintained)
-  contact: https://github.com/microsoft/vscode-dev-containers/issues/1589
-  repository: https://github.com/microsoft/vscode-dev-containers
-  ociReference: ghcr.io/microsoft/vscode-dev-containers
 - name: Assorted Features
   maintainer: Mike Priscella
   contact: https://github.com/mpriscella/features/issues
