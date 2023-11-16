@@ -116,7 +116,7 @@ ARTIFACT_PATH=devcontainer-feature-go.tgz
 for VERSION in 1  1.2  1.2.3  latest
 do
     oras push ${REGISTRY}/${NAMESPACE}/${FEATURE}:${VERSION} \
-            --manifest-config /dev/null:application/vnd.devcontainers \
+            --config /dev/null:application/vnd.devcontainers \
                              ./${ARTIFACT_PATH}:application/vnd.devcontainers.layer.v1+tar
 done
 ```
@@ -131,7 +131,7 @@ REGISTRY=ghcr.io
 NAMESPACE=devcontainers/features
 
 oras push ${REGISTRY}/${NAMESPACE}:latest \
-        --manifest-config /dev/null:application/vnd.devcontainers \
+        --config /dev/null:application/vnd.devcontainers \
                             ./devcontainer-collection.json:application/vnd.devcontainers.collection.layer.v1+json
 ```
 
