@@ -623,3 +623,8 @@
   contact: https://github.com/brokenpip3/devcontainers-bats/issues
   repository: https://github.com/brokenpip3/devcontainers-bats
   ociReference: ghcr.io/brokenpip3/devcontainers-bats
+- name: Logic App Standard Template
+  maintainer: mcollier
+  contact: https://github.com/mcollier/logic-app-dev-container-template/issues
+  repository: https://github.com/mcollier/logic-app-dev-container-template
+  ociReference: ghcr.io/mcollier/logic-app-dev-container-template/logic-app-standard
