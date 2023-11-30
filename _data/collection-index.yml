@@ -628,3 +628,8 @@
   contact: https://github.com/mcollier/logic-app-dev-container-template/issues
   repository: https://github.com/mcollier/logic-app-dev-container-template
   ociReference: ghcr.io/mcollier/logic-app-dev-container-template
+- name: Additional Dev Container Features by prulloac
+  maintainer: prulloac
+  contact: https://github.com/prulloac/devcontainer-features/issues
+  repository: https://github.com/prulloac/devcontainer-features
+  ociReference: ghcr.io/prulloac/devcontainer-features
