@@ -633,3 +633,8 @@
   contact: https://github.com/prulloac/devcontainer-features/issues
   repository: https://github.com/prulloac/devcontainer-features
   ociReference: ghcr.io/prulloac/devcontainer-features
+- name: Additional Dev Container Features by LumenPink
+  maintainer: lumenpink
+  contact: https://github.com/lumenpink/devcontainer-features/issues
+  repository: https://github.com/lumenpink/devcontainer-features
+  ociReference: ghcr.io/lumenpink/devcontainer-features
