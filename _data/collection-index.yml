@@ -638,3 +638,8 @@
   contact: https://github.com/lumenpink/devcontainer-features/issues
   repository: https://github.com/lumenpink/devcontainer-features
   ociReference: ghcr.io/lumenpink/devcontainer-features
+- name: Azure Functions Dev Container Templates
+  maintainer: Tatsuro Shibamura
+  contact: https://github.com/shibayan/devcontainers/issues
+  repository: https://github.com/shibayan/devcontainers
+  ociReference: ghcr.io/shibayan/devcontainers
