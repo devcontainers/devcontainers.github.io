@@ -638,3 +638,8 @@
   contact: https://github.com/lumenpink/devcontainer-features/issues
   repository: https://github.com/lumenpink/devcontainer-features
   ociReference: ghcr.io/lumenpink/devcontainer-features
+- name: Templates by Mohd Shukri Hasan
+  maintainer: Mohd Shukri Hasan
+  contact: https://github.com/hsm207/devcontainer-templates/issues
+  ociReference: ghcr.io/hsm207/devcontainer-templates
+
