@@ -641,5 +641,6 @@
 - name: Templates by Mohd Shukri Hasan
   maintainer: Mohd Shukri Hasan
   contact: https://github.com/hsm207/devcontainer-templates/issues
+  repository: https://github.com/hsm207/devcontainer-templates
   ociReference: ghcr.io/hsm207/devcontainer-templates
 
