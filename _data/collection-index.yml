@@ -643,4 +643,8 @@
   contact: https://github.com/hsm207/devcontainer-templates/issues
   repository: https://github.com/hsm207/devcontainer-templates
   ociReference: ghcr.io/hsm207/devcontainer-templates
-
+- name: Yet More Alpine DevContainer Features
+  maintainer: Rob Edwards
+  contact: https://github.com/raedwa01/devcontainers-features/issues
+  repository: https://github.com/raedwa01/devcontainers-features
+  ociReference: ghcr.io/raedwa01/devcontainer-templates
