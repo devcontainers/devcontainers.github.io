@@ -643,4 +643,10 @@
   contact: https://github.com/hsm207/devcontainer-templates/issues
   repository: https://github.com/hsm207/devcontainer-templates
   ociReference: ghcr.io/hsm207/devcontainer-templates
+- name: Radius Features (https://radapp.io/)
+  maintainer: radius-project
+  contact: https://github.com/radius-project/radius/issues
+  repository: https://github.com/radius-project/radius
+  ociReference: ghcr.io/radius-project/devcontainer-features
+
 
