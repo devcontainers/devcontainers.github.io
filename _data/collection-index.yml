@@ -643,4 +643,8 @@
   contact: https://github.com/hsm207/devcontainer-templates/issues
   repository: https://github.com/hsm207/devcontainer-templates
   ociReference: ghcr.io/hsm207/devcontainer-templates
-
+- name: Dev Container Features by CASL0
+  maintainer: CASL0
+  contact: https://github.com/CASL0/devcontainer-features/issues
+  repository: https://github.com/CASL0/devcontainer-features
+  ociReference: ghcr.io/casl0/devcontainer-features
