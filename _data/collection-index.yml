@@ -648,3 +648,8 @@
   contact: https://github.com/CASL0/devcontainer-features/issues
   repository: https://github.com/CASL0/devcontainer-features
   ociReference: ghcr.io/casl0/devcontainer-features
+- name: Development Container Features by goldsam
+  maintainer: goldsam
+  contact: https://github.com/goldsam/dev-container-features/issues
+  repository: https://github.com/goldsam/dev-container-features
+  ociReference: ghcr.io/goldsam/dev-container-features
