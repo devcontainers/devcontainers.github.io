@@ -653,3 +653,8 @@
   contact: https://github.com/goldsam/dev-container-features/issues
   repository: https://github.com/goldsam/dev-container-features
   ociReference: ghcr.io/goldsam/dev-container-features
+- name: Azure Functions Dev Container Templates
+  maintainer: Tatsuro Shibamura
+  contact: https://github.com/shibayan/devcontainers/issues
+  repository: https://github.com/shibayan/devcontainers
+  ociReference: ghcr.io/shibayan/devcontainers
