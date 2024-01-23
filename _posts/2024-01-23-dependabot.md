@@ -74,7 +74,7 @@ index e9d9af5..9eb9165 100644
  }
 ```
 
- This updater ensures publicly-accessible Features are pinned to the latest version in the associated `devcontainer.json` file.  If a dev container has an associated lockfile, that file will also be updated. For more information on lockfiles, see the associated [specification](https://github.com/devcontainers/spec/blob/main/docs/specs/devcontainer-lockfile.md).
+ This updater ensures publicly-accessible Features are pinned to the latest version in the associated `devcontainer.json` file.  If a dev container has an associated lockfile, that file will also be updated. For more information on lockfiles, see this [specification](https://github.com/devcontainers/spec/blob/main/docs/specs/devcontainer-lockfile.md).
 
 Features in any [valid dev container location](https://containers.dev/implementors/spec/#devcontainerjson) will be updated in a single pull request.
 
