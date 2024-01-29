@@ -583,7 +583,7 @@
   contact: https://github.com/audacioustux/devcontainers/issues
   repository: https://github.com/audacioustux/devcontainers
   ociReference: ghcr.io/audacioustux/devcontainers
-- name: PlantUml DevContainer 
+- name: PlantUml DevContainer
   maintainer: lnyousif
   contact: https://github.com/lnyousif/plantuml-devcontainer/issues
   repository: https://github.com/lnyousif/plantuml-devcontainer
@@ -658,3 +658,8 @@
   contact: https://github.com/shibayan/devcontainers/issues
   repository: https://github.com/shibayan/devcontainers
   ociReference: ghcr.io/shibayan/devcontainers
+- name: Dev Container Templates by RSM HCD Engineering
+  maintainer: RSM HCD Engineering
+  contact: https://github.com/rsm-hcd
+  repository: https://github.com/rsm-hcd/devcontainer-templates
+  ociReference: ghcr.io/rsm-hcd/devcontainer-templates
