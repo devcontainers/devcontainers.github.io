@@ -97,7 +97,7 @@ An OCI registry that implements the [OCI Artifact Distribution Specification](ht
 
 Each packaged Feature is pushed to the registry following the naming convention `<registry>/<namespace>/<id>[:version]`, where version is the major, minor, and patch version of the Feature, according to the semver specification.
 
-> **Note:** The `namespace` is a unique indentifier for the collection of Features.  There are no strict rules for the `namespace`; however, one pattern is to set `namespace` equal to source repository's `<owner>/<repo>`. 
+> **Note:** The `namespace` is a unique identifier for the collection of Features.  There are no strict rules for the `namespace`; however, one pattern is to set `namespace` equal to source repository's `<owner>/<repo>`. 
 
 A custom media type `application/vnd.devcontainers` and `application/vnd.devcontainers.layer.v1+tar` are used as demonstrated below.
 
@@ -133,6 +133,35 @@ NAMESPACE=devcontainers/features
 oras push ${REGISTRY}/${NAMESPACE}:latest \
         --config /dev/null:application/vnd.devcontainers \
                             ./devcontainer-collection.json:application/vnd.devcontainers.collection.layer.v1+json
+```
+
+Additionally, an [annotation](https://github.com/opencontainers/image-spec/blob/main/annotations.md) named `dev.containers.metadata` should be populated on the manifest when published by an implementing tool.  This annotation is the escaped JSON object of the entire `devcontainer-feature.json` as it appears during the [packaging stage](#packaging).  
+
+An example manifest with the `dev.containers.metadata` annotation:
+
+```json
+{
+  "schemaVersion": 2,
+  "mediaType": "application/vnd.oci.image.manifest.v1+json",
+  "config": {
+    "mediaType": "application/vnd.devcontainers",
+    "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  "layers": [
+    {
+      "mediaType": "application/vnd.devcontainers.layer.v1+tar",
+      "digest": "sha256:738af5504b253dc6de51d2cb1556cdb7ce70ab18b2f32b0c2f12650ed6d2e4bc",
+      "size": 3584,
+      "annotations": {
+        "org.opencontainers.image.title": "devcontainer-feature-myFeature.tgz"
+      }
+    }
+  ],
+  "annotations": {
+    "dev.containers.metadata": "{\"name\": \"My Feature\",\"id\": \"myFeature\",\"version\": \"1.0.0\",\"dependsOn\": {\"ghcr.io/myotherFeature:1\": {\"flag\": true},\"features.azurecr.io/aThirdFeature:1\": {},\"features.azurecr.io/aFourthFeature:1.2.3\": {}}}"
+  }
+}
 ```
 
 ### <a href="#directly-reference-tarball" name="directly-reference-tarball" class="anchor"> Directly referencing a tarball </a>
