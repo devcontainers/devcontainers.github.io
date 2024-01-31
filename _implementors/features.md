@@ -423,9 +423,6 @@ If a Feature is indicated in `overrideFeatureInstallOrder` but not a member of t
 > - Sort Features by their canonical name (For OCI-published Features, the Feature ID resolved to the digest hash).
 > 
 > If there is no difference based on these comparator rules, the Features are considered equal.
->
-> 
-
 
 > ## <a href="#dependency-installation-order-algorithm" name="dependency-installation-order-algorithm" class="anchor"> Dependency installation order algorithm </a>
 >
