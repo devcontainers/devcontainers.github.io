@@ -272,7 +272,7 @@
   maintainer: Bruno-Pier Busque
   contact: https://github.com/BrunoB81HK/ros2-workspace-devcontainer-template/issues
   repository: https://github.com/BrunoB81HK/ros2-workspace-devcontainer-template
-  ociReference: https://ghcr.io/BrunoB81HK/ros2-workspace-devcontainer-template
+  ociReference: ghcr.io/brunob81hk/ros2-workspace-devcontainer-template
 - name: Assorted Features
   maintainer: r3dpoint
   contact: https://github.com/r3dpoint/devcontainer-features/issues
