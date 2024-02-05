@@ -668,3 +668,8 @@
   contact: https://github.com/rsm-hcd
   repository: https://github.com/rsm-hcd/devcontainer-templates
   ociReference: ghcr.io/rsm-hcd/devcontainer-templates
+- name: Dev Container Features by Niko Böckerman
+  maintainer: Niko Böckerman
+  contact: https://github.com/nikobockerman
+  repository: https://github.com/nikobockerman/devcontainer-features
+  ociReference: ghcr.io/nikobockerman/devcontainer-features
