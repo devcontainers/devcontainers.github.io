@@ -673,3 +673,13 @@
   contact: https://github.com/GeorgOfenbeck/features/issues
   repository: https://github.com/GeorgOfenbeck/features 
   ociReference: ghcr.io/georgofenbeck/features
+- name: Dev Container Features by Niko Böckerman
+  maintainer: Niko Böckerman
+  contact: https://github.com/nikobockerman
+  repository: https://github.com/nikobockerman/devcontainer-features
+  ociReference: ghcr.io/nikobockerman/devcontainer-features
+- name: Bun.sh Runtime Dev Container Templates
+  maintainer: Marcos Gomes Neto
+  contact: https://github.com/marcosgomesneto/bun-devcontainers/issues
+  repository: https://github.com/marcosgomesneto/bun-devcontainers
+  ociReference: ghcr.io/marcosgomesneto/bun-devcontainers
