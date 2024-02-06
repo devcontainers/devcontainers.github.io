@@ -668,6 +668,11 @@
   contact: https://github.com/rsm-hcd
   repository: https://github.com/rsm-hcd/devcontainer-templates
   ociReference: ghcr.io/rsm-hcd/devcontainer-templates
+- name: Additional Dev Container Features by Georg Ofenbeck 
+  maintainer: Georg Ofenbeck
+  contact: https://github.com/GeorgOfenbeck/features/issues
+  repository: https://github.com/GeorgOfenbeck/features 
+  ociReference: ghcr.io/georgofenbeck/features
 - name: Dev Container Features by Niko Böckerman
   maintainer: Niko Böckerman
   contact: https://github.com/nikobockerman
