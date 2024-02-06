@@ -672,4 +672,4 @@
   maintainer: Georg Ofenbeck
   contact: https://github.com/GeorgOfenbeck/features/issues
   repository: https://github.com/GeorgOfenbeck/features 
-  ociReference: ghcr.io/GeorgOfenbeck/features
+  ociReference: ghcr.io/georgofenbeck/features
