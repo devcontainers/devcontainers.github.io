@@ -672,4 +672,4 @@
   maintainer: Noah Jelich
   contact: https://github.com/near/near-devcontainers/issues
   repository: https://github.com/near/near-devcontainers
-  ociReference: ghcr.io/near/near-devcontainers
+  ociReference: ghcr.io/near/near-devcontainers/features
