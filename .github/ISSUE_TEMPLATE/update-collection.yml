@@ -1,0 +1,49 @@
+name: Want to add a dev container collection?
+description: Dev container collection contribution template
+labels: [collection]
+
+title: "Add a collection to the index"
+
+body:
+
+- type: input
+  id: name
+  attributes:
+    label: Collection name
+  validations:
+    required: true
+
+- type: input
+  id: maintainer
+  attributes:
+    label: Maintainer name
+  validations:
+    required: true
+
+- type: input
+  id: contact
+  attributes:
+    label: Maintainer contact link (i.e. repo issues link, email)
+  validations:
+    required: true
+
+- type: input
+  id: repository
+  attributes:
+    label: Repository URL
+  validations:
+    required: true
+
+- type: input
+  id: ociReference
+  attributes:
+    label: OCI Reference
+  validations:
+    required: true
+
+- type: checkboxes
+  attributes:
+    label: I acknowledge that this collection provides new functionality, distinct from the existing collections part of this index
+    options:
+      - label: Confirm
+        required: true
