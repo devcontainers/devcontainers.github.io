@@ -687,4 +687,9 @@
   maintainer: Mikael Koskinen
   contact: https://github.com/weikio/devcontainer-templates/issues
   repository: https://github.com/weikio/devcontainer-templates
-  ociReference: ghcr.io/weikio/devcontainer-templates  
+  ociReference: ghcr.io/weikio/devcontainer-templates
+- name: Dev Container Features by Hans Spaans
+  maintainer: Hans Spaans
+  contact: https://github.com/hspaans/devcontainer-features/issues
+  repository: https://github.com/hspaans/devcontainer-features
+  ociReference: ghcr.io/hspaans/devcontainer-features
