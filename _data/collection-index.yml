@@ -572,7 +572,7 @@
   maintainer: Ty Schlichenmeyer
   contact: https://github.com/schlich/devcontainer-features/issues
   repository: https://github.com/schlich/devcontainer-features
-  ociReference: ghcr.io/schlich/devcontainer-features/rye
+  ociReference: ghcr.io/schlich/devcontainer-features
 - name: Features by raucha
   maintainer: raucha
   contact: https://github.com/raucha/devcontainer-features/issues
