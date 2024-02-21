@@ -568,6 +568,11 @@
   contact: https://github.com/schlich/cst-devcontainer-feature/issues
   repository: https://github.com/schlich/cst-devcontainer-feature
   ociReference: ghcr.io/schlich/cst-devcontainer-feature
+- name: Rye
+  maintainer: Ty Schlichenmeyer
+  contact: https://github.com/schlich/devcontainer-features/issues
+  repository: https://github.com/schlich/devcontainer-features
+  ociReference: ghcr.io/schlich/devcontainer-features
 - name: Features by raucha
   maintainer: raucha
   contact: https://github.com/raucha/devcontainer-features/issues
