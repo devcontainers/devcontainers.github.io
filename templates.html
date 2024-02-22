@@ -16,19 +16,46 @@ sectionid: collection-index-templates
     Please note that if you need to report a Template, you should do so through the registry hosting the Template.
 </p>
 
-<p>
-</p>
-<tr>
-    <td class="tg-0lax"><b>Template Name</b></b></td>
-    <td class="tg-0lax"><b>Maintainer</b></td>
-</tr>
+<input type="text" id="searchInput" placeholder="Search">
+<br>
+<br>
 
-{% for c in site.data.devcontainer-index.collections %}
+<table id="collectionTable" class="tg">
+    <tr>
+        <td class="tg-0lax"><b>Template Name</b></b></td>
+        <td class="tg-0lax"><b>Maintainer</b></td>
+    </tr>
+    
+    {% for c in site.data.devcontainer-index.collections %}
     {% for f in c.templates %}
     <tr>
-        <td class="tg-0lax"><a rel="nofollow" href="{{ f.documentationURL | strip_html }}">{{ f.name | strip_html  }}</a></td>
-        <td class="tg-0lax">{{ c.sourceInformation.maintainer | strip_html  }}</td>
+        <td class="tg-0lax"><a rel="nofollow" href="{{ f.documentationURL | strip_html }}">{{ f.name | strip_html }}</a>
+        </td>
+        <td class="tg-0lax">{{ c.sourceInformation.maintainer | strip_html }}</td>
     </tr>
     {% endfor %}
+    
+    {% endfor %}
+</table>
 
-{% endfor %}
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const collectionTable = document.getElementById('collectionTable');
+    const rows = collectionTable.getElementsByTagName('tr');
+
+    searchInput.addEventListener('input', function () {
+        const searchValue = searchInput.value.toLowerCase();
+
+        for (let i = 1; i < rows.length; i++) {
+            const name = rows[i].getElementsByTagName('td')[0].textContent.toLowerCase();
+            const maintainer = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
+            const repository = rows[i].getElementsByTagName('td')[2].textContent.toLowerCase();
+
+            if (name.includes(searchValue) || maintainer.includes(searchValue) || repository.includes(searchValue)) {
+                rows[i].style.display = '';
+            } else {
+                rows[i].style.display = 'none';
+            }
+        }
+    });
+</script>

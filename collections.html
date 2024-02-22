@@ -17,17 +17,49 @@ sectionid: collection-index
         href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">this
         yaml file</a>.
 </p>
-<tr>
-    <td class="tg-0lax"><b>Name</b></b></td>
-    <td class="tg-0lax"><b>Maintainer</b></td>
-    <td class="tg-0lax"><b>Repository</b></td>
-</tr>
 
-{% for c in site.data.collection-index %}
-<tr>
-    <td class="tg-0lax">{{ c.name }}</td>
-    <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html }}</a></td>
-    <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html }}</a>
-    </td>
-</tr>
-{% endfor %}
+<input type="text" id="searchInput" placeholder="Search">
+
+<br>
+<br>
+
+<table id="collectionTable" class="tg">
+    <tr>
+        <td class="tg-0lax"><b>Name</b></td>
+        <td class="tg-0lax"><b>Maintainer</b></td>
+        <td class="tg-0lax"><b>Repository</b></td>
+    </tr>
+
+    {% for c in site.data.collection-index %}
+    <tr>
+        <td class="tg-0lax">{{ c.name }}</td>
+        <td class="tg-0lax"><a rel="nofollow" href="{{ c.contact | strip_html  }}">{{ c.maintainer | strip_html }}</a>
+        </td>
+        <td class="tg-0lax"><a rel="nofollow" href="{{ c.repository | strip_html  }}">{{ c.repository | strip_html
+                }}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const collectionTable = document.getElementById('collectionTable');
+    const rows = collectionTable.getElementsByTagName('tr');
+
+    searchInput.addEventListener('input', function () {
+        const searchValue = searchInput.value.toLowerCase();
+
+        for (let i = 1; i < rows.length; i++) {
+            const name = rows[i].getElementsByTagName('td')[0].textContent.toLowerCase();
+            const maintainer = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
+            const repository = rows[i].getElementsByTagName('td')[2].textContent.toLowerCase();
+
+            if (name.includes(searchValue) || maintainer.includes(searchValue) || repository.includes(searchValue)) {
+                rows[i].style.display = '';
+            } else {
+                rows[i].style.display = 'none';
+            }
+        }
+    });
+</script>
