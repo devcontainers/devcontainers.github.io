@@ -50,7 +50,7 @@ sectionid: collection-index-templates
             const name = rows[i].getElementsByTagName('td')[0].textContent.toLowerCase();
             const maintainer = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
 
-            if (name.includes(searchValue) || maintainer.includes(searchValue) || repository.includes(searchValue)) {
+            if (name.includes(searchValue) || maintainer.includes(searchValue)) {
                 rows[i].style.display = '';
             } else {
                 rows[i].style.display = 'none';
