@@ -698,3 +698,8 @@
   contact: https://github.com/hspaans/devcontainer-features/issues
   repository: https://github.com/hspaans/devcontainer-features
   ociReference: ghcr.io/hspaans/devcontainer-features
+- name: Dev Container Templates by johnluicn
+  maintainer: johnluicn
+  contact: https://github.com/johnluicn/devcontainer-templates/issues
+  repository: https://github.com/johnluicn/devcontainer-templates
+  ociReference: ghcr.io/johnluicn/devcontainer-templates  
