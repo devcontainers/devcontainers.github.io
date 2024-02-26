@@ -13,7 +13,7 @@ Metadata properties marked with a 🏷️ can be stored in the `devcontainer.met
 ## <a href="#general-properties" name="general-properties" class="anchor"> General devcontainer.json properties </a>
 
 | Property | Type  | Description |
- |:------------------|:------------|:------------|
+|:------------------|:------------|:------------|
 | `name` | string | A name for the dev container displayed in the UI |
 | `forwardPorts` 🏷️ | array | An array of port numbers or `"host:port"` values  (e.g. `[3000, "db:5432"]`) that should always be forwarded from inside the primary container to the local machine (including on the web). The property is most useful for forwarding ports that cannot be auto-forwarded because the related process that starts before the `devcontainer.json` supporting service / tool connects or for forwarding a service not in the primary container in Docker Compose scenarios (e.g. `"db:5432"`). Defaults to `[]`. |
 | `portsAttributes` 🏷️ | object | Object that maps a port number, `"host:port"` value, range, or regular expression to a set of default options. See [port attributes](#port-attributes) for available options. For example: <br />`"portsAttributes": {"3000": {"label": "Application port"}}` |
@@ -43,7 +43,7 @@ The focus of `devcontainer.json` is to describe how to enrich a container for th
 ### <a href="#image-specific" name="image-specific" class="anchor"> Image or Dockerfile specific properties </a>
 
 | Property | Type  | Description |
- |:------------------|:------------|:------------|
+|:------------------|:------------|:------------|
 | `image` | string | **Required** when using an image. The name of an image in a container registry ([DockerHub](https://hub.docker.com), [GitHub Container Registry](https://docs.github.com/packages/guides/about-github-container-registry), [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)) that `devcontainer.json` supporting services / tools should use to create the dev container. |
 | `build.dockerfile` | string |**Required** when using a Dockerfile. The location of a [Dockerfile](https://docs.docker.com/engine/reference/builder/) that defines the contents of the container. The path is relative to the `devcontainer.json` file. |
 | `build.context` | string | Path that the Docker build should be run from relative to `devcontainer.json`. For example, a value of `".."` would allow you to reference content in sibling directories. Defaults to `"."`. |
@@ -60,7 +60,7 @@ The focus of `devcontainer.json` is to describe how to enrich a container for th
 ### <a href="#compose-specific" name="compose-specific" class="anchor"> Docker Compose specific properties </a>
 
 | Property | Type  | Description |
- |:------------------|:------------|:------------|
+|:------------------|:------------|:------------|
 | `dockerComposeFile` | string,<br>array | **Required** when [using Docker Compose](https://docs.docker.com/compose/). Path or an ordered list of paths to Docker Compose files relative to the `devcontainer.json` file. Using an array is useful [when extending your Docker Compose configuration](https://docs.docker.com/compose/extends/#multiple-compose-files). The order of the array matters since the contents of later files can override values set in previous ones.<br>The default `.env` file is picked up from the root of the project, but you can use `env_file` in your Docker Compose file to specify an alternate location.<br>Note that the array syntax will execute the command without a shell. You can [learn more](#formatting-string-vs-array-properties) about formatting string vs array properties. |
 | `service` | string | **Required** when [using Docker Compose](https://docs.docker.com/compose/). The name of the service `devcontainer.json` supporting services / tools should connect to once running.  |
 | `runServices` | array | An array of services in your Docker Compose configuration that should be started by `devcontainer.json` supporting services / tools. These will also be stopped when you disconnect unless `"shutdownAction"` is `"none"`. Defaults to all services. |
@@ -76,7 +76,7 @@ While most properties apply to any `devcontainer.json` supporting tool or servic
 When creating or working with a dev container, you may need different commands to be run at different points in the container's lifecycle. The table below lists a set of command properties you can use to update what the container's contents in the order in which they are run (for example, `onCreateCommand` will run after `initializeCommand`). Each command property is an string or list of command arguments that should execute from the `workspaceFolder`.
 
 | Property | Type  | Description |
- |:------------------|:------------|:------------|
+|:------------------|:------------|:------------|
 | `initializeCommand` | string,<br>array,<br>object | A command string or list of command arguments to run on the **host machine** before the container is created.<br /><br /> ⚠️ The command is run wherever the source code is located on the host. For cloud services, this is in the cloud.<br>Note that the array syntax will execute the command without a shell. You can [learn more](#formatting-string-vs-array-properties) about formatting string vs array vs object properties. |
 | `onCreateCommand` 🏷️ | string,<br>array,<br>object | This command is the first of three (along with `updateContentCommand` and `postCreateCommand`) that finalizes container setup when a dev container is created. It and subsequent commands execute **inside** the container immediately after it has started for the first time.<br /><br> Cloud services can use this command when caching or prebuilding a container. This means that it will not typically have access to user-scoped assets or secrets.<br>Note that the array syntax will execute the command without a shell. You can [learn more](#formatting-string-vs-array-properties) about formatting string vs array vs object properties. |
 | `updateContentCommand` 🏷️ | string,<br>array,<br>object  | This command is the second of three that finalizes container setup when a dev container is created. It executes inside the container after `onCreateCommand` whenever new content is available in the source tree during the creation process.<br><br />It will execute at least once, but cloud services will also periodically execute the command to refresh cached or prebuilt containers. Like cloud services using `onCreateCommand`, it can only take advantage of repository and org scoped secrets or permissions.<br>Note that the array syntax will execute the command without a shell. You can [learn more](#formatting-string-vs-array-properties) about formatting string vs array vs object properties. |
@@ -95,7 +95,7 @@ If one of the lifecycle scripts fails, any subsequent scripts will not be execut
 While `devcontainer.json` does not focus on hardware or VM provisioning, it can be useful to know your container's minimum RAM, CPU, and storage requirements. This is what the `hostRequirements` properties allow you to do. Cloud services can use these properties to automatically default to the best compute option available, while in other cases, you will be presented with a warning if the requirements are not met.
 
 | Property | Type  | Description |
- |:------------------|:------------|:------------|
+|:------------------|:------------|:------------|
 | `hostRequirements.cpus` 🏷️ | integer | Indicates the minimum required number of CPUs / virtual CPUs / cores. For example: `"hostRequirements": {"cpus": 2}` |
 | `hostRequirements.memory` 🏷️ | string |  A string indicating minimum memory requirements with a `tb`, `gb`, `mb`, or `kb` suffix. For example, `"hostRequirements": {"memory": "4gb"}` |
 | `hostRequirements.storage` 🏷️ | string | A string indicating minimum storage requirements with a `tb`, `gb`, `mb`, or `kb` suffix. For example, `"hostRequirements": {"storage": "32gb"}` |
@@ -106,7 +106,7 @@ While `devcontainer.json` does not focus on hardware or VM provisioning, it can 
 The `portsAttributes` and `otherPortsAttributes` properties allow you to map default port options for one or more manually or automatically forwarded ports. The following is a list of options that can be set in the configuration object assigned to the property.
 
 | Property | Type  | Description |
- |:------------------|:------------|:------------|
+|:------------------|:------------|:------------|
 | `label` 🏷️ | string | Display name for the port in the ports view. Defaults to not set. |
 | `protocol` 🏷️ | enum | Controls protocol handling for forwarded ports. When not set, the port is assumed to be a raw TCP stream which, if forwarded to `localhost`, supports any number of protocols. However, if the port is forwarded to a web URL (e.g. from a cloud service on the web), only HTTP ports in the container are supported. Setting this property to `https` alters handling by ignoring any SSL/TLS certificates present when communicating on the port and using the correct certificate for the forwarded URL instead (e.g `https://*.githubpreview.dev`). If set to `http`, processing is the same as if the protocol is not set. Defaults to not set. |
 | `onAutoForward` 🏷️ | enum | Controls what should happen when a port is auto-forwarded once you've connected to the container. `notify` is the default, and a notification will appear when the port is auto-forwarded. If set to `openBrowser`, the port will be opened in the system's default browser. A value of `openBrowserOnce` will open the browser only once. `openPreview` will open the URL in `devcontainer.json` supporting services' / tools' embedded preview browser. A value of `silent` will forward the port, but take no further action. A value of `ignore` means that this port should not be auto-forwarded at all. |
@@ -163,7 +163,7 @@ Finally, you may use an object format:
 Variables can be referenced in certain string values in `devcontainer.json` in the following format: **${variableName}**. The following is a list of available variables you can use.
 
 | Variable | Properties | Description |
-|:----------|:---------|:----------------------|
+|:------------------|:------------|:------------|
 | `${localEnv:VARIABLE_NAME}` | Any | Value of an environment variable on the **host machine** (in this case, called `VARIABLE_NAME`). Unset variables are left blank. For example, this would set a variable to your local home folder on Linux / macOS or the user folder on Windows:<br/> `"remoteEnv": { "LOCAL_USER_PATH": "${localEnv:HOME}${localEnv:USERPROFILE}" }` <br /><br /> A default value for when the environment variable is not set can be given with `${localEnv:VARIABLE_NAME:default_value}`. <br /><br /> ⚠️ For a cloud service, the host is in the cloud rather than your local machine.|
 | `${containerEnv:VARIABLE_NAME}` | `remoteEnv` | Value of an existing environment variable inside the container once it is up and running (in this case, called `VARIABLE_NAME`). For example:<br /> `"remoteEnv": { "PATH": "${containerEnv:PATH}:/some/other/path" }` <br /><br /> A default value for when the environment variable is not set can be given with `${containerEnv:VARIABLE_NAME:default_value}`. |
 | `${localWorkspaceFolder}`  | Any | Path of the local folder that was opened in the `devcontainer.json` supporting service / tool (that contains `.devcontainer/devcontainer.json`). |
