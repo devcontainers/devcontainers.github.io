@@ -63,7 +63,7 @@ The focus of `devcontainer.json` is to describe how to enrich a container for th
 |:------------------|:------------|:------------|
 | `dockerComposeFile` | string,<br>array | **Required** when using [Docker Compose](https://docs.docker.com/compose/). Path or an ordered list of paths to Docker Compose files relative to the `devcontainer.json` file. Using an array is useful [when extending your Docker Compose configuration](https://docs.docker.com/compose/extends/#multiple-compose-files). The order of the array matters since the contents of later files can override values set in previous ones.<br>The default `.env` file is picked up from the root of the project, but you can use `env_file` in your Docker Compose file to specify an alternate location.<br>Note that the array syntax will execute the command without a shell. You can [learn more](#formatting-string-vs-array-properties) about formatting string vs array properties. |
 | `service` | string | **Required** when using [Docker Compose](https://docs.docker.com/compose/). The name of the service `devcontainer.json` supporting services / tools should connect to once running. |
-| `runServices` | array | An array of services in your Docker Compose configuration that should be started by `devcontainer.json` supporting services / tools. These will also be stopped when you disconnect unless `"shutdownAction"` is `"none"`. Defaults to all services. |
+| `runServices` | array | An array of services in your Docker Compose configuration that should be started by `devcontainer.json` supporting services / tools. These will also be stopped when you disconnect unless `"shutdownAction"` is `"none"`. Defaults to all services.  |
 | `workspaceFolder` | string | Sets the default path that `devcontainer.json` supporting services / tools should open when connecting to the container (which is often the path to a volume mount where the source code can be found in the container). Defaults to `"/"`. |
 {: .table .table-bordered .table-responsive}
 
@@ -171,7 +171,6 @@ Variables can be referenced in certain string values in `devcontainer.json` in t
 | `${localWorkspaceFolderBasename}` | Any | Name of the local folder that was opened in the `devcontainer.json` supporting service / tool (that contains `.devcontainer/devcontainer.json`). |
 | `${containerWorkspaceFolderBasename}` | Any | Name of the folder where the workspace files can be found in the container. |
 | `${devcontainerId}` | Any | Allow Features to refer to an identifier that is unique to the dev container they are installed into and that is stable across rebuilds.<br> The properties supporting it in devcontainer.json are: `name`, `runArgs`, `initializeCommand`, `onCreateCommand`, `updateContentCommand`, `postCreateCommand`, `postStartCommand`, `postAttachCommand`, `workspaceFolder`, `workspaceMount`, `mounts`, `containerEnv`, `remoteEnv`, `containerUser`, `remoteUser`, and `customizations`. |
-
 {: .table .table-bordered .table-responsive}
 
 ## <a href="#schema" name="schema" class="anchor"> Schema </a>
