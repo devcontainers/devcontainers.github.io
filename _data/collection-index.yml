@@ -703,3 +703,8 @@
   contact: https://github.com/johnluicn/devcontainer-templates/issues
   repository: https://github.com/johnluicn/devcontainer-templates
   ociReference: ghcr.io/johnluicn/devcontainer-templates  
+- name: Bob buildsystem and DevBox features
+  maintainer: Dirk Louwers
+  contact: https://github.com/dlouwers/devcontainer-features/issues
+  repository: https://github.com/dlouwers/devcontainer-features
+  ociReference: ghcr.io/dlouwers/devcontainer-features
