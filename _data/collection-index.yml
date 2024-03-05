@@ -1,8 +1,3 @@
-- name: Bob Build System
-  maintainer: Dirk Louwers
-  contact: https://github.com/dlouwers/devcontainer-feature-bob/issues
-  repository: https://github.com/dlouwers/devcontainer-feature-bob
-  ociReference: ghcr.io/dlouwers/devcontainer-feature-bob/bob
 - name: Reference Implementation Features
   maintainer: Dev Container Spec Maintainers
   contact: https://github.com/devcontainers/features/issues
@@ -708,3 +703,8 @@
   contact: https://github.com/johnluicn/devcontainer-templates/issues
   repository: https://github.com/johnluicn/devcontainer-templates
   ociReference: ghcr.io/johnluicn/devcontainer-templates  
+- name: Bob buildsystem and DevBox features
+  maintainer: Dirk Louwers
+  contact: https://github.com/dlouwers/devcontainer-features/issues
+  repository: https://github.com/dlouwers/devcontainer-features
+  ociReference: ghcr.io/dlouwers/devcontainer-features
