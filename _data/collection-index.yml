@@ -708,3 +708,8 @@
   contact: https://github.com/dlouwers/devcontainer-features/issues
   repository: https://github.com/dlouwers/devcontainer-features
   ociReference: ghcr.io/dlouwers/devcontainer-features
+- name: Dev Container Features by kreemer
+  maintainer: kreemer
+  contact: https://github.com/kreemer/features/issues
+  repository: https://github.com/kreemer/features
+  ociReference: ghcr.io/kreemer/features
