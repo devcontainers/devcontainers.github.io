@@ -713,3 +713,8 @@
   contact: https://github.com/kreemer/features/issues
   repository: https://github.com/kreemer/features
   ociReference: ghcr.io/kreemer/features
+- name: Dev Container Features by Vero
+  maintainer: Vero
+  contact: https://github.com/veronoicc/devcontainer-features/issues
+  repository: https://github.com/veronoicc/devcontainer-features
+  ociReference: ghcr.io/veronoicc/devcontainer-features
