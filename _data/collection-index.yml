@@ -718,3 +718,8 @@
   contact: https://github.com/veronoicc/devcontainer-features/issues
   repository: https://github.com/veronoicc/devcontainer-features
   ociReference: ghcr.io/veronoicc/devcontainer-features
+- name: Dev Container Templates by joshuanianji
+  maintainer: joshuanianji
+  contact: https://github.com/joshuanianji/devcontainer-templates/issues
+  repository: https://github.com/joshuanianji/devcontainer-templates
+  ociReference: ghcr.io/joshuanianji/devcontainer-templates
