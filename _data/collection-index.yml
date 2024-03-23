@@ -723,3 +723,8 @@
   contact: https://github.com/joshuanianji/devcontainer-templates/issues
   repository: https://github.com/joshuanianji/devcontainer-templates
   ociReference: ghcr.io/joshuanianji/devcontainer-templates
+- name: OpenCodeCo Dev Containers goodies
+  maintainer: leocavalcante
+  contact: https://github.com/orgs/opencodeco/discussions
+  repository: https://github.com/opencodeco/devcontainers
+  ociReference: ghcr.io/opencodeco/devcontainers
