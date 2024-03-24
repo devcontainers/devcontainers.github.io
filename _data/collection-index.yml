@@ -728,3 +728,8 @@
   contact: https://github.com/orgs/opencodeco/discussions
   repository: https://github.com/opencodeco/devcontainers
   ociReference: ghcr.io/opencodeco/devcontainers
+- name: Dev Container Features by Valentin
+  maintainer: Valentin Heiligers
+  contact: https://github.com/va-h/devcontainers-features/issues
+  repository: https://github.com/va-h/devcontainers-features
+  ociReference: ghcr.io/va-h/devcontainers-features
