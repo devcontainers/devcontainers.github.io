@@ -1,0 +1,46 @@
+name: Update collection
+on:
+  issue_comment:
+    types: [created]
+    branches:
+      - gh-pages
+jobs:
+  update_collection:
+    runs-on: ubuntu-latest
+    if: contains(github.event.comment.body, '#sign-off') && (github.event.comment.user.login == 'bamurtaugh' || contains(github.event.comment.user.login, 'devcontainers/maintainers'))
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install js-yaml
+        run: npm install js-yaml    
+
+      - run: sudo apt-get install jq
+
+      - uses: stefanbuck/github-issue-praser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/update-collection.yml
+
+      - run: |
+          cat <<EOF >collection.json
+          ${{ steps.issue-parser.outputs.jsonString }}
+          EOF
+
+      - run: node _data/update-collection.js
+
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
+          git config --global user.name "github-actions[bot]" && \
+          git add _data/collection-index.yml && \
+          git commit -m 'Add collection' && \
+          git push
+
+      - uses: peter-evans/close-issue@v1
+        with:
+          comment: Thanks so much for your contribution! Your collection is now part of our community index. Check out the <a href="https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml">collection-index.yml</a> and <a href="https://containers.dev/collections">containers.dev/collections</a>.
