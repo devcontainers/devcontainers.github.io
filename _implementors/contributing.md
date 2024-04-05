@@ -1,8 +1,14 @@
-# How to Contribute to the Dev Container Specification
+---
+layout: implementors
+title:  "How to contribute to the Development Container Specification"
+shortTitle: "Contributing"
+author: Microsoft
+index: 9
+---
 
-We're excited for your contributions to the dev container specification! This document outlines how you can get involved. 
+We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. 
 
-## Spec contribution approaches
+## <a href="#contribution-approaches" name="contribution-approaches" class="anchor"> Spec Contribution approaches </a>
 
 If you'd like to contribute a change or addition to the spec, you may follow the guidance below:
 - Propose the change via an [issue](https://github.com/devcontainers/spec/issues) in this repository. Try to get early feedback before spending too much effort formalizing it.
@@ -16,9 +22,9 @@ Here is a sample:
 
 - PRs to the [schema](https://github.com/microsoft/vscode/blob/main/extensions/configuration-editing/schemas/devContainer.schema.src.json), i.e code or shell scripts demonstrating approaches for implementation.
 
-Once there is discussion on your proposal, please also open and link a PR to update the [devcontainer.json reference doc](https://github.com/microsoft/vscode-docs/blob/main/docs/remote/devcontainerjson-reference.md). When your proposal is merged, the docs will be kept up-to-date with the latest spec.
+Once there is discussion on your proposal, please also open and link a PR to update the [devcontainer.json reference doc](https://aka.ms/devcontainer.json). When your proposal is merged, the docs will be kept up-to-date with the latest spec.
 
-### Contributing tool-specific support
+### <a href="#tool-specific-support" name="tool-specific-support" class="anchor"> Contributing tool-specific support </a>
 
 Tool-specific properties are contained in namespaces in the `"customizations"` property. For instance, VS Code specific properties are formated as:
 
@@ -37,7 +43,7 @@ Tool-specific properties are contained in namespaces in the `"customizations"` p
 
 You may propose adding a new namespace for a specific tool, and any properties specific to that tool.
 
-## Formatting Guidelines
+### <a href="#formatting-guidelines" name="formatting-guidelines" class="anchor"> Formatting Guidelines </a>
 
 When contributing an official doc or referencing dev containers in your projects, please consider the following guidelines:
 
@@ -51,7 +57,7 @@ When contributing an official doc or referencing dev containers in your projects
 - Refer to the CLI as the "Dev Container CLI" (note the caps)
 - Use bolding for emphasis sprinkled throughout sections, rather than try to use it to always bold certain terms
 
-## Review process
+## <a href="#review-process" name="review-process" class="anchor"> Review process </a>
 
 We use the following [labels](https://github.com/devcontainers/spec/labels):
 
@@ -60,7 +66,8 @@ We use the following [labels](https://github.com/devcontainers/spec/labels):
 
 [Milestones](https://github.com/devcontainers/spec/milestones) use a "month year" pattern (i.e. January 2022). If a finalized proposal is added to a milestone, it is intended to be merged during that milestone.
 
-## Community Engagement
+## <a href="#community-engagement" name="community-engagement" class="anchor"> Community Engagement </a>
+
 There are several additional options to engage with the dev container community, such as asking questions, providing feedback, or engaging on how your team may use or contribute to dev containers:
 - [GitHub Discussions](https://github.com/devcontainers/spec/discussions): This is a great opportunity to connect with the community and maintainers of this project, without the requirement of contributing a change to the actual spec (which we see more in issues and PRs)
 - [Community Slack channel](https://aka.ms/dev-container-community): This is a great opportunity to connect with the community and maintainers
