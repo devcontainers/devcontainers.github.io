@@ -6,7 +6,7 @@ author: Microsoft
 index: 9
 ---
 
-We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. 
+We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. We also welcome you to join our [community Slack channel](https://aka.ms/dev-container-community).
 
 ## <a href="#contribution-approaches" name="contribution-approaches" class="anchor"> Spec Contribution approaches </a>
 
@@ -16,9 +16,10 @@ If you'd like to contribute a change or addition to the spec, you may follow the
 
 Here is a sample:
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `image` | string | **Required** when [using an image](/docs/remote/create-dev-container.md#using-an-image-or-dockerfile). The name of an image in a container registry ([DockerHub](https://hub.docker.com), [GitHub Container Registry](https://docs.github.com/packages/guides/about-github-container-registry), [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)) that VS Code and other `devcontainer.json` supporting services / tools should use to create the dev container. |
+| Property | Type  | Description |
+|:------------------|:------------|:------------|
+| `image`    | string      | **Required** when using an image. The name of an image in a container registry ([DockerHub](https://hub.docker.com), [GitHub Container Registry](https://docs.github.com/packages/guides/about-github-container-registry), [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)) that VS Code and other `devcontainer.json` supporting services / tools should use to create the dev container. |
+{: .table .table-bordered .table-responsive}
 
 - PRs to the [schema](https://github.com/microsoft/vscode/blob/main/extensions/configuration-editing/schemas/devContainer.schema.src.json), i.e code or shell scripts demonstrating approaches for implementation.
 
@@ -59,7 +60,7 @@ When contributing an official doc or referencing dev containers in your projects
 
 ## <a href="#review-process" name="review-process" class="anchor"> Review process </a>
 
-We use the following [labels](https://github.com/devcontainers/spec/labels):
+We use the following [labels](https://github.com/devcontainers/spec/labels) in the spec repo:
 
 - `proposal`: Issues under discussion, still collecting feedback.
 - `finalization`: Proposals we intend to make part of the spec.

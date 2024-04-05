@@ -1,6 +1,6 @@
 # How to Contribute to the Dev Container Specification
 
-We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. 
+We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. We also welcome you to join our [community Slack channel](https://aka.ms/dev-container-community).
 
 ## Spec contribution approaches
 
@@ -53,7 +53,7 @@ When contributing an official doc or referencing dev containers in your projects
 
 ## Review process
 
-We use the following [labels](https://github.com/devcontainers/spec/labels):
+We use the following [labels](https://github.com/devcontainers/spec/labels) in the spec repo:
 
 - `proposal`: Issues under discussion, still collecting feedback.
 - `finalization`: Proposals we intend to make part of the spec.
