@@ -738,3 +738,8 @@
   contact: https://github.com/va-h/devcontainers-features/issues
   repository: https://github.com/va-h/devcontainers-features
   ociReference: ghcr.io/va-h/devcontainers-features
+- name: Alloy Dev Container Template
+  maintainer: heathprovost
+  contact: https://github.com/heathprovost/alloy-devcontainer-template/issues
+  repository: https://github.com/heathprovost/alloy-devcontainer-template
+  ociReference: ghcr.io/heathprovost/alloy-devcontainer-template
