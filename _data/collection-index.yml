@@ -758,3 +758,8 @@
   contact: https://github.com/veryl-lang/devcontainer-features/issues
   repository: https://github.com/veryl-lang/devcontainer-features/
   ociReference: ghcr.io/veryl-lang/devcontainer-features
+- name: Dev Container Features (Cadu Ribeiro)
+  maintainer: Cadu Ribeiro
+  contact: https://github.com/duduribeiro/devcontainer-features/issues
+  repository: https://github.com/duduribeiro/devcontainer-features/
+  ociReference: ghcr.io/duduribeiro/devcontainer-features  
