@@ -775,6 +775,6 @@
   ociReference: ghcr.io/skriptfabrik/devcontainer-features
 - name: Dev Container Features by m4tchl0ck
   maintainer: Adrian Rusznica
-  contact: https://github.com/m4tchl0ck/devcontainer-features/issues
+  contact: https://github.com/m4tchl0ck/devcontainers-features/issues
   repository: https://github.com/m4tchl0ck/devcontainer-features/
   ociReference: ghcr.io/m4tchl0ck/devcontainer-features
