@@ -783,3 +783,8 @@
   contact: https://github.com/nils-geistmann/devcontainers-features/issues
   repository: https://github.com/nils-geistmann/devcontainers-features/
   ociReference: ghcr.io/nils-geistmann/devcontainers-features
+- name: Dev Container Features by rafaph
+  maintainer: Raphael Castro
+  contact: https://github.com/rafaph/devcontainer-features/issues
+  repository: https://github.com/rafaph/devcontainer-features
+  ociReference: ghcr.io/rafaph/devcontainer-features
