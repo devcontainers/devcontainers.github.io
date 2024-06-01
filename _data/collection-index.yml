@@ -803,3 +803,8 @@
   contact: https://github.com/GMkonan/fly-cli-feature/issues
   repository: https://github.com/GMkonan/fly-cli-feature
   ociReference: ghcr.io/gmkonan/fly-cli-feature
+- name: Dev Container Features by E-gineering
+  maintainer: E-gineering
+  contact: https://github.com/e-gineering/devcontainer-features/issues
+  repository: https://github.com/e-gineering/devcontainer-features
+  ociReference: ghcr.io/e-gineering/devcontainer-features
