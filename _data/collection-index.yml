@@ -833,4 +833,10 @@
   contact: https://github.com/tcaky/devcontainer-features/issues
   repository: https://github.com/tcaky/devcontainer-features
   ociReference: ghcr.io/tcaky/devcontainer-features
+- name: Dev Container Templates by ThePhaseless
+  maintainer: ThePhaseless
+  contact: https://github.com/ThePhaseless/devcontainer-templates/issues
+  repository: https://github.com/ThePhaseless/devcontainer-templates
+  ociReference: ghcr.io/thephaseless/devcontainer-templates
+
   
