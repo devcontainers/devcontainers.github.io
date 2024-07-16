@@ -868,3 +868,8 @@
   contact: https://github.com/sleter/mojo-devcontainer/issues
   repository: https://github.com/sleter/mojo-devcontainer
   ociReference: ghcr.io/sleter/mojo-devcontainer
+- name: Devcontainer features by sidecus
+  maintainer: sidecus
+  contact: https://github.com/sidecus/devcontainer-features/issues
+  repository: https://github.com/sidecus/devcontainer-features
+  ociReference: ghcr.io/sidecus/devcontainer-features
