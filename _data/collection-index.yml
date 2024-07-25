@@ -873,3 +873,8 @@
   contact: https://github.com/sidecus/devcontainer-features/issues
   repository: https://github.com/sidecus/devcontainer-features
   ociReference: ghcr.io/sidecus/devcontainer-features
+- name: Julian Pawlowski Dev Container Features
+  maintainer: jpawlowski
+  contact: https://github.com/jpawlowski/devcontainer-features/issues
+  repository: https://github.com/jpawlowski/devcontainer-features
+  ociReference: ghcr.io/jpawlowski/devcontainer-features
