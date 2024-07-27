@@ -883,3 +883,13 @@
   contact: https://github.com/jpawlowski/devcontainer-features/issues
   repository: https://github.com/jpawlowski/devcontainer-features
   ociReference: ghcr.io/jpawlowski/devcontainer-features
+- name: pre-commit(via pip)
+  maintainer: gvatsal60 (Vatsal Gupta)
+  contact: https://github.com/gvatsal60/dev-container-features/issues
+  repository: https://github.com/gvatsal60/dev-container-features
+  ociReference: ghcr.io/gvatsal60/dev-container-features
+- name: sonarlint
+  maintainer: gvatsal60 (Vatsal Gupta)
+  contact: https://github.com/gvatsal60/dev-container-features/issues
+  repository: https://github.com/gvatsal60/dev-container-features
+  ociReference: ghcr.io/gvatsal60/dev-container-features
