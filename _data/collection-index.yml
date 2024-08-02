@@ -888,3 +888,8 @@
   contact: https://github.com/gvatsal60/dev-container-features/issues
   repository: https://github.com/gvatsal60/dev-container-features
   ociReference: ghcr.io/gvatsal60/dev-container-features
+- name: Devcontainer features by git-saj
+  maintainer: git-saj
+  contact: https://github.com/git-saj/devcontainer-features/issues
+  repository: https://github.com/git-saj/devcontainer-features
+  ociReference: ghcr.io/git-saj/devcontainer-features
