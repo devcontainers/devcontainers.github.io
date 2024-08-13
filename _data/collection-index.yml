@@ -903,4 +903,8 @@
   contact: https://github.com/juan-ayala/devcontainer-features/issues
   repository: https://github.com/juan-ayala/devcontainer-features
   ociReference: ghcr.io/juan-ayala/devcontainer-features
-  
+- name: Devcontainer templates by Juan Ayala
+  maintainer: Juan Ayala
+  contact: https://github.com/juan-ayala/devcontainer-templates/issues
+  repository: https://github.com/juan-ayala/devcontainer-templates
+  ociReference: ghcr.io/juan-ayala/devcontainer-templates
