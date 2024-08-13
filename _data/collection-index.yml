@@ -898,3 +898,9 @@
   contact: https://github.com/code-fabrik/features/issues
   repository: https://github.com/code-fabrik/features
   ociReference: ghcr.io/code-fabrik/features
+- name: Devcontainer features by Juan Ayala
+  maintainer: Juan Ayala
+  contact: https://github.com/juan-ayala/devcontainer-features/issues
+  repository: https://github.com/juan-ayala/devcontainer-features
+  ociReference: ghcr.io/juan-ayala/devcontainer-features
+  
