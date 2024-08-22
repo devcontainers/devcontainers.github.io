@@ -908,3 +908,8 @@
   contact: https://github.com/localstack/devcontainer-template/issues
   repository: https://github.com/localstack/devcontainer-template
   ociReference: ghcr.io/localstack/devcontainer-template
+- name: DeepSpaceCartel DevContainer Features
+  maintainer: DeepSpaceCartel Inc.
+  contact: https://github.com/deep-space-cartel/devcontainers-features/issues
+  repository: https://github.com/deep-space-cartel/devcontainers-features
+  ociReference: ghcr.io/deep-space-cartel/devcontainers-features
