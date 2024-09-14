@@ -923,3 +923,8 @@
   contact: https://github.com/lx-0/devcontainer-templates/issues
   repository: https://github.com/lx-0/devcontainer-templates
   ociReference: ghcr.io/lx-0/devcontainer-templates
+- name: Dev Container Features by devcontainers-extra
+  maintainer: devcontainers-extra
+  contact: https://github.com/devcontainers-extra/features/issues
+  repository: https://github.com/devcontainers-extra/features
+  ociReference: ghcr.io/devcontainers-extra/features
