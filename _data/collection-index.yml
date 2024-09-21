@@ -923,3 +923,8 @@
   contact: https://github.com/lx-0/devcontainer-templates/issues
   repository: https://github.com/lx-0/devcontainer-templates
   ociReference: ghcr.io/lx-0/devcontainer-templates
+- name: Devcontainer features by vmvarela
+  maintainer: Victor M. Varela
+  contact: https://github.com/vmvarela/devcontainer-features/issues
+  repository: https://github.com/vmvarela/devcontainer-features
+  ociReference: ghcr.io/vmvarela/devcontainer-features
