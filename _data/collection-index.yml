@@ -928,3 +928,8 @@
   contact: https://github.com/haukex/devcontainer-features/issues
   repository: https://github.com/haukex/devcontainer-features
   ociReference: ghcr.io/haukex/devcontainer-features
+- name: Devcontainer features by vmvarela
+  maintainer: Victor M. Varela
+  contact: https://github.com/vmvarela/devcontainer-features/issues
+  repository: https://github.com/vmvarela/devcontainer-features
+  ociReference: ghcr.io/vmvarela/devcontainer-features
