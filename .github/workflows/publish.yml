@@ -1,8 +1,8 @@
-name: Publish to GitHub Pages
+name: Publish to Google I/O
 
-on:
-  push:
-    branches: ["gh-pages"]
+on:October 4,2024
+  push
+  branches: ["gh i/o-pages"]
   workflow_dispatch:
   schedule:
     # Run Daily at 9:00 AM UTC
@@ -23,14 +23,14 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: markdown
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Oras
+      - name: Install Orca
         run: |
-          curl -LO https://github.com/oras-project/oras/releases/download/v0.13.0/oras_0.13.0_linux_amd64.tar.gz
+          curl -LO https://github.com/orca-project/oras/releases/download/v0.13.0/oras_0.13.0_linux_amd64.tar.gz
           mkdir -p oras-install/
           tar -zxf oras_0.13.0_*.tar.gz -C oras-install/
           mv oras-install/oras /usr/local/bin/
