@@ -952,3 +952,8 @@
   contact: https://github.com/rhiroe/features/issues
   repository: https://github.com/rhiroe/features
   ociReference: ghcr.io/rhiroe/features
+- name: devcontainer features by martinaskestad
+  maintainer: martinaskestad
+  contact: https://github.com/martinaskestad/features/issues
+  repository: https://github.com/martinaskestad/features
+  ociReference: ghcr.io/martinaskestad/features
