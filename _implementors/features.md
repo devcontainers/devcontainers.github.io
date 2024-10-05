@@ -57,7 +57,7 @@ The properties of the file are as follows:
 | `legacyIds` | array | Array of old IDs used to publish this Feature. The property is useful for renaming a currently published Feature within a single namespace. |
 | `deprecated` | boolean | Indicates that the Feature is deprecated, and will not receive any further updates/support. This property is intended to be used by the supporting tools for highlighting Feature deprecation. |
 | `mounts` | object | Defaults to unset. Cross-orchestrator way to add additional mounts to a container. Each value is an object that accepts the same values as the [Docker CLI `--mount` flag](https://docs.docker.com/engine/reference/commandline/run/#mount). The Pre-defined [devcontainerId](/implementors/json_reference#variables-in-devcontainerjson) variable may be referenced in the value. For example:<br />`"mounts": [{ "source": "dind-var-lib-docker", "target": "/var/lib/docker", "type": "volume" }]` |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 (**) The ID must refer to either a Feature (1) published to an OCI registry, (2) a Feature Tgz URI, or (3) a Feature in the local file tree. Deprecated Feature identifiers (i.e GitHub Release) are not supported and the presence of this property may be considered a fatal error or ignored. For [local Features (ie: during development)](../features-distribution#addendum-locally-referenced), you may also depend on other local Features by providing a relative path to the Feature, relative to folder containing the active `devcontainer.json`. This behavior of Features within this property again mirror the `features` object in `devcontainer.json`.
 
@@ -73,7 +73,7 @@ The following lifecycle hooks may be declared as properties of `devcontainer-fea
 | `postCreateCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties)|
 | `postStartCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties) |
 | `postAttachCommand` | [string, array, object](/implementors/json_reference#formatting-string-vs-array-properties) |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 #### <a href="#behavior" name="behavior" class="anchor"> Behavior </a>
 
@@ -144,7 +144,7 @@ The options property contains a map of option IDs and their related configuratio
 | `optionId.enum` | array | A strict list of allowed string values. Free-form values are **not** allowed. Omit when using `optionId.proposals`. |
 | `optionId.default` | string or boolean | Default value for the option. |
 | `optionId.description` | string | Description for the option. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ### <a href="#user-env-var" name="user-env-var" class="anchor"> User environment variables </a>
 
@@ -264,7 +264,7 @@ The `id` format specified dicates how a supporting tool will locate and download
 | `<oci-registry>/<namespace>/<feature>[:<semantic-version>]` | Reference to feature in OCI registry(*) | `ghcr.io/user/repo/go` <br> `ghcr.io/user/repo/go:1` <br> `ghcr.io/user/repo/go:latest`|
 | `https://<uri-to-feature-tgz>` | Direct HTTPS URI to a tarball. | `https://github.com/user/repo/releases/devcontainer-feature-go.tgz` |
 | `./<path-to-feature-dir>`| A relative directory(**) to folder containing a devcontainer-feature.json. | `./myGoFeature` |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 (*) OCI registry must implement the [OCI Artifact Distribution Specification](https://github.com/opencontainers/distribution-spec). Some implementors can be [found here](https://oras.land/implementors/).
 

@@ -91,7 +91,7 @@ To apply the metadata together with a user's `devcontainer.json` at runtime, the
 | `shutdownAction` | `string` (enum) | Last value wins. | ✓ |   |
 | `updateRemoteUserUID` | `boolean` | Last value wins. | ✓ |   |
 | `hostRequirements` | `cpus`, `memory`, `storage`, `gpu` | Max value wins. | ✓ |   |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 Variables in string values will be substituted at the time the value is applied. When the order matters, the `devcontainer.json` is considered last.
 

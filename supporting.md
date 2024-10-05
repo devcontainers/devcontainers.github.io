@@ -29,7 +29,7 @@ Visual Studio Code specific properties go under `vscode` inside `customizations`
 |:------------------|:------------|:------------|
 | `extensions` | array | An array of extension IDs that specify the extensions that should be installed inside the container when it is created. Defaults to `[]`. |
 | `settings` | object | Adds default `settings.json` values into a container/machine specific settings file. Defaults to `{}`. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 Please note that the [Dev Containers](#dev-containers) extension and [GitHub Codespaces](#github-codespaces) support these VS Code properties.
 
@@ -91,7 +91,7 @@ Some properties may also have certain limitations in the Dev Containers extensio
 | `workspaceFolder` | string | Not yet supported when using Clone Repository in Container Volume. |
 | `${localWorkspaceFolder}`  | Any | Not yet supported when using Clone Repository in Container Volume. |
 | `${localWorkspaceFolderBasename}` | Any | Not yet supported when using Clone Repository in Container Volume. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ## <a href="#services" name="services" class="anchor"> Services </a>
 
@@ -151,7 +151,7 @@ Some properties may apply differently to codespaces.
 | `${localEnv:VARIABLE_NAME}` | Any | For Codespaces, the host is in the cloud rather than your local machine.|
 | `customizations.codespaces` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
 | `hostRequirements` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ### <a href="#codesandbox" name="codesandbox" class="anchor"> CodeSandbox </a>
 
@@ -187,7 +187,7 @@ The following properties apply differently to CodeSandbox.
 | `features` | object | CodeSandbox automatically adds docker-cli to the container and connects to the host socket. Features like `docker-in-docker` and `docker-outside-of-docker` will work a bit differently. As the docker-cli and socket from host are accessible in the container, most use cases should work as expected. |
 | `${localEnv:VARIABLE_NAME}` | Any | For CodeSandbox, the host is in the cloud rather than in your local machine.|
 | `hostRequirements` | object | CodeSandbox does not yet support this property. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ### <a href="#devpod" name="devpod" class="anchor"> DevPod </a>
 

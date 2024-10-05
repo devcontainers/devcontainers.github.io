@@ -81,7 +81,7 @@ The `devcontainer-collection.json` is an auto-generated metadata file.
 | :--- | :--- | :--- |
 | `sourceInformation` | object | Metadata from the implementing packaging tool. |
 | `features` | array | The list of features that are contained in this collection.|
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 Each Features's `devcontainer-feature.json` metadata file is appended into the `features` top-level array.
 

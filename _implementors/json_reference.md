@@ -34,7 +34,7 @@ Metadata properties marked with a 🏷️️ can be stored in the `devcontainer.
 | `features` | object | An object of [Dev Container Feature IDs](../../features) and related options to be added into your primary container. The specific options that are available varies by feature, so see its documentation for additional details. For example: <br />`"features": { "ghcr.io/devcontainers/features/github-cli": {} }` |
 | `overrideFeatureInstallOrder` | array | By default, Features will attempt to automatically set the order they are installed based on a `installsAfter` property within each of them. This property allows you to override the Feature install order when needed. For example: <br />`"overrideFeatureInstallОrder": [ "ghcr.io/devcontainers/features/common-utils", "ghcr.io/devcontainers/features/github-cli" ]` |
 | `customizations` 🏷️| object | Product specific properties, defined in [supporting tools](../../supporting) |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ## <a href="#scenario-specific" name="scenario-specific" class="anchor"> Scenario specific properties </a>
 
@@ -55,7 +55,7 @@ The focus of `devcontainer.json` is to describe how to enrich a container for th
 | `workspaceMount` | string | Requires `workspaceFolder` be set as well. Overrides the default local mount point for the workspace when the container is created. Supports the same values as the [Docker CLI `--mount` flag](https://docs.docker.com/engine/reference/commandline/run/#mount). Environment and [pre-defined variables](#variables-in-devcontainerjson) may be referenced in the value. For example: <br />`"workspaceMount": "source=${localWorkspaceFolder}/sub-folder,target=/workspace,type=bind,consistency=cached", "workspaceFolder": "/workspace"` |
 | `workspaceFolder` | string | Requires `workspaceMount` be set. Sets the default path that `devcontainer.json` supporting services / tools should open when connecting to the container. Defaults to the automatic source code mount location. |
 | `runArgs` | array | An array of [Docker CLI arguments](https://docs.docker.com/engine/reference/commandline/run/) that should be used when running the container. Defaults to `[]`. For example, this allows ptrace based debuggers like C++ to work in the container:<br /> `"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ]` . |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ### <a href="#compose-specific" name="compose-specific" class="anchor"> Docker Compose specific properties </a>
 
@@ -65,7 +65,7 @@ The focus of `devcontainer.json` is to describe how to enrich a container for th
 | `service` | string | **Required** when using [Docker Compose](https://docs.docker.com/compose/). The name of the service `devcontainer.json` supporting services / tools should connect to once running. |
 | `runServices` | array | An array of services in your Docker Compose configuration that should be started by `devcontainer.json` supporting services / tools. These will also be stopped when you disconnect unless `"shutdownAction"` is `"none"`. Defaults to all services. |
 | `workspaceFolder` | string | Sets the default path that `devcontainer.json` supporting services / tools should open when connecting to the container (which is often the path to a volume mount where the source code can be found in the container). Defaults to `"/"`. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ## <a href="#tool-specific" name="tool-specific" class="anchor"> Tool-specific properties </a>
 
@@ -84,7 +84,7 @@ When creating or working with a dev container, you may need different commands t
 | `postStartCommand` 🏷️ | string,<br>array,<br>object | A command to run each time the container is successfully started.<br><br>Note that the array syntax will execute the command without a shell. You can [learn more](#formatting-string-vs-array-properties) about formatting string vs array vs object properties. |
 | `postAttachCommand` 🏷️ | string,<br>array,<br>object | A command to run each time a tool has successfully attached to the container.<br><br>Note that the array syntax will execute the command without a shell. You can [learn more](#formatting-string-vs-array-properties) about formatting string vs array vs object properties. |
 | `waitFor` 🏷️ | enum | An enum that specifies the command any tool should wait for before connecting. Defaults to `updateContentCommand`. This allows you to use `onCreateCommand` or `updateContentCommand` for steps that must happen before `devcontainer.json` supporting tools connect while still using `postCreateCommand` for steps that can happen behind the scenes afterwards. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 For each command property, if the value is a single string, it will be run in `/bin/sh`. Use `&&` in a string to execute multiple commands. For example, `"yarn install"` or `"apt-get update && apt-get install -y curl"`. The array syntax `["yarn", "install"]` will invoke the command (in this case `yarn`) directly without using a shell. Each fires after your source code has been mounted, so you can also run shell scripts from your source tree. For example: `bash scripts/install-dev-tools.sh`.
 
@@ -100,7 +100,7 @@ While `devcontainer.json` does not focus on hardware or VM provisioning, it can 
 | `hostRequirements.memory` 🏷️ | string |  A string indicating minimum memory requirements with a `tb`, `gb`, `mb`, or `kb` suffix. For example, `"hostRequirements": {"memory": "4gb"}` |
 | `hostRequirements.storage` 🏷️ | string | A string indicating minimum storage requirements with a `tb`, `gb`, `mb`, or `kb` suffix. For example, `"hostRequirements": {"storage": "32gb"}` |
 | `hostRequirements.gpu` 🏷️ | boolean,<br>string,<br>object | Indicates if any GPU is required. A boolean indicates if a GPU is required or not. The string `"optional"` indicates that a GPU is used when available, but is not required.<br><br>The object syntax specifies how much GPU resources are required. The `cores` property indicates the minimum number of cores and the `memory` property indicates minimum storage requirements with a `tb`, `gb`, `mb`, or `kb` suffix. For example, `"gpu": { "cores": 1000, "storage": "32gb" }` |
- {: .table .table-bordered .table-responsive}
+ {: .table .table-bordered}
 
 ## <a href="#port-attributes" name="port-attributes" class="anchor"> Port attributes </a>
 
@@ -113,7 +113,7 @@ The `portsAttributes` and `otherPortsAttributes` properties allow you to map def
 | `onAutoForward` 🏷️ | enum | Controls what should happen when a port is auto-forwarded once you've connected to the container. `notify` is the default, and a notification will appear when the port is auto-forwarded. If set to `openBrowser`, the port will be opened in the system's default browser. A value of `openBrowserOnce` will open the browser only once. `openPreview` will open the URL in `devcontainer.json` supporting services' / tools' embedded preview browser. A value of `silent` will forward the port, but take no further action. A value of `ignore` means that this port should not be auto-forwarded at all. |
 | `requireLocalPort` 🏷️ | boolean | Dictates when port forwarding is required to map the port in the container to the same port locally or not. If set to `false`, the `devcontainer.json` supporting services /  tools will attempt to use the specified port forward to `localhost`, and silently map to a different one if it is unavailable. If set to `true`, you will be notified if it is not possible to use the same port. Defaults to `false`. |
 | `elevateIfNeeded` 🏷️ | boolean | Forwarding low ports like 22, 80, or 443 to `localhost` on the same port from `devcontainer.json` supporting services / tools may require elevated permissions on certain operating systems. Setting this property to `true` will automatically try to elevate the `devcontainer.json` supporting tool's permissions in this situation. Defaults to `false`. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ## <a href="#formatting-string-vs-array-properties" name="formatting-string-vs-array-properties" class="anchor"> Formatting string vs. array properties </a>
 
@@ -172,7 +172,7 @@ Variables can be referenced in certain string values in `devcontainer.json` in t
 | `${localWorkspaceFolderBasename}` | Any | Name of the local folder that was opened in the `devcontainer.json` supporting service / tool (that contains `.devcontainer/devcontainer.json`). |
 | `${containerWorkspaceFolderBasename}` | Any | Name of the folder where the workspace files can be found in the container. |
 | `${devcontainerId}` | Any | Allow Features to refer to an identifier that is unique to the dev container they are installed into and that is stable across rebuilds.<br> The properties supporting it in devcontainer.json are: `name`, `runArgs`, `initializeCommand`, `onCreateCommand`, `updateContentCommand`, `postCreateCommand`, `postStartCommand`, `postAttachCommand`, `workspaceFolder`, `workspaceMount`, `mounts`, `containerEnv`, `remoteEnv`, `containerUser`, `remoteUser`, and `customizations`. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ## <a href="#schema" name="schema" class="anchor"> Schema </a>
 

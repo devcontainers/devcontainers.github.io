@@ -42,7 +42,7 @@ The properties of the file are as follows:
 | `publisher` | string | Name of the publisher/maintainer of the Template. |
 | `keywords` | array | List of strings relevant to a user that would search for this Template. |
 | [`optionalPaths`](#optionalPaths) | array | An array of files or directories that tooling may consider "optional" when applying a Template. Directories are indicated with a trailing `/*`, (eg: `.github/*`).
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ### <a href="#options" name="options" class="anchor">  The `options` property</a>
 The `options` property contains a map of option IDs and their related configuration settings. These `options` are used by the supporting tools to prompt the user to choose from different Template configuration options. The tools would replace the option ID with the selected value in all the files (within the sub-directory of the Template). This replacement would happen before dropping the `.devcontainer.json` (or `.devcontainer/devcontainer.json`) and other files (within the sub-directory of the Template) required to containerize your project. See [option resolution](#option-resolution) for more details. For example:
@@ -68,7 +68,7 @@ The `options` property contains a map of option IDs and their related configurat
 | `optionId.proposals` | array | A list of suggested string values. Free-form values **are** allowed. Omit when using `optionId.enum`. |
 | `optionId.enum` | array | A strict list of allowed string values. Free-form values are **not** allowed. Omit when using `optionId.proposals`. |
 | `optionId.default` | string | Default value for the option. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 > `Note`: The `options` must be unique for every `devcontainer-template.json`
 
