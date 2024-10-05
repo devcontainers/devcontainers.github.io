@@ -78,7 +78,7 @@ The `devcontainer-collection.json` is an auto-generated metadata file.
 | :--- | :--- | :--- |
 | `sourceInformation` | object | Metadata from the implementing packaging tool. |
 | `templates` | array | The list of Templates that are contained in this collection.|
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 Each Template's `devcontainer-template.json` metadata file is appended into the `templates` top-level array.
 

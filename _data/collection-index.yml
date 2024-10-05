@@ -942,3 +942,13 @@
   contact: https://github.com/devcontainers-extra/features/issues
   repository: https://github.com/devcontainers-extra/features
   ociReference: ghcr.io/devcontainers-extra/features
+- name: devcontainer features by bas.codes
+  maintainer: Bas Steins
+  contact: https://bas.bio
+  repository: https://github.com/sebst/devcontainer-features
+  ociReference: ghcr.io/sebst/devcontainer-features
+- name: devcontainer features by rhiroe
+  maintainer: rhiroe
+  contact: https://github.com/rhiroe/features/issues
+  repository: https://github.com/rhiroe/features
+  ociReference: ghcr.io/rhiroe/features
