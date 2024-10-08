@@ -957,3 +957,8 @@
   contact: https://github.com/martinaskestad/features/issues
   repository: https://github.com/martinaskestad/features
   ociReference: ghcr.io/martinaskestad/features
+- name: devcontainer features for wolfi base docker image
+  maintainer: David Zucker
+  contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
+  repository: https://github.com/davzucky/devcontainers-features-wolfi
+  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
