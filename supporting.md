@@ -197,9 +197,11 @@ The following properties apply differently to CodeSandbox.
 
 [**Gitpod Flex**](https://www.gitpod.io/) is a platform for automating and standardizing development environments. Available as a self-hosted solution in your cloud or for local development through Gitpod Desktop, Gitpod Flex scales to support environments with up to 896 vCPUs and 12TB of RAM, including GPU support and compatibility with multiple editors like VS Code, JetBrains, Cursor, and Zed.
 
-Gitpod Flex fully adheres to the Dev Container specification, enabling developers to create portable and reproducible environments through `devcontainer.json`. To apply changes, simply run `gitpod environment devcontainer rebuild` from within any development environment.
+Gitpod Flex fully adheres to the Dev Container Specification, enabling developers to create portable and reproducible environments through `devcontainer.json`. To apply changes, simply run `gitpod environment devcontainer rebuild` from within any development environment.
 
-For more details on constraints, customizations, and automation options, please refer to our [blog announcement](https://www.gitpod.io/blog/gitpod-supports-development-container).
+
+For more details on constraints, customizations, and automation options, please refer to the [blog announcement](https://www.gitpod.io/blog/gitpod-supports-development-container).
+
 
 ### <a href="#schema" name="schema" class="anchor"> Schema </a>
 
