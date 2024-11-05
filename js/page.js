@@ -1,7 +1,12 @@
 $('#small-nav-dropdown').change(function() {
-  window.location = $(this)
+  var selectedValue = $(this)
     .find('option:selected')
-    .val()
+    .val();
+  if (/^https?:\/\/[^\s/$.?#].[^\s]*$/.test(selectedValue)) {
+    window.location = selectedValue;
+  } else {
+    console.error('Invalid URL:', selectedValue);
+  }
 })
 
 const site_tag = 'UA-62780441-30';
