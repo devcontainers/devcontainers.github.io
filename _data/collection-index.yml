@@ -962,3 +962,8 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: AWS Lambda Dev Container
+  maintainer: Yuji Masaoka
+  contact: https://github.com/ymasaoka/devcontainer-templates/issues
+  repository: https://github.com/ymasaoka/devcontainer-templates
+  ociReference: ghcr.io/ymasaoka/devcontainer-templates
