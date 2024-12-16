@@ -962,3 +962,8 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: Dev Container Templates by Atharva Upadhye
+  maintainer: Atharva Upadhye
+  contact: https://github.com/atharva-upadhye/devcontainer-templates/issues
+  repository: https://github.com/atharva-upadhye/devcontainer-templates
+  ociReference: ghcr.io/atharva-upadhye/devcontainer-templates
