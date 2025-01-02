@@ -992,3 +992,13 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
+- name: devcontainer features by irfansofyana
+  maintainer: irfansofyana
+  contact: https://github.com/irfansofyana/devcontainer-features/issues
+  repository: https://github.com/irfansofyana/devcontainer-features
+  ociReference: ghcr.io/irfansofyana/devcontainer-features
+- name: devcontainer templates by irfansofyana
+  maintainer: irfansofyana
+  repository: https://github.com/irfansofyana/devcontainer-templates
+  contact: https://github.com/irfansofyana/devcontainer-templates/issues
+  ociReference: ghcr.io/irfansofyana/devcontainer-templates
