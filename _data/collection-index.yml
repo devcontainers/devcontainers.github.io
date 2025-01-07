@@ -961,4 +961,9 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
+- name: slang programming language
+  maintainer: loag
+  contact: https://github.com/Loag/slang-feature/issues
+  repository: https://github.com/Loag/slang-feature
+  ociReference: ghcr.io/loag/slang-feature
