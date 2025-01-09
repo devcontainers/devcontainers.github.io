@@ -962,3 +962,8 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: devcontainer features by kfbfarley
+  maintainer: kfbfarley
+  contact: https://github.com/kfbfarley/devcontainer-features/issues
+  repository: https://github.com/kfbfarley/devcontainer-features
+  ociReference: ghcr.io/kfbfarley/devcontainers-features
