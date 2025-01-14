@@ -962,3 +962,8 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: Chromia Rell Development Container
+  maintainer: Chromaway AB
+  contact: https://github.com/ChromiaProject/devcontainers-chromia/issues
+  repository: https://github.com/ChromiaProject/devcontainers-chromia
+  ociReference: ghcr.io/ChromiaProject/devcontainers-chromia/simple-chromia
