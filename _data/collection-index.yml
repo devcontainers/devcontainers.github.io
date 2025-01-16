@@ -962,3 +962,8 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: devcontainer feature to install apt dependencies defined in an `Aptfile.dev` file.
+  maintainer: Viktor Schmidt
+  contact: https://github.com/viktorianer/devcontainer-features/issues
+  repository: https://github.com/viktorianer/devcontainer-features/tree/main/src/apt
+  ociReference: ghcr.io/viktorianer/devcontainer-features/apt
