@@ -962,3 +962,8 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: Devcontainer features by raine-works
+  maintainer: raine-works
+  contact: https://github.com/raine-works/devcontainer-features/issues
+  repository: https://github.com/raine-works/devcontainer-features
+  ociReference: ghcr.io/raine-works/devcontainer-features 
