@@ -961,4 +961,9 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
+- name: Dev Container Features by Ivan Szkiba
+  maintainer: Ivan Szkiba
+  contact: https://github.com/szkiba/devcontainer-features/issues
+  repository: https://github.com/szkiba/devcontainer-features
+  ociReference: ghcr.io/szkiba/devcontainer-features
