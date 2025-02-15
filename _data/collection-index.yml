@@ -962,3 +962,8 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: DevContainer Templates by hudsonm62
+  maintainer: hudsonm62
+  contact: https://github.com/hudsonm62/devcontainers/issues
+  repository: https://github.com/hudsonm62/devcontainers
+  ociReference: ghcr.io/hudsonm62/devcontainers
