@@ -966,4 +966,4 @@
   maintainer: Markus Zhang
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
-  ociReference: ghcr.io/RouL/devcontainer-features
+  ociReference: ghcr.io/roul/devcontainer-features
