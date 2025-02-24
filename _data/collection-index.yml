@@ -967,6 +967,11 @@
   contact: https://github.com/forwardsoftware/devcontainer-features/issues
   repository: https://github.com/forwardsoftware/devcontainer-features
   ociReference: ghcr.io/forwardsoftware/devcontainer-features
+- name: Community features by devcontainer.community
+  maintainer: devcontainer.community
+  contact: https://devcontainer.community
+  repository: https://github.com/devcontainer-community/devcontainer-features
+  ociReference: ghcr.io/devcontainer-community/devcontainer-features
 - name: Additional Dev Container Features by braun-daniel
   maintainer: Daniel Braun
   contact: https://github.com/braun-daniel/devcontainer-features/issues
@@ -977,3 +982,13 @@
   contact: https://github.com/szkiba/devcontainer-features/issues
   repository: https://github.com/szkiba/devcontainer-features
   ociReference: ghcr.io/szkiba/devcontainer-features
+- name: devcontainer features by TheDiveO
+  maintainer: TheDiveO
+  contact: https://github.com/thediveo/devcontainer-features/issues
+  repository: https://github.com/thediveo/devcontainer-features
+  ociReference: ghcr.io/thediveo/devcontainer-features
+- name: devcontainer features by RouL
+  maintainer: Markus Zhang
+  contact: https://github.com/RouL/devcontainer-features/issues
+  repository: https://github.com/RouL/devcontainer-features
+  ociReference: ghcr.io/roul/devcontainer-features
