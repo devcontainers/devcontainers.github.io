@@ -962,11 +962,6 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
-- name: devcontainer features by RouL
-  maintainer: Markus Zhang
-  contact: https://github.com/RouL/devcontainer-features/issues
-  repository: https://github.com/RouL/devcontainer-features
-  ociReference: ghcr.io/roul/devcontainer-features
 - name: Additional Dev Container Features by braun-daniel
   maintainer: Daniel Braun
   contact: https://github.com/braun-daniel/devcontainer-features/issues
@@ -977,3 +972,13 @@
   contact: https://github.com/szkiba/devcontainer-features/issues
   repository: https://github.com/szkiba/devcontainer-features
   ociReference: ghcr.io/szkiba/devcontainer-features
+- name: devcontainer features by TheDiveO
+  maintainer: TheDiveO
+  contact: https://github.com/thediveo/devcontainer-features/issues
+  repository: https://github.com/thediveo/devcontainer-features
+  ociReference: ghcr.io/thediveo/devcontainer-features
+- name: devcontainer features by RouL
+  maintainer: Markus Zhang
+  contact: https://github.com/RouL/devcontainer-features/issues
+  repository: https://github.com/RouL/devcontainer-features
+  ociReference: ghcr.io/roul/devcontainer-features
