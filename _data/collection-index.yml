@@ -962,6 +962,11 @@
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
+- name: Additional Dev Container Features by braun-daniel
+  maintainer: Daniel Braun
+  contact: https://github.com/braun-daniel/devcontainer-features/issues
+  repository: https://github.com/braun-daniel/devcontainer-features
+  ociReference: ghcr.io/braun-daniel/devcontainer-features
 - name: Dev Container Features by Ivan Szkiba
   maintainer: Ivan Szkiba
   contact: https://github.com/szkiba/devcontainer-features/issues
