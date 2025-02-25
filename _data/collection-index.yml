@@ -982,6 +982,11 @@
   contact: https://github.com/thediveo/devcontainer-features/issues
   repository: https://github.com/thediveo/devcontainer-features
   ociReference: ghcr.io/thediveo/devcontainer-features
+- name: devcontainer features by .NET Aspire
+  maintainer: danmoseley
+  contact: https://github.com/dotnet/aspire-devcontainer-feature/issues
+  repository: https://github.com/dotnet/aspire-devcontainer-feature
+  ociReference: ghcr.io/dotnet/aspire-devcontainer-feature
 - name: devcontainer features by RouL
   maintainer: Markus Zhang
   contact: https://github.com/RouL/devcontainer-features/issues
