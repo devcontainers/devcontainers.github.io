@@ -942,11 +942,11 @@
   contact: https://github.com/devcontainers-extra/features/issues
   repository: https://github.com/devcontainers-extra/features
   ociReference: ghcr.io/devcontainers-extra/features
-- name: devcontainer features by bas.codes
+- name: devcontainer features by Bas Steins
   maintainer: Bas Steins
-  contact: https://bas.bio
-  repository: https://github.com/sebst/devcontainer-features
-  ociReference: ghcr.io/sebst/devcontainer-features
+  contact: https://bas.codes
+  repository: https://github.com/bascodes/devcontainer-features
+  ociReference: ghcr.io/bascodes/devcontainer-features
 - name: devcontainer features by rhiroe
   maintainer: rhiroe
   contact: https://github.com/rhiroe/features/issues
@@ -967,3 +967,28 @@
   contact: https://github.com/viktorianer/devcontainer-features/issues
   repository: https://github.com/viktorianer/devcontainer-features/tree/main/src/apt
   ociReference: ghcr.io/viktorianer/devcontainer-features/apt
+- name: Community features by devcontainer.community
+  maintainer: devcontainer.community
+  contact: https://devcontainer.community
+  repository: https://github.com/devcontainer-community/devcontainer-features
+  ociReference: ghcr.io/devcontainer-community/devcontainer-features
+- name: Additional Dev Container Features by braun-daniel
+  maintainer: Daniel Braun
+  contact: https://github.com/braun-daniel/devcontainer-features/issues
+  repository: https://github.com/braun-daniel/devcontainer-features
+  ociReference: ghcr.io/braun-daniel/devcontainer-features
+- name: Dev Container Features by Ivan Szkiba
+  maintainer: Ivan Szkiba
+  contact: https://github.com/szkiba/devcontainer-features/issues
+  repository: https://github.com/szkiba/devcontainer-features
+  ociReference: ghcr.io/szkiba/devcontainer-features
+- name: devcontainer features by TheDiveO
+  maintainer: TheDiveO
+  contact: https://github.com/thediveo/devcontainer-features/issues
+  repository: https://github.com/thediveo/devcontainer-features
+  ociReference: ghcr.io/thediveo/devcontainer-features
+- name: devcontainer features by RouL
+  maintainer: Markus Zhang
+  contact: https://github.com/RouL/devcontainer-features/issues
+  repository: https://github.com/RouL/devcontainer-features
+  ociReference: ghcr.io/roul/devcontainer-features
