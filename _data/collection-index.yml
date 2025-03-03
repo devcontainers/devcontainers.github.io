@@ -1,5 +1,5 @@
-- name: Reference Implementation Features
-  maintainer: Dev Container Spec Maintainers
+- name: The Salt-Shalt brother's
+  maintainer: Evgenii Sergeevich && Cocumber
   contact: https://github.com/devcontainers/features/issues
   repository: https://github.com/devcontainers/features
   ociReference: ghcr.io/devcontainers/features
