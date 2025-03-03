@@ -2,7 +2,7 @@
   maintainer: Evgenii Sergeevich && Cocumber
   contact: https://github.com/devcontainers/features/issues
   repository: https://github.com/devcontainers/features
-  ociReference: ghcr.io/devcontainers/features
+  ociReference: ghcr.io/de_data/collection-index.ymlvcontainers/features
 - name: Reference Implementation Templates
   maintainer: Dev Container Spec Maintainers
   contact: https://github.com/devcontainers/templates/issues
