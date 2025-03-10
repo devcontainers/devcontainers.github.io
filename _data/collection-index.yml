@@ -992,3 +992,8 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
+- name: Radius devcontainer features
+  maintainer: Radius maintainers
+  contact: https://github.com/radius-project/radius/issues
+  repository: https://github.com/radius-project/radius
+  ociReference: ghcr.io/radius-project/radius
