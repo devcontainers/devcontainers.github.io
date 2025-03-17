@@ -992,7 +992,7 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
-- name: pixi 
+- name: devcontainer templates by blooop
   maintainer: Austin Gregg-Smith
   contact: https://github.com/blooop/devcontainer-templates/issues
   repository: https://github.com/blooop/devcontainer-templates
