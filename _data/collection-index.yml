@@ -992,3 +992,8 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
+- name: devcontainer features by itsalljustdata
+  maintainer: Jonathan Mills
+  contact: https://github.com/itsalljustdata/devcontainers-custom-features/issues
+  repository: https://github.com/itsalljustdata/devcontainers-custom-features
+  ociReference: ghcr.io/itsalljustdata/devcontainers-custom-features
