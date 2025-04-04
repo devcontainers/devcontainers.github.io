@@ -989,6 +989,6 @@
   ociReference: ghcr.io/roul/devcontainer-features
 - name: Chromia Rell Development Container
   maintainer: Chromaway AB
-  contact: https://github.com/ChromiaProject/devcontainers-chromia/issues
-  repository: https://github.com/ChromiaProject/devcontainers-chromia
-  ociReference: ghcr.io/ChromiaProject/devcontainers-chromia/simple-chromia
+  contact: https://github.com/chromiaproject/devcontainers-chromia/issues
+  repository: https://github.com/chromiaproject/devcontainers-chromia
+  ociReference: ghcr.io/chromiaproject/devcontainers-chromia/simple-chromia
