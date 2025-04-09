@@ -298,6 +298,11 @@
   contact: https://github.com/swift-server-community/swift-devcontainer-features/issues
   repository: https://github.com/swift-server-community/swift-devcontainer-features
   ociReference: ghcr.io/swift-server-community/swift-devcontainer-features
+- name: Kvokka Dev Container Features
+  maintainer: kvokka
+  contact: https://github.com/kvokka/features/issues
+  repository: https://github.com/kvokka/features
+  ociReference: ghcr.io/kvokka/features
 - name: gickis Dev Container Features
   maintainer: Andrii Tararaka
   contact: https://github.com/gickis/devcontainer-features/issues
@@ -338,11 +343,6 @@
   contact: https://github.com/ksh5022/devcontainer-features/issues
   repository: https://github.com/ksh5022/devcontainer-features
   ociReference: ghcr.io/ksh5022/devcontainer-features
-- name: GMkonan devcontainer features
-  maintainer: GMkonan
-  contact: https://github.com/GMkonan/feature/issues
-  repository: https://github.com/GMkonan/feature
-  ociReference: ghcr.io/gmkonan/feature
 - name: Dapr devcontainer features
   maintainer: Dapr maintainers
   contact: https://github.com/dapr/cli/issues
@@ -961,7 +961,12 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
+- name: devcontainer features by ChaosWars
+  maintainer: ChaosWars
+  contact: https://github.com/ChaosWars/vscode-features/issues
+  repository: https://github.com/ChaosWars/vscode-features
+  ociReference: ghcr.io/chaoswars/vscode-features
 - name: Community features by devcontainer.community
   maintainer: devcontainer.community
   contact: https://devcontainer.community
