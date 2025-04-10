@@ -1017,3 +1017,8 @@
   contact: https://github.com/fardragon/devcontainers-zig-template/issues
   repository: https://github.com/fardragon/devcontainers-zig-template
   ociReference: ghcr.io/fardragon/devcontainers-zig-template
+- name: Dev Container Features by Grafana Labs
+  maintainer: Grafana Labs
+  contact: https://github.com/grafana/devcontainer-features/issues
+  repository: https://github.com/grafana/devcontainer-features
+  ociReference: ghcr.io/grafana/devcontainer-features
