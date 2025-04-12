@@ -1,3 +1,5 @@
+- name: Cache
+  uses: actions/cache@v4.2.3
 # For most projects, this workflow file will not need changing; you simply need
 # to commit it to your repository.
 #
