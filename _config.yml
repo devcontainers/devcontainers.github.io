@@ -16,7 +16,6 @@ highlighter: rouge
 plugins:
   - github-pages
   - jemoji
-  
   - jekyll-feed
 
 
