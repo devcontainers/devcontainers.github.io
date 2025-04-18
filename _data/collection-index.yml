@@ -966,7 +966,7 @@
   maintainer: ForWarD Software
   contact: https://github.com/forwardsoftware/devcontainer-features/issues
   repository: https://github.com/forwardsoftware/devcontainer-features
-  ociReference: ghcr.io/forwardsoftware/devcontainer-features 
+  ociReference: ghcr.io/forwardsoftware/devcontainer-features
 - name: devcontainer feature to install apt dependencies defined in an `Aptfile.dev` file.
   maintainer: Viktor Schmidt
   contact: https://github.com/viktorianer/devcontainer-features/issues
@@ -1007,6 +1007,11 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
+- name: Claude Code Feature
+  maintainer: Anthropic
+  contact: https://github.com/anthropics/devcontainer-features/issues
+  repository: https://github.com/anthropics/devcontainer-features
+  ociReference: ghcr.io/anthropics/devcontainer-features/claude-code
 - name: devcontainer templates by blooop
   maintainer: Austin Gregg-Smith
   contact: https://github.com/blooop/devcontainer-templates/issues
@@ -1022,6 +1027,11 @@
   contact: https://github.com/fardragon/devcontainers-zig-template/issues
   repository: https://github.com/fardragon/devcontainers-zig-template
   ociReference: ghcr.io/fardragon/devcontainers-zig-template
+- name: TTCN-3-Devcontainer
+  maintainer: Muhammad Umair Khan
+  contact: https://github.com/m-umair-khan-dev/devcontainers/issues
+  repository: https://github.com/m-umair-khan-dev/devcontainers
+  ociReference: ghcr.io/m-umair-khan-dev/devcontainers/ttcn-3-devcontainer
 - name: Dev Container Features by Grafana Labs
   maintainer: Grafana Labs
   contact: https://github.com/grafana/devcontainer-features/issues
