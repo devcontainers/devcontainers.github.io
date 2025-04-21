@@ -1009,9 +1009,9 @@
   ociReference: ghcr.io/roul/devcontainer-features
 - name: Devcontainer for Cargo lambda
   maintainer: Han Sen
-  contact: https://github.com/tokidoki11/cargo-lambda-devcontainer-feature/issues
-  repository: https://github.com/tokidoki11/cargo-lambda-devcontainer-feature
-  ociReference: ghcr.io/tokidoki11/cargo-lambda-devcontainer-feature
+  contact: https://github.com/tokidoki11/devcontainer-feature/issues
+  repository: https://github.com/tokidoki11/devcontainer-feature
+  ociReference: ghcr.io/tokidoki11/devcontainer-feature/cargo-lambda
 - name: Claude Code Feature
   maintainer: Anthropic
   contact: https://github.com/anthropics/devcontainer-features/issues
