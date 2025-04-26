@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Using Images, Dockerfiles, and Docker Compose"
-author: "@chuxel"
-authorUrl: https://github.com/chuxel
+author:
+  - "@chuxel"
+authorUrl:
+  - https://github.com/chuxel
 ---
 
 When creating a development container, you have a variety of different ways to customize your environment like ["Features"](/features) or [lifecycle scripts](/implementors/json_reference/#lifecycle-scripts). However, if you are familiar with containers, you may want to use a [Dockerfile](/guide/dockerfile#dockerfile) or [Docker Compose / Compose](/guide/dockerfile#docker-compose) to customize your environment. This article will walk through how to use these formats with the Dev Container spec.
@@ -32,7 +34,7 @@ Next, remove the `image` property from `devcontainer.json` (if it exists) and ad
 ```json
 {
     "build": {
-        // Path is relataive to the devcontainer.json file.
+        // Path is relative to the devcontainer.json file.
         "dockerfile": "Dockerfile"
     }
 }
@@ -44,7 +46,7 @@ That's it! When you start up your Dev Container, the Dockerfile will be automati
 
 Better yet, you can can use a Dockerfile as a part of authoring an image you can share with others. You can even **add Dev Container settings and metadata right into the image itself**. This avoids having to duplicate config and settings in multiple devcontainer.json files and keeps them in sync with your images! 
 
-See the reference on **[pre-building](/implementors/reference/#prebuilding)** to learn more!
+See the guide on **[pre-building]({% post_url 2023-08-22-prebuild %})** to learn more!
 
 ## <a href="#docker-compose" name="docker-compose" class="anchor">  Using Docker Compose </a>
 
@@ -138,6 +140,6 @@ volumes:
   postgres-data:
 ```
 
-Finally, as in the Dockerfile example, you can use this same setup to author a Dev Container image you can share with others and add Dev Container settings and metadata right into the image itself. 
+Finally, as in the Dockerfile example, you can use this same setup to create a Dev Container image that you can share with others. You can also add Dev Container settings and metadata right into the image itself. 
 
-See the reference on **[pre-building](/implementors/reference/#prebuilding)** to learn more!
+See the guide on **[pre-building]({% post_url 2023-08-22-prebuild %})** to learn more!

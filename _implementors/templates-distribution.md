@@ -19,7 +19,7 @@ Goals include:
 
 A Template's source code is stored in a git repository.
 
-For ease of authorship and maintenance, [1..n] Templates can share a single git repository. This set of Templates is referred to as a "collection," and will share the same [`devcontainer-collection.json`](#devcontainer-collection.json) file and "namespace" (eg. `<owner>/<repo>`).
+For ease of authorship and maintenance, [1..n] Templates can share a single git repository. This set of Templates is referred to as a "collection," and will share the same [`devcontainer-collection.json`](#devcontainer-collection) file and "namespace" (eg. `<owner>/<repo>`).
 
 > **Note:** Templates and [Features](/implementors/features) should be placed in different git repositories. 
 
@@ -68,7 +68,7 @@ Templates are distributed as tarballs. The tarball contains the entire contents 
 
 The tarball is named `devcontainer-template-<id>.tgz`, where `<id>` is the Templates's `id` field.
 
-A reference implementation for packaging and distributing Templates is provided as a GitHub Action (https://github.com/devcontainers/action).
+A reference implementation for packaging and distributing Templates is provided as a [GitHub Action](https://github.com/devcontainers/action).
 
 ### <a href="#devcontainer-collection" name="devcontainer-collection" class="anchor"> devcontainer-collection.json </a>
 
@@ -78,7 +78,7 @@ The `devcontainer-collection.json` is an auto-generated metadata file.
 | :--- | :--- | :--- |
 | `sourceInformation` | object | Metadata from the implementing packaging tool. |
 | `templates` | array | The list of Templates that are contained in this collection.|
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 Each Template's `devcontainer-template.json` metadata file is appended into the `templates` top-level array.
 
@@ -113,7 +113,7 @@ ARTIFACT_PATH=devcontainer-template-go.tgz
 for VERSION in 1  1.2  1.2.3  latest
 do
         oras push ${REGISTRY}/${NAMESPACE}/${TEMPLATE}:${VERSION} \
-                --manifest-config /dev/null:application/vnd.devcontainers \
+                --config /dev/null:application/vnd.devcontainers \
                         ./${ARTIFACT_PATH}:application/vnd.devcontainers.layer.v1+tar
 done
 
@@ -129,13 +129,13 @@ REGISTRY=ghcr.io
 NAMESPACE=devcontainers/templates
 
 oras push ${REGISTRY}/${NAMESPACE}:latest \
-        --manifest-config /dev/null:application/vnd.devcontainers \
+        --config /dev/null:application/vnd.devcontainers \
                             ./devcontainer-collection.json:application/vnd.devcontainers.collection.layer.v1+json
 ```
 
 ## <a href="#guide-to-publishing-templates" name="guide-to-publishing-templates" class="anchor">Guide to publishing Templates</a>
 
-The dev container CLI can be used to publish [Dev Container Template](https://containers.dev/implementors/templates/) artifacts to an OCI registry (that supports the [artifacts specification](https://oras.land/implementors/)).
+The Dev Container CLI can be used to publish [Template](https://containers.dev/implementors/templates/) artifacts to an OCI registry (that supports the [artifacts specification](https://oras.land/implementors/)).
 
 To see all the available options, run `devcontainers templates publish --help`.
 
