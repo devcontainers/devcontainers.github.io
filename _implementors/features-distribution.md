@@ -8,7 +8,7 @@ index: 6
 
 **TL;DR Check out the [quick start repository](https://github.com/devcontainers/feature-template) to get started on distributing your own Dev Container Features.**
 
-This specification defines a pattern where community members and organizations can author and self-publish [Dev Container 'Features'](../features). 
+This specification defines a pattern where community members and organizations can author and self-publish [Dev Container Features](../features). 
 
 Goals include:
 
@@ -23,7 +23,7 @@ Goals include:
 
 Features source code is stored in a git repository.
 
-For ease of authorship and maintenance, [1..n] features can share a single git repository. This set of Features is referred to as a "collection," and will share the same [`devcontainer-collection.json`](#devcontainer-collection.json) file and "namespace" (eg. `<owner>/<repo>`).
+For ease of authorship and maintenance, [1..n] features can share a single git repository. This set of Features is referred to as a "collection," and will share the same [`devcontainer-collection.json`](#devcontainer-collection-json) file and "namespace" (eg. `<owner>/<repo>`).
 
 Source code for the set follows the example file structure below:
 
@@ -81,7 +81,7 @@ The `devcontainer-collection.json` is an auto-generated metadata file.
 | :--- | :--- | :--- |
 | `sourceInformation` | object | Metadata from the implementing packaging tool. |
 | `features` | array | The list of features that are contained in this collection.|
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 Each Features's `devcontainer-feature.json` metadata file is appended into the `features` top-level array.
 
@@ -89,7 +89,7 @@ Each Features's `devcontainer-feature.json` metadata file is appended into the `
 
 There are several supported ways to distribute Features. Distribution is handled by the implementing packaging tool such as the [Dev Container CLI](https://github.com/devcontainers/cli) or [Dev Container Publish GitHub Action](https://github.com/marketplace/actions/dev-container-publish). See the [quick start repository](https://github.com/devcontainers/feature-template) for a full working example.
 
-A user references a distributed Feature in a `devcontainer.json` as defined in ['referencing a feature'](../features#referencing-a-feature).
+A user references a distributed Feature in a `devcontainer.json` as defined in ['referencing a Feature'](../features#referencing-a-feature).
 
 ### <a href="#oci-registry" name="oci-registry" class="anchor"> OCI Registry </a>
 
@@ -97,7 +97,7 @@ An OCI registry that implements the [OCI Artifact Distribution Specification](ht
 
 Each packaged Feature is pushed to the registry following the naming convention `<registry>/<namespace>/<id>[:version]`, where version is the major, minor, and patch version of the Feature, according to the semver specification.
 
-> **Note:** The `namespace` is a unique indentifier for the collection of Features.  There are no strict rules for the `namespace`; however, one pattern is to set `namespace` equal to source repository's `<owner>/<repo>`. 
+> **Note:** The `namespace` is a unique identifier for the collection of Features.  There are no strict rules for the `namespace`; however, one pattern is to set `namespace` equal to source repository's `<owner>/<repo>`. 
 
 A custom media type `application/vnd.devcontainers` and `application/vnd.devcontainers.layer.v1+tar` are used as demonstrated below.
 
@@ -116,7 +116,7 @@ ARTIFACT_PATH=devcontainer-feature-go.tgz
 for VERSION in 1  1.2  1.2.3  latest
 do
     oras push ${REGISTRY}/${NAMESPACE}/${FEATURE}:${VERSION} \
-            --manifest-config /dev/null:application/vnd.devcontainers \
+            --config /dev/null:application/vnd.devcontainers \
                              ./${ARTIFACT_PATH}:application/vnd.devcontainers.layer.v1+tar
 done
 ```
@@ -131,8 +131,37 @@ REGISTRY=ghcr.io
 NAMESPACE=devcontainers/features
 
 oras push ${REGISTRY}/${NAMESPACE}:latest \
-        --manifest-config /dev/null:application/vnd.devcontainers \
+        --config /dev/null:application/vnd.devcontainers \
                             ./devcontainer-collection.json:application/vnd.devcontainers.collection.layer.v1+json
+```
+
+Additionally, an [annotation](https://github.com/opencontainers/image-spec/blob/main/annotations.md) named `dev.containers.metadata` should be populated on the manifest when published by an implementing tool.  This annotation is the escaped JSON object of the entire `devcontainer-feature.json` as it appears during the [packaging stage](#packaging).  
+
+An example manifest with the `dev.containers.metadata` annotation:
+
+```json
+{
+  "schemaVersion": 2,
+  "mediaType": "application/vnd.oci.image.manifest.v1+json",
+  "config": {
+    "mediaType": "application/vnd.devcontainers",
+    "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  "layers": [
+    {
+      "mediaType": "application/vnd.devcontainers.layer.v1+tar",
+      "digest": "sha256:738af5504b253dc6de51d2cb1556cdb7ce70ab18b2f32b0c2f12650ed6d2e4bc",
+      "size": 3584,
+      "annotations": {
+        "org.opencontainers.image.title": "devcontainer-feature-myFeature.tgz"
+      }
+    }
+  ],
+  "annotations": {
+    "dev.containers.metadata": "{\"name\": \"My Feature\",\"id\": \"myFeature\",\"version\": \"1.0.0\",\"dependsOn\": {\"ghcr.io/myotherFeature:1\": {\"flag\": true},\"features.azurecr.io/aThirdFeature:1\": {},\"features.azurecr.io/aFourthFeature:1.2.3\": {}}}"
+  }
+}
 ```
 
 ### <a href="#directly-reference-tarball" name="directly-reference-tarball" class="anchor"> Directly referencing a tarball </a>
@@ -149,9 +178,9 @@ A local Feature is referenced in the devcontainer's `feature` object **relative 
 
 Additional constraints exists when including local Features in a project:
 
-* The project must have a `.devcontainer/` folder at the root of the [**project workspace folder**](/docs/specs/devcontainer-reference.md#project-workspace-folder).
+* The project must have a `.devcontainer/` folder at the root of the [**project workspace folder**](/implementors/spec/#project-workspace-folder).
 
-* A local Feature's source code **must** be contained within a sub-folder of the `.devcontainer/ folder`.
+* A local Feature's source code **must** be contained within a sub-folder of the `.devcontainer/` folder.
 
 * The sub-folder name **must** match the Feature's `id` field.
 
