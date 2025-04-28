@@ -1037,3 +1037,8 @@
   contact: https://github.com/grafana/devcontainer-features/issues
   repository: https://github.com/grafana/devcontainer-features
   ociReference: ghcr.io/grafana/devcontainer-features
+- name: Dev Container Features by atty303
+  maintainer: atty303
+  contact: https://github.com/atty303/devcontainer-features/issues
+  repository: https://github.com/atty303/devcontainer-features
+  ociReference: ghcr.io/atty303/devcontainer-features
