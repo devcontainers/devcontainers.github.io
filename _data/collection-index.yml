@@ -1037,3 +1037,8 @@
   contact: https://github.com/grafana/devcontainer-features/issues
   repository: https://github.com/grafana/devcontainer-features
   ociReference: ghcr.io/grafana/devcontainer-features
+- name: Dev Container Features by AuthZed
+  maintainer: AuthZed
+  contact: https://github.com/authzed/devcontainer-features/issues
+  repository: https://github.com/authzed/devcontainer-features
+  ociReference: ghcr.io/authzed/devcontainer-features
