@@ -1067,4 +1067,8 @@
   contact: https://github.com/jajera/features/issues
   repository: https://github.com/jajera/features
   ociReference: ghcr.io/jajera/features
-  
+- name: MrSimonEmms Dev Container Features
+  maintainer: MrSimonEmms
+  contact: https://github.com/mrsimonemms/devcontainers/issues
+  repository: https://github.com/mrsimonemms/devcontainers
+  ociReference: ghcr.io/mrsimonemms/devcontainers
