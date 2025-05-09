@@ -1037,3 +1037,8 @@
   contact: https://github.com/grafana/devcontainer-features/issues
   repository: https://github.com/grafana/devcontainer-features
   ociReference: ghcr.io/grafana/devcontainer-features
+- name: Axon Ivy devcontainer template
+  maintainer: axonivy
+  contact: https://github.com/axonivy/devcontainer-templates/issues
+  repository: https://github.com/axonivy/devcontainer-templates
+  ociReference: ghcr.io/axonivy/devcontainer-templates
