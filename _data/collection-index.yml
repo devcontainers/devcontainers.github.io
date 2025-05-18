@@ -1037,3 +1037,8 @@
   contact: https://github.com/grafana/devcontainer-features/issues
   repository: https://github.com/grafana/devcontainer-features
   ociReference: ghcr.io/grafana/devcontainer-features
+- name: Dev Container Features by httpdss
+  maintainer: httpdss
+  contact: https://github.com/httpdss/devcontainers-features/issues
+  repository: https://github.com/httpdss/devcontainers-features
+  ociReference: ghcr.io/httpdss/devcontainers-features
