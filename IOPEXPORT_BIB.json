@@ -1,0 +1,14 @@
+@article{Garaio_2015,
+doi = {10.1088/0957-4484/26/1/015704},
+url = {https://dx.doi.org/10.1088/0957-4484/26/1/015704},
+year = {2014},
+month = {dec},
+publisher = {IOP Publishing},
+volume = {26},
+number = {1},
+pages = {015704},
+author = {Garaio, Eneko and Sandre, Olivier and Collantes, Juan-Mari and Garcia, Jose Angel and Mornet, Stéphane and Plazaola, Fernando},
+title = {Specific absorption rate dependence on temperature in magnetic field hyperthermia measured by dynamic hysteresis losses (ac magnetometry)},
+journal = {Nanotechnology},
+abstract = {Magnetic nanoparticles (NPs) are intensively studied for their potential use for magnetic hyperthermia, a treatment that has passed a phase II clinical trial against severe brain cancer (glioblastoma) at the end of 2011. Their heating power, characterized by the ‘specific absorption rate (SAR)’, is often considered temperature independent in the literature, mainly because of the difficulties that arise from the measurement methodology. Using a dynamic magnetometer presented in a recent paper, we measure here the thermal dependence of SAR for superparamagnetic iron oxide (maghemite) NPs of four different size-ranges corresponding to mean diameters around 12 nm, 14 nm, 15 nm and 16 nm. The article reports a parametrical study extending from 10 to 60 C in temperature, from 75 to 1031 kHz in frequency, and from 2 to 24 kA m−1 in magnetic field strength. It was observed that SAR values of smaller NPs decrease with temperature whereas for the larger sample (16 nm) SAR values increase with temperature. The measured variation of SAR with temperature is frequency dependent. This behaviour is fully explained within the scope of linear response theory based on Néel and Brown relaxation processes, using independent magnetic measurements of the specific magnetization and the magnetic anisotropy constant. A good quantitative agreement between experimental values and theoretical values is confirmed in a tri-dimensional space that uses as coordinates the field strength, the frequency and the temperature.}
+}
