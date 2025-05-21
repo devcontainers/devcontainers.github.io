@@ -263,6 +263,11 @@
   contact: https://github.com/ijnek/ros-devcontainer-template/issues
   repository: https://github.com/ijnek/ros-devcontainer-template
   ociReference: ghcr.io/ijnek/ros-devcontainer-template
+- name: Typst
+  maintainer: Solomon Wakhungu
+  contact: https://github.com/1solomonwakhungu/typst-dev-container/issues
+  repository: https://github.com/1solomonwakhungu/typst-dev-container
+  ociReference: ghcr.io/1solomonwakhungu/typst-dev-container/typst
 - name: ROS 2 Workspace Templates
   maintainer: Bruno-Pier Busque
   contact: https://github.com/BrunoB81HK/ros2-workspace-devcontainer-template/issues
