@@ -263,7 +263,7 @@
   contact: https://github.com/ijnek/ros-devcontainer-template/issues
   repository: https://github.com/ijnek/ros-devcontainer-template
   ociReference: ghcr.io/ijnek/ros-devcontainer-template
-- name: Typst
+- name: Typst + Pandoc
   maintainer: Solomon Wakhungu
   contact: https://github.com/1solomonwakhungu/typst-dev-container/issues
   repository: https://github.com/1solomonwakhungu/typst-dev-container
