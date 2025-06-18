@@ -966,7 +966,7 @@
   maintainer: ForWarD Software
   contact: https://github.com/forwardsoftware/devcontainer-features/issues
   repository: https://github.com/forwardsoftware/devcontainer-features
-  ociReference: ghcr.io/forwardsoftware/devcontainer-features 
+  ociReference: ghcr.io/forwardsoftware/devcontainer-features
 - name: devcontainer feature to install apt dependencies defined in an `Aptfile.dev` file.
   maintainer: Viktor Schmidt
   contact: https://github.com/viktorianer/devcontainer-features/issues
@@ -1007,6 +1007,16 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
+- name: devcontainer templates by techiro
+  maintainer: techiro
+  contact: https://github.com/techiro/devcontainer-template/issues
+  repository: https://github.com/techiro/devcontainer-template
+  ociReference: ghcr.io/techiro/devcontainer-template
+- name: Claude Code Feature
+  maintainer: Anthropic
+  contact: https://github.com/anthropics/devcontainer-features/issues
+  repository: https://github.com/anthropics/devcontainer-features
+  ociReference: ghcr.io/anthropics/devcontainer-features/claude-code
 - name: devcontainer templates by blooop
   maintainer: Austin Gregg-Smith
   contact: https://github.com/blooop/devcontainer-templates/issues
@@ -1032,6 +1042,31 @@
   contact: https://github.com/grafana/devcontainer-features/issues
   repository: https://github.com/grafana/devcontainer-features
   ociReference: ghcr.io/grafana/devcontainer-features
+- name: Axon Ivy devcontainer template
+  maintainer: axonivy
+  contact: https://github.com/axonivy/devcontainer-templates/issues
+  repository: https://github.com/axonivy/devcontainer-templates
+  ociReference: ghcr.io/axonivy/devcontainer-templates
+- name: Dev Container Features by Coder
+  maintainer: Coder
+  contact: https://github.com/coder/devcontainer-features/issues
+  repository: https://github.com/coder/devcontainer-features
+  ociReference: ghcr.io/coder/devcontainer-features
+- name: Dev Container Features by atty303
+  maintainer: atty303
+  contact: https://github.com/atty303/devcontainer-features/issues
+  repository: https://github.com/atty303/devcontainer-features
+  ociReference: ghcr.io/atty303/devcontainer-features
+- name: devcontainer features by MuhmdRaouf
+  maintainer: Mohammed Abdel Raouf (MuhmdRaouf)
+  contact: https://github.com/muhmdraouf/devcontainers-features/issues
+  repository: https://github.com/muhmdraouf/devcontainers-features
+  ociReference: ghcr.io/muhmdraouf/devcontainers-features
+- name: Dev Container Features by John Ajera
+  maintainer: John Ajera
+  contact: https://github.com/jajera/features/issues
+  repository: https://github.com/jajera/features
+  ociReference: ghcr.io/jajera/features
 - name: AWS Lambda Dev Container
   maintainer: Yuji Masaoka
   contact: https://github.com/ymasaoka/devcontainer-templates/issues
