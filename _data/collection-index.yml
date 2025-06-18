@@ -1007,6 +1007,11 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
+- name: devcontainer templates by techiro
+  maintainer: techiro
+  contact: https://github.com/techiro/devcontainer-template/issues
+  repository: https://github.com/techiro/devcontainer-template
+  ociReference: ghcr.io/techiro/devcontainer-template
 - name: Claude Code Feature
   maintainer: Anthropic
   contact: https://github.com/anthropics/devcontainer-features/issues
@@ -1037,6 +1042,11 @@
   contact: https://github.com/grafana/devcontainer-features/issues
   repository: https://github.com/grafana/devcontainer-features
   ociReference: ghcr.io/grafana/devcontainer-features
+- name: Dev Container Features by John Ajera
+  maintainer: John Ajera
+  contact: https://github.com/jajera/features/issues
+  repository: https://github.com/jajera/features
+  ociReference: ghcr.io/jajera/features
 - name: Chromia Rell Development Container
   maintainer: Chromaway AB
   contact: https://github.com/chromiaproject/devcontainers-chromia/issues
