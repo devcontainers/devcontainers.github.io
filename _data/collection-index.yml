@@ -603,11 +603,6 @@
   contact: https://github.com/MarlonPassos-git/dev-container-features/issues
   repository: https://github.com/MarlonPassos-git/dev-container-features
   ociReference: ghcr.io/marlonpassos-git/dev-container-features
-- name: DevContainers for Fedora-based Development
-  maintainer: RonaldTM9999
-  contact: https://github.com/RonaldTM9999/devcontainers/issues
-  repository: https://github.com/RonaldTM9999/devcontainers
-  ociReference: ghcr.io/ronaldtm9999/devcontainers
 - name: DevContainer Features by Paul Gilber
   maintainer: Paul Gilber
   contact: https://github.com/paul-gilber/devcontainer-features/issues
@@ -903,11 +898,6 @@
   contact: https://github.com/localstack/devcontainer-template/issues
   repository: https://github.com/localstack/devcontainer-template
   ociReference: ghcr.io/localstack/devcontainer-template
-- name: DeepSpaceCartel DevContainer Features
-  maintainer: DeepSpaceCartel Inc.
-  contact: https://github.com/deep-space-cartel/devcontainers-features/issues
-  repository: https://github.com/deep-space-cartel/devcontainers-features
-  ociReference: ghcr.io/deep-space-cartel/devcontainers-features
 - name: Dev Container features by Adaptavist
   maintainer: Mark Gibson
   contact: https://github.com/adaptavist/devcontainer-features/issues
