@@ -1072,3 +1072,13 @@
   contact: https://github.com/ferdinandkeller/features/issues
   repository: https://github.com/ferdinandkeller/features
   ociReference: ghcr.io/ferdinandkeller/features/httpie
+- name: BTP Dev Container Features
+  maintainer: Navin Krishnan
+  contact: https://github.com/navinkrishnan/devcontainer-features-btp/issues
+  repository: https://github.com/navinkrishnan/devcontainer-features-btp
+  ociReference: ghcr.io/navinkrishnan/devcontainer-features-btp
+- name: BTP CAP (Cloud Application Programming) Model Dev Templates
+  maintainer: Navin Krishnan
+  contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
+  repository: https://github.com/navinkrishnan/devcontainer-templates-btp
+  ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
