@@ -1076,4 +1076,4 @@
   maintainer: ANh Nguyễn (TakahashiNguyen)
   contact: https://github.com/TakahashiNguyen/devcontainer-features/issues
   repository: https://github.com/TakahashiNguyen/devcontainer-features
-  ociReference: ghcr.io/TakahashiNguyen/devcontainer-features
+  ociReference: ghcr.io/takahashinguyen/devcontainer-features
