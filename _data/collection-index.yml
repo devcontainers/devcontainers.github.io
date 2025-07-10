@@ -1072,3 +1072,8 @@
   contact: https://github.com/ferdinandkeller/features/issues
   repository: https://github.com/ferdinandkeller/features
   ociReference: ghcr.io/ferdinandkeller/features/httpie
+- name: sebdanielsson's templates
+  maintainer: Sebastian Danielsson (@sebdanielsson)
+  contact: https://github.com/sebdanielsson/devcontainers/issues
+  repository: https://github.com/sebdanielsson/devcontainers
+  ocireference: ghcr.io/sebdanielsson/devcontainers
