@@ -1072,3 +1072,8 @@
   contact: https://github.com/ferdinandkeller/features/issues
   repository: https://github.com/ferdinandkeller/features
   ociReference: ghcr.io/ferdinandkeller/features/httpie
+- name: Dev Container Features by Franco Ruggeri
+  maintainer: Franco Ruggeri
+  contact: https://github.com/franco-ruggeri/devcontainer-features/issues
+  repository: https://github.com/franco-ruggeri/devcontainer-features
+  ociReference: ghcr.io/franco-ruggeri/devcontainer-features
