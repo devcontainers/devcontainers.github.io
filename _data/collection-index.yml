@@ -1072,3 +1072,8 @@
   contact: https://github.com/ferdinandkeller/features/issues
   repository: https://github.com/ferdinandkeller/features
   ociReference: ghcr.io/ferdinandkeller/features/httpie
+- name: Features by Rob
+  maintainer: Rob Clevenger
+  contact: https://github.com/rcleveng/devcontainer-features/issues
+  repository: https://github.com/rcleveng/devcontainer-features
+  ociReference: ghcr.io/rcleveng/devcontainer-features
