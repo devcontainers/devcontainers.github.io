@@ -1072,3 +1072,8 @@
   contact: https://github.com/ferdinandkeller/features/issues
   repository: https://github.com/ferdinandkeller/features
   ociReference: ghcr.io/ferdinandkeller/features/httpie
+- name: Rojo
+  maintainer: Ryan Luu
+  contact: https://github.com/RyanLua/features/issues
+  repository: https://github.com/RyanLua/features
+  ociReference: ghcr.io/ryanlua/features/rojo
