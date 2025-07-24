@@ -1082,3 +1082,8 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates/roblox
+- name: olivierlemasle
+  maintainer: Olivier Lemasle
+  contact: https://github.com/olivierlemasle/devcontainers-features/issues
+  repository: https://github.com/olivierlemasle/devcontainers-features
+  ociReference: ghcr.io/olivierlemasle/devcontainers-features
