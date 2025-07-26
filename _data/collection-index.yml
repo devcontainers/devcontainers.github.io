@@ -1082,3 +1082,8 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates/roblox
+- name: FEniCS
+  maintainer: schnellerhase
+  contact: https://github.com/schnellerhase/devcontainer-FEniCS/issues
+  repository: https://github.com/schnellerhase/devcontainer-FEniCS
+  ociReference: ghcr.io/schnellerhase/devcontainer-fenics/fenics
