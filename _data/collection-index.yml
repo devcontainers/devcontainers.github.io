@@ -1082,3 +1082,8 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates/roblox
+- name: PairSpaces
+  maintainer: PairSpaces by Interaction, LLC
+  contact: https://github.com/pairspaces/devcontainers/issues
+  repository: https://github.com/pairspaces/devcontainers
+  ociReference: ghcr.io/pairspaces/devcontainers
