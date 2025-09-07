@@ -1133,3 +1133,8 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
+- name: Dev Container assets by Yassine Doghri
+  maintainer: Yassine Doghri
+  contact: https://github.com/yassinedoghri/devcontainers/issues
+  repository: https://github.com/yassinedoghri/devcontainers
+  ociReference: ghcr.io/yassinedoghri/devcontainers
