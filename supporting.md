@@ -193,16 +193,16 @@ The following properties apply differently to CodeSandbox.
 
 [DevPod](https://github.com/loft-sh/devpod) is a client-only tool to create reproducible developer environments based on a `devcontainer.json` on any backend. Each developer environment runs in a container and is specified through a `devcontainer.json`. Through DevPod providers these environments can be created on any backend, such as the local computer, a Kubernetes cluster, any reachable remote machine or in a VM in the cloud.
 
-### <a href="#gitpod" name="gitpod" class="anchor"> Gitpod </a>
+### <a href="#ona" name="ona" class="anchor"> Ona (formerly Gitpod) </a>
 
-[**Gitpod Flex**](https://www.gitpod.io/) is a platform for automating and standardizing development environments. Available as a self-hosted solution in your cloud or for local development through Gitpod Desktop, Gitpod Flex scales to support environments with up to 896 vCPUs and 12TB of RAM, including GPU support and compatibility with multiple editors like VS Code, JetBrains, Cursor, and Zed.
+[Ona](https://ona.com/) (formerly Gitpod) is mission control for software projects and software engineering agents. Your personal team of software engineering agents, sandboxed in ephemeral environments with editing via embedded VS Code and support for desktop IDEs.
 
-Gitpod Flex fully adheres to the Dev Container Specification, enabling developers to create portable and reproducible environments through `devcontainer.json`. To apply changes, simply run `gitpod environment devcontainer rebuild` from within any development environment.
+Ona adheres to the Dev Container Specification, enabling developers and agents to work in sandboxed, reproducible environments where each agent runs in its own isolated environment with OS-level separation to ensure secure execution.
 
-
-For more details on constraints, customizations, and automation options, please refer to the [blog announcement](https://www.gitpod.io/blog/gitpod-supports-development-container).
+For more details on Ona refer to the [platform documentation](https://ona.com/docs/ona/configuration/devcontainer/getting-started).
 
 
 ### <a href="#schema" name="schema" class="anchor"> Schema </a>
 
 You can explore the [VS Code implementation](implementors/json_schema) of the dev container schema.
+
