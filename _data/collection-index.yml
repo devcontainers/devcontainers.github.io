@@ -1082,3 +1082,8 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates/roblox
+- name: Dev container features for Azure linux images
+  maintainer: Victor Maznev
+  contact: https://github.com/bullmastiffo/devcontainers-features/issues
+  repository: https://github.com/bullmastiffo/devcontainers-features
+  ociReference: ghcr.io/bullmastiffo/devcontainers-features
