@@ -1082,3 +1082,13 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates/roblox
+- name: Dev Container Templates by pirpedro
+  maintainer: Pedro Rodrigues
+  contact: https://github.com/pirpedro/devcontainers/issues
+  repository: https://github.com/pirpedro/devcontainers
+  ociReference: ghcr.io/pirpedro/devcontainers
+- name: Dev Container Features by pirpedro
+  maintainer: Pedro Rodrigues
+  contact: https://github.com/pirpedro/features/issues
+  repository: https://github.com/pirpedro/features
+  ociReference: ghcr.io/pirpedro/features  
