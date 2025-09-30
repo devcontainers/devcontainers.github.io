@@ -1082,3 +1082,7 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates/roblox
+- name: Prek
+  contact: https://github.com/offbyone/devcontainer-features/issues
+  repository: https://github.com/offbyone/devcontainer-features
+  ociReference: ghcr.io/offbyone/devcontainer-features/prek
