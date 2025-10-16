@@ -1082,3 +1082,8 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates
+- name: Dev Container Features by Daniel Lindemann
+  maintainer: Daniel Lindemann
+  contact: https://github.com/daniellindemann/dev-container-features/issues
+  repository: https://github.com/daniellindemann/dev-container-features/
+  ociReference: ghcr.io/daniellindemann/dev-container-features
