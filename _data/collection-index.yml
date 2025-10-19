@@ -1082,3 +1082,8 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates
+- name: Starship
+  maintainer: Tobias Chavarria
+  contact: https://github.com/tobiaschc/devcontainer-features/issues
+  repository: https://github.com/tobiaschc/devcontainer-features/tree/main/src/starship
+  ociReference: ghcr.io/tobiaschc/devcontainer-features/starship
