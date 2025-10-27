@@ -205,7 +205,8 @@ You may review the current devcontainer.json schemas in the spec repo, which inc
 						"string",
 						"array"
 					],
-					"description": "A command to run locally before anything else. This command is run before \"onCreateCommand\". If this is a single string, it will be run in a shell. If this is an array of strings, it will be run as a single command without shell.",
+					"description": "A command string or list of command arguments to run on the host machine during initialization, including during container creation and on subsequent starts.  The command may run more than once during a given session. This command is run before \"onCreateCommand\". If this is a single string, it will be run in a shell. If this is an array of strings, it will be run as a single command without shell.",
+
 					"items": {
 						"type": "string"
 					}

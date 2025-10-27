@@ -1,8 +1,8 @@
 # How to Contribute to the Dev Container Specification
 
-We're excited for your contributions to the dev container specification! This document outlines how you can get involved. 
+We're excited for your contributions to the Dev Container Specification! This document outlines how you can get involved. We also welcome you to join our [community Slack channel](https://aka.ms/dev-container-community).
 
-## Contribution approaches
+## Spec contribution approaches
 
 If you'd like to contribute a change or addition to the spec, you may follow the guidance below:
 - Propose the change via an [issue](https://github.com/devcontainers/spec/issues) in this repository. Try to get early feedback before spending too much effort formalizing it.
@@ -16,7 +16,7 @@ Here is a sample:
 
 - PRs to the [schema](https://github.com/microsoft/vscode/blob/main/extensions/configuration-editing/schemas/devContainer.schema.src.json), i.e code or shell scripts demonstrating approaches for implementation.
 
-Once there is discussion on your proposal, please also open and link a PR to update the [devcontainer.json reference doc](https://github.com/microsoft/vscode-docs/blob/main/docs/remote/devcontainerjson-reference.md). When your proposal is merged, the docs will be kept up-to-date with the latest spec.
+Once there is discussion on your proposal, please also open and link a PR to update the [devcontainer.json reference doc](https://aka.ms/devcontainer.json). When your proposal is merged, the docs will be kept up-to-date with the latest spec.
 
 ### Contributing tool-specific support
 
@@ -53,7 +53,7 @@ When contributing an official doc or referencing dev containers in your projects
 
 ## Review process
 
-We use the following [labels](https://github.com/devcontainers/spec/labels):
+We use the following [labels](https://github.com/devcontainers/spec/labels) in the spec repo:
 
 - `proposal`: Issues under discussion, still collecting feedback.
 - `finalization`: Proposals we intend to make part of the spec.
@@ -65,4 +65,4 @@ There are several additional options to engage with the dev container community,
 - [GitHub Discussions](https://github.com/devcontainers/spec/discussions): This is a great opportunity to connect with the community and maintainers of this project, without the requirement of contributing a change to the actual spec (which we see more in issues and PRs)
 - [Community Slack channel](https://aka.ms/dev-container-community): This is a great opportunity to connect with the community and maintainers
 - You can always check out the issues and PRs (and contribute new ones) across the repos in the [Dev Containers GitHub org](https://github.com/devcontainers) too!
-
+- Community collections: You can contribute your own [Templates](https://containers.dev/implementors/templates-distribution/#distribution) and [Features](https://containers.dev/implementors/features-distribution/#distribution) to our [community index](https://containers.dev/collections)!

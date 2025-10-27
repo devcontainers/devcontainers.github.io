@@ -29,7 +29,7 @@ Visual Studio Code specific properties go under `vscode` inside `customizations`
 |:------------------|:------------|:------------|
 | `extensions` | array | An array of extension IDs that specify the extensions that should be installed inside the container when it is created. Defaults to `[]`. |
 | `settings` | object | Adds default `settings.json` values into a container/machine specific settings file. Defaults to `{}`. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 Please note that the [Dev Containers](#dev-containers) extension and [GitHub Codespaces](#github-codespaces) support these VS Code properties.
 
@@ -65,9 +65,9 @@ Cachix's **[devenv](https://devenv.sh/)** now supports automatically generating 
 
 See [devenv documentation](https://devenv.sh/integrations/codespaces-devcontainer/) for detais. 
 
-### <a href="#jetpack-io-devbox" name="jetpack-io-devbox" class="anchor"> Jetpack.io Devbox </a>
+### <a href="#jetify-devbox" name="jetify-devbox" class="anchor"> Jetify Devbox </a>
 
-[Jetpack.io](https://jetpack.io) is a [Nix](https://nixos.org/)-based service for deploying applications. [DevBox](https://www.jetpack.io/devbox/) provides a way to use Nix to generate a development environment. [Jetpack.io's VS Code extension](https://marketplace.visualstudio.com/items?itemName=jetpack-io.devbox) allows you to quickly take advantage of DevBox in any Dev Container Spec supporting tool or service. 
+[Jetify](https://jetify.com) (formerly jetpack.io) is a [Nix](https://nixos.org/)-based service for deploying applications. [DevBox](https://www.jetify.com/devbox/) provides a way to use Nix to generate a development environment. [Jetify's VS Code extension](https://marketplace.visualstudio.com/items?itemName=jetpack-io.devbox) allows you to quickly take advantage of DevBox in any Dev Container Spec supporting tool or service. 
 
 Press <kbd>cmd/ctrl</kbd>+<kbd>shift</kbd>+<kbd>p</kbd> or <kbd>F1</kbd> and select the **Generate Dev Container files** command to get started!
 
@@ -91,7 +91,7 @@ Some properties may also have certain limitations in the Dev Containers extensio
 | `workspaceFolder` | string | Not yet supported when using Clone Repository in Container Volume. |
 | `${localWorkspaceFolder}`  | Any | Not yet supported when using Clone Repository in Container Volume. |
 | `${localWorkspaceFolderBasename}` | Any | Not yet supported when using Clone Repository in Container Volume. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ## <a href="#services" name="services" class="anchor"> Services </a>
 
@@ -151,7 +151,7 @@ Some properties may apply differently to codespaces.
 | `${localEnv:VARIABLE_NAME}` | Any | For Codespaces, the host is in the cloud rather than your local machine.|
 | `customizations.codespaces` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
 | `hostRequirements` | object | Codespaces reads this property from devcontainer.json, not image metadata. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ### <a href="#codesandbox" name="codesandbox" class="anchor"> CodeSandbox </a>
 
@@ -187,12 +187,23 @@ The following properties apply differently to CodeSandbox.
 | `features` | object | CodeSandbox automatically adds docker-cli to the container and connects to the host socket. Features like `docker-in-docker` and `docker-outside-of-docker` will work a bit differently. As the docker-cli and socket from host are accessible in the container, most use cases should work as expected. |
 | `${localEnv:VARIABLE_NAME}` | Any | For CodeSandbox, the host is in the cloud rather than in your local machine.|
 | `hostRequirements` | object | CodeSandbox does not yet support this property. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 ### <a href="#devpod" name="devpod" class="anchor"> DevPod </a>
 
 [DevPod](https://github.com/loft-sh/devpod) is a client-only tool to create reproducible developer environments based on a `devcontainer.json` on any backend. Each developer environment runs in a container and is specified through a `devcontainer.json`. Through DevPod providers these environments can be created on any backend, such as the local computer, a Kubernetes cluster, any reachable remote machine or in a VM in the cloud.
 
+### <a href="#ona" name="ona" class="anchor"> Ona (formerly Gitpod) </a>
+
+[Ona](https://ona.com/) (formerly Gitpod)  is the mission control for software projects and software engineering agents. It provides secure, ephemeral development environments that run in our cloud or your VPC, enabling humans and agents to collaborate seamlessly.
+
+Ona fully adheres to the Dev Container Specification, so you can define portable and reproducible environments with `devcontainer.json`. Whether you’re onboarding a new developer, running background agents, or delegating long-running migrations, Ona Environments ensure every task runs in a clean, policy-enforced environment.
+
+For details on constraints, customization, and automation options, see the [Ona Dev Container docs](https://ona.com/docs/ona/configuration/devcontainer/overview).
+
+
 ### <a href="#schema" name="schema" class="anchor"> Schema </a>
 
 You can explore the [VS Code implementation](implementors/json_schema) of the dev container schema.
+
+
