@@ -1072,12 +1072,12 @@
   contact: https://github.com/ferdinandkeller/features/issues
   repository: https://github.com/ferdinandkeller/features
   ociReference: ghcr.io/ferdinandkeller/features/httpie
-- name: Rojo
+- name: Rojo Feature
   maintainer: Ryan Luu
   contact: https://github.com/RyanLua/features/issues
   repository: https://github.com/RyanLua/features
-  ociReference: ghcr.io/ryanlua/features/rojo
-- name: Roblox
+  ociReference: ghcr.io/ryanlua/features
+- name: Roblox Template
   maintainer: Ryan Luu
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
@@ -1087,3 +1087,18 @@
   contact: https://github.com/TakahashiNguyen/devcontainer-features/issues
   repository: https://github.com/TakahashiNguyen/devcontainer-features
   ociReference: ghcr.io/takahashinguyen/devcontainer-features
+- name: olivierlemasle
+  maintainer: Olivier Lemasle
+  contact: https://github.com/olivierlemasle/devcontainers-features/issues
+  repository: https://github.com/olivierlemasle/devcontainers-features
+  ociReference: ghcr.io/olivierlemasle/devcontainers-features
+- name: BTP Dev Container Features
+  maintainer: Navin Krishnan
+  contact: https://github.com/navinkrishnan/devcontainer-features-btp/issues
+  repository: https://github.com/navinkrishnan/devcontainer-features-btp
+  ociReference: ghcr.io/navinkrishnan/devcontainer-features-btp
+- name: BTP CAP (Cloud Application Programming) Model Dev Templates
+  maintainer: Navin Krishnan
+  contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
+  repository: https://github.com/navinkrishnan/devcontainer-templates-btp
+  ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
