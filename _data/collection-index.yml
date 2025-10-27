@@ -1087,3 +1087,24 @@
   contact: https://github.com/schnellerhase/devcontainer-fenics/issues
   repository: https://github.com/schnellerhase/devcontainer-fenics
   ociReference: ghcr.io/schnellerhase/devcontainer-fenics/fenics
+  ociReference: ghcr.io/ryanlua/templates/roblox
+- name: devcontainer features by TakahashiNguyen
+  maintainer: ANh Nguyễn (TakahashiNguyen)
+  contact: https://github.com/TakahashiNguyen/devcontainer-features/issues
+  repository: https://github.com/TakahashiNguyen/devcontainer-features
+  ociReference: ghcr.io/takahashinguyen/devcontainer-features
+- name: olivierlemasle
+  maintainer: Olivier Lemasle
+  contact: https://github.com/olivierlemasle/devcontainers-features/issues
+  repository: https://github.com/olivierlemasle/devcontainers-features
+  ociReference: ghcr.io/olivierlemasle/devcontainers-features
+- name: BTP Dev Container Features
+  maintainer: Navin Krishnan
+  contact: https://github.com/navinkrishnan/devcontainer-features-btp/issues
+  repository: https://github.com/navinkrishnan/devcontainer-features-btp
+  ociReference: ghcr.io/navinkrishnan/devcontainer-features-btp
+- name: BTP CAP (Cloud Application Programming) Model Dev Templates
+  maintainer: Navin Krishnan
+  contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
+  repository: https://github.com/navinkrishnan/devcontainer-templates-btp
+  ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
