@@ -37,11 +37,12 @@ The properties of the file are as follows:
 | `description` | string | Description of the Template. |
 | `documentationURL` | string | Url that points to the documentation of the Template. |
 | `licenseURL` | string | Url that points to the license of the Template. |
-| `options` | object | A map of options that the supporting tools should use to populate different configuration options for the Template. |
+| [`options`](#options) | object | A map of options that the supporting tools should use to populate different configuration options for the Template. |
 | `platforms` | array | Languages and platforms supported by the Template. |
 | `publisher` | string | Name of the publisher/maintainer of the Template. |
 | `keywords` | array | List of strings relevant to a user that would search for this Template. |
-{: .table .table-bordered .table-responsive}
+| [`optionalPaths`](#optionalPaths) | array | An array of files or directories that tooling may consider "optional" when applying a Template. Directories are indicated with a trailing `/*`, (eg: `.github/*`).
+{: .table .table-bordered}
 
 ### <a href="#options" name="options" class="anchor">  The `options` property</a>
 The `options` property contains a map of option IDs and their related configuration settings. These `options` are used by the supporting tools to prompt the user to choose from different Template configuration options. The tools would replace the option ID with the selected value in all the files (within the sub-directory of the Template). This replacement would happen before dropping the `.devcontainer.json` (or `.devcontainer/devcontainer.json`) and other files (within the sub-directory of the Template) required to containerize your project. See [option resolution](#option-resolution) for more details. For example:
@@ -67,9 +68,33 @@ The `options` property contains a map of option IDs and their related configurat
 | `optionId.proposals` | array | A list of suggested string values. Free-form values **are** allowed. Omit when using `optionId.enum`. |
 | `optionId.enum` | array | A strict list of allowed string values. Free-form values are **not** allowed. Omit when using `optionId.proposals`. |
 | `optionId.default` | string | Default value for the option. |
-{: .table .table-bordered .table-responsive}
+{: .table .table-bordered}
 
 > `Note`: The `options` must be unique for every `devcontainer-template.json`
+
+### <a href="#optionalPaths" name="optionalPaths" class="anchor">  The `optionalPaths` property</a>
+
+Before applying a Template, tooling must inspect the `optionalPaths` property of a Template and prompt the user on whether each file or folder should be included in the resulting output workspace folder.  A path is relative to the root of the Template source directory.
+
+- For a single file, provide the full relative path (without any leading or trailing path delimiters).  
+- For a directory, provide the full relative path with a trailing slash and asterisk (`/*`) appended to the path.  The directory and its children will be recursively ignored.
+
+Examples are shown below:
+
+```jsonc
+{
+    "id": "cpp",
+    "version": "3.0.0",
+    "name": "C++",
+    "description": "Develop C++ applications",
+    "optionalPaths": [
+         "GETTING-STARTED.md",                 // Single file
+         "example-project-1/MyProject.csproj", // Single file in nested directory
+         ".github/*"                           // Entire recursive contents of directory
+     ]
+}
+```
+
 
 ### <a href="#referencing-a-template" name="referencing-a-template" class="anchor"> Referencing a Template </a>
 
