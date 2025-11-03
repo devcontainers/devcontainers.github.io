@@ -1138,3 +1138,9 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
+- name: Assorted Features
+  maintainer: Evit15
+  contact: https://github.com/Evit15/devcontainer-features/issues
+  repository: https://github.com/Evit15/devcontainer-features
+  ociReference: ghcr.io/Evit15/devcontainer-features
+  
