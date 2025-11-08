@@ -1138,3 +1138,8 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
+- name: Git Absorb Feature
+  maintainer: baxyz
+  contact: https://github.com/baxyz/devcontainer-features/issues
+  repository: https://github.com/baxyz/devcontainer-features/tree/main/src/git-absorb
+  ociReference: ghcr.io/baxyz/devcontainer-features/git-absorb
