@@ -1138,3 +1138,8 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
+- name: Devcontainer Features for Devcontainer Configurations
+  maintainer: devcontainer-config
+  contact: https://github.com/devcontainer-config/features/issues
+  repository: https://github.com/devcontainer-config/features
+  ociReference: ghcr.io/devcontainer-config/features
