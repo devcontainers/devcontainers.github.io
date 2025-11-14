@@ -1138,7 +1138,7 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
-- name: Github CLI (via npm)
+- name: Gemini CLI (via npm)
   maintainer: siri404
   contact: https://github.com/siri404/devcontainer-ai-features/issues
   repository: https://github.com/siri404/devcontainer-ai-features
