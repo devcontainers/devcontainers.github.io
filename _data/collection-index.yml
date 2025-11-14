@@ -1138,8 +1138,8 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
-- name: siri404 Features
+- name: Github CLI
   maintainer: siri404
-  contact: https://github.com/siri404/devcontainers/issues
-  repository: https://github.com/siri404/devcontainers
-  ociReference: ghcr.io/siri404/devcontainers
+  contact: https://github.com/siri404/devcontainer-ai-features/issues
+  repository: https://github.com/siri404/devcontainer-ai-features
+  ociReference: ghcr.io/siri404/devcontainer-ai-features
