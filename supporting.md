@@ -193,6 +193,17 @@ The following properties apply differently to CodeSandbox.
 
 [DevPod](https://github.com/loft-sh/devpod) is a client-only tool to create reproducible developer environments based on a `devcontainer.json` on any backend. Each developer environment runs in a container and is specified through a `devcontainer.json`. Through DevPod providers these environments can be created on any backend, such as the local computer, a Kubernetes cluster, any reachable remote machine or in a VM in the cloud.
 
+### <a href="#ona" name="ona" class="anchor"> Ona (formerly Gitpod) </a>
+
+[Ona](https://ona.com/) (formerly Gitpod)  is the mission control for software projects and software engineering agents. It provides secure, ephemeral development environments that run in our cloud or your VPC, enabling humans and agents to collaborate seamlessly.
+
+Ona fully adheres to the Dev Container Specification, so you can define portable and reproducible environments with `devcontainer.json`. Whether you’re onboarding a new developer, running background agents, or delegating long-running migrations, Ona Environments ensure every task runs in a clean, policy-enforced environment.
+
+For details on constraints, customization, and automation options, see the [Ona Dev Container docs](https://ona.com/docs/ona/configuration/devcontainer/overview).
+
+
 ### <a href="#schema" name="schema" class="anchor"> Schema </a>
 
 You can explore the [VS Code implementation](implementors/json_schema) of the dev container schema.
+
+
