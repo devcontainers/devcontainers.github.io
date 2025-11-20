@@ -1176,7 +1176,7 @@
   maintainer: Pedro Rodrigues
   contact: https://github.com/pirpedro/features/issues
   repository: https://github.com/pirpedro/features
-  ociReference: ghcr.io/pirpedro/features  
+  ociReference: ghcr.io/pirpedro/features
 - name: Dev container features for Azure linux images
   maintainer: Victor Maznev
   contact: https://github.com/bullmastiffo/devcontainers-features/issues
@@ -1257,3 +1257,8 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Couper DevContainer Feature
+  maintainer: Marcel Ludwig (malud)
+  contact: https://github.com/coupergateway/features/issues
+  repository: https://github.com/coupergateway/features
+  ociReference: ghcr.io/coupergateway/features/couper
