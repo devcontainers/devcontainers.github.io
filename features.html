@@ -57,7 +57,7 @@ sectionid: collection-index-features
     const collectionTable = document.getElementById('collectionTable');
     const rows = collectionTable.getElementsByTagName('tr');
 
-    searchInput.addEventListener('input', function () {
+    function performSearch() {
         const searchValue = searchInput.value.toLowerCase();
 
         for (let i = 1; i < rows.length; i++) {
@@ -71,5 +71,24 @@ sectionid: collection-index-features
                 rows[i].style.display = 'none';
             }
         }
+    }
+
+    searchInput.addEventListener('input', function () {
+        performSearch();
+        const url = new URL(window.location);
+        if (searchInput.value) {
+            url.searchParams.set('search', searchInput.value);
+        } else {
+            url.searchParams.delete('search');
+        }
+        window.history.replaceState({}, '', url);
     });
+
+    // Read search parameter from URL on page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParam = urlParams.get('search');
+    if (searchParam) {
+        searchInput.value = searchParam;
+        performSearch();
+    }
 </script>
