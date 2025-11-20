@@ -918,6 +918,11 @@
   contact: https://github.com/lx-0/devcontainer-templates/issues
   repository: https://github.com/lx-0/devcontainer-templates
   ociReference: ghcr.io/lx-0/devcontainer-templates
+- name: AIT-Assistive-Autonomous-Systems Dev Container Features
+  maintainer: AIT-Assistive-Autonomous-Systems maintainers
+  contact: https://github.com/AIT-Assistive-Autonomous-Systems/devcontainer_features/issues
+  repository: https://github.com/AIT-Assistive-Autonomous-Systems/devcontainer_features
+  ociReference: ghcr.io/ait-assistive-autonomous-systems/devcontainer_features
 - name: Hauke's Features for Development Containers
   maintainer: Hauke D
   contact: https://github.com/haukex/devcontainer-features/issues
@@ -961,6 +966,28 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
+  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
+- name: slang programming language
+  maintainer: loag
+  contact: https://github.com/Loag/slang-feature/issues
+  repository: https://github.com/Loag/slang-feature
+  ociReference: ghcr.io/loag/slang-feature
+- name: devcontainer features by zetta
+  maintainer: zetta
+  contact: https://github.com/zetta/devcontainer-features/issues
+  repository: https://github.com/zetta/devcontainer-features
+  ociReference: ghcr.io/zetta/devcontainer-features
+  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
+- name: devcontainer features for ubuntugis
+  maintainer: Conner Shoop
+  contact: https://github.com/connershoop/devcontainer-feature-ubuntugis/issues
+  repository: https://github.com/connershoop/devcontainer-feature-ubuntugis
+  ociReference: ghcr.io/connershoop/devcontainer-feature-ubuntugis
+- name: Nefarious Development Containers
+  maintainer: NickChecan
+  contact: https://github.com/The-Nefarious-Developer/devcontainer-templates/issues
+  repository: https://github.com/The-Nefarious-Developer/devcontainer-templates
+  ociReference: ghcr.io/the-nefarious-developer/devcontainer-templates
   ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
 - name: Dev Container Features by ForWarD Software
   maintainer: ForWarD Software
@@ -1007,6 +1034,16 @@
   contact: https://github.com/RouL/devcontainer-features/issues
   repository: https://github.com/RouL/devcontainer-features
   ociReference: ghcr.io/roul/devcontainer-features
+- name: devcontainer features by irfansofyana
+  maintainer: irfansofyana
+  contact: https://github.com/irfansofyana/devcontainer-features/issues
+  repository: https://github.com/irfansofyana/devcontainer-features
+  ociReference: ghcr.io/irfansofyana/devcontainer-features
+- name: devcontainer templates by irfansofyana
+  maintainer: irfansofyana
+  repository: https://github.com/irfansofyana/devcontainer-templates
+  contact: https://github.com/irfansofyana/devcontainer-templates/issues
+  ociReference: ghcr.io/irfansofyana/devcontainer-templates
 - name: devcontainer templates by techiro
   maintainer: techiro
   contact: https://github.com/techiro/devcontainer-template/issues
@@ -1077,6 +1114,11 @@
   contact: https://github.com/chromiaproject/devcontainers-chromia/issues
   repository: https://github.com/chromiaproject/devcontainers-chromia
   ociReference: ghcr.io/chromiaproject/devcontainers-chromia/simple-chromia
+- name: AWS Lambda Dev Container
+  maintainer: Yuji Masaoka
+  contact: https://github.com/ymasaoka/devcontainer-templates/issues
+  repository: https://github.com/ymasaoka/devcontainer-templates
+  ociReference: ghcr.io/ymasaoka/devcontainer-templates
 - name: MrSimonEmms Dev Container Features
   maintainer: MrSimonEmms
   contact: https://github.com/mrsimonemms/devcontainers/issues
@@ -1143,3 +1185,8 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
+- name: Atomys Dev Container Features
+  maintainer: Atomys
+  contact: https://github.com/42atomys/devcontainers-features/issues
+  repository: https://github.com/42atomys/devcontainers-features
+  ociReference: ghcr.io/42atomys/devcontainers-features
