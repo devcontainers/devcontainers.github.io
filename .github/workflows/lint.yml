@@ -4,6 +4,9 @@ on:
     paths:
       - _data/collection-index.yml
 
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   yamllint:
