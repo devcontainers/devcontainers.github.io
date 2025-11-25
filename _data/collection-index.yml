@@ -977,7 +977,6 @@
   contact: https://github.com/zetta/devcontainer-features/issues
   repository: https://github.com/zetta/devcontainer-features
   ociReference: ghcr.io/zetta/devcontainer-features
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
 - name: devcontainer features for ubuntugis
   maintainer: Conner Shoop
   contact: https://github.com/connershoop/devcontainer-feature-ubuntugis/issues
@@ -988,7 +987,6 @@
   contact: https://github.com/The-Nefarious-Developer/devcontainer-templates/issues
   repository: https://github.com/The-Nefarious-Developer/devcontainer-templates
   ociReference: ghcr.io/the-nefarious-developer/devcontainer-templates
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
 - name: Dev Container Features by ForWarD Software
   maintainer: ForWarD Software
   contact: https://github.com/forwardsoftware/devcontainer-features/issues
