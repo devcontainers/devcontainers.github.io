@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
-        uses: actions/checkout@master
+        uses: actions/checkout@v6
       - name: 'Yamllint'
-        uses: karancode/yamllint-github-action@master
+        uses: karancode/yamllint-github-action@v2
         with:
           yamllint_file_or_dir: _data/collection-index.yml
           yamllint_strict: true
