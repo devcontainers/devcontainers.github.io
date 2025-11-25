@@ -17,6 +17,7 @@ jobs:
         with:
           yamllint_file_or_dir: _data/collection-index.yml
           yamllint_strict: true
+          yamllint_config_filepath: .github/lint-config.yaml
           yamllint_comment: true
         env:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
