@@ -1257,3 +1257,8 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Dev Container Features by ProxayFox
+  maintainer: ProxayFox
+  contact: https://github.com/ProxayFox/devcontainer-features/issues
+  repository: https://github.com/ProxayFox/devcontainer-features
+  ociReference: ghcr.io/proxayfox/devcontainer-features
