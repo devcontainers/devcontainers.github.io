@@ -1257,3 +1257,8 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Xingxin HE's Devcontainer Features
+  maintainer: XingxinHE
+  contact: https://github.com/XingxinHE/devcontainer-features/issues
+  repository: https://github.com/XingxinHE/devcontainer-features
+  ociReference: ghcr.io/XingxinHE/devcontainer-features
