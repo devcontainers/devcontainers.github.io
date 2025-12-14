@@ -58,6 +58,11 @@
   contact: https://github.com/metaskills
   repository: https://github.com/customink/codespaces-features
   ociReference: ghcr.io/customink/codespaces-features
+- name: DevContainer Features
+  maintainer: Stuart Bell
+  contact: https://github.com/stu-bell/devcontainer-features/issues
+  repository: https://github.com/stu-bell/devcontainer-features
+  ociReference: ghcr.io/stu-bell/devcontainer-features
 - name: Assorted Features
   maintainer: Stuart Leeks
   contact: https://github.com/stuartleeks/dev-container-features/issues
