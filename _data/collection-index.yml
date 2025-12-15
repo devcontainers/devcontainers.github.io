@@ -1261,4 +1261,4 @@
   maintainer: KingBain
   contact: https://github.com/KingBain/devcontainer-features-databricks/issues
   repository: https://github.com/KingBain/devcontainer-features-databricks
-  ociReference: ghcr.io/KingBain/devcontainer-features-databricks
+  ociReference: ghcr.io/kingbain/devcontainer-features-databricks
