@@ -1257,3 +1257,18 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Neovim (Binary) (neovim)
+  maintainer: caspersg
+  contact: https://github.com/caspersg/devcontainer_features/issues
+  repository: https://github.com/caspersg/devcontainer_features
+  ociReference: http://ghcr.io/caspersg/devcontainer_features/neovim
+- name: Kafka CLI tools (kafka_cli)
+  maintainer: caspersg
+  contact: https://github.com/caspersg/devcontainer_features/issues
+  repository: https://github.com/caspersg/devcontainer_features
+  ociReference: http://ghcr.io/caspersg/devcontainer_features/kafka_cli
+- name: Redis CLI Binary (redis_cli)
+  maintainer: caspersg
+  contact: https://github.com/caspersg/devcontainer_features/issues
+  repository: https://github.com/caspersg/devcontainer_features
+  ociReference: http://ghcr.io/caspersg/devcontainer_features/redis_cli
