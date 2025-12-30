@@ -1257,3 +1257,8 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Dev Container Features by Carlos Eduardo Monti
+  maintainer: Carlos Eduardo Monti
+  contact: https://github.com/slaytanic/devcontainer/issues
+  repository: https://github.com/slaytanic/devcontainer
+  ociReference: ghcr.io/slaytanic/devcontainer
