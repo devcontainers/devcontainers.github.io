@@ -1257,11 +1257,6 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
-- name: Rails Dev Container Templates
-  maintainer: Rails Contributors
-  contact: https://github.com/rails/devcontainer/issues
-  repository: https://github.com/rails/devcontainer
-  ociReference: ghcr.io/rails/devcontainer/images
 - name: Rails Dev Container Features
   maintainer: Rails Contributors
   contact: https://github.com/rails/devcontainer/issues
