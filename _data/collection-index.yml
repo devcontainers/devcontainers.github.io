@@ -1,8 +1,3 @@
-- name: Airgapped / Offline Python VSCode DevContainer
-  maintainer: OpenTechIL
-  contact: https://github.com/OpenTechIL/offline-python-vscode-devcontainer/issues
-  repository: https://github.com/OpenTechIL/offline-python-vscode-devcontainer
-  ociReference: ghcr.io/opentechil/offline-python-vscode-devcontainer
 - name: Reference Implementation Features
   maintainer: Dev Container Spec Maintainers
   contact: https://github.com/devcontainers/features/issues
@@ -1262,3 +1257,8 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Airgapped / Offline Python VSCode DevContainer
+  maintainer: OpenTechIL
+  contact: https://github.com/OpenTechIL/offline-python-vscode-devcontainer/issues
+  repository: https://github.com/OpenTechIL/offline-python-vscode-devcontainer
+  ociReference: ghcr.io/opentechil/offline-python-vscode-devcontainer
