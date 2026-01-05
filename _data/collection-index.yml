@@ -1355,3 +1355,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: lornd-uv
+  maintainer: lornd
+  contact: https://github.com/LDlornd/uv-dev-container/issues
+  repository: https://github.com/LDlornd/uv-dev-container
+  ociReference: ghcr.io/LDlornd/uv-dev-container/lornd-uv
