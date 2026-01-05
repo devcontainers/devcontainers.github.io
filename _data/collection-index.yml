@@ -1350,3 +1350,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: Blender Dev Container Template for Extension development
+  maintainer: peakys (@katohirosato)
+  contact: https://github.com/peakys-org/blender-devcontainer/issues/
+  repository: https://github.com/peakys-org/blender-devcontainer/
+  ociReference: ghcr.io/peakys-org/blender-devcontainer/
