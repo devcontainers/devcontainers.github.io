@@ -383,11 +383,6 @@
   contact: https://github.com/CodeMan99/features/issues
   repository: https://github.com/CodeMan99/features
   ociReference: ghcr.io/codeman99/features
-- name: Features by Favalos
-  maintainer: Fernando Avalos
-  contact: https://github.com/favalos/devcontainer-features/issues
-  repository: https://github.com/favalos/devcontainer-features
-  ociReference: ghcr.io/favalos/devcontainer-features
 - name: Community Templates
   maintainer: devcontainers-community
   contact: https://github.com/orgs/devcontainers-community/discussions
@@ -778,6 +773,11 @@
   contact: https://github.com/rafaph/devcontainer-features/issues
   repository: https://github.com/rafaph/devcontainer-features
   ociReference: ghcr.io/rafaph/devcontainer-features
+- name: Dev Container Features by weslyg
+  maintainer: weslyg
+  contact: https://github.com/weslyg/features/issues
+  repository:  https://github.com/weslyg/features
+  ociReference: ghcr.io/weslyg/features
 - name: SPFx Dev Container
   maintainer: Troy
   contact: https://github.com/tpalacino/SPFx-dev-container/issues
@@ -966,7 +966,10 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
+  maintainer: eBizBase
+  contact: https://github.com/ebizbase/dev-infras/issues
+  repository: https://github.com/ebizbase/dev-infras
+  ociReference: ghcr.io/ebizbase/devcontainers-features
 - name: slang programming language
   maintainer: loag
   contact: https://github.com/Loag/slang-feature/issues
@@ -977,7 +980,6 @@
   contact: https://github.com/zetta/devcontainer-features/issues
   repository: https://github.com/zetta/devcontainer-features
   ociReference: ghcr.io/zetta/devcontainer-features
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi  
 - name: devcontainer features for ubuntugis
   maintainer: Conner Shoop
   contact: https://github.com/connershoop/devcontainer-feature-ubuntugis/issues
@@ -988,7 +990,6 @@
   contact: https://github.com/The-Nefarious-Developer/devcontainer-templates/issues
   repository: https://github.com/The-Nefarious-Developer/devcontainer-templates
   ociReference: ghcr.io/the-nefarious-developer/devcontainer-templates
-  ociReference: ghcr.io/davzucky/devcontainers-features-wolfi
 - name: Dev Container Features by ForWarD Software
   maintainer: ForWarD Software
   contact: https://github.com/forwardsoftware/devcontainer-features/issues
@@ -1154,6 +1155,11 @@
   contact: https://github.com/RyanLua/templates/issues
   repository: https://github.com/RyanLua/templates
   ociReference: ghcr.io/ryanlua/templates
+- name: Dev Container Features by Daniel Lindemann
+  maintainer: Daniel Lindemann
+  contact: https://github.com/daniellindemann/dev-container-features/issues
+  repository: https://github.com/daniellindemann/dev-container-features/tree/main/src/dotnet-usersecrets-persistence
+  ociReference: ghcr.io/daniellindemann/dev-container-features
 - name: Starship
   maintainer: Tobias Chavarria
   contact: https://github.com/tobiaschc/devcontainer-features/issues
@@ -1224,6 +1230,11 @@
   contact: https://github.com/navinkrishnan/devcontainer-templates-btp/issues
   repository: https://github.com/navinkrishnan/devcontainer-templates-btp
   ociReference: ghcr.io/navinkrishnan/devcontainer-templates-btp
+- name: Gemini CLI (via npm)
+  maintainer: siri404
+  contact: https://github.com/siri404/devcontainer-ai-features/issues
+  repository: https://github.com/siri404/devcontainer-ai-features
+  ociReference: ghcr.io/siri404/devcontainer-ai-features
 - name: EdgeActions Dev Container Templates
   maintainer: Azure EdgeActions Developer Experiences Team
   contact: https://github.com/Azure/edgeactions-devcontainers/issues
@@ -1264,3 +1275,8 @@
   contact: https://github.com/Evit15/devcontainer-features/issues
   repository: https://github.com/Evit15/devcontainer-features
   ociReference: ghcr.io/Evit15/devcontainer-features
+- name: fexec
+  maintainer: roboslone
+  contact: https://github.com/roboslone/go-framework/issues
+  repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
+  ociReference: ghcr.io/roboslone/go-framework
