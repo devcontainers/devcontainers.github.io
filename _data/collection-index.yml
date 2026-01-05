@@ -1270,6 +1270,16 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: C++ Dev Container Template
+  maintainer: Philips Software
+  contact: https://github.com/philips-software/amp-devcontainer/issues
+  repository: https://github.com/philips-software/amp-devcontainer
+  ociReference: ghcr.io/philips-software/amp-devcontainer/cpp-template
+- name: Rust Dev Container Template
+  maintainer: Philips Software
+  contact: https://github.com/philips-software/amp-devcontainer/issues
+  repository: https://github.com/philips-software/amp-devcontainer
+  ociReference: ghcr.io/philips-software/amp-devcontainer/rust-template
 - name: Devcontainer Features for Devcontainer Configurations
   maintainer: devcontainer-config
   contact: https://github.com/devcontainer-config/features/issues
