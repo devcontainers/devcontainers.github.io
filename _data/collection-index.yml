@@ -1355,3 +1355,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: Airgapped / Offline Python VSCode DevContainer
+  maintainer: OpenTechIL
+  contact: https://github.com/OpenTechIL/offline-python-vscode-devcontainer/issues
+  repository: https://github.com/OpenTechIL/offline-python-vscode-devcontainer
+  ociReference: ghcr.io/opentechil/offline-python-vscode-devcontainer
