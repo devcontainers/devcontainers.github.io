@@ -1355,3 +1355,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: Dev Container Features by w3cj
+  maintainer: w3cj
+  contact: https://github.com/w3cj/devcontainer-features/issues
+  repository: https://github.com/w3cj/devcontainer-features
+  ociReference: ghcr.io/w3cj/devcontainer-features
