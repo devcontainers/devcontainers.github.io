@@ -1355,3 +1355,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: Dev Container Features by ttyrho
+  maintainer: ttyrho
+  contact: https://github.com/ttyrho/devcontainer-features/issues
+  repository: https://github.com/ttyrho/devcontainer-features
+  ociReference: ghcr.io/ttyrho/devcontainer-features
