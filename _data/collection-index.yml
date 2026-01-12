@@ -1355,3 +1355,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: marble's Devcontainer Features
+  maintainer: marblejenka
+  contact: https://github.com/marblejenka/devcontainer-feature/issues
+  repository: https://github.com/marblejenka/devcontainer-feature
+  ociReference: ghcr.io/marblejenka/devcontainer-feature
