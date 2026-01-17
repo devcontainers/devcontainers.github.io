@@ -1356,3 +1356,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: Oh My Posh Dev Container Features
+  maintainer: Bipin Paul
+  contact: https://github.com/iambipinpaul/devcontainer-features/issues
+  repository: https://github.com/iambipinpaul/devcontainer-features
+  ociReference: ghcr.io/iambipinpaul/devcontainer-features
