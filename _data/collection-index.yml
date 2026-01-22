@@ -1256,11 +1256,11 @@
   contact: https://github.com/helpers4/devcontainer/issues
   repository: https://github.com/helpers4/devcontainer/tree/main/src/git-absorb
   ociReference: ghcr.io/helpers4/devcontainer/git-absorb
-- name: Shell History Per Project Feature
+- name: Shell History Per Project
   maintainer: baxyz
-  contact: https://github.com/baxyz/devcontainer-features/issues
-  repository: https://github.com/baxyz/devcontainer-features/tree/main/src/shell-history-per-project
-  ociReference: ghcr.io/baxyz/devcontainer-features/shell-history-per-project
+  contact: https://github.com/helpers4/devcontainer/issues
+  repository: https://github.com/helpers4/devcontainer/tree/main/src/shell-history-per-project
+  ociReference: ghcr.io/helpers4/devcontainer/shell-history-per-project
 - name: Biome Feature
   maintainer: baxyz
   contact: https://github.com/baxyz/devcontainer-features/issues
