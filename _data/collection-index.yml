@@ -1261,6 +1261,11 @@
   contact: https://github.com/helpers4/devcontainer/issues
   repository: https://github.com/helpers4/devcontainer/tree/main/src/shell-history-per-project
   ociReference: ghcr.io/helpers4/devcontainer/shell-history-per-project
+- name: Angular Dev
+  maintainer: baxyz
+  contact: https://github.com/helpers4/devcontainer/issues
+  repository: https://github.com/helpers4/devcontainer/tree/main/src/angular-dev
+  ociReference: ghcr.io/helpers4/devcontainer/angular-dev
 - name: Biome Feature
   maintainer: baxyz
   contact: https://github.com/baxyz/devcontainer-features/issues
