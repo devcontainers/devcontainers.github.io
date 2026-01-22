@@ -1251,11 +1251,11 @@
   contact: https://github.com/Azure/edgeactions-devcontainers/issues
   repository: https://github.com/Azure/edgeactions-devcontainers
   ociReference: ghcr.io/Azure/edgeactions-devcontainers
-- name: Git Absorb Feature
+- name: Git Absorb
   maintainer: baxyz
-  contact: https://github.com/baxyz/devcontainer-features/issues
-  repository: https://github.com/baxyz/devcontainer-features/tree/main/src/git-absorb
-  ociReference: ghcr.io/baxyz/devcontainer-features/git-absorb
+  contact: https://github.com/helpers4/devcontainer/issues
+  repository: https://github.com/helpers4/devcontainer/tree/main/src/git-absorb
+  ociReference: ghcr.io/helpers4/devcontainer/git-absorb
 - name: Shell History Per Project Feature
   maintainer: baxyz
   contact: https://github.com/baxyz/devcontainer-features/issues
