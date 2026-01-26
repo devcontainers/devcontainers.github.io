@@ -1356,3 +1356,8 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: Metin's Dev Containers
+  maintainer: Metin Senturk
+  contact: https://github.com/metinsenturk/devcontainer-templates/issues
+  repository: https://github.com/metinsenturk/devcontainer-templates
+  ociReference: ghcr.io/metinsenturk/devcontainer-templates
