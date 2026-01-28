@@ -971,6 +971,7 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
+- name: devcontainer features by ebizbase
   maintainer: eBizBase
   contact: https://github.com/ebizbase/dev-infras/issues
   repository: https://github.com/ebizbase/dev-infras
@@ -1285,6 +1286,11 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Dev Container Features by Carlos Eduardo Monti
+  maintainer: Carlos Eduardo Monti
+  contact: https://github.com/slaytanic/devcontainer/issues
+  repository: https://github.com/slaytanic/devcontainer
+  ociReference: ghcr.io/slaytanic/devcontainer
 - name: Dev Container Features by Rayyan Abdul-Wahhab
   maintainer: Rayyan Abdul-Wahhab
   contact: https://github.com/rabdulwahhab/devcontainer-features/issues

@@ -16,7 +16,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v6
       - name: 'Yamllint'
-        uses: karancode/yamllint-github-action@@v2.1.1
+        uses: karancode/yamllint-github-action@v2.1.1
         with:
           yamllint_file_or_dir: _data/collection-index.yml
           yamllint_strict: true
