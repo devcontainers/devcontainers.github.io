@@ -1360,4 +1360,4 @@
   maintainer: peakys (@katohirosato)
   contact: https://github.com/peakys-org/blender-devcontainer/issues/
   repository: https://github.com/peakys-org/blender-devcontainer/
-  ociReference: ghcr.io/peakys-org/blender-devcontainer/
+  ociReference: ghcr.io/peakys-org/blender-devcontainer/blender-devcontainer
