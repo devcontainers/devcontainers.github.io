@@ -781,7 +781,7 @@
 - name: Dev Container Features by weslyg
   maintainer: weslyg
   contact: https://github.com/weslyg/features/issues
-  repository:  https://github.com/weslyg/features
+  repository: https://github.com/weslyg/features
   ociReference: ghcr.io/weslyg/features
 - name: SPFx Dev Container
   maintainer: Troy
