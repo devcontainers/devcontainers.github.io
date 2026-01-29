@@ -781,7 +781,7 @@
 - name: Dev Container Features by weslyg
   maintainer: weslyg
   contact: https://github.com/weslyg/features/issues
-  repository:  https://github.com/weslyg/features
+  repository: https://github.com/weslyg/features
   ociReference: ghcr.io/weslyg/features
 - name: SPFx Dev Container
   maintainer: Troy
@@ -971,6 +971,7 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
+- name: devcontainer features by ebizbase
   maintainer: eBizBase
   contact: https://github.com/ebizbase/dev-infras/issues
   repository: https://github.com/ebizbase/dev-infras
@@ -1355,6 +1356,16 @@
   contact: https://github.com/roboslone/go-framework/issues
   repository: https://github.com/roboslone/go-framework/tree/main/src/fexec
   ociReference: ghcr.io/roboslone/go-framework
+- name: Blender Dev Container Template for Extension development
+  maintainer: peakys (@katohirosato)
+  contact: https://github.com/peakys-org/blender-devcontainer/issues/
+  repository: https://github.com/peakys-org/blender-devcontainer/
+  ociReference: ghcr.io/peakys-org/blender-devcontainer/blender-devcontainer
+- name: Oh My Posh Dev Container Features
+  maintainer: Bipin Paul
+  contact: https://github.com/iambipinpaul/devcontainer-features/issues
+  repository: https://github.com/iambipinpaul/devcontainer-features
+  ociReference: ghcr.io/iambipinpaul/devcontainer-features
 - name: Airgapped / Offline Python VSCode DevContainer
   maintainer: OpenTechIL
   contact: https://github.com/OpenTechIL/offline-python-vscode-devcontainer/issues
