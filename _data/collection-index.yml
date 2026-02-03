@@ -1336,16 +1336,11 @@
   contact: https://github.com/EstebenR/devcontainers/issues
   repository: https://github.com/EstebenR/devcontainers/
   ociReference: ghcr.io/estebenr/devcontainers
-- name: C++ Dev Container Template
+- name: Philips Software Dev Container Templates
   maintainer: Philips Software
   contact: https://github.com/philips-software/amp-devcontainer/issues
   repository: https://github.com/philips-software/amp-devcontainer
-  ociReference: ghcr.io/philips-software/amp-devcontainer/cpp-template
-- name: Rust Dev Container Template
-  maintainer: Philips Software
-  contact: https://github.com/philips-software/amp-devcontainer/issues
-  repository: https://github.com/philips-software/amp-devcontainer
-  ociReference: ghcr.io/philips-software/amp-devcontainer/rust-template
+  ociReference: ghcr.io/philips-software/amp-devcontainer
 - name: Devcontainer Features for Devcontainer Configurations
   maintainer: devcontainer-config
   contact: https://github.com/devcontainer-config/features/issues
