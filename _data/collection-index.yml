@@ -321,8 +321,8 @@
 - name: Microsoft SBOM Tool
   maintainer: JasonTheDeveloper
   contact: https://github.com/JasonTheDeveloper/features/issues
-  repository: https://github.com/JasonTheDeveloper/features
-  ociReference: ghcr.io/jasonthedeveloper/features
+  repository: https://github.com/JasonTheDeveloper/features/tree/main/src/sbom
+  ociReference: ghcr.io/jasonthedeveloper/features/sbom
 - name: Templates by John Muchovej
   maintainer: John Muchovej
   contact: https://github.com/jmuchovej/devcontainers/issues
