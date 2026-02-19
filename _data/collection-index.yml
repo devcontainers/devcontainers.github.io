@@ -323,6 +323,11 @@
   contact: https://github.com/JasonTheDeveloper/features/issues
   repository: https://github.com/JasonTheDeveloper/features/tree/main/src/sbom
   ociReference: ghcr.io/jasonthedeveloper/features/sbom
+- name: Trivy
+  maintainer: JasonTheDeveloper
+  contact: https://github.com/JasonTheDeveloper/features/issues
+  repository: https://github.com/JasonTheDeveloper/features/tree/main/src/trivy
+  ociReference: ghcr.io/jasonthedeveloper/features/trivy
 - name: Templates by John Muchovej
   maintainer: John Muchovej
   contact: https://github.com/jmuchovej/devcontainers/issues
