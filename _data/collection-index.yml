@@ -1396,7 +1396,7 @@
   contact: https://github.com/LDlornd/uv-dev-container/issues
   repository: https://github.com/LDlornd/uv-dev-container
   ociReference: ghcr.io/LDlornd/uv-dev-container/lornd-uv
-- name: Dev Container Features for Data Analyses by Miguel Rodo
+- name: Data Project Features by Miguel Rodo
   maintainer: Miguel Rodo
   contact: https://github.com/MiguelRodo/DevContainerFeatures/issues
-  ociReference: ghcr.io/MiguelRodo/DevContainerFeatures
+  ociReference: ghcr.io/miguelrodo/devcontainerfeatures
