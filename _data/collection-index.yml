@@ -1291,6 +1291,11 @@
   contact: https://github.com/pairspaces/devcontainers/issues
   repository: https://github.com/pairspaces/devcontainers
   ociReference: ghcr.io/pairspaces/devcontainers/pairspaces
+- name: Dev Container Features by caspersg
+  maintainer: caspersg
+  contact: https://github.com/caspersg/devcontainer_features/issues
+  repository: https://github.com/caspersg/devcontainer_features
+  ociReference: ghcr.io/caspersg/devcontainer_features
 - name: Dev Container Features by Carlos Eduardo Monti
   maintainer: Carlos Eduardo Monti
   contact: https://github.com/slaytanic/devcontainer/issues
