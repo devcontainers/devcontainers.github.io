@@ -1396,3 +1396,8 @@
   contact: https://github.com/LDlornd/uv-dev-container/issues
   repository: https://github.com/LDlornd/uv-dev-container
   ociReference: ghcr.io/LDlornd/uv-dev-container/lornd-uv
+- name: Dev Container Features by AlanChen
+  maintainer: alan-chen-dongsheng
+  contact: https://github.com/alan-chen-dongsheng/devcontainer-templates/issues
+  repository: https://github.com/alan-chen-dongsheng/devcontainer-templates
+  ociReference: ghcr.io/alan-chen-dongsheng/devcontainer-templates
