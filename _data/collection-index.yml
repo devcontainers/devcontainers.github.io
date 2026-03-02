@@ -1399,4 +1399,5 @@
 - name: Data Project Features by Miguel Rodo
   maintainer: Miguel Rodo
   contact: https://github.com/MiguelRodo/DevContainerFeatures/issues
+  repository: https://github.com/MiguelRodo/DevContainerFeatures
   ociReference: ghcr.io/miguelrodo/devcontainerfeatures
