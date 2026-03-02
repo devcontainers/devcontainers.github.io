@@ -31,5 +31,5 @@ _If your PR contributes a new collection, please utilize this checklist:_
 - [ ] Maintainer name
 - [ ] Maintainer contact link (i.e. link to a GitHub repo, email)
 - [ ] Repository URL
-- [ ] OCI Reference
+- [ ] OCI Reference (must be the collection root, e.g. `ghcr.io/<owner>/<repo>` — one entry per repository, not one per Feature; do not include `http://` or `https://`)
 - [ ] I acknowledge that this collection provides new functionality, distinct from the existing collections part of this index.

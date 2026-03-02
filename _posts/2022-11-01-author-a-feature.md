@@ -107,4 +107,6 @@ If you'd like your Features to appear in our [public index](/features) so that o
 * Open a PR to modify the [collection-index.yml](https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml) file
 * Features housed in other OCI Artifact container registries can be included as long as they can be downloaded without a login.
 
+> **Note:** Add a **single entry per repository**, regardless of how many Features it contains. The `ociReference` should be the collection namespace root — e.g., `ghcr.io/<owner>/<repo>` — **not** a path to an individual Feature (e.g., avoid `ghcr.io/<owner>/<repo>/<featureName>`). The site will automatically discover all Features in the collection from that one entry. The `ociReference` value must not include a URL scheme such as `http://` or `https://`.
+
 Feature collections are scanned to populate a Feature index on the [containers.dev site](/features) and allow them to appear in Dev Container creation UX in [supporting tools](https://containers.dev/supporting) like [VS Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [GitHub Codespaces](https://github.com/features/codespaces).

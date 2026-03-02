@@ -28,6 +28,8 @@ It is from this [Jekyll Dev Container Template](https://github.com/devcontainers
 
 If you'd like to provide feedback on or contribute to the dev containers website, please feel free to open an issue or PR in this repo.
 
+If you'd like to add your own Features or Templates collection to the [community index](https://containers.dev/collections), please read the [Authoring a Dev Container Feature](https://containers.dev/guide/author-a-feature) guide first — in particular the [Adding Features to the Index](https://containers.dev/guide/author-a-feature#add-to-index) section, which explains how to correctly format your `collection-index.yml` entry.
+
 For issues on and contributions to the dev container specification itself, please visit the [Dev Containers Spec repo](https://github.com/devcontainers/spec).
 
 ## License
