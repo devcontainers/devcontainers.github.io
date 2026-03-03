@@ -1401,3 +1401,8 @@
   contact: https://github.com/iyaki/devcontainer-features/issues
   repository: https://github.com/iyaki/devcontainer-features
   ociReference: ghcr.io/iyaki/devcontainer-features
+- name: Devcontainer templates by iyaki
+  maintainer: iyaki
+  contact: https://github.com/iyaki/devcontainer-templates/issues
+  repository: https://github.com/iyaki/devcontainer-templates
+  ociReference: ghcr.io/iyaki/devcontainer-templates
