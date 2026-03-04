@@ -1386,7 +1386,7 @@
   contact: https://github.com/metinsenturk/devcontainer-templates/issues
   repository: https://github.com/metinsenturk/devcontainer-templates
   ociReference: ghcr.io/metinsenturk/devcontainer-templates
-- name: Dev Container Features by goodjobandrew
+- name: Dev Container Templates by goodjobandrew
   maintainer: goodjobandrew
   contact: https://github.com/goodjobandrew/devcontainer-templates/issues
   repository: https://github.com/goodjobandrew/devcontainer-templates
