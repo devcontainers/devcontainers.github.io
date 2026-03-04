@@ -1241,7 +1241,7 @@
   contact: https://github.com/ksachdeva/devcontainer-features/issues
   repository: https://github.com/ksachdeva/devcontainer-features
   ociReference: ghcr.io/ksachdeva/devcontainer-features
-- name: Gemini CLI (via npm)
+- name: Devcontainer AI Features
   maintainer: siri404
   contact: https://github.com/siri404/devcontainer-ai-features/issues
   repository: https://github.com/siri404/devcontainer-ai-features
