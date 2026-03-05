@@ -1391,6 +1391,11 @@
   contact: https://github.com/ttyrho/devcontainer-features/issues
   repository: https://github.com/ttyrho/devcontainer-features
   ociReference: ghcr.io/ttyrho/devcontainer-features
+- name: Doppler Features
+  maintainer: Doppler Team
+  contact: https://github.com/DopplerHQ/devcontainer-features/issues
+  repository: https://github.com/DopplerHQ/devcontainer-features
+  ociReference: ghcr.io/dopplerhq/devcontainer-features
 - name: lornd-uv
   maintainer: lornd
   contact: https://github.com/LDlornd/uv-dev-container/issues
