@@ -41,25 +41,3 @@ sectionid: collection-index
     </tr>
     {% endfor %}
 </table>
-
-<script>
-    const searchInput = document.getElementById('searchInput');
-    const collectionTable = document.getElementById('collectionTable');
-    const rows = collectionTable.getElementsByTagName('tr');
-
-    searchInput.addEventListener('input', function () {
-        const searchValue = searchInput.value.toLowerCase();
-
-        for (let i = 1; i < rows.length; i++) {
-            const name = rows[i].getElementsByTagName('td')[0].textContent.toLowerCase();
-            const maintainer = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
-            const repository = rows[i].getElementsByTagName('td')[2].textContent.toLowerCase();
-
-            if (name.includes(searchValue) || maintainer.includes(searchValue) || repository.includes(searchValue)) {
-                rows[i].style.display = '';
-            } else {
-                rows[i].style.display = 'none';
-            }
-        }
-    });
-</script>
