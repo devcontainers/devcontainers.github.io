@@ -1396,3 +1396,8 @@
   contact: https://github.com/LDlornd/uv-dev-container/issues
   repository: https://github.com/LDlornd/uv-dev-container
   ociReference: ghcr.io/LDlornd/uv-dev-container/lornd-uv
+- name: Templates by Thomas Hucke
+  maintainer: thucke
+  contact: https://github.com/thucke/devcontainer-templates/issues
+  repository: https://github.com/thucke/devcontainer-templates
+  ociReference: ghcr.io/thucke/devcontainer-templates
