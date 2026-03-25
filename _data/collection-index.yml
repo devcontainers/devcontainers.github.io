@@ -1241,7 +1241,7 @@
   contact: https://github.com/ksachdeva/devcontainer-features/issues
   repository: https://github.com/ksachdeva/devcontainer-features
   ociReference: ghcr.io/ksachdeva/devcontainer-features
-- name: Gemini CLI (via npm)
+- name: Devcontainer AI Features
   maintainer: siri404
   contact: https://github.com/siri404/devcontainer-ai-features/issues
   repository: https://github.com/siri404/devcontainer-ai-features
@@ -1396,6 +1396,16 @@
   contact: https://github.com/LDlornd/uv-dev-container/issues
   repository: https://github.com/LDlornd/uv-dev-container
   ociReference: ghcr.io/LDlornd/uv-dev-container/lornd-uv
+- name: Data Project Features by Miguel Rodo
+  maintainer: Miguel Rodo
+  contact: https://github.com/MiguelRodo/DevContainerFeatures/issues
+  repository: https://github.com/MiguelRodo/DevContainerFeatures
+  ociReference: ghcr.io/miguelrodo/devcontainerfeatures
+- name: Evan's Devcontainer Features
+  maintainer: esimkowitz
+  contact: https://github.com/esimkowitz/devcontainer-features/issues
+  repository: https://github.com/esimkowitz/devcontainer-features
+  ociReference: ghcr.io/esimkowitz/devcontainer-features
 - name: Dev Container Features by AlanChen
   maintainer: alan-chen-dongsheng
   contact: https://github.com/alan-chen-dongsheng/devcontainer-templates/issues
