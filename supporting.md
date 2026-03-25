@@ -45,6 +45,10 @@ IntelliJ IDEA has early support dev containers that can be run remotely via an S
 
 You may learn more in the [announcement blog post](https://blog.jetbrains.com/idea/2023/06/intellij-idea-2023-2-eap-6/#SupportforDevContainers).
 
+### <a href="#emacs" name="emacs" class="anchor"> Emacs </a>
+
+[GNU Emacs](https://www.gnu.org/software/emacs/) can make use of dev containers using the community extension [devcontainer.el](https://johannes-mueller.github.io/devcontainer.el/).  The extension is available by the popular package registry [MELPA](https://melpa.org).  It can also be installed directly from the source code that is available on [GitHub](https://github.com/johannes-mueller/devcontainer.el).
+
 ## <a href="#tools" name="tools" class="anchor"> Tools </a>
 
 ### <a href="#devcontainer-cli" name="devcontainer-cli" class="anchor"> Dev Container CLI </a>

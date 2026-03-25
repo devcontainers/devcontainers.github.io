@@ -1241,7 +1241,7 @@
   contact: https://github.com/ksachdeva/devcontainer-features/issues
   repository: https://github.com/ksachdeva/devcontainer-features
   ociReference: ghcr.io/ksachdeva/devcontainer-features
-- name: Gemini CLI (via npm)
+- name: Devcontainer AI Features
   maintainer: siri404
   contact: https://github.com/siri404/devcontainer-ai-features/issues
   repository: https://github.com/siri404/devcontainer-ai-features
@@ -1386,16 +1386,61 @@
   contact: https://github.com/metinsenturk/devcontainer-templates/issues
   repository: https://github.com/metinsenturk/devcontainer-templates
   ociReference: ghcr.io/metinsenturk/devcontainer-templates
+- name: Dev Container Templates by goodjobandrew
+  maintainer: goodjobandrew
+  contact: https://github.com/goodjobandrew/devcontainer-templates/issues
+  repository: https://github.com/goodjobandrew/devcontainer-templates
+  ociReference: ghcr.io/goodjobandrew/devcontainer-templates
 - name: Dev Container Features by ttyrho
   maintainer: ttyrho
   contact: https://github.com/ttyrho/devcontainer-features/issues
   repository: https://github.com/ttyrho/devcontainer-features
   ociReference: ghcr.io/ttyrho/devcontainer-features
+- name: Doppler Features
+  maintainer: Doppler Team
+  contact: https://github.com/DopplerHQ/devcontainer-features/issues
+  repository: https://github.com/DopplerHQ/devcontainer-features
+  ociReference: ghcr.io/dopplerhq/devcontainer-features
 - name: lornd-uv
   maintainer: lornd
   contact: https://github.com/LDlornd/uv-dev-container/issues
   repository: https://github.com/LDlornd/uv-dev-container
   ociReference: ghcr.io/LDlornd/uv-dev-container/lornd-uv
+- name: Data Project Features by Miguel Rodo
+  maintainer: Miguel Rodo
+  contact: https://github.com/MiguelRodo/DevContainerFeatures/issues
+  repository: https://github.com/MiguelRodo/DevContainerFeatures
+  ociReference: ghcr.io/miguelrodo/devcontainerfeatures
+- name: Evan's Devcontainer Features
+  maintainer: esimkowitz
+  contact: https://github.com/esimkowitz/devcontainer-features/issues
+  repository: https://github.com/esimkowitz/devcontainer-features
+  ociReference: ghcr.io/esimkowitz/devcontainer-features
+- name: Dev Container Features by AlanChen
+  maintainer: alan-chen-dongsheng
+  contact: https://github.com/alan-chen-dongsheng/devcontainer-templates/issues
+  repository: https://github.com/alan-chen-dongsheng/devcontainer-templates
+  ociReference: ghcr.io/alan-chen-dongsheng/devcontainer-templates
+- name: Devcontainer features by iyaki
+  maintainer: iyaki
+  contact: https://github.com/iyaki/devcontainer-features/issues
+  repository: https://github.com/iyaki/devcontainer-features
+  ociReference: ghcr.io/iyaki/devcontainer-features
+- name: Devcontainer templates by iyaki
+  maintainer: iyaki
+  contact: https://github.com/iyaki/devcontainer-templates/issues
+  repository: https://github.com/iyaki/devcontainer-templates
+  ociReference: ghcr.io/iyaki/devcontainer-templates
+- name: Phoenix
+  maintainer: lwrless
+  contact: https://github.com/on-my-machine-works/devcontainer-templates/issues
+  repository: https://github.com/on-my-machine-works/devcontainer-templates
+  ociReference: ghcr.io/on-my-machine-works/devcontainer-templates/phoenix
+- name: Dev Container Features (Riccardo Bravin)
+  maintainer: Riccardo Bravin
+  contact: https://github.com/RiccardoBravin/devcontainer-features/issues
+  repository: https://github.com/RiccardoBravin/devcontainer-features
+  ociReference: ghcr.io/riccardobravin/devcontainer-features
 - name: databricks-tooling
   maintainer: mike-fi
   contact: https://github.com/mike-fi/devcontainer-features/issues
