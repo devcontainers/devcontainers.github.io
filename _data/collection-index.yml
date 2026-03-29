@@ -1456,3 +1456,8 @@
   contact: https://github.com/wcgomes/devcontainer-features/issues
   repository: https://github.com/wcgomes/devcontainer-features
   ociReference: ghcr.io/wcgomes/devcontainer-features
+- name: Devcontainer Features by NicoVIII
+  maintainer: NicoVIII
+  contact: https://github.com/NicoVIII/devcontainer-features/issues
+  repository: https://github.com/NicoVIII/devcontainer-features
+  ociReference: ghcr.io/NicoVIII/devcontainer-features
