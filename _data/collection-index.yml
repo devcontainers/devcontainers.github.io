@@ -1456,3 +1456,8 @@
   contact: https://github.com/wcgomes/devcontainer-features/issues
   repository: https://github.com/wcgomes/devcontainer-features
   ociReference: ghcr.io/wcgomes/devcontainer-features
+- name: althack
+  maintainer: althack
+  contact: https://github.com/althack/devcontainers/issues
+  repository: https://github.com/althack/devcontainers
+  ociReference: ghcr.io/althack/devcontainers
