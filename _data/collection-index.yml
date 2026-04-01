@@ -1456,3 +1456,8 @@
   contact: https://github.com/wcgomes/devcontainer-features/issues
   repository: https://github.com/wcgomes/devcontainer-features
   ociReference: ghcr.io/wcgomes/devcontainer-features
+- name: Dev Container features by sliekens
+  maintainer: sliekens
+  contact: https://github.com/sliekens/devcontainer-features/issues
+  repository: https://github.com/sliekens/devcontainer-features
+  ociReference: ghcr.io/sliekens/devcontainer-features
