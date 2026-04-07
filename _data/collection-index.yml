@@ -1460,4 +1460,4 @@
   maintainer: NicoVIII
   contact: https://github.com/NicoVIII/devcontainer-features/issues
   repository: https://github.com/NicoVIII/devcontainer-features
-  ociReference: ghcr.io/NicoVIII/devcontainer-features
+  ociReference: ghcr.io/nicoviii/devcontainer-features
