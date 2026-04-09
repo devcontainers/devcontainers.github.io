@@ -1456,6 +1456,16 @@
   contact: https://github.com/wcgomes/devcontainer-features/issues
   repository: https://github.com/wcgomes/devcontainer-features
   ociReference: ghcr.io/wcgomes/devcontainer-features
+- name: PostFinance Features
+  maintainer: PostFinance AG
+  contact: https://github.com/postfinance/devcontainer-features/issues
+  repository: https://github.com/postfinance/devcontainer-features
+  ociReference: ghcr.io/postfinance/devcontainer-features
+- name: Devcontainer Features by NicoVIII
+  maintainer: NicoVIII
+  contact: https://github.com/NicoVIII/devcontainer-features/issues
+  repository: https://github.com/NicoVIII/devcontainer-features
+  ociReference: ghcr.io/nicoviii/devcontainer-features
 - name: althack
   maintainer: althack
   contact: https://github.com/althack/devcontainers/issues
