@@ -1251,26 +1251,11 @@
   contact: https://github.com/Azure/edgeactions-devcontainers/issues
   repository: https://github.com/Azure/edgeactions-devcontainers
   ociReference: ghcr.io/Azure/edgeactions-devcontainers
-- name: Git Absorb
+- name: helpers4 Dev Container Features
   maintainer: baxyz
   contact: https://github.com/helpers4/devcontainer/issues
-  repository: https://github.com/helpers4/devcontainer/tree/main/src/git-absorb
-  ociReference: ghcr.io/helpers4/devcontainer/git-absorb
-- name: Shell History Per Project
-  maintainer: baxyz
-  contact: https://github.com/helpers4/devcontainer/issues
-  repository: https://github.com/helpers4/devcontainer/tree/main/src/shell-history-per-project
-  ociReference: ghcr.io/helpers4/devcontainer/shell-history-per-project
-- name: Angular Dev
-  maintainer: baxyz
-  contact: https://github.com/helpers4/devcontainer/issues
-  repository: https://github.com/helpers4/devcontainer/tree/main/src/angular-dev
-  ociReference: ghcr.io/helpers4/devcontainer/angular-dev
-- name: Local Mounts
-  maintainer: baxyz
-  contact: https://github.com/helpers4/devcontainer/issues
-  repository: https://github.com/helpers4/devcontainer/tree/main/src/local-mounts
-  ociReference: ghcr.io/helpers4/devcontainer/local-mounts
+  repository: https://github.com/helpers4/devcontainer
+  ociReference: ghcr.io/helpers4/devcontainer
 - name: Dev Container assets by Yassine Doghri
   maintainer: Yassine Doghri
   contact: https://github.com/yassinedoghri/devcontainers/issues
