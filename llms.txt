@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# {{ site.title | default: "DevContainers Documentation" }}
+
+> {{ site.description | strip_html | strip_newlines | default: "Development containers documentation and specification." }}
+
+## General Pages
+{%- for page in site.pages %}
+{%- unless page.path contains "/" %}{%- if page.path contains ".md" %}{%- if page.name != 'README.md' and page.name != 'SECURITY.md' and page.name != 'contributing.md' %}
+- [{{ page.title | default: page.name }}]({{ site.url }}{{ site.baseurl }}/{{ page.name }})
+{%- endif %}{%- endif %}{%- endunless %}
+{%- endfor %}
+
+## Implementors Guide
+{%- for implementor in site.implementors %}{%- assign filename = implementor.path | split: "/" | last %}
+- [{{ implementor.title | default: filename }}]({{ site.url }}{{ site.baseurl }}/implementors/{{ filename }})
+{%- endfor %}
+
+## Posts (Guides)
+{%- for post in site.posts %}
+- [{{ post.title }}]({{ site.url }}{{ site.baseurl }}{{ post.url }}.md)
+{%- endfor %}
