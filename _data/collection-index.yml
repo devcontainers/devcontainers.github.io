@@ -1461,3 +1461,8 @@
   contact: https://github.com/althack/devcontainers/issues
   repository: https://github.com/althack/devcontainers
   ociReference: ghcr.io/althack/devcontainers
+- name: Devcontainer Features by rosstaco
+  maintainer: rosstaco
+  contact: https://github.com/rosstaco/devcontainer-features/issues
+  repository: https://github.com/rosstaco/devcontainer-features
+  ociReference: ghcr.io/rosstaco/devcontainer-features
