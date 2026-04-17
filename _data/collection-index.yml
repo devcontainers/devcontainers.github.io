@@ -1461,3 +1461,8 @@
   contact: https://github.com/althack/devcontainers/issues
   repository: https://github.com/althack/devcontainers
   ociReference: ghcr.io/althack/devcontainers
+- name: Devcontainer Features
+  maintainer: agardnerit
+  contact: https://github.com/agardnerIT/devcontainer-feature-dtctl/issues
+  repository: https://github.com/agardnerIT/devcontainer-feature-dtctl
+  ociReferences: ghcr.io/agardnerit/devcontainer-feature-dtctl
