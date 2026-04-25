@@ -1461,3 +1461,8 @@
   contact: https://github.com/althack/devcontainers/issues
   repository: https://github.com/althack/devcontainers
   ociReference: ghcr.io/althack/devcontainers
+- name: Devcontainer Features by Soup-bowl
+  maintainer: soup-bowl
+  contact: https://github.com/soup-bowl/features/issues
+  repository: https://github.com/soup-bowl/features
+  ociReference: ghcr.io/soup-bowl/features
