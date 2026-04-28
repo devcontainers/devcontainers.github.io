@@ -1466,3 +1466,8 @@
   contact: https://github.com/rosstaco/devcontainer-features/issues
   repository: https://github.com/rosstaco/devcontainer-features
   ociReference: ghcr.io/rosstaco/devcontainer-features
+- name: Devcontainer Features
+  maintainer: agardnerit
+  contact: https://github.com/agardnerIT/devcontainer-feature-dtctl/issues
+  repository: https://github.com/agardnerIT/devcontainer-feature-dtctl
+  ociReferences: ghcr.io/agardnerit/devcontainer-feature-dtctl
