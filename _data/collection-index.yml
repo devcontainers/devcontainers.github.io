@@ -1461,3 +1461,18 @@
   contact: https://github.com/althack/devcontainers/issues
   repository: https://github.com/althack/devcontainers
   ociReference: ghcr.io/althack/devcontainers
+- name: Devcontainer Features by rosstaco
+  maintainer: rosstaco
+  contact: https://github.com/rosstaco/devcontainer-features/issues
+  repository: https://github.com/rosstaco/devcontainer-features
+  ociReference: ghcr.io/rosstaco/devcontainer-features
+- name: Devcontainer Features
+  maintainer: agardnerit
+  contact: https://github.com/agardnerIT/devcontainer-feature-dtctl/issues
+  repository: https://github.com/agardnerIT/devcontainer-feature-dtctl
+  ociReferences: ghcr.io/agardnerit/devcontainer-feature-dtctl
+- name: Devcontainer Features by nkdui
+  maintainer: nkdui
+  contact: https://github.com/nkdui/devcontainer-features/issues
+  repository: https://github.com/nkdui/devcontainer-features
+  ociReference: ghcr.io/nkdui/devcontainer-features
