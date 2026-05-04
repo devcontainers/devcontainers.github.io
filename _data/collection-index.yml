@@ -1476,3 +1476,8 @@
   contact: https://github.com/nkdui/devcontainer-features/issues
   repository: https://github.com/nkdui/devcontainer-features
   ociReference: ghcr.io/nkdui/devcontainer-features
+- name: trunk-rs devcontainer feature
+  maintainer: Mark Hornsby (mrhornsby)
+  contact: https://github.com/mrhornsby/trunk-devcontainer-feature/issues
+  repository: https://github.com/mrhornsby/trunk-devcontainer-feature
+  ociReference: ghcr.io/mrhornsby/trunk-devcontainer-feature/trunk
