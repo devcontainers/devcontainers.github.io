@@ -1476,3 +1476,8 @@
   contact: https://github.com/nkdui/devcontainer-features/issues
   repository: https://github.com/nkdui/devcontainer-features
   ociReference: ghcr.io/nkdui/devcontainer-features
+- name: Magento Open Source Dev Container Templates
+  maintainer: Doug Hatcher
+  contact: https://github.com/doughatcher/devcontainer-templates/issues
+  repository: https://github.com/doughatcher/devcontainer-templates
+  ociReference: ghcr.io/doughatcher/devcontainer-templates
