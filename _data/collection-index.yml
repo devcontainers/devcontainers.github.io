@@ -1476,3 +1476,8 @@
   contact: https://github.com/nkdui/devcontainer-features/issues
   repository: https://github.com/nkdui/devcontainer-features
   ociReference: ghcr.io/nkdui/devcontainer-features
+- name: Devcontainer Features by nkaaf
+  maintainer: nkaaf
+  contact: https://github.com/nkaaf/devcontainer-features/issues
+  repository: https://github.com/nkaaf/devcontainer-features
+  ociReference: ghcr.io/nkaaf/devcontainer-features
