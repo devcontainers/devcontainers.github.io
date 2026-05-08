@@ -1475,4 +1475,9 @@
   maintainer: nkdui
   contact: https://github.com/nkdui/devcontainer-features/issues
   repository: https://github.com/nkdui/devcontainer-features
-  ociReference: ghcr.io/nkdui/devcontainer-features
+  ociReference: ghcr.io/nkdui/devcontainer-features<
+- name: Keeper Secrets Manager (KSM) Dev Container Features
+  maintainer: cdsolinfo
+  contact: https://github.com/cdsolinfo/devcontainer-features/issues
+  repository: https://github.com/cdsolinfo/devcontainer-features
+  ociReference: ghcr.io/cdsolinfo/devcontainer-features  
