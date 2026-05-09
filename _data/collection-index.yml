@@ -1476,3 +1476,8 @@
   contact: https://github.com/nkdui/devcontainer-features/issues
   repository: https://github.com/nkdui/devcontainer-features
   ociReference: ghcr.io/nkdui/devcontainer-features
+- name: Nostr Event Watcher
+  maintainer: Dominik Falkner
+  contact: https://github.com/falknerdominik/nostr-watch/issues
+  repository: https://github.com/falknerdominik/nostr-watch
+  ociReference: ghcr.io/falknerdominik/nostr-watch
