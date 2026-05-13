@@ -1621,3 +1621,8 @@
   contact: https://github.com/Jartan-LLC/enchantments/issues
   repository: https://github.com/Jartan-LLC/enchantments
   ociReference: ghcr.io/jartan-llc/enchantments
+- name: Devcontainer Features by Iain Galloway
+  maintainer: Iain Galloway
+  contact: https://github.com/iaingalloway/features/issues
+  repository: https://github.com/iaingalloway/features
+  ociReference: ghcr.io/iaingalloway/features
