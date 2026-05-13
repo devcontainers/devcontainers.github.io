@@ -1601,3 +1601,8 @@
   contact: https://github.com/zafnz/devcontainer-features/issues
   repository: https://github.com/zafnz/devcontainer-features
   ociReference: ghcr.io/zafnz/devcontainer-features
+- name: Devcontainer Features by Iain Galloway
+  maintainer: Iain Galloway
+  contact: https://github.com/iaingalloway/features/issues
+  repository: https://github.com/iaingalloway/features
+  ociReference: ghcr.io/iaingalloway/features
