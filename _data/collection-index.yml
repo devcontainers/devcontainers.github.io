@@ -1461,6 +1461,11 @@
   contact: https://github.com/althack/devcontainers/issues
   repository: https://github.com/althack/devcontainers
   ociReference: ghcr.io/althack/devcontainers
+- name: Devcontainer Features by Soup-bowl
+  maintainer: soup-bowl
+  contact: https://github.com/soup-bowl/features/issues
+  repository: https://github.com/soup-bowl/features
+  ociReference: ghcr.io/soup-bowl/features
 - name: Devcontainer Features by rosstaco
   maintainer: rosstaco
   contact: https://github.com/rosstaco/devcontainer-features/issues
@@ -1476,6 +1481,16 @@
   contact: https://github.com/nkdui/devcontainer-features/issues
   repository: https://github.com/nkdui/devcontainer-features
   ociReference: ghcr.io/nkdui/devcontainer-features
+- name: trunk-rs devcontainer feature
+  maintainer: mrhornsby
+  contact: https://github.com/mrhornsby/trunk-devcontainer-feature/issues
+  repository: https://github.com/mrhornsby/trunk-devcontainer-feature
+  ociReference: ghcr.io/mrhornsby/trunk-devcontainer-feature
+- name: Magento Open Source Dev Container Templates
+  maintainer: Doug Hatcher
+  contact: https://github.com/doughatcher/devcontainer-templates/issues
+  repository: https://github.com/doughatcher/devcontainer-templates
+  ociReference: ghcr.io/doughatcher/devcontainer-templates
 - name: Devcontainer Features by nkaaf
   maintainer: nkaaf
   contact: https://github.com/nkaaf/devcontainer-features/issues
