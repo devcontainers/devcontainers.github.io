@@ -1501,3 +1501,8 @@
   contact: https://github.com/nkaaf/devcontainer-features/issues
   repository: https://github.com/nkaaf/devcontainer-features
   ociReference: ghcr.io/nkaaf/devcontainer-features
+- name: Dev Container Features by RodriBus
+  maintainer: RodriBus
+  contact: https://github.com/RodriBus/devcontainer-features/issues
+  repository: https://github.com/RodriBus/devcontainer-features
+  ociReference: ghcr.io/rodribus/devcontainer-features
