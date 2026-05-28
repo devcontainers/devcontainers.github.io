@@ -1361,6 +1361,11 @@
   contact: https://github.com/w3cj/devcontainer-features/issues
   repository: https://github.com/w3cj/devcontainer-features
   ociReference: ghcr.io/w3cj/devcontainer-features
+- name: pretalx Dev Container Templates
+  maintainer: Tjark
+  contact: https://github.com/tjarbo/pretalx-devcontainer/issues
+  repository: https://github.com/tjarbo/pretalx-devcontainer
+  ociReference: ghcr.io/tjarbo/pretalx-devcontainer
 - name: marble's Devcontainer Features
   maintainer: marblejenka
   contact: https://github.com/marblejenka/devcontainer-feature/issues
