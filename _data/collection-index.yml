@@ -1501,3 +1501,8 @@
   contact: https://github.com/nkaaf/devcontainer-features/issues
   repository: https://github.com/nkaaf/devcontainer-features
   ociReference: ghcr.io/nkaaf/devcontainer-features
+- name: Dev Container Extras
+  maintainer: XavierBeheydt
+  contact: https://github.com/XavierBeheydt/devcontainer-extras/issues
+  repository: https://github.com/XavierBeheydt/devcontainer-extras
+  ociReference: ghcr.io/xavierbeheydt/devcontainer-extras
