@@ -1511,3 +1511,8 @@
   contact: https://github.com/aqua/devcontainer-antigravity-cli/issues
   repository: https://github.com/aqua/devcontainer-antigravity-cli
   ociReference: ghcr.io/aqua/devcontainer-antigravity-cli
+- name: Devcontainer Features by SrzStephen
+  maintainer: Stephen Mott
+  contact: https://github.com/SrzStephen/devcontainer-features/issues
+  repository: https://github.com/SrzStephen/devcontainer-features
+  ociReference: ghcr.io/srzstephen/devcontainer-features
