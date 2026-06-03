@@ -1511,3 +1511,8 @@
   contact: https://github.com/aqua/devcontainer-antigravity-cli/issues
   repository: https://github.com/aqua/devcontainer-antigravity-cli
   ociReference: ghcr.io/aqua/devcontainer-antigravity-cli
+- name: Dev Container features by kuju63
+  maintainer: kuju63
+  contact: https://github.com/kuju63/devcontainer-features/issues
+  repository: https://github.com/kuju63/devcontainer-features
+  ociReference: ghcr.io/kuju63/devcontainer-features
