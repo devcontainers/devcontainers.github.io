@@ -1511,3 +1511,8 @@
   contact: https://github.com/aqua/devcontainer-antigravity-cli/issues
   repository: https://github.com/aqua/devcontainer-antigravity-cli
   ociReference: ghcr.io/aqua/devcontainer-antigravity-cli
+- name: Google gcloud CLI feature by aqua
+  maintainer: aqua
+  contact: https://github.com/aqua/devcontainer-gcloud/issues
+  repository: https://github.com/aqua/devcontainer-gcloud
+  ociReference: ghcr.io/aqua/devcontainer-gcloud
