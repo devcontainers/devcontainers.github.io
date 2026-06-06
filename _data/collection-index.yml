@@ -1551,3 +1551,8 @@
   contact: https://github.com/dnegstad/devcontainer-dev-certs/issues
   repository: https://github.com/dnegstad/devcontainer-dev-certs
   ociReference: ghcr.io/dnegstad/devcontainer-dev-certs
+- name: Ansible DevTools with Claude Code
+  maintainer: leogallego
+  contact: https://github.com/leogallego/ansible-claude-code-devcontainer/issues
+  repository: https://github.com/leogallego/ansible-claude-code-devcontainer
+  ociReference: ghcr.io/leogallego/ansible-claude-code-devcontainer
