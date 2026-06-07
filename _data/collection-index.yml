@@ -1511,3 +1511,8 @@
   contact: https://github.com/aqua/devcontainer-antigravity-cli/issues
   repository: https://github.com/aqua/devcontainer-antigravity-cli
   ociReference: ghcr.io/aqua/devcontainer-antigravity-cli
+- name: Dev Container Feature by cjcrobin
+  maintainer: cjcrobin
+  contact: https://github.com/cjcrobin/devcontainer-features/issues
+  repository: https://github.com/cjcrobin/devcontainer-features
+  ociReference: ghcr.io/cjcrobin/devcontainer-features
