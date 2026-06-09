@@ -1501,6 +1501,36 @@
   contact: https://github.com/nkaaf/devcontainer-features/issues
   repository: https://github.com/nkaaf/devcontainer-features
   ociReference: ghcr.io/nkaaf/devcontainer-features
+- name: Dev Container Features by RodriBus
+  maintainer: RodriBus
+  contact: https://github.com/RodriBus/devcontainer-features/issues
+  repository: https://github.com/RodriBus/devcontainer-features
+  ociReference: ghcr.io/rodribus/devcontainer-features
+- name: Antigravity CLI feature by aqua
+  maintainer: aqua
+  contact: https://github.com/aqua/devcontainer-antigravity-cli/issues
+  repository: https://github.com/aqua/devcontainer-antigravity-cli
+  ociReference: ghcr.io/aqua/devcontainer-antigravity-cli
+- name: Dev Container Feature by cjcrobin
+  maintainer: cjcrobin
+  contact: https://github.com/cjcrobin/devcontainer-features/issues
+  repository: https://github.com/cjcrobin/devcontainer-features
+  ociReference: ghcr.io/cjcrobin/devcontainer-features
+- name: Google gcloud CLI feature by aqua
+  maintainer: aqua
+  contact: https://github.com/aqua/devcontainer-gcloud/issues
+  repository: https://github.com/aqua/devcontainer-gcloud
+  ociReference: ghcr.io/aqua/devcontainer-gcloud
+- name: Dev Container features by kuju63
+  maintainer: kuju63
+  contact: https://github.com/kuju63/devcontainer-features/issues
+  repository: https://github.com/kuju63/devcontainer-features
+  ociReference: ghcr.io/kuju63/devcontainer-features
+- name: Devcontainer Features by SrzStephen
+  maintainer: Stephen Mott
+  contact: https://github.com/SrzStephen/devcontainer-features/issues
+  repository: https://github.com/SrzStephen/devcontainer-features
+  ociReference: ghcr.io/srzstephen/devcontainer-features
 - name: Dev Container Extras by XavierBeheydt
   maintainer: XavierBeheydt
   contact: https://github.com/XavierBeheydt/devcontainer-extras/issues
