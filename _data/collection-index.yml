@@ -1541,3 +1541,8 @@
   contact: https://github.com/XavierBeheydt/devcontainer-extras/issues
   repository: https://github.com/XavierBeheydt/devcontainer-extras
   ociReference: ghcr.io/xavierbeheydt/devcontainer-extras
+- name: Tectonic Feature by sjp
+  maintainer: sjp
+  contact: https://github.com/sjp/tectonic-feature/issues
+  repository: https://github.com/sjp/tectonic-feature
+  ociReference: ghcr.io/sjp/tectonic-feature
