@@ -1541,3 +1541,13 @@
   contact: https://github.com/XavierBeheydt/devcontainer-extras/issues
   repository: https://github.com/XavierBeheydt/devcontainer-extras
   ociReference: ghcr.io/xavierbeheydt/devcontainer-extras
+- name: Tectonic Feature by sjp
+  maintainer: sjp
+  contact: https://github.com/sjp/tectonic-feature/issues
+  repository: https://github.com/sjp/tectonic-feature
+  ociReference: ghcr.io/sjp/tectonic-feature
+- name: Dev Certs Feature by David Negstad
+  maintainer: dnegstad
+  contact: https://github.com/dnegstad/devcontainer-dev-certs/issues
+  repository: https://github.com/dnegstad/devcontainer-dev-certs
+  ociReference: ghcr.io/dnegstad/devcontainer-dev-certs
