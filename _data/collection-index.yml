@@ -1551,3 +1551,9 @@
   contact: https://github.com/dnegstad/devcontainer-dev-certs/issues
   repository: https://github.com/dnegstad/devcontainer-dev-certs
   ociReference: ghcr.io/dnegstad/devcontainer-dev-certs
+- name: Devcontainer Features by jrussellsmyth
+  maintainer: jrussellsmyth
+  contact: https://github.com/jrussellsmyth/devcontainer-features/issues
+  repostiory: https://github.com/jrussellsmyth/devcontainer-features
+  ociReference: ghcr.io/jrussellsmyth/devcontainer-features
+  
