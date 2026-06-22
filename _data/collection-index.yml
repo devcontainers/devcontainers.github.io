@@ -1153,13 +1153,13 @@
   ocireference: ghcr.io/sebdanielsson/devcontainers
 - name: Rojo Feature
   maintainer: Ryan Luu
-  contact: https://github.com/RyanLua/features/issues
-  repository: https://github.com/RyanLua/features
+  contact: https://github.com/ryanlua/features/issues
+  repository: https://github.com/ryanlua/features
   ociReference: ghcr.io/ryanlua/features
 - name: Roblox Template
   maintainer: Ryan Luu
-  contact: https://github.com/RyanLua/templates/issues
-  repository: https://github.com/RyanLua/templates
+  contact: https://github.com/ryanlua/templates/issues
+  repository: https://github.com/ryanlua/templates
   ociReference: ghcr.io/ryanlua/templates
 - name: Dev Container Features by Daniel Lindemann
   maintainer: Daniel Lindemann
