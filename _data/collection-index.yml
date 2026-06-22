@@ -1554,6 +1554,6 @@
 - name: Devcontainer Features by jrussellsmyth
   maintainer: jrussellsmyth
   contact: https://github.com/jrussellsmyth/devcontainer-features/issues
-  repostiory: https://github.com/jrussellsmyth/devcontainer-features
+  repository: https://github.com/jrussellsmyth/devcontainer-features
   ociReference: ghcr.io/jrussellsmyth/devcontainer-features
   
