@@ -1153,13 +1153,13 @@
   ocireference: ghcr.io/sebdanielsson/devcontainers
 - name: Rojo Feature
   maintainer: Ryan Luu
-  contact: https://github.com/RyanLua/features/issues
-  repository: https://github.com/RyanLua/features
+  contact: https://github.com/ryanlua/features/issues
+  repository: https://github.com/ryanlua/features
   ociReference: ghcr.io/ryanlua/features
 - name: Roblox Template
   maintainer: Ryan Luu
-  contact: https://github.com/RyanLua/templates/issues
-  repository: https://github.com/RyanLua/templates
+  contact: https://github.com/ryanlua/templates/issues
+  repository: https://github.com/ryanlua/templates
   ociReference: ghcr.io/ryanlua/templates
 - name: Dev Container Features by Daniel Lindemann
   maintainer: Daniel Lindemann
@@ -1551,6 +1551,11 @@
   contact: https://github.com/dnegstad/devcontainer-dev-certs/issues
   repository: https://github.com/dnegstad/devcontainer-dev-certs
   ociReference: ghcr.io/dnegstad/devcontainer-dev-certs
+- name: Ansible DevTools with Claude Code
+  maintainer: leogallego
+  contact: https://github.com/leogallego/ansible-claude-code-devcontainer/issues
+  repository: https://github.com/leogallego/ansible-claude-code-devcontainer
+  ociReference: ghcr.io/leogallego/ansible-claude-code-devcontainer
 - name: Devcontainer Features by jrussellsmyth
   maintainer: jrussellsmyth
   contact: https://github.com/jrussellsmyth/devcontainer-features/issues
