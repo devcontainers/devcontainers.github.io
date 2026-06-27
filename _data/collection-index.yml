@@ -1561,3 +1561,8 @@
   contact: https://github.com/jrussellsmyth/devcontainer-features/issues
   repository: https://github.com/jrussellsmyth/devcontainer-features
   ociReference: ghcr.io/jrussellsmyth/devcontainer-features
+- name: Bare Dev Container Templates
+  maintainer: nozaq
+  contact: https://github.com/bare-devcontainer/templates/issues
+  repository: https://github.com/bare-devcontainer/templates
+  ociReference: ghcr.io/bare-devcontainer/templates
