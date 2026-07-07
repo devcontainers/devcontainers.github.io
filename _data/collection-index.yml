@@ -1,3 +1,8 @@
+- name: Git Extended
+  maintainer: Agustin-Gigena
+  contact: https://github.com/Agustin-Gigena/devcontainer-features/issues
+  repository: https://github.com/Agustin-Gigena/devcontainer-features
+  ociReference: ghcr.io/Agustin-Gigena/devcontainer-features
 - name: Reference Implementation Features
   maintainer: Dev Container Spec Maintainers
   contact: https://github.com/devcontainers/features/issues
