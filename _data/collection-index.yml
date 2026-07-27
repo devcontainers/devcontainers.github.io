@@ -1570,4 +1570,4 @@
   maintainer: Maincode
   contact: https://github.com/MaincodeHQ/devcontainer-features/issues
   repository: https://github.com/MaincodeHQ/devcontainer-features
-  ociReference: ghcr.io/maincodehq/devcontainer-features
+  ociReference: ghcr.io/maincodehq/devcontainer-features/matilda-code
