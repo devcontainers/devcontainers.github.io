@@ -3,7 +3,7 @@
   contact: https://github.com/Agustin-Gigena/devcontainer-features/issues
   repository: https://github.com/Agustin-Gigena/devcontainer-features
   ociReference: ghcr.io/Agustin-Gigena/devcontainer-features
-- name: Dotnet Ef
+- name: Dotnet Entity Framework Tools
   maintainer: Agustin-Gigena
   contact: https://github.com/Agustin-Gigena/devcontainer-features/issues
   repository: https://github.com/Agustin-Gigena/devcontainer-features
