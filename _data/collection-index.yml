@@ -1180,7 +1180,7 @@
   maintainer: schnellerhase
   contact: https://github.com/schnellerhase/devcontainer-fenics/issues
   repository: https://github.com/schnellerhase/devcontainer-fenics
-  ociReference: ghcr.io/schnellerhase/devcontainer-fenics/fenics
+  ociReference: ghcr.io/schnellerhase/devcontainer-fenics
 - name: Dev Container Templates by pirpedro
   maintainer: Pedro Rodrigues
   contact: https://github.com/pirpedro/devcontainers/issues
