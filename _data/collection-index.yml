@@ -1566,6 +1566,11 @@
   contact: https://github.com/bare-devcontainer/templates/issues
   repository: https://github.com/bare-devcontainer/templates
   ociReference: ghcr.io/bare-devcontainer/templates
+- name: Dev Container Features by NolanJX
+  maintainer: NolanJX
+  contact: https://github.com/NolanJX/devcontainer-features/issues
+  repository: https://github.com/NolanJX/devcontainer-features
+  ociReference: ghcr.io/nolanjx/devcontainer-features
 - name: ITplusX Dev Container Features
   maintainer: ITplusX
   contact: https://github.com/itplusx/devcontainer-features/issues
