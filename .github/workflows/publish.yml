@@ -57,6 +57,34 @@ jobs:
           source: ./
           destination: ./_site
 
+      - name: Copy raw markdown files to output directory
+        run: |
+          rsync -a \
+            --exclude='/README.md' \
+            --exclude='/SECURITY.md' \
+            --exclude='/CODEOWNERS' \
+            --exclude='/contributing.md' \
+            --include='/*.md' \
+            --exclude='/*' \
+            ./ _site/
+          rsync -am --include='*/' --include='*.md' --exclude='*' _implementors/ _site/implementors/
+          for f in _posts/*.md; do
+            [ -e "$f" ] || continue
+            filename=$(basename "$f")
+            cp "$f" "_site/guide/${filename#????-??-??-}"
+          done
+
+      - name: Generate llms-full.txt
+        run: |
+          OUTPUT_FILE="_site/llms-full.txt"
+          > "$OUTPUT_FILE"
+          echo "This document contains the full Markdown documentation for DevContainers." >> "$OUTPUT_FILE"
+          echo "The files are separated by lines of dashes, and each starts with its file path." >> "$OUTPUT_FILE"
+          find _site -type f -name "*.md" -print0 | sort -z | while IFS= read -r -d '' filepath; do
+            echo -e "\n\n-----------------------------------------------------------------\n" >> "$OUTPUT_FILE"
+            cat "$filepath" >> "$OUTPUT_FILE"
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
