@@ -1500,7 +1500,7 @@
   maintainer: cdsolinfo
   contact: https://github.com/cdsolinfo/devcontainer-features/issues
   repository: https://github.com/cdsolinfo/devcontainer-features
-  ociReference: ghcr.io/cdsolinfo/devcontainer-features  
+  ociReference: ghcr.io/cdsolinfo/devcontainer-features
 - name: Devcontainer Features by nkaaf
   maintainer: nkaaf
   contact: https://github.com/nkaaf/devcontainer-features/issues
@@ -1581,3 +1581,8 @@
   contact: https://github.com/MaincodeHQ/devcontainer-features/issues
   repository: https://github.com/MaincodeHQ/devcontainer-features
   ociReference: ghcr.io/maincodehq/devcontainer-features/matilda-code
+- name: mise Dev Container Templates
+  maintainer: mkvlrn
+  contact: https://github.com/mkvlrn/mise-devcontainers/issues
+  repository: https://github.com/mkvlrn/mise-devcontainers
+  ociReference: ghcr.io/mkvlrn/mise-devcontainers
