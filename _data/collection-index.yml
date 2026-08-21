@@ -1180,7 +1180,7 @@
   maintainer: schnellerhase
   contact: https://github.com/schnellerhase/devcontainer-fenics/issues
   repository: https://github.com/schnellerhase/devcontainer-fenics
-  ociReference: ghcr.io/schnellerhase/devcontainer-fenics/fenics
+  ociReference: ghcr.io/schnellerhase/devcontainer-fenics
 - name: Dev Container Templates by pirpedro
   maintainer: Pedro Rodrigues
   contact: https://github.com/pirpedro/devcontainers/issues
@@ -1566,3 +1566,18 @@
   contact: https://github.com/bare-devcontainer/templates/issues
   repository: https://github.com/bare-devcontainer/templates
   ociReference: ghcr.io/bare-devcontainer/templates
+- name: Dev Container Features by NolanJX
+  maintainer: NolanJX
+  contact: https://github.com/NolanJX/devcontainer-features/issues
+  repository: https://github.com/NolanJX/devcontainer-features
+  ociReference: ghcr.io/nolanjx/devcontainer-features
+- name: ITplusX Dev Container Features
+  maintainer: ITplusX
+  contact: https://github.com/itplusx/devcontainer-features/issues
+  repository: https://github.com/itplusx/devcontainer-features
+  ociReference: ghcr.io/itplusx/devcontainer-features
+- name: Matilda Code Features
+  maintainer: Maincode
+  contact: https://github.com/MaincodeHQ/devcontainer-features/issues
+  repository: https://github.com/MaincodeHQ/devcontainer-features
+  ociReference: ghcr.io/maincodehq/devcontainer-features/matilda-code
