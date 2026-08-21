@@ -1581,6 +1581,11 @@
   contact: https://github.com/MaincodeHQ/devcontainer-features/issues
   repository: https://github.com/MaincodeHQ/devcontainer-features
   ociReference: ghcr.io/maincodehq/devcontainer-features/matilda-code
+- name: Claude Code (apt) Dev Container Feature
+  maintainer: Andrii Pravorskyi
+  contact: https://gitlab.com/pravorskyi/devcontainer-features/-/issues
+  repository: https://gitlab.com/pravorskyi/devcontainer-features
+  ociReference: registry.gitlab.com/pravorskyi/devcontainer-features
 - name: mise Dev Container Templates
   maintainer: mkvlrn
   contact: https://github.com/mkvlrn/mise-devcontainers/issues
