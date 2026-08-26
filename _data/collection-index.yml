@@ -1591,3 +1591,8 @@
   contact: https://github.com/mkvlrn/mise-devcontainers/issues
   repository: https://github.com/mkvlrn/mise-devcontainers
   ociReference: ghcr.io/mkvlrn/mise-devcontainers
+- name: LiquiLens Evidence Carrier Features
+  maintainer: beepboop2025
+  contact: https://github.com/beepboop2025/liquilens-devcontainer-features/issues
+  repository: https://github.com/beepboop2025/liquilens-devcontainer-features
+  ociReference: ghcr.io/beepboop2025/liquilens-devcontainer-features
