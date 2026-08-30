@@ -1,0 +1,14 @@
+{
+	"servers": {
+		"io.github.vercel/next-devtools-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"next-devtools-mcp@0.3.6"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.3.6"
+		}
+	},
+	"inputs": []
+}

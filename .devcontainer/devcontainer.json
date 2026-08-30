@@ -18,7 +18,14 @@
 		4000,
 		// Live reload server
 		35729
-	]
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-azureappservice"
+			]
+		}
+	}
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "jekyll --version"
