@@ -1,13 +1,8 @@
-- name: Git Extended
+- name: Features For .NET Tools & Git
   maintainer: Agustin-Gigena
   contact: https://github.com/Agustin-Gigena/devcontainer-features/issues
   repository: https://github.com/Agustin-Gigena/devcontainer-features
-  ociReference: ghcr.io/Agustin-Gigena/devcontainer-features
-- name: Dotnet Entity Framework Tools
-  maintainer: Agustin-Gigena
-  contact: https://github.com/Agustin-Gigena/devcontainer-features/issues
-  repository: https://github.com/Agustin-Gigena/devcontainer-features
-  ociReference: ghcr.io/Agustin-Gigena/devcontainer-features
+  ociReference: ghcr.io/agustin-gigena/devcontainer-features
 - name: Reference Implementation Features
   maintainer: Dev Container Spec Maintainers
   contact: https://github.com/devcontainers/features/issues
