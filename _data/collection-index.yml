@@ -1596,3 +1596,8 @@
   contact: https://github.com/beepboop2025/liquilens-devcontainer-features/issues
   repository: https://github.com/beepboop2025/liquilens-devcontainer-features
   ociReference: ghcr.io/beepboop2025/liquilens-devcontainer-features
+- name: jqweb Dev Container Features
+  maintainer: zafnz
+  contact: https://github.com/zafnz/devcontainer-features/issues
+  repository: https://github.com/zafnz/devcontainer-features
+  ociReference: ghcr.io/zafnz/devcontainer-features
