@@ -1601,3 +1601,8 @@
   contact: https://github.com/zafnz/devcontainer-features/issues
   repository: https://github.com/zafnz/devcontainer-features
   ociReference: ghcr.io/zafnz/devcontainer-features
+- name: Muse Code Dev Container Features
+  maintainer: HarjjotSinghh
+  contact: https://github.com/HarjjotSinghh/devcontainer-features/issues
+  repository: https://github.com/HarjjotSinghh/devcontainer-features
+  ociReference: ghcr.io/harjjotsinghh/devcontainer-features
