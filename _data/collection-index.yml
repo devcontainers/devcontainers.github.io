@@ -1601,3 +1601,8 @@
   contact: https://github.com/zafnz/devcontainer-features/issues
   repository: https://github.com/zafnz/devcontainer-features
   ociReference: ghcr.io/zafnz/devcontainer-features
+- name: raine-works Dev Container Features
+  maintainer: Raineworks
+  contact: https://github.com/raine-works/devcontainer-features/issues
+  repository: https://github.com/raine-works/devcontainer-features
+  ociReference: ghcr.io/raine-works/devcontainer-features
