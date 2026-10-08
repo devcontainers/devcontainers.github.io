@@ -1606,3 +1606,8 @@
   contact: https://github.com/raine-works/devcontainer-features/issues
   repository: https://github.com/raine-works/devcontainer-features
   ociReference: ghcr.io/raine-works/devcontainer-features
+- name: UniRate Features
+  maintainer: UniRate
+  contact: https://github.com/UniRate-API/devcontainer-features/issues
+  repository: https://github.com/UniRate-API/devcontainer-features
+  ociReference: ghcr.io/unirate-api/devcontainer-features
