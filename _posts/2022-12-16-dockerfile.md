@@ -70,7 +70,7 @@ services:
   devcontainer:
     image: mcr.microsoft.com/devcontainers/base:ubuntu
     volumes:
-      - ../..:/workspaces:cached
+      - ../..:/workspaces
     network_mode: service:db
     command: sleep infinity
 
@@ -89,7 +89,7 @@ volumes:
 ```
 
 In this example:
--  `../..:/workspaces:cached` mounts the workspace folder from the local source tree into the Dev Container.
+-  `../..:/workspaces` mounts the workspace folder from the local source tree into the Dev Container.
 - `network_mode: service:db` puts the Dev Container on the same network as the database, so that it can access it on `localhost`.
 - The `db` section uses the [Postgres](https://hub.docker.com/_/postgres) image with a few settings.
 
@@ -106,7 +106,7 @@ Next, let's configure devcontainer.json to use it.
 In this example:
 - `service` indicates which service in the `docker-compose.yml` file is the Dev Container.
 - `dockerComposeFile` indicates where to find the `docker-compose.yml` file.
-- `workspaceFolder` indicates where to mount the workspace folder. This corresponds to a sub-folder under the mount point from `../..:/workspaces:cached` in the `docker-compose.yml` file.
+- `workspaceFolder` indicates where to mount the workspace folder. This corresponds to a sub-folder under the mount point from `../..:/workspaces` in the `docker-compose.yml` file.
 
 That's it!
 
@@ -122,7 +122,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ../..:/workspaces:cached      
+      - ../..:/workspaces      
     network_mode: service:db
     command: sleep infinity
 
