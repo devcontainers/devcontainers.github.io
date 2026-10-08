@@ -1606,3 +1606,8 @@
   contact: https://github.com/raine-works/devcontainer-features/issues
   repository: https://github.com/raine-works/devcontainer-features
   ociReference: ghcr.io/raine-works/devcontainer-features
+- name: enchantments
+  maintainer: Jartan LLC
+  contact: https://github.com/Jartan-LLC/enchantments/issues
+  repository: https://github.com/Jartan-LLC/enchantments
+  ociReference: ghcr.io/jartan-llc/enchantments
