@@ -1606,3 +1606,8 @@
   contact: https://github.com/raine-works/devcontainer-features/issues
   repository: https://github.com/raine-works/devcontainer-features
   ociReference: ghcr.io/raine-works/devcontainer-features
+- name: Dev Container Features by nabil-becker
+  maintainer: Nabil Becker
+  contact: https://github.com/nabil-becker/devcontainer-features/issues
+  repository: https://github.com/nabil-becker/devcontainer-features
+  ociReference: ghcr.io/nabil-becker/devcontainer-features
