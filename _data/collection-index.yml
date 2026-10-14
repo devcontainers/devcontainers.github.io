@@ -1606,3 +1606,8 @@
   contact: https://github.com/raine-works/devcontainer-features/issues
   repository: https://github.com/raine-works/devcontainer-features
   ociReference: ghcr.io/raine-works/devcontainer-features
+- name: OpenBao dev container feature
+  maintainer: EmperorRAG
+  contact: https://github.com/EmperorRAG
+  repository: https://github.com/EmperorRAG/my-private-projects-monorepo
+  ociReference: ghcr.io/emperorrag/devcontainer-features
