@@ -97,6 +97,13 @@ Some properties may also have certain limitations in the Dev Containers extensio
 | `${localWorkspaceFolderBasename}` | Any | Not yet supported when using Clone Repository in Container Volume. |
 {: .table .table-bordered}
 
+### <a href="#devsy" name="devsy" class="anchor"> Devsy </a>
+
+[Devsy](https://devsy.sh/) gives development teams standardized, ready-to-code workspaces that
+cut hardware cost, shorten onboarding, and keep developers productive. Workspaces run from
+a `devcontainer.json` definition and deploy to Docker, Kubernetes, SSH remote hosts, cloud
+providers (AWS, GCP, Azure, DigitalOcean), Apple Containers, and Lima VMs, with more on the way.
+
 ## <a href="#services" name="services" class="anchor"> Services </a>
 
 ### <a href="#github-codespaces" name="github-codespaces" class="anchor"> GitHub Codespaces </a>
