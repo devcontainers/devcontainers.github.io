@@ -1606,3 +1606,8 @@
   contact: https://github.com/T0ng5/esp-idf/issues
   repository: https://github.com/T0ng5/esp-idf
   ociReference: ghcr.io/t0ng5/esp-idf
+- name: raine-works Dev Container Features
+  maintainer: Raineworks
+  contact: https://github.com/raine-works/devcontainer-features/issues
+  repository: https://github.com/raine-works/devcontainer-features
+  ociReference: ghcr.io/raine-works/devcontainer-features
