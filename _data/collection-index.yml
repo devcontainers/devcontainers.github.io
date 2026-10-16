@@ -1306,11 +1306,16 @@
   contact: https://github.com/ProxayFox/devcontainer-features/issues
   repository: https://github.com/ProxayFox/devcontainer-features
   ociReference: ghcr.io/proxayfox/devcontainer-features
-- name: Databricks CLI Feature
+- name: Databricks CLI
   maintainer: KingBain
-  contact: https://github.com/KingBain/devcontainer-features-databricks/issues
-  repository: https://github.com/KingBain/devcontainer-features-databricks
-  ociReference: ghcr.io/kingbain/devcontainer-features-databricks
+  contact: https://github.com/KingBain/devcontainer-features/issues
+  repository: https://github.com/KingBain/devcontainer-features
+  ociReference: ghcr.io/kingbain/devcontainer-features/databricks-cli
+- name: Certificate Updater
+  maintainer: KingBain
+  contact: https://github.com/KingBain/devcontainer-features/issues
+  repository: https://github.com/KingBain/devcontainer-features
+  ociReference: ghcr.io/kingbain/devcontainer-features/cert-update
 - name: Couper DevContainer Feature
   maintainer: Marcel Ludwig (malud)
   contact: https://github.com/coupergateway/features/issues
