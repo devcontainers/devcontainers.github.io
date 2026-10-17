@@ -1616,3 +1616,8 @@
   contact: https://github.com/Jartan-LLC/enchantments/issues
   repository: https://github.com/Jartan-LLC/enchantments
   ociReference: ghcr.io/jartan-llc/enchantments
+- name: UniRate Features
+  maintainer: UniRate
+  contact: https://github.com/UniRate-API/devcontainer-features/issues
+  repository: https://github.com/UniRate-API/devcontainer-features
+  ociReference: ghcr.io/unirate-api/devcontainer-features
