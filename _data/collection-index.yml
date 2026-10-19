@@ -1031,7 +1031,7 @@
   contact: https://github.com/thediveo/devcontainer-features/issues
   repository: https://github.com/thediveo/devcontainer-features
   ociReference: ghcr.io/thediveo/devcontainer-features
-- name: devcontainer features by .NET Aspire
+- name: devcontainer features by Aspire
   maintainer: Aspire team
   contact: https://github.com/microsoft/aspire/issues
   repository: https://github.com/microsoft/aspire-devcontainer-feature
