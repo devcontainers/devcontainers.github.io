@@ -1621,3 +1621,8 @@
   contact: https://github.com/Jartan-LLC/enchantments/issues
   repository: https://github.com/Jartan-LLC/enchantments
   ociReference: ghcr.io/jartan-llc/enchantments
+- name: Eidos CLI (eidos-ai)
+  maintainer: Marwan Chawa (@mchawa)
+  contact: https://github.com/mchawa/eidos/issues
+  repository: https://github.com/mchawa/eidos
+  ociReference: ghcr.io/mchawa/eidos
