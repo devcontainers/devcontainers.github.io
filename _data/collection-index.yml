@@ -1621,3 +1621,8 @@
   contact: https://github.com/Jartan-LLC/enchantments/issues
   repository: https://github.com/Jartan-LLC/enchantments
   ociReference: ghcr.io/jartan-llc/enchantments
+- name: Occoneechee Lodge
+  maintainer: Lodge104
+  contact: https://github.com/Lodge104/devcontainer.features/issues
+  repository: https://github.com/Lodge104/devcontainer.features
+  ociReference: ghcr.io/lodge104/devcontainer.features
