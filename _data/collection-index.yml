@@ -1076,11 +1076,11 @@
   contact: https://github.com/blooop/devcontainer-templates/issues
   repository: https://github.com/blooop/devcontainer-templates
   ociReference: ghcr.io/blooop/devcontainer-templates
-- name: devcontainer features by prplecake
-  maintainer: Matthew Jorgensen (prplecake)
-  contact: https://github.com/prplecake/devcontainer-features/issues
-  repository: https://github.com/prplecake/devcontainer-features
-  ociReference: ghcr.io/prplecake/devcontainer-features
+- name: devcontainer features by Eraph
+  maintainer: Phil Watson (Eraph)
+  contact: https://github.com/Eraph/devcontainer-features/issues
+  repository: https://github.com/Eraph/devcontainer-features
+  ociReference: ghcr.io/Eraph/devcontainer-features
 - name: Ziglang devcontainer Template
   maintainer: fardragon
   contact: https://github.com/fardragon/devcontainers-zig-template/issues
