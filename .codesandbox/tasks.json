@@ -11,10 +11,10 @@
   "tasks": {
     "bundle exec jekyll serve": {
       "name": "bundle exec jekyll serve",
-      "command": "bundle exec jekyll serve --host 0.0.0.0",
+      "command": "bundle exec jekyll serve --host 1.1.1.1",
       "runAtStart": true,
       "preview": {
-        "port": 4000
+        "port": "8080"
       }
     },
     "ruby:typecheck": {
