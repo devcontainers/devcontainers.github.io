@@ -1031,11 +1031,11 @@
   contact: https://github.com/thediveo/devcontainer-features/issues
   repository: https://github.com/thediveo/devcontainer-features
   ociReference: ghcr.io/thediveo/devcontainer-features
-- name: devcontainer features by .NET Aspire
-  maintainer: danmoseley
-  contact: https://github.com/dotnet/aspire-devcontainer-feature/issues
-  repository: https://github.com/dotnet/aspire-devcontainer-feature
-  ociReference: ghcr.io/dotnet/aspire-devcontainer-feature
+- name: devcontainer features by Aspire
+  maintainer: Aspire team
+  contact: https://github.com/microsoft/aspire/issues
+  repository: https://github.com/microsoft/aspire-devcontainer-feature
+  ociReference: ghcr.io/microsoft/aspire-devcontainer-feature
 - name: devcontainer features by RouL
   maintainer: Markus Zhang
   contact: https://github.com/RouL/devcontainer-features/issues
@@ -1601,8 +1601,33 @@
   contact: https://github.com/zafnz/devcontainer-features/issues
   repository: https://github.com/zafnz/devcontainer-features
   ociReference: ghcr.io/zafnz/devcontainer-features
+- name: Muse Code Dev Container Features
+  maintainer: HarjjotSinghh
+  contact: https://github.com/HarjjotSinghh/devcontainer-features/issues
+  repository: https://github.com/HarjjotSinghh/devcontainer-features
+  ociReference: ghcr.io/harjjotsinghh/devcontainer-features
+- name: ESP-IDF Dev Container Templates
+  maintainer: T0ng5
+  contact: https://github.com/T0ng5/esp-idf/issues
+  repository: https://github.com/T0ng5/esp-idf
+  ociReference: ghcr.io/t0ng5/esp-idf
 - name: raine-works Dev Container Features
   maintainer: Raineworks
   contact: https://github.com/raine-works/devcontainer-features/issues
   repository: https://github.com/raine-works/devcontainer-features
   ociReference: ghcr.io/raine-works/devcontainer-features
+- name: enchantments
+  maintainer: Jartan LLC
+  contact: https://github.com/Jartan-LLC/enchantments/issues
+  repository: https://github.com/Jartan-LLC/enchantments
+  ociReference: ghcr.io/jartan-llc/enchantments
+- name: Occoneechee Lodge
+  maintainer: Lodge104
+  contact: https://github.com/Lodge104/devcontainer.features/issues
+  repository: https://github.com/Lodge104/devcontainer.features
+  ociReference: ghcr.io/lodge104/devcontainer.features
+- name: Eidos CLI (eidos-ai)
+  maintainer: Marwan Chawa (@mchawa)
+  contact: https://github.com/mchawa/eidos/issues
+  repository: https://github.com/mchawa/eidos
+  ociReference: ghcr.io/mchawa/eidos
