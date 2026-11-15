@@ -1631,3 +1631,8 @@
   contact: https://github.com/mchawa/eidos/issues
   repository: https://github.com/mchawa/eidos
   ociReference: ghcr.io/mchawa/eidos
+- name: Mattbusel LLM tools and Tensorust MCP
+  maintainer: Matthew Busel (@Mattbusel)
+  contact: https://github.com/Mattbusel/devcontainer-features/issues
+  repository: https://github.com/Mattbusel/devcontainer-features
+  ociReference: ghcr.io/mattbusel/devcontainer-features
