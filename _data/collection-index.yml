@@ -1080,7 +1080,7 @@
   maintainer: Phil Watson (Eraph)
   contact: https://github.com/Eraph/devcontainer-features/issues
   repository: https://github.com/Eraph/devcontainer-features
-  ociReference: ghcr.io/Eraph/devcontainer-features
+  ociReference: ghcr.io/eraph/devcontainer-features
 - name: Ziglang devcontainer Template
   maintainer: fardragon
   contact: https://github.com/fardragon/devcontainers-zig-template/issues
