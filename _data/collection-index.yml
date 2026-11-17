@@ -1631,3 +1631,8 @@
   contact: https://github.com/mchawa/eidos/issues
   repository: https://github.com/mchawa/eidos
   ociReference: ghcr.io/mchawa/eidos
+- name: ocx
+  maintainer: ocx-sh
+  contact: https://github.com/ocx-sh/devcontainer-features/issues
+  repository: https://github.com/ocx-sh/devcontainer-features
+  ociReference: ghcr.io/ocx-sh/devcontainer-features
