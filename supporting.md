@@ -75,6 +75,10 @@ See [devenv documentation](https://devenv.sh/integrations/codespaces-devcontaine
 
 Press <kbd>cmd/ctrl</kbd>+<kbd>shift</kbd>+<kbd>p</kbd> or <kbd>F1</kbd> and select the **Generate Dev Container files** command to get started!
 
+### <a href="#dc2kit" name="dc2kit" class="anchor"> dc2kit </a>
+
+[dc2kit](https://github.com/aashish-thapa/dc2kit) converts a `devcontainer.json` into a [Docker Sandboxes](https://docs.docker.com/ai/sandboxes/) kit, so coding agents run in the same environment as your editor. It installs Features in spec order (`dependsOn`, `installsAfter`, `overrideFeatureInstallOrder`), maps lifecycle commands, ports, and host requirements onto kit capabilities, and reports the properties a sandbox cannot honor, such as `mounts` and `postAttachCommand`.
+
 ### <a href="#dev-containers" name="dev-containers" class="anchor"> VS Code Dev Containers extension </a>
 
 The [Visual Studio Code Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a [Docker container](https://docker.com) as a full-featured development environment. It allows you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set. There is more information in the Dev Containers [documentation](https://code.visualstudio.com/docs/remote/containers).
