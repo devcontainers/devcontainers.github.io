@@ -12,7 +12,7 @@ When a dev container configuration references a disallowed Feature, building or 
 
 > Cannot use the '`ghcr.io/<owner>/<collection>/<feature>`' Feature since it was reported to be problematic. Please remove this Feature from your configuration and rebuild any dev container using it before continuing.
 
-If a dev container that uses the Feature is already running, the tool stops it.
+When you open or start a dev container that uses the Feature, the tool also stops it if it is already running.
 
 ## <a href="#why" name="why" class="anchor"> Why a Feature is disallowed </a>
 
@@ -35,11 +35,11 @@ If you rename or delete the GitHub account or organization that publishes your F
 
 ## <a href="#reporting" name="reporting" class="anchor"> Reporting a problematic Feature </a>
 
-If you believe a Feature is malicious or was published by someone other than its original author, report it as described in our [security policy](https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/SECURITY.md). Please don't report security issues in public GitHub issues.
+If you believe a Feature is malicious or was published by someone other than its original author, report it through the registry hosting the Feature.
 
 ## <a href="#control-manifest" name="control-manifest" class="anchor"> How tools find disallowed Features </a>
 
-Disallowed Features are listed in the [control manifest](static/devcontainer-control-manifest.json), which is maintained in the [devcontainers/crawler](https://github.com/devcontainers/crawler/blob/main/config/devcontainer-control-manifest.json) repository. Each entry in `disallowedFeatures` has:
+Disallowed Features are listed in the [control manifest](static/devcontainer-control-manifest.json). Each entry in `disallowedFeatures` has:
 
 | Property | Type | Description |
 |----------|------|-------------|
