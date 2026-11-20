@@ -1277,6 +1277,12 @@
   repository: https://github.com/blooop/devcontainer-templates
   ociReference: ghcr.io/blooop/devcontainer-templates
   ownerId: 1213400
+- name: devcontainer features by prplecake
+  maintainer: Matthew Jorgensen (prplecake)
+  contact: https://github.com/prplecake/devcontainer-features/issues
+  repository: https://github.com/prplecake/devcontainer-features
+  ociReference: ghcr.io/prplecake/devcontainer-features
+  ownerId: 83595468
 - name: Ziglang devcontainer Template
   maintainer: fardragon
   contact: https://github.com/fardragon/devcontainers-zig-template/issues
