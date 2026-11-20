@@ -878,11 +878,6 @@
   contact: https://github.com/gvatsal60/dev-container-features/issues
   repository: https://github.com/gvatsal60/dev-container-features
   ociReference: ghcr.io/gvatsal60/dev-container-features
-- name: Devcontainer features by git-saj
-  maintainer: git-saj
-  contact: https://github.com/git-saj/devcontainer-features/issues
-  repository: https://github.com/git-saj/devcontainer-features
-  ociReference: ghcr.io/git-saj/devcontainer-features
 - name: Devcontainer features by Codefabrik
   maintainer: Codefabrik GmbH
   contact: https://github.com/code-fabrik/features/issues
@@ -971,11 +966,6 @@
   maintainer: David Zucker
   contact: https://github.com/davzucky/devcontainers-features-wolfi/issues
   repository: https://github.com/davzucky/devcontainers-features-wolfi
-- name: devcontainer features by ebizbase
-  maintainer: eBizBase
-  contact: https://github.com/ebizbase/dev-infras/issues
-  repository: https://github.com/ebizbase/dev-infras
-  ociReference: ghcr.io/ebizbase/devcontainers-features
 - name: slang programming language
   maintainer: loag
   contact: https://github.com/Loag/slang-feature/issues
@@ -1076,11 +1066,6 @@
   contact: https://github.com/blooop/devcontainer-templates/issues
   repository: https://github.com/blooop/devcontainer-templates
   ociReference: ghcr.io/blooop/devcontainer-templates
-- name: devcontainer features by prplecake
-  maintainer: Matthew Jorgensen (prplecake)
-  contact: https://github.com/prplecake/devcontainer-features/issues
-  repository: https://github.com/prplecake/devcontainer-features
-  ociReference: ghcr.io/prplecake/devcontainer-features
 - name: Ziglang devcontainer Template
   maintainer: fardragon
   contact: https://github.com/fardragon/devcontainers-zig-template/issues
