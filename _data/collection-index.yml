@@ -1421,7 +1421,7 @@
   ociReference: ghcr.io/mattmazzola/devcontainers
   ownerId: 2856501
 - name: W&B Catnip
-  maintainer: Weights and Biases
+  maintainer: Weights and Biases (test)
   contact: https://github.com/wandb/catnip/issues
   repository: https://github.com/wandb/catnip
   ociReference: ghcr.io/wandb/catnip/feature
@@ -1934,3 +1934,9 @@
   repository: https://github.com/mchawa/eidos
   ociReference: ghcr.io/mchawa/eidos
   ownerId: 78374013
+- name: Reused name (test)
+  maintainer: Test
+  contact: https://github.com/git-saj/x/issues
+  repository: https://github.com/git-saj/x
+  ociReference: ghcr.io/git-saj/x
+  ownerId: 1
