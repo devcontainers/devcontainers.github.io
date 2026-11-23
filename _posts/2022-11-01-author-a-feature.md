@@ -109,4 +109,17 @@ If you'd like your Features to appear in our [public index](/features) so that o
 
 > **Note:** Add a **single entry per repository**, regardless of how many Features it contains. The `ociReference` should be the collection namespace root — e.g., `ghcr.io/<owner>/<repo>` — **not** a path to an individual Feature (e.g., avoid `ghcr.io/<owner>/<repo>/<featureName>`). The site will automatically discover all Features in the collection from that one entry. The `ociReference` value must not include a URL scheme such as `http://` or `https://`.
 
+For collections published to `ghcr.io`, the entry must also include an `ownerId`: the numeric `id` of the GitHub user or organization `<owner>`, as returned by `https://api.github.com/users/<owner>`. Unlike the name, this ID doesn't change when an account is renamed, so collections whose owner name now belongs to a different account are skipped. For example:
+
+```yaml
+- name: My Features
+  maintainer: My Name
+  contact: https://github.com/<owner>/<repo>/issues
+  repository: https://github.com/<owner>/<repo>
+  ociReference: ghcr.io/<owner>/<repo>
+  ownerId: 12345678
+```
+
+If you rename the account, update `ociReference` to the new name and keep the `ownerId`.
+
 Feature collections are scanned to populate a Feature index on the [containers.dev site](/features) and allow them to appear in Dev Container creation UX in [supporting tools](https://containers.dev/supporting) like [VS Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [GitHub Codespaces](https://github.com/features/codespaces).
