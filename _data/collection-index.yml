@@ -1940,3 +1940,9 @@
   repository: https://github.com/mchawa/eidos
   ociReference: ghcr.io/mchawa/eidos
   ownerId: 78374013
+- name: Typst Dev Container
+  maintainer: Solomon Wakhungu
+  contact: https://github.com/1solomonwakhungu/typst-dev-container/issues
+  repository: https://github.com/1solomonwakhungu/typst-dev-container
+  ociReference: ghcr.io/1solomonwakhungu/typst-dev-container/templates
+  ownerId: 65043605
