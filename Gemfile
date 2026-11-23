@@ -3,6 +3,10 @@ ruby RUBY_VERSION
 
 gem "jekyll", "3.9.3"
 
+gem "csv", "~> 3.3"
+gem "base64", "~> 0.3.0"
+gem "bigdecimal", "~> 4.1"
+
 # to use GitHub Pages
 # gem "github-pages", group: :jekyll_plugins
 
