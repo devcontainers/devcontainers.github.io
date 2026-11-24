@@ -1940,3 +1940,9 @@
   repository: https://github.com/mchawa/eidos
   ociReference: ghcr.io/mchawa/eidos
   ownerId: 78374013
+- name: UniRate Features
+  maintainer: UniRate
+  contact: https://github.com/UniRate-API/devcontainer-features/issues
+  repository: https://github.com/UniRate-API/devcontainer-features
+  ociReference: ghcr.io/unirate-api/devcontainer-features
+  ownerId: 199503194
