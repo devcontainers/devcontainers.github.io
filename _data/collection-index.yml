@@ -1940,3 +1940,9 @@
   repository: https://github.com/mchawa/eidos
   ociReference: ghcr.io/mchawa/eidos
   ownerId: 78374013
+- name: ocx
+  maintainer: ocx-sh
+  contact: https://github.com/ocx-sh/devcontainer-features/issues
+  repository: https://github.com/ocx-sh/devcontainer-features
+  ociReference: ghcr.io/ocx-sh/devcontainer-features
+  ownerId: 263156444
