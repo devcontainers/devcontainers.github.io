@@ -1940,3 +1940,9 @@
   repository: https://github.com/mchawa/eidos
   ociReference: ghcr.io/mchawa/eidos
   ownerId: 78374013
+- name: Devcontainer Features by Iain Galloway
+  maintainer: Iain Galloway
+  contact: https://github.com/iaingalloway/features/issues
+  repository: https://github.com/iaingalloway/features
+  ociReference: ghcr.io/iaingalloway/features
+  ownerId: 1901288
