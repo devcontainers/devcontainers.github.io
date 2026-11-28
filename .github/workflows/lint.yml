@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - _data/collection-index.yml
+      - .github/scripts/check-collection-index.sh
+      - .github/workflows/lint.yml
 
 permissions:
   contents: read
@@ -24,3 +26,17 @@ jobs:
           yamllint_comment: true
         env:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  entries:
+    name: 'Check added and changed entries'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v6
+      - name: 'Check entries'
+        run: |
+          git fetch --depth=1 origin "$BASE_REF"
+          bash .github/scripts/check-collection-index.sh FETCH_HEAD
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
